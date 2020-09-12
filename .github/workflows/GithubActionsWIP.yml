@@ -275,7 +275,7 @@ jobs:
 
 # We'd like to push to a forked repository; The push appears to work but the packages are not visible
 # Pending a service response we only do the push of the CI build in the Material-Blazor/Material.Blazor repository
-# The commented 'if' can replace the current 'if' when this is resolved
+# The commented 'if' can replace the current 'if' when (and if) this is resolved
 
     - name: Upload Package 🚀
       run: nuget push ${env:outputMBWin}\*.nupkg -Source https://nuget.pkg.github.com/${{github.repository_owner}}/index.json
