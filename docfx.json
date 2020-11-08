@@ -10,6 +10,7 @@
         }
       ],
       "dest": "api",
+      "properties": { "TargetFramework": "netstandard2.1" },
       "disableContribution": true,
       "disableGitFeatures": false,
       "disableDefaultFilter": false
