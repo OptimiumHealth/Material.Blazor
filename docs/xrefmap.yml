@@ -136,12 +136,12 @@ references:
 - uid: C.MBMenuSelectionGroup
   name: MBMenuSelectionGroup
   href: Material.Blazor/Components/MenuSelectionGroup/MBMenuSelectionGroup.html
-- uid: C.MBNumericDecimalField
-  name: MBNumericDecimalField
-  href: Material.Blazor/Components/NumericDecimalField/MBNumericDecimalField.html
+- uid: C.MBNumericDoubleField
+  name: MBNumericDoubleField
+  href: Material.Blazor/Components/NumericDoubleField/MBNumericDoubleField.html
 - uid: C.MBNumericIntField
   name: MBNumericIntField
-  href: Material.Blazor/Components/NumericDoubleField/MBNumericDoubleField.html
+  href: Material.Blazor/Components/NumericIntField/MBNumericIntField.html
 - uid: C.MBPagedDataList
   name: MBPagedDataList
   href: Material.Blazor/Components/PagedDataList/MBPagedDataList.html
@@ -458,6 +458,12 @@ references:
   commentId: T:Material.Blazor.Internal.ComponentFoundation
   fullName: Material.Blazor.Internal.ComponentFoundation
   nameWithType: ComponentFoundation
+- uid: Material.Blazor.Internal.ComponentFoundation._hasInstantiated
+  name: _hasInstantiated
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation__hasInstantiated
+  commentId: F:Material.Blazor.Internal.ComponentFoundation._hasInstantiated
+  fullName: Material.Blazor.Internal.ComponentFoundation._hasInstantiated
+  nameWithType: ComponentFoundation._hasInstantiated
 - uid: Material.Blazor.Internal.ComponentFoundation.CascadingDefaults
   name: CascadingDefaults
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_CascadingDefaults
@@ -516,19 +522,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.Finalize
   nameWithType: ComponentFoundation.Finalize
-- uid: Material.Blazor.Internal.ComponentFoundation.OnAfterRender(System.Boolean)
-  name: OnAfterRender(Boolean)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnAfterRender_System_Boolean_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.OnAfterRender(System.Boolean)
-  fullName: Material.Blazor.Internal.ComponentFoundation.OnAfterRender(System.Boolean)
-  nameWithType: ComponentFoundation.OnAfterRender(Boolean)
-- uid: Material.Blazor.Internal.ComponentFoundation.OnAfterRender*
-  name: OnAfterRender
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnAfterRender_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.OnAfterRender
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.OnAfterRender
-  nameWithType: ComponentFoundation.OnAfterRender
 - uid: Material.Blazor.Internal.ComponentFoundation.OnAfterRenderAsync(System.Boolean)
   name: OnAfterRenderAsync(Boolean)
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnAfterRenderAsync_System_Boolean_
@@ -542,6 +535,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.OnAfterRenderAsync
   nameWithType: ComponentFoundation.OnAfterRenderAsync
+- uid: Material.Blazor.Internal.ComponentFoundation.OnDisabledSet
+  name: OnDisabledSet
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnDisabledSet
+  commentId: E:Material.Blazor.Internal.ComponentFoundation.OnDisabledSet
+  fullName: Material.Blazor.Internal.ComponentFoundation.OnDisabledSet
+  nameWithType: ComponentFoundation.OnDisabledSet
 - uid: Material.Blazor.Internal.ComponentFoundation.OnParametersSet
   name: OnParametersSet()
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnParametersSet
@@ -718,23 +717,6 @@ references:
   fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FormatValueToString
   nameWithType: InputComponentFoundation<T>.FormatValueToString
   nameWithType.vb: InputComponentFoundation(Of T).FormatValueToString
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender(System.Boolean)
-  name: OnAfterRender(Boolean)
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRender_System_Boolean_
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender(System.Boolean)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnAfterRender(System.Boolean)
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnAfterRender(System.Boolean)
-  nameWithType: InputComponentFoundation<T>.OnAfterRender(Boolean)
-  nameWithType.vb: InputComponentFoundation(Of T).OnAfterRender(Boolean)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender*
-  name: OnAfterRender
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRender_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnAfterRender
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnAfterRender
-  nameWithType: InputComponentFoundation<T>.OnAfterRender
-  nameWithType.vb: InputComponentFoundation(Of T).OnAfterRender
 - uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRenderAsync(System.Boolean)
   name: OnAfterRenderAsync(Boolean)
   href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRenderAsync_System_Boolean_
@@ -1286,6 +1268,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.InternalTooltipAnchor.OnInitialized
   nameWithType: InternalTooltipAnchor.OnInitialized
+- uid: Material.Blazor.Internal.InternalTooltipAnchor.RemoveTooltip(System.Guid)
+  name: RemoveTooltip(Guid)
+  href: api/Material.Blazor.Internal.InternalTooltipAnchor.html#Material_Blazor_Internal_InternalTooltipAnchor_RemoveTooltip_System_Guid_
+  commentId: M:Material.Blazor.Internal.InternalTooltipAnchor.RemoveTooltip(System.Guid)
+  fullName: Material.Blazor.Internal.InternalTooltipAnchor.RemoveTooltip(System.Guid)
+  nameWithType: InternalTooltipAnchor.RemoveTooltip(Guid)
+- uid: Material.Blazor.Internal.InternalTooltipAnchor.RemoveTooltip*
+  name: RemoveTooltip
+  href: api/Material.Blazor.Internal.InternalTooltipAnchor.html#Material_Blazor_Internal_InternalTooltipAnchor_RemoveTooltip_
+  commentId: Overload:Material.Blazor.Internal.InternalTooltipAnchor.RemoveTooltip
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalTooltipAnchor.RemoveTooltip
+  nameWithType: InternalTooltipAnchor.RemoveTooltip
 - uid: Material.Blazor.Internal.StyleMapper
   name: StyleMapper
   href: api/Material.Blazor.Internal.StyleMapper.html
@@ -1872,6 +1867,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCard.CardStyle
   nameWithType: MBCard.CardStyle
+- uid: Material.Blazor.MBCard.OnAfterRenderAsync(System.Boolean)
+  name: OnAfterRenderAsync(Boolean)
+  href: api/Material.Blazor.MBCard.html#Material_Blazor_MBCard_OnAfterRenderAsync_System_Boolean_
+  commentId: M:Material.Blazor.MBCard.OnAfterRenderAsync(System.Boolean)
+  fullName: Material.Blazor.MBCard.OnAfterRenderAsync(System.Boolean)
+  nameWithType: MBCard.OnAfterRenderAsync(Boolean)
+- uid: Material.Blazor.MBCard.OnAfterRenderAsync*
+  name: OnAfterRenderAsync
+  href: api/Material.Blazor.MBCard.html#Material_Blazor_MBCard_OnAfterRenderAsync_
+  commentId: Overload:Material.Blazor.MBCard.OnAfterRenderAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBCard.OnAfterRenderAsync
+  nameWithType: MBCard.OnAfterRenderAsync
 - uid: Material.Blazor.MBCard.OnInitialized
   name: OnInitialized()
   href: api/Material.Blazor.MBCard.html#Material_Blazor_MBCard_OnInitialized
@@ -4920,6 +4928,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBMenu.NotifyClosedAsync
   nameWithType: MBMenu.NotifyClosedAsync
+- uid: Material.Blazor.MBMenu.OnAfterRenderAsync(System.Boolean)
+  name: OnAfterRenderAsync(Boolean)
+  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_OnAfterRenderAsync_System_Boolean_
+  commentId: M:Material.Blazor.MBMenu.OnAfterRenderAsync(System.Boolean)
+  fullName: Material.Blazor.MBMenu.OnAfterRenderAsync(System.Boolean)
+  nameWithType: MBMenu.OnAfterRenderAsync(Boolean)
+- uid: Material.Blazor.MBMenu.OnAfterRenderAsync*
+  name: OnAfterRenderAsync
+  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_OnAfterRenderAsync_
+  commentId: Overload:Material.Blazor.MBMenu.OnAfterRenderAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenu.OnAfterRenderAsync
+  nameWithType: MBMenu.OnAfterRenderAsync
 - uid: Material.Blazor.MBMenu.OnInitialized
   name: OnInitialized()
   href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_OnInitialized
@@ -4965,259 +4986,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBMenuSelectionGroup.ChildContent
   nameWithType: MBMenuSelectionGroup.ChildContent
-- uid: Material.Blazor.MBNumericDecimalField
-  name: MBNumericDecimalField
-  href: api/Material.Blazor.MBNumericDecimalField.html
-  commentId: T:Material.Blazor.MBNumericDecimalField
-  fullName: Material.Blazor.MBNumericDecimalField
-  nameWithType: MBNumericDecimalField
-- uid: Material.Blazor.MBNumericDecimalField.DecimalPlaces
-  name: DecimalPlaces
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_DecimalPlaces
-  commentId: P:Material.Blazor.MBNumericDecimalField.DecimalPlaces
-  fullName: Material.Blazor.MBNumericDecimalField.DecimalPlaces
-  nameWithType: MBNumericDecimalField.DecimalPlaces
-- uid: Material.Blazor.MBNumericDecimalField.DecimalPlaces*
-  name: DecimalPlaces
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_DecimalPlaces_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.DecimalPlaces
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.DecimalPlaces
-  nameWithType: MBNumericDecimalField.DecimalPlaces
-- uid: Material.Blazor.MBNumericDecimalField.Density
-  name: Density
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Density
-  commentId: P:Material.Blazor.MBNumericDecimalField.Density
-  fullName: Material.Blazor.MBNumericDecimalField.Density
-  nameWithType: MBNumericDecimalField.Density
-- uid: Material.Blazor.MBNumericDecimalField.Density*
-  name: Density
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Density_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.Density
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.Density
-  nameWithType: MBNumericDecimalField.Density
-- uid: Material.Blazor.MBNumericDecimalField.FocusedMagnitude
-  name: FocusedMagnitude
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_FocusedMagnitude
-  commentId: P:Material.Blazor.MBNumericDecimalField.FocusedMagnitude
-  fullName: Material.Blazor.MBNumericDecimalField.FocusedMagnitude
-  nameWithType: MBNumericDecimalField.FocusedMagnitude
-- uid: Material.Blazor.MBNumericDecimalField.FocusedMagnitude*
-  name: FocusedMagnitude
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_FocusedMagnitude_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.FocusedMagnitude
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.FocusedMagnitude
-  nameWithType: MBNumericDecimalField.FocusedMagnitude
-- uid: Material.Blazor.MBNumericDecimalField.HelperText
-  name: HelperText
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_HelperText
-  commentId: P:Material.Blazor.MBNumericDecimalField.HelperText
-  fullName: Material.Blazor.MBNumericDecimalField.HelperText
-  nameWithType: MBNumericDecimalField.HelperText
-- uid: Material.Blazor.MBNumericDecimalField.HelperText*
-  name: HelperText
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_HelperText_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.HelperText
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.HelperText
-  nameWithType: MBNumericDecimalField.HelperText
-- uid: Material.Blazor.MBNumericDecimalField.HelperTextPersistent
-  name: HelperTextPersistent
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_HelperTextPersistent
-  commentId: P:Material.Blazor.MBNumericDecimalField.HelperTextPersistent
-  fullName: Material.Blazor.MBNumericDecimalField.HelperTextPersistent
-  nameWithType: MBNumericDecimalField.HelperTextPersistent
-- uid: Material.Blazor.MBNumericDecimalField.HelperTextPersistent*
-  name: HelperTextPersistent
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_HelperTextPersistent_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.HelperTextPersistent
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.HelperTextPersistent
-  nameWithType: MBNumericDecimalField.HelperTextPersistent
-- uid: Material.Blazor.MBNumericDecimalField.IconFoundry
-  name: IconFoundry
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_IconFoundry
-  commentId: P:Material.Blazor.MBNumericDecimalField.IconFoundry
-  fullName: Material.Blazor.MBNumericDecimalField.IconFoundry
-  nameWithType: MBNumericDecimalField.IconFoundry
-- uid: Material.Blazor.MBNumericDecimalField.IconFoundry*
-  name: IconFoundry
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_IconFoundry_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.IconFoundry
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.IconFoundry
-  nameWithType: MBNumericDecimalField.IconFoundry
-- uid: Material.Blazor.MBNumericDecimalField.Label
-  name: Label
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Label
-  commentId: P:Material.Blazor.MBNumericDecimalField.Label
-  fullName: Material.Blazor.MBNumericDecimalField.Label
-  nameWithType: MBNumericDecimalField.Label
-- uid: Material.Blazor.MBNumericDecimalField.Label*
-  name: Label
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Label_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.Label
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.Label
-  nameWithType: MBNumericDecimalField.Label
-- uid: Material.Blazor.MBNumericDecimalField.LeadingIcon
-  name: LeadingIcon
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_LeadingIcon
-  commentId: P:Material.Blazor.MBNumericDecimalField.LeadingIcon
-  fullName: Material.Blazor.MBNumericDecimalField.LeadingIcon
-  nameWithType: MBNumericDecimalField.LeadingIcon
-- uid: Material.Blazor.MBNumericDecimalField.LeadingIcon*
-  name: LeadingIcon
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_LeadingIcon_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.LeadingIcon
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.LeadingIcon
-  nameWithType: MBNumericDecimalField.LeadingIcon
-- uid: Material.Blazor.MBNumericDecimalField.Max
-  name: Max
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Max
-  commentId: P:Material.Blazor.MBNumericDecimalField.Max
-  fullName: Material.Blazor.MBNumericDecimalField.Max
-  nameWithType: MBNumericDecimalField.Max
-- uid: Material.Blazor.MBNumericDecimalField.Max*
-  name: Max
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Max_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.Max
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.Max
-  nameWithType: MBNumericDecimalField.Max
-- uid: Material.Blazor.MBNumericDecimalField.Min
-  name: Min
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Min
-  commentId: P:Material.Blazor.MBNumericDecimalField.Min
-  fullName: Material.Blazor.MBNumericDecimalField.Min
-  nameWithType: MBNumericDecimalField.Min
-- uid: Material.Blazor.MBNumericDecimalField.Min*
-  name: Min
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Min_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.Min
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.Min
-  nameWithType: MBNumericDecimalField.Min
-- uid: Material.Blazor.MBNumericDecimalField.NumericFormat
-  name: NumericFormat
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_NumericFormat
-  commentId: P:Material.Blazor.MBNumericDecimalField.NumericFormat
-  fullName: Material.Blazor.MBNumericDecimalField.NumericFormat
-  nameWithType: MBNumericDecimalField.NumericFormat
-- uid: Material.Blazor.MBNumericDecimalField.NumericFormat*
-  name: NumericFormat
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_NumericFormat_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.NumericFormat
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.NumericFormat
-  nameWithType: MBNumericDecimalField.NumericFormat
-- uid: Material.Blazor.MBNumericDecimalField.NumericSingularFormat
-  name: NumericSingularFormat
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_NumericSingularFormat
-  commentId: P:Material.Blazor.MBNumericDecimalField.NumericSingularFormat
-  fullName: Material.Blazor.MBNumericDecimalField.NumericSingularFormat
-  nameWithType: MBNumericDecimalField.NumericSingularFormat
-- uid: Material.Blazor.MBNumericDecimalField.NumericSingularFormat*
-  name: NumericSingularFormat
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_NumericSingularFormat_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.NumericSingularFormat
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.NumericSingularFormat
-  nameWithType: MBNumericDecimalField.NumericSingularFormat
-- uid: Material.Blazor.MBNumericDecimalField.OnInitialized
-  name: OnInitialized()
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_OnInitialized
-  commentId: M:Material.Blazor.MBNumericDecimalField.OnInitialized
-  fullName: Material.Blazor.MBNumericDecimalField.OnInitialized()
-  nameWithType: MBNumericDecimalField.OnInitialized()
-- uid: Material.Blazor.MBNumericDecimalField.OnInitialized*
-  name: OnInitialized
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_OnInitialized_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.OnInitialized
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.OnInitialized
-  nameWithType: MBNumericDecimalField.OnInitialized
-- uid: Material.Blazor.MBNumericDecimalField.Prefix
-  name: Prefix
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Prefix
-  commentId: P:Material.Blazor.MBNumericDecimalField.Prefix
-  fullName: Material.Blazor.MBNumericDecimalField.Prefix
-  nameWithType: MBNumericDecimalField.Prefix
-- uid: Material.Blazor.MBNumericDecimalField.Prefix*
-  name: Prefix
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Prefix_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.Prefix
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.Prefix
-  nameWithType: MBNumericDecimalField.Prefix
-- uid: Material.Blazor.MBNumericDecimalField.Suffix
-  name: Suffix
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Suffix
-  commentId: P:Material.Blazor.MBNumericDecimalField.Suffix
-  fullName: Material.Blazor.MBNumericDecimalField.Suffix
-  nameWithType: MBNumericDecimalField.Suffix
-- uid: Material.Blazor.MBNumericDecimalField.Suffix*
-  name: Suffix
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_Suffix_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.Suffix
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.Suffix
-  nameWithType: MBNumericDecimalField.Suffix
-- uid: Material.Blazor.MBNumericDecimalField.TextInputStyle
-  name: TextInputStyle
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_TextInputStyle
-  commentId: P:Material.Blazor.MBNumericDecimalField.TextInputStyle
-  fullName: Material.Blazor.MBNumericDecimalField.TextInputStyle
-  nameWithType: MBNumericDecimalField.TextInputStyle
-- uid: Material.Blazor.MBNumericDecimalField.TextInputStyle*
-  name: TextInputStyle
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_TextInputStyle_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.TextInputStyle
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.TextInputStyle
-  nameWithType: MBNumericDecimalField.TextInputStyle
-- uid: Material.Blazor.MBNumericDecimalField.TrailingIcon
-  name: TrailingIcon
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_TrailingIcon
-  commentId: P:Material.Blazor.MBNumericDecimalField.TrailingIcon
-  fullName: Material.Blazor.MBNumericDecimalField.TrailingIcon
-  nameWithType: MBNumericDecimalField.TrailingIcon
-- uid: Material.Blazor.MBNumericDecimalField.TrailingIcon*
-  name: TrailingIcon
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_TrailingIcon_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.TrailingIcon
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.TrailingIcon
-  nameWithType: MBNumericDecimalField.TrailingIcon
-- uid: Material.Blazor.MBNumericDecimalField.UnfocusedMagnitude
-  name: UnfocusedMagnitude
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_UnfocusedMagnitude
-  commentId: P:Material.Blazor.MBNumericDecimalField.UnfocusedMagnitude
-  fullName: Material.Blazor.MBNumericDecimalField.UnfocusedMagnitude
-  nameWithType: MBNumericDecimalField.UnfocusedMagnitude
-- uid: Material.Blazor.MBNumericDecimalField.UnfocusedMagnitude*
-  name: UnfocusedMagnitude
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_UnfocusedMagnitude_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.UnfocusedMagnitude
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.UnfocusedMagnitude
-  nameWithType: MBNumericDecimalField.UnfocusedMagnitude
-- uid: Material.Blazor.MBNumericDecimalField.ValidationMessageFor
-  name: ValidationMessageFor
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_ValidationMessageFor
-  commentId: P:Material.Blazor.MBNumericDecimalField.ValidationMessageFor
-  fullName: Material.Blazor.MBNumericDecimalField.ValidationMessageFor
-  nameWithType: MBNumericDecimalField.ValidationMessageFor
-- uid: Material.Blazor.MBNumericDecimalField.ValidationMessageFor*
-  name: ValidationMessageFor
-  href: api/Material.Blazor.MBNumericDecimalField.html#Material_Blazor_MBNumericDecimalField_ValidationMessageFor_
-  commentId: Overload:Material.Blazor.MBNumericDecimalField.ValidationMessageFor
-  isSpec: "True"
-  fullName: Material.Blazor.MBNumericDecimalField.ValidationMessageFor
-  nameWithType: MBNumericDecimalField.ValidationMessageFor
 - uid: Material.Blazor.MBNumericDoubleField
   name: MBNumericDoubleField
   href: api/Material.Blazor.MBNumericDoubleField.html
