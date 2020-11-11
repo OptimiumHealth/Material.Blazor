@@ -68,10 +68,21 @@ jobs:
     - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
       uses: actions/checkout@v2
 
-
 # We really want to setup .Net 5 here, but DocFx fails
 
+
     - name: DotNet info (Pre setup)
+      run: dotnet --info
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.100
+        source-url: https://nuget.pkg.github.com/${{github.repository_owner}}/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: DotNet info (Post setup)
       run: dotnet --info
 
 
@@ -89,18 +100,6 @@ jobs:
         path: siteDocFx
       if: (github.repository != 'Material-Blazor/Material.Blazor')
 #      if: (github.repository != 'Material-Blazor/Material.Blazor') && contains(github.ref, 'refs/heads')
-
-
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.100
-        source-url: https://nuget.pkg.github.com/${{github.repository_owner}}/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-    - name: DotNet info (Post setup)
-      run: dotnet --info
 
 
     - name: Build Website 🔧
