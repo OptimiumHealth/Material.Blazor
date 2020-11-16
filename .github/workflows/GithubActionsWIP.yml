@@ -74,7 +74,6 @@ jobs:
       run: dotnet --info
 
 
-
     - name: Create documentation 🔧
       run: .\docfx\docfx docfx.json
       env:
