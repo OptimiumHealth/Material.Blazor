@@ -90,16 +90,16 @@ jobs:
 #      if: (github.repository != 'Material-Blazor/Material.Blazor') && contains(github.ref, 'refs/heads')
 
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.100
-        source-url: https://nuget.pkg.github.com/${{github.repository_owner}}/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    #- name: Setup .NET
+    #  uses: actions/setup-dotnet@v1
+    #  with:
+    #    dotnet-version: 5.0.100
+    #    source-url: https://nuget.pkg.github.com/${{github.repository_owner}}/index.json
+    #  env:
+    #    NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: DotNet info (Post setup)
-      run: dotnet --info
+    #- name: DotNet info (Post setup)
+    #  run: dotnet --info
 
 
     - name: Build Website 🔧
