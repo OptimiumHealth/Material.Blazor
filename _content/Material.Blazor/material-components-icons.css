@@ -8,25 +8,25 @@
   font-family: 'Material Icons Outlined';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v27/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format('opentype');
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v35/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format('opentype');
 }
 @font-face {
   font-family: 'Material Icons Round';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsround/v26/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format('opentype');
+  src: url(https://fonts.gstatic.com/s/materialiconsround/v34/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format('opentype');
 }
 @font-face {
   font-family: 'Material Icons Sharp';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconssharp/v27/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format('opentype');
+  src: url(https://fonts.gstatic.com/s/materialiconssharp/v35/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format('opentype');
 }
 @font-face {
   font-family: 'Material Icons Two Tone';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v25/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format('opentype');
+  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v33/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format('opentype');
 }
 
 .material-icons {
