@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>MBSelect </title>
+    <title>MBNumericDecimalField </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="MBSelect ">
+    <meta name="title" content="MBNumericDecimalField ">
     <meta name="generator" content="docfx 2.56.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,42 +77,26 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="C.MBSelect">
-<h1 id="mbselecttitem">MBSelect&lt;TItem&gt;</h1>
+            <article class="content wrap" id="_content" data-uid="C.MBNumericDecimalField">
+<h1 id="mbnumericdecimalfield">MBNumericDecimalField</h1>
 
 <h2 id="summary">Summary</h2>
-<p>A <a href="https://github.com/material-components/material-components-web/tree/v8.0.0/packages/mdc-select#select-menus">Material Select Menu</a>.</p>
-<h2 id="details">Details</h2>
+<p>An <a class="xref" href="../TextField/MBTextField.html">MBTextField</a> designed for a <code>decimal</code> numeric value input with a formatted display while the field lacks focus (format is turned off with focus for efficient data entry).
+Has the capacity to scale order of magnitude for percentage or <a href="https://en.wikipedia.org/wiki/Basis_point">basis points</a> (1/100th of a percent) data input and display. Has the following properties</p>
+<h2 id="detail">Detail</h2>
 <ul>
-<li>Accepts an <code>IEnumerable&lt;Titem&gt;</code> of selectable items;</li>
-<li>Can be styled as either a filled or outlined Material Theme select;</li>
-<li>The ItemValidation parameter has three possible values:
-<ul>
-<li>&quot;Exception&quot; is the default value and an exception will be raised if the Value supplied does not match one of the Values in the List parameter data;</li>
-<li>&quot;DefaultToFirst&quot; will select the first item in the list if the Value does not match; or</li>
-<li>&quot;NoSelection&quot; will not pick a radiobutton when the Value is illegal;</li>
-</ul>
-</li>
-<li>Several ArgumentExceptions can also be thrown for such things as a missing or empty List, a List that has multiple identical SelectedValues, and missing Value bindings.</li>
-<li>Applies <a class="xref" href="../../../articles/Density.html">density subsystem</a> - note that filled selects with denisty of -2 or less ignore labels by design within Material Theme.</li>
-</ul>
-<h2 id="assisting-blazor-rendering-with-key">Assisting Blazor Rendering with <code>@key</code></h2>
-<ul>
-<li>MBSelect renders similar table rows with a <code>foreach</code> loop;</li>
-<li>In general each item rendered in a loop in Blazor should be supplied with a unique object via the <code>@key</code> attribute - see <a href="https://blazor-university.com/components/render-trees/optimising-using-key/">Blazor University</a>;</li>
-<li>MBSelect by default uses the <code>SelectedValue</code> property of each item in the <code>Items</code> parameter as the key, however you can override this. Material.Blazor does this because we have had instances where Blazor crashes with the default key giving an exception message such as &quot;The given key 'MyObject' was not present&quot;;</li>
-<li>You can provide a function delegate to the <code>GetKeysFunc</code> parameter - we have used two variants of this:
-<ul>
-<li>First to get a unique <code>Id</code> property that happens to be in our item's class: <code>GetKeysFunc=&quot;@((item) =&gt; item.Id)&quot;</code>; and</li>
-<li>Second using a &quot;fake key&quot; where we create a GUID to act as the key: <code>GetKeysFunc=&quot;@((item) =&gt; Guid.NewGuid())&quot;</code>.</li>
-<li>You can see an example of this in the <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor.Website/Pages/List.razor#L155">MBList demonstration website page's code</a>.</li>
-</ul>
-</li>
+<li>Includes <a class="xref" href="../TextField/MBTextField.html">MBTextField</a> properties; plus</li>
+<li>Minimum and maximum amounts;</li>
+<li>Numeric format for when the field lacks focus;</li>
+<li>A maximum number of decimal places - if the user types additional dp, standard rounding is applied;</li>
+<li>Focused and Unfocused magnitude to facilite percentage and basis point input, e.g. 12.5% is entered as text &quot;12.5&quot; rather than &quot;0.125&quot; and displayed either as &quot;12.5&quot; or with percentage formatting as &quot;12.5%&quot; (not available with basis points);</li>
+<li>Applies <a class="xref" href="../../../articles/Density.html">density subsystem</a> - note that filled text fields with denisty of -2 or less ignore labels by design within Material Theme.</li>
+<li>Renders Blazor validation messages in Material Theme's style. see the <a class="xref" href="../../../articles/FormValidation.html">Form Validation Article</a>.</li>
 </ul>
 <p> </p>
 <p> </p>
-<p><a class="xref" href="../../../articles/CoreComponents.html"><img src="https://img.shields.io/static/v1?label=Components&amp;message=Core&amp;color=blue" alt="Components"></a>
-<a class="xref" href="../../../api/Material.Blazor.MBSelect-1.html"><img src="https://img.shields.io/static/v1?label=API%20Documentation&amp;message=MBSelect&amp;color=brightgreen" alt="Docs"></a></p>
+<p><a class="xref" href="../../../articles/PlusComponents.html"><img src="https://img.shields.io/static/v1?label=Components&amp;message=Plus&amp;color=red" alt="Components"></a>
+<a class="xref" href="../../../api/Material.Blazor.MBNumericDecimalField.html"><img src="https://img.shields.io/static/v1?label=API%20Documentation&amp;message=MBNumericDecimalField&amp;color=brightgreen" alt="Docs"></a></p>
 </article>
           </div>
           
@@ -121,7 +105,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Components/Select/MBSelect.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Components/NumericDecimalField/MBNumericDecimalField.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
