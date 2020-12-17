@@ -1201,6 +1201,10 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
   background-color: lightblue;
 }
 
+.mb-grid-backgroundcolor-row-selected {
+  background-color: lightgreen;
+}
+
 .mdc-list.dense--5 .mdc-list-item, .mdc-list.dense--4 .mdc-list-item {
   height: 32px;
 }

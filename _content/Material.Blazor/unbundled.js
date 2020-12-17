@@ -106,8 +106,8 @@
     __webpack_require__.d(MBGrid_namespaceObject, {
         getScrollBarWidth: () => getScrollBarWidth,
         getTextWidth: () => getTextWidth,
-        syncScroll: () => syncScroll,
-        syncScroll2: () => syncScroll2
+        syncScrollByID: () => syncScrollByID,
+        syncScrollByRef: () => syncScrollByRef
     });
     var MBIconButton_namespaceObject = {};
     __webpack_require__.r(MBIconButton_namespaceObject);
@@ -10495,27 +10495,28 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }
     }
-    function syncScroll(gridHeaderID, gridBodyID) {
+    function syncScrollByID(gridHeaderID, gridBodyID) {
         var headerDiv = document.getElementById(gridHeaderID);
         var bodyDiv = document.getElementById(gridBodyID);
         if (headerDiv != null && bodyDiv != null) {
             headerDiv.scrollLeft = bodyDiv.scrollLeft;
         }
     }
-    function syncScroll2(gridHeaderRef, gridBodyRef) {
+    function syncScrollByRef(gridHeaderRef, gridBodyRef) {
         gridHeaderRef.scrollLeft = gridBodyRef.scrollLeft;
     }
-    function getScrollBarWidth() {
+    function getScrollBarWidth(className) {
         var firstDiv = document.createElement("div");
+        firstDiv.style.position = "absolute";
         firstDiv.style.visibility = "hidden";
-        firstDiv.style.overflow = "scroll";
+        firstDiv.style.whiteSpace = "nowrap";
+        firstDiv.style.left = "-9999px";
+        firstDiv.className = className;
         document.body.appendChild(firstDiv);
         var secondDiv = document.createElement("div");
         firstDiv.appendChild(secondDiv);
         var width = firstDiv.offsetWidth - secondDiv.offsetWidth;
-        if (firstDiv.parentNode != null) {
-            firstDiv.parentNode.removeChild(firstDiv);
-        }
+        document.body.removeChild(firstDiv);
         return width;
     }
     function getTextWidth(className, textToMeasure) {
