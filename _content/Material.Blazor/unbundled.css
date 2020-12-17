@@ -3,31 +3,31 @@
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v67/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype");
+  src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype");
 }
 @font-face {
   font-family: "Material Icons Outlined";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v35/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v38/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format("opentype");
 }
 @font-face {
   font-family: "Material Icons Round";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsround/v34/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconsround/v37/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format("opentype");
 }
 @font-face {
   font-family: "Material Icons Sharp";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconssharp/v35/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconssharp/v38/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format("opentype");
 }
 @font-face {
   font-family: "Material Icons Two Tone";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v33/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v36/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format("opentype");
 }
 .material-icons {
   font-family: "Material Icons";
@@ -1109,6 +1109,96 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
   width: 48px;
   height: 48px;
   padding: 12px;
+}
+
+.mb-grid-div-header {
+  font-weight: bolder;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: auto;
+  align-items: stretch;
+}
+
+.mb-grid-div-body {
+  background: lightblue;
+  font-weight: normal;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: scroll;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.mb-grid-table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  flex-grow: 1;
+  overflow: hidden;
+  font-size: 1rem;
+  table-layout: fixed;
+  text-align: left;
+  text-indent: unset;
+  text-overflow: ellipsis;
+  text-wrap: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.mb-grid-colgroup {
+  display: table-column-group;
+}
+
+/* 
+    CAUTION -- the padding value is used in the method MeasureWidths
+*/
+.mb-grid-td {
+  display: table-cell;
+  flex: 0 0 auto;
+  padding: 4px;
+  font-size: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.mb-grid-td-group {
+  display: table-cell;
+  color: black;
+  border-bottom: 0px;
+  border-left: 1px solid darkblue;
+  border-right: 1px solid darkblue;
+  border-top: 2px solid darkblue;
+  font-size: x-large;
+  font-weight: bolder;
+  flex: 0 0 auto;
+}
+
+.mb-grid-backgroundcolor-header-background {
+  background: lightgray;
+  background-color: lightgray;
+}
+
+.mb-grid-backgroundcolor-row-even {
+  background-color: khaki;
+}
+
+.mb-grid-backgroundcolor-row-odd {
+  background-color: lemonchiffon;
+}
+
+.mb-grid-backgroundcolor-row-group {
+  background-color: lightblue;
 }
 
 .mdc-list.dense--5 .mdc-list-item, .mdc-list.dense--4 .mdc-list-item {
