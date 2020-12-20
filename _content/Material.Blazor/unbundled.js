@@ -79,7 +79,8 @@
         destroy: () => MBDatePicker_destroy,
         init: () => MBDatePicker_init,
         listItemClick: () => listItemClick,
-        scrollToYear: () => scrollToYear
+        scrollToYear: () => scrollToYear,
+        setDisabled: () => MBDatePicker_setDisabled
     });
     var MBDialog_namespaceObject = {};
     __webpack_require__.r(MBDialog_namespaceObject);
@@ -9317,6 +9318,9 @@ PERFORMANCE OF THIS SOFTWARE.
     }(MDCComponent);
     function MBDatePicker_init(elem) {
         elem._select = MDCSelect.attachTo(elem);
+    }
+    function MBDatePicker_setDisabled(elem, value) {
+        elem._select.disabled = value;
     }
     function MBDatePicker_destroy(elem) {
         elem._select.destroy();

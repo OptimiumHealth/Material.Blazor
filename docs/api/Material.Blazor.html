@@ -88,6 +88,12 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Material.Blazor.DialogChildComponentFoundation.html">DialogChildComponentFoundation</a></h4>
+      <section><p>A direct ancestor of <a class="xref" href="Material.Blazor.Internal.InputComponentFoundation-1.html">InputComponentFoundation&lt;T&gt;</a> for dialogs to reference when intiating child
+components. We cannot use <a class="xref" href="Material.Blazor.Internal.InputComponentFoundation-1.html">InputComponentFoundation&lt;T&gt;</a> directly because its generics get in the way.
+This class allows <a class="xref" href="Material.Blazor.MBDialog.html">MBDialog</a> to control when child components are instantiated with
+Material Components Web JS.</p>
+</section>
       <h4><a class="xref" href="Material.Blazor.MBAnimatedNavigation.html">MBAnimatedNavigation</a></h4>
       <section><p>This component works with <a class="xref" href="Material.Blazor.IMBAnimatedNavigationManager.html">IMBAnimatedNavigationManager</a> to navigate your page navigation.
 Place this component around your app's entire @Body render fragment (potentially in MainLayout.razor),

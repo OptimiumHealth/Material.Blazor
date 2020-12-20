@@ -196,6 +196,25 @@ references:
   commentId: N:Material.Blazor
   fullName: Material.Blazor
   nameWithType: Material.Blazor
+- uid: Material.Blazor.DialogChildComponentFoundation
+  name: DialogChildComponentFoundation
+  href: api/Material.Blazor.DialogChildComponentFoundation.html
+  commentId: T:Material.Blazor.DialogChildComponentFoundation
+  fullName: Material.Blazor.DialogChildComponentFoundation
+  nameWithType: DialogChildComponentFoundation
+- uid: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
+  name: RequestInstantiation()
+  href: api/Material.Blazor.DialogChildComponentFoundation.html#Material_Blazor_DialogChildComponentFoundation_RequestInstantiation
+  commentId: M:Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
+  fullName: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation()
+  nameWithType: DialogChildComponentFoundation.RequestInstantiation()
+- uid: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation*
+  name: RequestInstantiation
+  href: api/Material.Blazor.DialogChildComponentFoundation.html#Material_Blazor_DialogChildComponentFoundation_RequestInstantiation_
+  commentId: Overload:Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
+  isSpec: "True"
+  fullName: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
+  nameWithType: DialogChildComponentFoundation.RequestInstantiation
 - uid: Material.Blazor.IMBAnimatedNavigationManager
   name: IMBAnimatedNavigationManager
   href: api/Material.Blazor.IMBAnimatedNavigationManager.html
@@ -1127,6 +1146,23 @@ references:
   fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnParametersSetAsync
   nameWithType: InputComponentFoundation<T>.OnParametersSetAsync
   nameWithType.vb: InputComponentFoundation(Of T).OnParametersSetAsync
+- uid: Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation
+  name: RequestInstantiation()
+  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_RequestInstantiation
+  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation
+  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.RequestInstantiation()
+  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).RequestInstantiation()
+  nameWithType: InputComponentFoundation<T>.RequestInstantiation()
+  nameWithType.vb: InputComponentFoundation(Of T).RequestInstantiation()
+- uid: Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation*
+  name: RequestInstantiation
+  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_RequestInstantiation_
+  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.RequestInstantiation
+  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).RequestInstantiation
+  nameWithType: InputComponentFoundation<T>.RequestInstantiation
+  nameWithType.vb: InputComponentFoundation(Of T).RequestInstantiation
 - uid: Material.Blazor.Internal.InputComponentFoundation`1.SetComponentValue
   name: SetComponentValue
   href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_SetComponentValue
@@ -3345,6 +3381,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDatePicker.MinDate
   nameWithType: MBDatePicker.MinDate
+- uid: Material.Blazor.MBDatePicker.OnDisabledSetCallback(System.Object,System.EventArgs)
+  name: OnDisabledSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnDisabledSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBDatePicker.OnDisabledSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBDatePicker.OnDisabledSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBDatePicker.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBDatePicker.OnDisabledSetCallback*
+  name: OnDisabledSetCallback
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnDisabledSetCallback_
+  commentId: Overload:Material.Blazor.MBDatePicker.OnDisabledSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBDatePicker.OnDisabledSetCallback
+  nameWithType: MBDatePicker.OnDisabledSetCallback
 - uid: Material.Blazor.MBDatePicker.OnInitialized
   name: OnInitialized()
   href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnInitialized
