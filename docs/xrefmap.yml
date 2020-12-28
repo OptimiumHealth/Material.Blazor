@@ -37,6 +37,9 @@ references:
 - uid: A.License
   name: License
   href: LICENSE.html
+- uid: A.MenuOverflow
+  name: MenuOverflow
+  href: articles/MenuOverflow.html
 - uid: A.PlusComponents
   name: PlusComponents
   href: articles/PlusComponents.html
@@ -82,6 +85,12 @@ references:
 - uid: C.MBCheckbox
   name: MBCheckbox
   href: Material.Blazor/Components/Checkbox/MBCheckbox.html
+- uid: C.MBChipsSelectMulti
+  name: MBChipsSelectMulti
+  href: Material.Blazor/Components/ChipsSelectMulti/MBChipsSelectMulti.html
+- uid: C.MBChipsSelectSingle
+  name: MBChipsSelectSingle
+  href: Material.Blazor/Components/ChipsSelectSingle/MBChipsSelectSingle.html
 - uid: C.MBCircularProgress
   name: MBCircularProgress
   href: Material.Blazor/Components/CircularProgress/MBCircularProgress.html
@@ -160,12 +169,21 @@ references:
 - uid: C.MBRadioButtonGroup
   name: MBRadioButtonGroup
   href: Material.Blazor/Components/RadioButtonGroup/MBRadioButtonGroup.html
+- uid: C.MBSegmentedButtonMulti
+  name: MBSegmentedButtonMulti
+  href: Material.Blazor/Components/SegmentedButtonMulti/MBSegmentedButtonMulti.html
+- uid: C.MBSegmentedButtonSingle
+  name: MBSegmentedButtonSingle
+  href: Material.Blazor/Components/SegmentedButtonSingle/MBSegmentedButtonSingle.html
 - uid: C.MBSelect
   name: MBSelect
   href: Material.Blazor/Components/Select/MBSelect.html
 - uid: C.MBShield
   name: MBShield
   href: Material.Blazor/Components/Shield/MBShield.html
+- uid: C.MBSlider
+  name: MBSlider
+  href: Material.Blazor/Components/Slider/MBSlider.html
 - uid: C.MBSlidingContent
   name: MBSlidingContent
   href: Material.Blazor/Components/SlidingContent/MBSlidingContent.html
@@ -196,25 +214,25 @@ references:
   commentId: N:Material.Blazor
   fullName: Material.Blazor
   nameWithType: Material.Blazor
-- uid: Material.Blazor.DialogChildComponentFoundation
-  name: DialogChildComponentFoundation
-  href: api/Material.Blazor.DialogChildComponentFoundation.html
-  commentId: T:Material.Blazor.DialogChildComponentFoundation
-  fullName: Material.Blazor.DialogChildComponentFoundation
-  nameWithType: DialogChildComponentFoundation
-- uid: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
+- uid: Material.Blazor.DialogChildComponent
+  name: DialogChildComponent
+  href: api/Material.Blazor.DialogChildComponent.html
+  commentId: T:Material.Blazor.DialogChildComponent
+  fullName: Material.Blazor.DialogChildComponent
+  nameWithType: DialogChildComponent
+- uid: Material.Blazor.DialogChildComponent.RequestInstantiation
   name: RequestInstantiation()
-  href: api/Material.Blazor.DialogChildComponentFoundation.html#Material_Blazor_DialogChildComponentFoundation_RequestInstantiation
-  commentId: M:Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
-  fullName: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation()
-  nameWithType: DialogChildComponentFoundation.RequestInstantiation()
-- uid: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation*
+  href: api/Material.Blazor.DialogChildComponent.html#Material_Blazor_DialogChildComponent_RequestInstantiation
+  commentId: M:Material.Blazor.DialogChildComponent.RequestInstantiation
+  fullName: Material.Blazor.DialogChildComponent.RequestInstantiation()
+  nameWithType: DialogChildComponent.RequestInstantiation()
+- uid: Material.Blazor.DialogChildComponent.RequestInstantiation*
   name: RequestInstantiation
-  href: api/Material.Blazor.DialogChildComponentFoundation.html#Material_Blazor_DialogChildComponentFoundation_RequestInstantiation_
-  commentId: Overload:Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
+  href: api/Material.Blazor.DialogChildComponent.html#Material_Blazor_DialogChildComponent_RequestInstantiation_
+  commentId: Overload:Material.Blazor.DialogChildComponent.RequestInstantiation
   isSpec: "True"
-  fullName: Material.Blazor.DialogChildComponentFoundation.RequestInstantiation
-  nameWithType: DialogChildComponentFoundation.RequestInstantiation
+  fullName: Material.Blazor.DialogChildComponent.RequestInstantiation
+  nameWithType: DialogChildComponent.RequestInstantiation
 - uid: Material.Blazor.IMBAnimatedNavigationManager
   name: IMBAnimatedNavigationManager
   href: api/Material.Blazor.IMBAnimatedNavigationManager.html
@@ -942,338 +960,338 @@ references:
   fullName.vb: Material.Blazor.Internal.ComponentFoundationExtensions.ParameterIsChanged(Of T)(ComponentBase, ParameterView, System.String, T)
   nameWithType: ComponentFoundationExtensions.ParameterIsChanged<T>(ComponentBase, ParameterView, String, T)
   nameWithType.vb: ComponentFoundationExtensions.ParameterIsChanged(Of T)(ComponentBase, ParameterView, String, T)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1
-  name: InputComponentFoundation<T>
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html
-  commentId: T:Material.Blazor.Internal.InputComponentFoundation`1
-  name.vb: InputComponentFoundation(Of T)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T)
-  nameWithType: InputComponentFoundation<T>
-  nameWithType.vb: InputComponentFoundation(Of T)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1._instantiate
+- uid: Material.Blazor.Internal.InputComponent`1
+  name: InputComponent<T>
+  href: api/Material.Blazor.Internal.InputComponent-1.html
+  commentId: T:Material.Blazor.Internal.InputComponent`1
+  name.vb: InputComponent(Of T)
+  fullName: Material.Blazor.Internal.InputComponent<T>
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T)
+  nameWithType: InputComponent<T>
+  nameWithType.vb: InputComponent(Of T)
+- uid: Material.Blazor.Internal.InputComponent`1._instantiate
   name: _instantiate
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1__instantiate
-  commentId: F:Material.Blazor.Internal.InputComponentFoundation`1._instantiate
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>._instantiate
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T)._instantiate
-  nameWithType: InputComponentFoundation<T>._instantiate
-  nameWithType.vb: InputComponentFoundation(Of T)._instantiate
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ComponentValueAsString
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1__instantiate
+  commentId: F:Material.Blazor.Internal.InputComponent`1._instantiate
+  fullName: Material.Blazor.Internal.InputComponent<T>._instantiate
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T)._instantiate
+  nameWithType: InputComponent<T>._instantiate
+  nameWithType.vb: InputComponent(Of T)._instantiate
+- uid: Material.Blazor.Internal.InputComponent`1.ComponentValueAsString
   name: ComponentValueAsString
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ComponentValueAsString
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.ComponentValueAsString
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ComponentValueAsString
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ComponentValueAsString
-  nameWithType: InputComponentFoundation<T>.ComponentValueAsString
-  nameWithType.vb: InputComponentFoundation(Of T).ComponentValueAsString
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ComponentValueAsString*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ComponentValueAsString
+  commentId: P:Material.Blazor.Internal.InputComponent`1.ComponentValueAsString
+  fullName: Material.Blazor.Internal.InputComponent<T>.ComponentValueAsString
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ComponentValueAsString
+  nameWithType: InputComponent<T>.ComponentValueAsString
+  nameWithType.vb: InputComponent(Of T).ComponentValueAsString
+- uid: Material.Blazor.Internal.InputComponent`1.ComponentValueAsString*
   name: ComponentValueAsString
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ComponentValueAsString_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.ComponentValueAsString
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ComponentValueAsString_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.ComponentValueAsString
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ComponentValueAsString
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ComponentValueAsString
-  nameWithType: InputComponentFoundation<T>.ComponentValueAsString
-  nameWithType.vb: InputComponentFoundation(Of T).ComponentValueAsString
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.EditContext
+  fullName: Material.Blazor.Internal.InputComponent<T>.ComponentValueAsString
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ComponentValueAsString
+  nameWithType: InputComponent<T>.ComponentValueAsString
+  nameWithType.vb: InputComponent(Of T).ComponentValueAsString
+- uid: Material.Blazor.Internal.InputComponent`1.EditContext
   name: EditContext
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_EditContext
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.EditContext
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.EditContext
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).EditContext
-  nameWithType: InputComponentFoundation<T>.EditContext
-  nameWithType.vb: InputComponentFoundation(Of T).EditContext
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.EditContext*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_EditContext
+  commentId: P:Material.Blazor.Internal.InputComponent`1.EditContext
+  fullName: Material.Blazor.Internal.InputComponent<T>.EditContext
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).EditContext
+  nameWithType: InputComponent<T>.EditContext
+  nameWithType.vb: InputComponent(Of T).EditContext
+- uid: Material.Blazor.Internal.InputComponent`1.EditContext*
   name: EditContext
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_EditContext_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.EditContext
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_EditContext_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.EditContext
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.EditContext
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).EditContext
-  nameWithType: InputComponentFoundation<T>.EditContext
-  nameWithType.vb: InputComponentFoundation(Of T).EditContext
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.FieldClass
+  fullName: Material.Blazor.Internal.InputComponent<T>.EditContext
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).EditContext
+  nameWithType: InputComponent<T>.EditContext
+  nameWithType.vb: InputComponent(Of T).EditContext
+- uid: Material.Blazor.Internal.InputComponent`1.FieldClass
   name: FieldClass
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_FieldClass
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.FieldClass
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.FieldClass
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FieldClass
-  nameWithType: InputComponentFoundation<T>.FieldClass
-  nameWithType.vb: InputComponentFoundation(Of T).FieldClass
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.FieldClass*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_FieldClass
+  commentId: P:Material.Blazor.Internal.InputComponent`1.FieldClass
+  fullName: Material.Blazor.Internal.InputComponent<T>.FieldClass
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).FieldClass
+  nameWithType: InputComponent<T>.FieldClass
+  nameWithType.vb: InputComponent(Of T).FieldClass
+- uid: Material.Blazor.Internal.InputComponent`1.FieldClass*
   name: FieldClass
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_FieldClass_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.FieldClass
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_FieldClass_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.FieldClass
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.FieldClass
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FieldClass
-  nameWithType: InputComponentFoundation<T>.FieldClass
-  nameWithType.vb: InputComponentFoundation(Of T).FieldClass
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.FieldIdentifier
+  fullName: Material.Blazor.Internal.InputComponent<T>.FieldClass
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).FieldClass
+  nameWithType: InputComponent<T>.FieldClass
+  nameWithType.vb: InputComponent(Of T).FieldClass
+- uid: Material.Blazor.Internal.InputComponent`1.FieldIdentifier
   name: FieldIdentifier
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_FieldIdentifier
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.FieldIdentifier
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.FieldIdentifier
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FieldIdentifier
-  nameWithType: InputComponentFoundation<T>.FieldIdentifier
-  nameWithType.vb: InputComponentFoundation(Of T).FieldIdentifier
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.FieldIdentifier*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_FieldIdentifier
+  commentId: P:Material.Blazor.Internal.InputComponent`1.FieldIdentifier
+  fullName: Material.Blazor.Internal.InputComponent<T>.FieldIdentifier
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).FieldIdentifier
+  nameWithType: InputComponent<T>.FieldIdentifier
+  nameWithType.vb: InputComponent(Of T).FieldIdentifier
+- uid: Material.Blazor.Internal.InputComponent`1.FieldIdentifier*
   name: FieldIdentifier
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_FieldIdentifier_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.FieldIdentifier
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_FieldIdentifier_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.FieldIdentifier
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.FieldIdentifier
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FieldIdentifier
-  nameWithType: InputComponentFoundation<T>.FieldIdentifier
-  nameWithType.vb: InputComponentFoundation(Of T).FieldIdentifier
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.FormatValueToString(`0)
+  fullName: Material.Blazor.Internal.InputComponent<T>.FieldIdentifier
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).FieldIdentifier
+  nameWithType: InputComponent<T>.FieldIdentifier
+  nameWithType.vb: InputComponent(Of T).FieldIdentifier
+- uid: Material.Blazor.Internal.InputComponent`1.FormatValueToString(`0)
   name: FormatValueToString(T)
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_FormatValueToString__0_
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.FormatValueToString(`0)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.FormatValueToString(T)
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FormatValueToString(T)
-  nameWithType: InputComponentFoundation<T>.FormatValueToString(T)
-  nameWithType.vb: InputComponentFoundation(Of T).FormatValueToString(T)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.FormatValueToString*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_FormatValueToString__0_
+  commentId: M:Material.Blazor.Internal.InputComponent`1.FormatValueToString(`0)
+  fullName: Material.Blazor.Internal.InputComponent<T>.FormatValueToString(T)
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).FormatValueToString(T)
+  nameWithType: InputComponent<T>.FormatValueToString(T)
+  nameWithType.vb: InputComponent(Of T).FormatValueToString(T)
+- uid: Material.Blazor.Internal.InputComponent`1.FormatValueToString*
   name: FormatValueToString
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_FormatValueToString_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.FormatValueToString
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_FormatValueToString_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.FormatValueToString
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.FormatValueToString
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).FormatValueToString
-  nameWithType: InputComponentFoundation<T>.FormatValueToString
-  nameWithType.vb: InputComponentFoundation(Of T).FormatValueToString
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender(System.Boolean)
+  fullName: Material.Blazor.Internal.InputComponent<T>.FormatValueToString
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).FormatValueToString
+  nameWithType: InputComponent<T>.FormatValueToString
+  nameWithType.vb: InputComponent(Of T).FormatValueToString
+- uid: Material.Blazor.Internal.InputComponent`1.OnAfterRender(System.Boolean)
   name: OnAfterRender(Boolean)
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRender_System_Boolean_
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender(System.Boolean)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnAfterRender(System.Boolean)
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnAfterRender(System.Boolean)
-  nameWithType: InputComponentFoundation<T>.OnAfterRender(Boolean)
-  nameWithType.vb: InputComponentFoundation(Of T).OnAfterRender(Boolean)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnAfterRender_System_Boolean_
+  commentId: M:Material.Blazor.Internal.InputComponent`1.OnAfterRender(System.Boolean)
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnAfterRender(System.Boolean)
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnAfterRender(System.Boolean)
+  nameWithType: InputComponent<T>.OnAfterRender(Boolean)
+  nameWithType.vb: InputComponent(Of T).OnAfterRender(Boolean)
+- uid: Material.Blazor.Internal.InputComponent`1.OnAfterRender*
   name: OnAfterRender
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRender_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRender
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnAfterRender_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnAfterRender
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnAfterRender
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnAfterRender
-  nameWithType: InputComponentFoundation<T>.OnAfterRender
-  nameWithType.vb: InputComponentFoundation(Of T).OnAfterRender
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRenderAsync(System.Boolean)
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnAfterRender
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnAfterRender
+  nameWithType: InputComponent<T>.OnAfterRender
+  nameWithType.vb: InputComponent(Of T).OnAfterRender
+- uid: Material.Blazor.Internal.InputComponent`1.OnAfterRenderAsync(System.Boolean)
   name: OnAfterRenderAsync(Boolean)
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRenderAsync_System_Boolean_
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRenderAsync(System.Boolean)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnAfterRenderAsync(System.Boolean)
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnAfterRenderAsync(System.Boolean)
-  nameWithType: InputComponentFoundation<T>.OnAfterRenderAsync(Boolean)
-  nameWithType.vb: InputComponentFoundation(Of T).OnAfterRenderAsync(Boolean)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRenderAsync*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnAfterRenderAsync_System_Boolean_
+  commentId: M:Material.Blazor.Internal.InputComponent`1.OnAfterRenderAsync(System.Boolean)
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnAfterRenderAsync(System.Boolean)
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnAfterRenderAsync(System.Boolean)
+  nameWithType: InputComponent<T>.OnAfterRenderAsync(Boolean)
+  nameWithType.vb: InputComponent(Of T).OnAfterRenderAsync(Boolean)
+- uid: Material.Blazor.Internal.InputComponent`1.OnAfterRenderAsync*
   name: OnAfterRenderAsync
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnAfterRenderAsync_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnAfterRenderAsync
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnAfterRenderAsync_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnAfterRenderAsync
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnAfterRenderAsync
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnAfterRenderAsync
-  nameWithType: InputComponentFoundation<T>.OnAfterRenderAsync
-  nameWithType.vb: InputComponentFoundation(Of T).OnAfterRenderAsync
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnInitialized
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnAfterRenderAsync
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnAfterRenderAsync
+  nameWithType: InputComponent<T>.OnAfterRenderAsync
+  nameWithType.vb: InputComponent(Of T).OnAfterRenderAsync
+- uid: Material.Blazor.Internal.InputComponent`1.OnInitialized
   name: OnInitialized()
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnInitialized
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnInitialized
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnInitialized()
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnInitialized()
-  nameWithType: InputComponentFoundation<T>.OnInitialized()
-  nameWithType.vb: InputComponentFoundation(Of T).OnInitialized()
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnInitialized*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitialized
+  commentId: M:Material.Blazor.Internal.InputComponent`1.OnInitialized
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitialized()
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitialized()
+  nameWithType: InputComponent<T>.OnInitialized()
+  nameWithType.vb: InputComponent(Of T).OnInitialized()
+- uid: Material.Blazor.Internal.InputComponent`1.OnInitialized*
   name: OnInitialized
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnInitialized_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnInitialized
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitialized_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnInitialized
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnInitialized
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnInitialized
-  nameWithType: InputComponentFoundation<T>.OnInitialized
-  nameWithType.vb: InputComponentFoundation(Of T).OnInitialized
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnInitializedAsync
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitialized
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitialized
+  nameWithType: InputComponent<T>.OnInitialized
+  nameWithType.vb: InputComponent(Of T).OnInitialized
+- uid: Material.Blazor.Internal.InputComponent`1.OnInitializedAsync
   name: OnInitializedAsync()
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnInitializedAsync
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnInitializedAsync
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnInitializedAsync()
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnInitializedAsync()
-  nameWithType: InputComponentFoundation<T>.OnInitializedAsync()
-  nameWithType.vb: InputComponentFoundation(Of T).OnInitializedAsync()
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnInitializedAsync*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitializedAsync
+  commentId: M:Material.Blazor.Internal.InputComponent`1.OnInitializedAsync
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitializedAsync()
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitializedAsync()
+  nameWithType: InputComponent<T>.OnInitializedAsync()
+  nameWithType.vb: InputComponent(Of T).OnInitializedAsync()
+- uid: Material.Blazor.Internal.InputComponent`1.OnInitializedAsync*
   name: OnInitializedAsync
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnInitializedAsync_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnInitializedAsync
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitializedAsync_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnInitializedAsync
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnInitializedAsync
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnInitializedAsync
-  nameWithType: InputComponentFoundation<T>.OnInitializedAsync
-  nameWithType.vb: InputComponentFoundation(Of T).OnInitializedAsync
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSet
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitializedAsync
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitializedAsync
+  nameWithType: InputComponent<T>.OnInitializedAsync
+  nameWithType.vb: InputComponent(Of T).OnInitializedAsync
+- uid: Material.Blazor.Internal.InputComponent`1.OnParametersSet
   name: OnParametersSet()
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnParametersSet
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSet
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnParametersSet()
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnParametersSet()
-  nameWithType: InputComponentFoundation<T>.OnParametersSet()
-  nameWithType.vb: InputComponentFoundation(Of T).OnParametersSet()
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSet*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnParametersSet
+  commentId: M:Material.Blazor.Internal.InputComponent`1.OnParametersSet
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnParametersSet()
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnParametersSet()
+  nameWithType: InputComponent<T>.OnParametersSet()
+  nameWithType.vb: InputComponent(Of T).OnParametersSet()
+- uid: Material.Blazor.Internal.InputComponent`1.OnParametersSet*
   name: OnParametersSet
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnParametersSet_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSet
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnParametersSet_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnParametersSet
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnParametersSet
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnParametersSet
-  nameWithType: InputComponentFoundation<T>.OnParametersSet
-  nameWithType.vb: InputComponentFoundation(Of T).OnParametersSet
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSetAsync
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnParametersSet
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnParametersSet
+  nameWithType: InputComponent<T>.OnParametersSet
+  nameWithType.vb: InputComponent(Of T).OnParametersSet
+- uid: Material.Blazor.Internal.InputComponent`1.OnParametersSetAsync
   name: OnParametersSetAsync()
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnParametersSetAsync
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSetAsync
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnParametersSetAsync()
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnParametersSetAsync()
-  nameWithType: InputComponentFoundation<T>.OnParametersSetAsync()
-  nameWithType.vb: InputComponentFoundation(Of T).OnParametersSetAsync()
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSetAsync*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnParametersSetAsync
+  commentId: M:Material.Blazor.Internal.InputComponent`1.OnParametersSetAsync
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnParametersSetAsync()
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnParametersSetAsync()
+  nameWithType: InputComponent<T>.OnParametersSetAsync()
+  nameWithType.vb: InputComponent(Of T).OnParametersSetAsync()
+- uid: Material.Blazor.Internal.InputComponent`1.OnParametersSetAsync*
   name: OnParametersSetAsync
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_OnParametersSetAsync_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.OnParametersSetAsync
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnParametersSetAsync_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnParametersSetAsync
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.OnParametersSetAsync
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).OnParametersSetAsync
-  nameWithType: InputComponentFoundation<T>.OnParametersSetAsync
-  nameWithType.vb: InputComponentFoundation(Of T).OnParametersSetAsync
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation
+  fullName: Material.Blazor.Internal.InputComponent<T>.OnParametersSetAsync
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnParametersSetAsync
+  nameWithType: InputComponent<T>.OnParametersSetAsync
+  nameWithType.vb: InputComponent(Of T).OnParametersSetAsync
+- uid: Material.Blazor.Internal.InputComponent`1.RequestInstantiation
   name: RequestInstantiation()
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_RequestInstantiation
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.RequestInstantiation()
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).RequestInstantiation()
-  nameWithType: InputComponentFoundation<T>.RequestInstantiation()
-  nameWithType.vb: InputComponentFoundation(Of T).RequestInstantiation()
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_RequestInstantiation
+  commentId: M:Material.Blazor.Internal.InputComponent`1.RequestInstantiation
+  fullName: Material.Blazor.Internal.InputComponent<T>.RequestInstantiation()
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).RequestInstantiation()
+  nameWithType: InputComponent<T>.RequestInstantiation()
+  nameWithType.vb: InputComponent(Of T).RequestInstantiation()
+- uid: Material.Blazor.Internal.InputComponent`1.RequestInstantiation*
   name: RequestInstantiation
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_RequestInstantiation_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.RequestInstantiation
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_RequestInstantiation_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.RequestInstantiation
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.RequestInstantiation
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).RequestInstantiation
-  nameWithType: InputComponentFoundation<T>.RequestInstantiation
-  nameWithType.vb: InputComponentFoundation(Of T).RequestInstantiation
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.SetComponentValue
+  fullName: Material.Blazor.Internal.InputComponent<T>.RequestInstantiation
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).RequestInstantiation
+  nameWithType: InputComponent<T>.RequestInstantiation
+  nameWithType.vb: InputComponent(Of T).RequestInstantiation
+- uid: Material.Blazor.Internal.InputComponent`1.SetComponentValue
   name: SetComponentValue
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_SetComponentValue
-  commentId: E:Material.Blazor.Internal.InputComponentFoundation`1.SetComponentValue
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.SetComponentValue
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).SetComponentValue
-  nameWithType: InputComponentFoundation<T>.SetComponentValue
-  nameWithType.vb: InputComponentFoundation(Of T).SetComponentValue
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.SetParametersAsync(ParameterView)
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_SetComponentValue
+  commentId: E:Material.Blazor.Internal.InputComponent`1.SetComponentValue
+  fullName: Material.Blazor.Internal.InputComponent<T>.SetComponentValue
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).SetComponentValue
+  nameWithType: InputComponent<T>.SetComponentValue
+  nameWithType.vb: InputComponent(Of T).SetComponentValue
+- uid: Material.Blazor.Internal.InputComponent`1.SetParametersAsync(ParameterView)
   name: SetParametersAsync(ParameterView)
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_SetParametersAsync_ParameterView_
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.SetParametersAsync(ParameterView)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.SetParametersAsync(ParameterView)
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).SetParametersAsync(ParameterView)
-  nameWithType: InputComponentFoundation<T>.SetParametersAsync(ParameterView)
-  nameWithType.vb: InputComponentFoundation(Of T).SetParametersAsync(ParameterView)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.SetParametersAsync*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_SetParametersAsync_ParameterView_
+  commentId: M:Material.Blazor.Internal.InputComponent`1.SetParametersAsync(ParameterView)
+  fullName: Material.Blazor.Internal.InputComponent<T>.SetParametersAsync(ParameterView)
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).SetParametersAsync(ParameterView)
+  nameWithType: InputComponent<T>.SetParametersAsync(ParameterView)
+  nameWithType.vb: InputComponent(Of T).SetParametersAsync(ParameterView)
+- uid: Material.Blazor.Internal.InputComponent`1.SetParametersAsync*
   name: SetParametersAsync
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_SetParametersAsync_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.SetParametersAsync
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_SetParametersAsync_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.SetParametersAsync
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.SetParametersAsync
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).SetParametersAsync
-  nameWithType: InputComponentFoundation<T>.SetParametersAsync
-  nameWithType.vb: InputComponentFoundation(Of T).SetParametersAsync
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ShouldRender
+  fullName: Material.Blazor.Internal.InputComponent<T>.SetParametersAsync
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).SetParametersAsync
+  nameWithType: InputComponent<T>.SetParametersAsync
+  nameWithType.vb: InputComponent(Of T).SetParametersAsync
+- uid: Material.Blazor.Internal.InputComponent`1.ShouldRender
   name: ShouldRender()
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ShouldRender
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.ShouldRender
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ShouldRender()
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ShouldRender()
-  nameWithType: InputComponentFoundation<T>.ShouldRender()
-  nameWithType.vb: InputComponentFoundation(Of T).ShouldRender()
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ShouldRender*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ShouldRender
+  commentId: M:Material.Blazor.Internal.InputComponent`1.ShouldRender
+  fullName: Material.Blazor.Internal.InputComponent<T>.ShouldRender()
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ShouldRender()
+  nameWithType: InputComponent<T>.ShouldRender()
+  nameWithType.vb: InputComponent(Of T).ShouldRender()
+- uid: Material.Blazor.Internal.InputComponent`1.ShouldRender*
   name: ShouldRender
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ShouldRender_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.ShouldRender
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ShouldRender_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.ShouldRender
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ShouldRender
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ShouldRender
-  nameWithType: InputComponentFoundation<T>.ShouldRender
-  nameWithType.vb: InputComponentFoundation(Of T).ShouldRender
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.TryParseValueFromString(System.String,`0@,System.String@)
+  fullName: Material.Blazor.Internal.InputComponent<T>.ShouldRender
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ShouldRender
+  nameWithType: InputComponent<T>.ShouldRender
+  nameWithType.vb: InputComponent(Of T).ShouldRender
+- uid: Material.Blazor.Internal.InputComponent`1.TryParseValueFromString(System.String,`0@,System.String@)
   name: TryParseValueFromString(String, out T, out String)
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_TryParseValueFromString_System_String__0__System_String__
-  commentId: M:Material.Blazor.Internal.InputComponentFoundation`1.TryParseValueFromString(System.String,`0@,System.String@)
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_TryParseValueFromString_System_String__0__System_String__
+  commentId: M:Material.Blazor.Internal.InputComponent`1.TryParseValueFromString(System.String,`0@,System.String@)
   name.vb: TryParseValueFromString(String, ByRef T, ByRef String)
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.TryParseValueFromString(System.String, out T, out System.String)
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).TryParseValueFromString(System.String, ByRef T, ByRef System.String)
-  nameWithType: InputComponentFoundation<T>.TryParseValueFromString(String, out T, out String)
-  nameWithType.vb: InputComponentFoundation(Of T).TryParseValueFromString(String, ByRef T, ByRef String)
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.TryParseValueFromString*
+  fullName: Material.Blazor.Internal.InputComponent<T>.TryParseValueFromString(System.String, out T, out System.String)
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).TryParseValueFromString(System.String, ByRef T, ByRef System.String)
+  nameWithType: InputComponent<T>.TryParseValueFromString(String, out T, out String)
+  nameWithType.vb: InputComponent(Of T).TryParseValueFromString(String, ByRef T, ByRef String)
+- uid: Material.Blazor.Internal.InputComponent`1.TryParseValueFromString*
   name: TryParseValueFromString
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_TryParseValueFromString_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.TryParseValueFromString
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_TryParseValueFromString_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.TryParseValueFromString
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.TryParseValueFromString
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).TryParseValueFromString
-  nameWithType: InputComponentFoundation<T>.TryParseValueFromString
-  nameWithType.vb: InputComponentFoundation(Of T).TryParseValueFromString
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.Value
+  fullName: Material.Blazor.Internal.InputComponent<T>.TryParseValueFromString
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).TryParseValueFromString
+  nameWithType: InputComponent<T>.TryParseValueFromString
+  nameWithType.vb: InputComponent(Of T).TryParseValueFromString
+- uid: Material.Blazor.Internal.InputComponent`1.Value
   name: Value
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_Value
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.Value
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.Value
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).Value
-  nameWithType: InputComponentFoundation<T>.Value
-  nameWithType.vb: InputComponentFoundation(Of T).Value
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.Value*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_Value
+  commentId: P:Material.Blazor.Internal.InputComponent`1.Value
+  fullName: Material.Blazor.Internal.InputComponent<T>.Value
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).Value
+  nameWithType: InputComponent<T>.Value
+  nameWithType.vb: InputComponent(Of T).Value
+- uid: Material.Blazor.Internal.InputComponent`1.Value*
   name: Value
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_Value_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.Value
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_Value_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.Value
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.Value
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).Value
-  nameWithType: InputComponentFoundation<T>.Value
-  nameWithType.vb: InputComponentFoundation(Of T).Value
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ValueChanged
+  fullName: Material.Blazor.Internal.InputComponent<T>.Value
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).Value
+  nameWithType: InputComponent<T>.Value
+  nameWithType.vb: InputComponent(Of T).Value
+- uid: Material.Blazor.Internal.InputComponent`1.ValueChanged
   name: ValueChanged
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ValueChanged
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.ValueChanged
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ValueChanged
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ValueChanged
-  nameWithType: InputComponentFoundation<T>.ValueChanged
-  nameWithType.vb: InputComponentFoundation(Of T).ValueChanged
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ValueChanged*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ValueChanged
+  commentId: P:Material.Blazor.Internal.InputComponent`1.ValueChanged
+  fullName: Material.Blazor.Internal.InputComponent<T>.ValueChanged
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ValueChanged
+  nameWithType: InputComponent<T>.ValueChanged
+  nameWithType.vb: InputComponent(Of T).ValueChanged
+- uid: Material.Blazor.Internal.InputComponent`1.ValueChanged*
   name: ValueChanged
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ValueChanged_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.ValueChanged
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ValueChanged_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.ValueChanged
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ValueChanged
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ValueChanged
-  nameWithType: InputComponentFoundation<T>.ValueChanged
-  nameWithType.vb: InputComponentFoundation(Of T).ValueChanged
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ValueExpression
+  fullName: Material.Blazor.Internal.InputComponent<T>.ValueChanged
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ValueChanged
+  nameWithType: InputComponent<T>.ValueChanged
+  nameWithType.vb: InputComponent(Of T).ValueChanged
+- uid: Material.Blazor.Internal.InputComponent`1.ValueExpression
   name: ValueExpression
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ValueExpression
-  commentId: P:Material.Blazor.Internal.InputComponentFoundation`1.ValueExpression
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ValueExpression
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ValueExpression
-  nameWithType: InputComponentFoundation<T>.ValueExpression
-  nameWithType.vb: InputComponentFoundation(Of T).ValueExpression
-- uid: Material.Blazor.Internal.InputComponentFoundation`1.ValueExpression*
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ValueExpression
+  commentId: P:Material.Blazor.Internal.InputComponent`1.ValueExpression
+  fullName: Material.Blazor.Internal.InputComponent<T>.ValueExpression
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ValueExpression
+  nameWithType: InputComponent<T>.ValueExpression
+  nameWithType.vb: InputComponent(Of T).ValueExpression
+- uid: Material.Blazor.Internal.InputComponent`1.ValueExpression*
   name: ValueExpression
-  href: api/Material.Blazor.Internal.InputComponentFoundation-1.html#Material_Blazor_Internal_InputComponentFoundation_1_ValueExpression_
-  commentId: Overload:Material.Blazor.Internal.InputComponentFoundation`1.ValueExpression
+  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ValueExpression_
+  commentId: Overload:Material.Blazor.Internal.InputComponent`1.ValueExpression
   isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponentFoundation<T>.ValueExpression
-  fullName.vb: Material.Blazor.Internal.InputComponentFoundation(Of T).ValueExpression
-  nameWithType: InputComponentFoundation<T>.ValueExpression
-  nameWithType.vb: InputComponentFoundation(Of T).ValueExpression
+  fullName: Material.Blazor.Internal.InputComponent<T>.ValueExpression
+  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).ValueExpression
+  nameWithType: InputComponent<T>.ValueExpression
+  nameWithType.vb: InputComponent(Of T).ValueExpression
 - uid: Material.Blazor.Internal.InternalDatePickerDayButton
   name: InternalDatePickerDayButton
   href: api/Material.Blazor.Internal.InternalDatePickerDayButton.html
@@ -1629,6 +1647,161 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.InternalTooltipAnchor.OnInitialized
   nameWithType: InternalTooltipAnchor.OnInitialized
+- uid: Material.Blazor.Internal.MultiSelectComponent`2
+  name: MultiSelectComponent<T, TListElement>
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html
+  commentId: T:Material.Blazor.Internal.MultiSelectComponent`2
+  name.vb: MultiSelectComponent(Of T, TListElement)
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement)
+  nameWithType: MultiSelectComponent<T, TListElement>
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement)
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.GetKeysFunc
+  name: GetKeysFunc
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_GetKeysFunc
+  commentId: P:Material.Blazor.Internal.MultiSelectComponent`2.GetKeysFunc
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.GetKeysFunc
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).GetKeysFunc
+  nameWithType: MultiSelectComponent<T, TListElement>.GetKeysFunc
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).GetKeysFunc
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.GetKeysFunc*
+  name: GetKeysFunc
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_GetKeysFunc_
+  commentId: Overload:Material.Blazor.Internal.MultiSelectComponent`2.GetKeysFunc
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.GetKeysFunc
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).GetKeysFunc
+  nameWithType: MultiSelectComponent<T, TListElement>.GetKeysFunc
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).GetKeysFunc
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.IconFoundry
+  name: IconFoundry
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_IconFoundry
+  commentId: P:Material.Blazor.Internal.MultiSelectComponent`2.IconFoundry
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.IconFoundry
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).IconFoundry
+  nameWithType: MultiSelectComponent<T, TListElement>.IconFoundry
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).IconFoundry
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.IconFoundry*
+  name: IconFoundry
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_IconFoundry_
+  commentId: Overload:Material.Blazor.Internal.MultiSelectComponent`2.IconFoundry
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.IconFoundry
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).IconFoundry
+  nameWithType: MultiSelectComponent<T, TListElement>.IconFoundry
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).IconFoundry
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.Items
+  name: Items
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_Items
+  commentId: P:Material.Blazor.Internal.MultiSelectComponent`2.Items
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.Items
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).Items
+  nameWithType: MultiSelectComponent<T, TListElement>.Items
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).Items
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.Items*
+  name: Items
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_Items_
+  commentId: Overload:Material.Blazor.Internal.MultiSelectComponent`2.Items
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.Items
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).Items
+  nameWithType: MultiSelectComponent<T, TListElement>.Items
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).Items
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.OnParametersSet
+  name: OnParametersSet()
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_OnParametersSet
+  commentId: M:Material.Blazor.Internal.MultiSelectComponent`2.OnParametersSet
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.OnParametersSet()
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).OnParametersSet()
+  nameWithType: MultiSelectComponent<T, TListElement>.OnParametersSet()
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).OnParametersSet()
+- uid: Material.Blazor.Internal.MultiSelectComponent`2.OnParametersSet*
+  name: OnParametersSet
+  href: api/Material.Blazor.Internal.MultiSelectComponent-2.html#Material_Blazor_Internal_MultiSelectComponent_2_OnParametersSet_
+  commentId: Overload:Material.Blazor.Internal.MultiSelectComponent`2.OnParametersSet
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.MultiSelectComponent<T, TListElement>.OnParametersSet
+  fullName.vb: Material.Blazor.Internal.MultiSelectComponent(Of T, TListElement).OnParametersSet
+  nameWithType: MultiSelectComponent<T, TListElement>.OnParametersSet
+  nameWithType.vb: MultiSelectComponent(Of T, TListElement).OnParametersSet
+- uid: Material.Blazor.Internal.SingleSelectComponent`2
+  name: SingleSelectComponent<T, TListElement>
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html
+  commentId: T:Material.Blazor.Internal.SingleSelectComponent`2
+  name.vb: SingleSelectComponent(Of T, TListElement)
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement)
+  nameWithType: SingleSelectComponent<T, TListElement>
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement)
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.GetKeysFunc
+  name: GetKeysFunc
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_GetKeysFunc
+  commentId: P:Material.Blazor.Internal.SingleSelectComponent`2.GetKeysFunc
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.GetKeysFunc
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).GetKeysFunc
+  nameWithType: SingleSelectComponent<T, TListElement>.GetKeysFunc
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).GetKeysFunc
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.GetKeysFunc*
+  name: GetKeysFunc
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_GetKeysFunc_
+  commentId: Overload:Material.Blazor.Internal.SingleSelectComponent`2.GetKeysFunc
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.GetKeysFunc
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).GetKeysFunc
+  nameWithType: SingleSelectComponent<T, TListElement>.GetKeysFunc
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).GetKeysFunc
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.Items
+  name: Items
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_Items
+  commentId: P:Material.Blazor.Internal.SingleSelectComponent`2.Items
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.Items
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).Items
+  nameWithType: SingleSelectComponent<T, TListElement>.Items
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).Items
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.Items*
+  name: Items
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_Items_
+  commentId: Overload:Material.Blazor.Internal.SingleSelectComponent`2.Items
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.Items
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).Items
+  nameWithType: SingleSelectComponent<T, TListElement>.Items
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).Items
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.ItemValidation
+  name: ItemValidation
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_ItemValidation
+  commentId: P:Material.Blazor.Internal.SingleSelectComponent`2.ItemValidation
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.ItemValidation
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ItemValidation
+  nameWithType: SingleSelectComponent<T, TListElement>.ItemValidation
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).ItemValidation
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.ItemValidation*
+  name: ItemValidation
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_ItemValidation_
+  commentId: Overload:Material.Blazor.Internal.SingleSelectComponent`2.ItemValidation
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.ItemValidation
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ItemValidation
+  nameWithType: SingleSelectComponent<T, TListElement>.ItemValidation
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).ItemValidation
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList(System.Collections.Generic.IEnumerable{Material.Blazor.MBSelectElement{`0}},Material.Blazor.MBItemValidation)
+  name: ValidateItemList(IEnumerable<MBSelectElement<T>>, MBItemValidation)
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_ValidateItemList_System_Collections_Generic_IEnumerable_Material_Blazor_MBSelectElement__0___Material_Blazor_MBItemValidation_
+  commentId: M:Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList(System.Collections.Generic.IEnumerable{Material.Blazor.MBSelectElement{`0}},Material.Blazor.MBItemValidation)
+  name.vb: ValidateItemList(IEnumerable(Of MBSelectElement(Of T)), MBItemValidation)
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.ValidateItemList(System.Collections.Generic.IEnumerable<Material.Blazor.MBSelectElement<T>>, Material.Blazor.MBItemValidation)
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ValidateItemList(System.Collections.Generic.IEnumerable(Of Material.Blazor.MBSelectElement(Of T)), Material.Blazor.MBItemValidation)
+  nameWithType: SingleSelectComponent<T, TListElement>.ValidateItemList(IEnumerable<MBSelectElement<T>>, MBItemValidation)
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).ValidateItemList(IEnumerable(Of MBSelectElement(Of T)), MBItemValidation)
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList*
+  name: ValidateItemList
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_ValidateItemList_
+  commentId: Overload:Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.ValidateItemList
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ValidateItemList
+  nameWithType: SingleSelectComponent<T, TListElement>.ValidateItemList
+  nameWithType.vb: SingleSelectComponent(Of T, TListElement).ValidateItemList
 - uid: Material.Blazor.Internal.StyleMapper
   name: StyleMapper
   href: api/Material.Blazor.Internal.StyleMapper.html
@@ -1648,33 +1821,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.StyleMapper.ToString
   nameWithType: StyleMapper.ToString
-- uid: Material.Blazor.Internal.ValidatingInputComponentFoundation`1
-  name: ValidatingInputComponentFoundation<T>
-  href: api/Material.Blazor.Internal.ValidatingInputComponentFoundation-1.html
-  commentId: T:Material.Blazor.Internal.ValidatingInputComponentFoundation`1
-  name.vb: ValidatingInputComponentFoundation(Of T)
-  fullName: Material.Blazor.Internal.ValidatingInputComponentFoundation<T>
-  fullName.vb: Material.Blazor.Internal.ValidatingInputComponentFoundation(Of T)
-  nameWithType: ValidatingInputComponentFoundation<T>
-  nameWithType.vb: ValidatingInputComponentFoundation(Of T)
-- uid: Material.Blazor.Internal.ValidatingInputComponentFoundation`1.ValidateItemList(System.Collections.Generic.IEnumerable{Material.Blazor.MBListElement{`0}},Material.Blazor.MBItemValidation)
-  name: ValidateItemList(IEnumerable<MBListElement<T>>, MBItemValidation)
-  href: api/Material.Blazor.Internal.ValidatingInputComponentFoundation-1.html#Material_Blazor_Internal_ValidatingInputComponentFoundation_1_ValidateItemList_System_Collections_Generic_IEnumerable_Material_Blazor_MBListElement__0___Material_Blazor_MBItemValidation_
-  commentId: M:Material.Blazor.Internal.ValidatingInputComponentFoundation`1.ValidateItemList(System.Collections.Generic.IEnumerable{Material.Blazor.MBListElement{`0}},Material.Blazor.MBItemValidation)
-  name.vb: ValidateItemList(IEnumerable(Of MBListElement(Of T)), MBItemValidation)
-  fullName: Material.Blazor.Internal.ValidatingInputComponentFoundation<T>.ValidateItemList(System.Collections.Generic.IEnumerable<Material.Blazor.MBListElement<T>>, Material.Blazor.MBItemValidation)
-  fullName.vb: Material.Blazor.Internal.ValidatingInputComponentFoundation(Of T).ValidateItemList(System.Collections.Generic.IEnumerable(Of Material.Blazor.MBListElement(Of T)), Material.Blazor.MBItemValidation)
-  nameWithType: ValidatingInputComponentFoundation<T>.ValidateItemList(IEnumerable<MBListElement<T>>, MBItemValidation)
-  nameWithType.vb: ValidatingInputComponentFoundation(Of T).ValidateItemList(IEnumerable(Of MBListElement(Of T)), MBItemValidation)
-- uid: Material.Blazor.Internal.ValidatingInputComponentFoundation`1.ValidateItemList*
-  name: ValidateItemList
-  href: api/Material.Blazor.Internal.ValidatingInputComponentFoundation-1.html#Material_Blazor_Internal_ValidatingInputComponentFoundation_1_ValidateItemList_
-  commentId: Overload:Material.Blazor.Internal.ValidatingInputComponentFoundation`1.ValidateItemList
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ValidatingInputComponentFoundation<T>.ValidateItemList
-  fullName.vb: Material.Blazor.Internal.ValidatingInputComponentFoundation(Of T).ValidateItemList
-  nameWithType: ValidatingInputComponentFoundation<T>.ValidateItemList
-  nameWithType.vb: ValidatingInputComponentFoundation(Of T).ValidateItemList
 - uid: Material.Blazor.MB_Grid_ColumnType
   name: MB_Grid_ColumnType
   href: api/Material.Blazor.MB_Grid_ColumnType.html
@@ -2838,6 +2984,178 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCheckbox.OnValueSetCallback
   nameWithType: MBCheckbox.OnValueSetCallback
+- uid: Material.Blazor.MBChipsSelectMulti`1
+  name: MBChipsSelectMulti<TItem>
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html
+  commentId: T:Material.Blazor.MBChipsSelectMulti`1
+  name.vb: MBChipsSelectMulti(Of TItem)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem)
+  nameWithType: MBChipsSelectMulti<TItem>
+  nameWithType.vb: MBChipsSelectMulti(Of TItem)
+- uid: Material.Blazor.MBChipsSelectMulti`1.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_Dispose_System_Boolean_
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.Dispose(System.Boolean)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.Dispose(System.Boolean)
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).Dispose(System.Boolean)
+  nameWithType: MBChipsSelectMulti<TItem>.Dispose(Boolean)
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).Dispose(Boolean)
+- uid: Material.Blazor.MBChipsSelectMulti`1.Dispose*
+  name: Dispose
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_Dispose_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.Dispose
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.Dispose
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).Dispose
+  nameWithType: MBChipsSelectMulti<TItem>.Dispose
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).Dispose
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
+  name: NotifyMultiSelectedAsync(Boolean[])
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifyMultiSelectedAsync_System_Boolean___
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
+  name.vb: NotifyMultiSelectedAsync(Boolean())
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync(System.Boolean[])
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync(System.Boolean())
+  nameWithType: MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync(Boolean[])
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync(Boolean())
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync*
+  name: NotifyMultiSelectedAsync
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifyMultiSelectedAsync_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync
+  nameWithType: MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync(System.Int32)
+  name: NotifySingleSelectedAsync(Int32)
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifySingleSelectedAsync_System_Int32_
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync(System.Int32)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync(System.Int32)
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync(System.Int32)
+  nameWithType: MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync(Int32)
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync(Int32)
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync*
+  name: NotifySingleSelectedAsync
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifySingleSelectedAsync_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync
+  nameWithType: MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
+  name: OnDisabledSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnDisabledSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBChipsSelectMulti<TItem>.OnDisabledSetCallback(Object, EventArgs)
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback*
+  name: OnDisabledSetCallback
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnDisabledSetCallback_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnDisabledSetCallback
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnDisabledSetCallback
+  nameWithType: MBChipsSelectMulti<TItem>.OnDisabledSetCallback
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnDisabledSetCallback
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnInitialized
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnInitialized
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnInitialized()
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnInitialized()
+  nameWithType: MBChipsSelectMulti<TItem>.OnInitialized()
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnInitialized()
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnInitialized_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnInitialized
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnInitialized
+  nameWithType: MBChipsSelectMulti<TItem>.OnInitialized
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnInitialized
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
+  name: OnValueSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnValueSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBChipsSelectMulti<TItem>.OnValueSetCallback(Object, EventArgs)
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback*
+  name: OnValueSetCallback
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnValueSetCallback_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnValueSetCallback
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnValueSetCallback
+  nameWithType: MBChipsSelectMulti<TItem>.OnValueSetCallback
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnValueSetCallback
+- uid: Material.Blazor.MBChipsSelectSingle`1
+  name: MBChipsSelectSingle<TItem>
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html
+  commentId: T:Material.Blazor.MBChipsSelectSingle`1
+  name.vb: MBChipsSelectSingle(Of TItem)
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem)
+  nameWithType: MBChipsSelectSingle<TItem>
+  nameWithType.vb: MBChipsSelectSingle(Of TItem)
+- uid: Material.Blazor.MBChipsSelectSingle`1.IconFoundry
+  name: IconFoundry
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_IconFoundry
+  commentId: P:Material.Blazor.MBChipsSelectSingle`1.IconFoundry
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.IconFoundry
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).IconFoundry
+  nameWithType: MBChipsSelectSingle<TItem>.IconFoundry
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).IconFoundry
+- uid: Material.Blazor.MBChipsSelectSingle`1.IconFoundry*
+  name: IconFoundry
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_IconFoundry_
+  commentId: Overload:Material.Blazor.MBChipsSelectSingle`1.IconFoundry
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.IconFoundry
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).IconFoundry
+  nameWithType: MBChipsSelectSingle<TItem>.IconFoundry
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).IconFoundry
+- uid: Material.Blazor.MBChipsSelectSingle`1.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnInitialized
+  commentId: M:Material.Blazor.MBChipsSelectSingle`1.OnInitialized
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.OnInitialized()
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnInitialized()
+  nameWithType: MBChipsSelectSingle<TItem>.OnInitialized()
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).OnInitialized()
+- uid: Material.Blazor.MBChipsSelectSingle`1.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnInitialized_
+  commentId: Overload:Material.Blazor.MBChipsSelectSingle`1.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.OnInitialized
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnInitialized
+  nameWithType: MBChipsSelectSingle<TItem>.OnInitialized
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).OnInitialized
+- uid: Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
+  name: OnValueSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnValueSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBChipsSelectSingle<TItem>.OnValueSetCallback(Object, EventArgs)
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback*
+  name: OnValueSetCallback
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnValueSetCallback_
+  commentId: Overload:Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.OnValueSetCallback
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnValueSetCallback
+  nameWithType: MBChipsSelectSingle<TItem>.OnValueSetCallback
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).OnValueSetCallback
 - uid: Material.Blazor.MBCircularProgress
   name: MBCircularProgress
   href: api/Material.Blazor.MBCircularProgress.html
@@ -3368,6 +3686,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDatePicker.MaxDate
   nameWithType: MBDatePicker.MaxDate
+- uid: Material.Blazor.MBDatePicker.MenuSurfacePositioning
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_MenuSurfacePositioning
+  commentId: P:Material.Blazor.MBDatePicker.MenuSurfacePositioning
+  fullName: Material.Blazor.MBDatePicker.MenuSurfacePositioning
+  nameWithType: MBDatePicker.MenuSurfacePositioning
+- uid: Material.Blazor.MBDatePicker.MenuSurfacePositioning*
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_MenuSurfacePositioning_
+  commentId: Overload:Material.Blazor.MBDatePicker.MenuSurfacePositioning
+  isSpec: "True"
+  fullName: Material.Blazor.MBDatePicker.MenuSurfacePositioning
+  nameWithType: MBDatePicker.MenuSurfacePositioning
 - uid: Material.Blazor.MBDatePicker.MinDate
   name: MinDate
   href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_MinDate
@@ -4752,6 +5083,32 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIcon.OnParametersSet
   nameWithType: MBIcon.OnParametersSet
+- uid: Material.Blazor.MBIconBearingSelectElement`1
+  name: MBIconBearingSelectElement<T>
+  href: api/Material.Blazor.MBIconBearingSelectElement-1.html
+  commentId: T:Material.Blazor.MBIconBearingSelectElement`1
+  name.vb: MBIconBearingSelectElement(Of T)
+  fullName: Material.Blazor.MBIconBearingSelectElement<T>
+  fullName.vb: Material.Blazor.MBIconBearingSelectElement(Of T)
+  nameWithType: MBIconBearingSelectElement<T>
+  nameWithType.vb: MBIconBearingSelectElement(Of T)
+- uid: Material.Blazor.MBIconBearingSelectElement`1.Icon
+  name: Icon
+  href: api/Material.Blazor.MBIconBearingSelectElement-1.html#Material_Blazor_MBIconBearingSelectElement_1_Icon
+  commentId: P:Material.Blazor.MBIconBearingSelectElement`1.Icon
+  fullName: Material.Blazor.MBIconBearingSelectElement<T>.Icon
+  fullName.vb: Material.Blazor.MBIconBearingSelectElement(Of T).Icon
+  nameWithType: MBIconBearingSelectElement<T>.Icon
+  nameWithType.vb: MBIconBearingSelectElement(Of T).Icon
+- uid: Material.Blazor.MBIconBearingSelectElement`1.Icon*
+  name: Icon
+  href: api/Material.Blazor.MBIconBearingSelectElement-1.html#Material_Blazor_MBIconBearingSelectElement_1_Icon_
+  commentId: Overload:Material.Blazor.MBIconBearingSelectElement`1.Icon
+  isSpec: "True"
+  fullName: Material.Blazor.MBIconBearingSelectElement<T>.Icon
+  fullName.vb: Material.Blazor.MBIconBearingSelectElement(Of T).Icon
+  nameWithType: MBIconBearingSelectElement<T>.Icon
+  nameWithType.vb: MBIconBearingSelectElement(Of T).Icon
 - uid: Material.Blazor.MBIconButton
   name: MBIconButton
   href: api/Material.Blazor.MBIconButton.html
@@ -5179,6 +5536,30 @@ references:
   commentId: F:Material.Blazor.MBIconMITheme.TwoTone
   fullName: Material.Blazor.MBIconMITheme.TwoTone
   nameWithType: MBIconMITheme.TwoTone
+- uid: Material.Blazor.MBInputEventType
+  name: MBInputEventType
+  href: api/Material.Blazor.MBInputEventType.html
+  commentId: T:Material.Blazor.MBInputEventType
+  fullName: Material.Blazor.MBInputEventType
+  nameWithType: MBInputEventType
+- uid: Material.Blazor.MBInputEventType.OnChange
+  name: OnChange
+  href: api/Material.Blazor.MBInputEventType.html#Material_Blazor_MBInputEventType_OnChange
+  commentId: F:Material.Blazor.MBInputEventType.OnChange
+  fullName: Material.Blazor.MBInputEventType.OnChange
+  nameWithType: MBInputEventType.OnChange
+- uid: Material.Blazor.MBInputEventType.OnInputDebounced
+  name: OnInputDebounced
+  href: api/Material.Blazor.MBInputEventType.html#Material_Blazor_MBInputEventType_OnInputDebounced
+  commentId: F:Material.Blazor.MBInputEventType.OnInputDebounced
+  fullName: Material.Blazor.MBInputEventType.OnInputDebounced
+  nameWithType: MBInputEventType.OnInputDebounced
+- uid: Material.Blazor.MBInputEventType.OnInputThrottled
+  name: OnInputThrottled
+  href: api/Material.Blazor.MBInputEventType.html#Material_Blazor_MBInputEventType_OnInputThrottled
+  commentId: F:Material.Blazor.MBInputEventType.OnInputThrottled
+  fullName: Material.Blazor.MBInputEventType.OnInputThrottled
+  nameWithType: MBInputEventType.OnInputThrottled
 - uid: Material.Blazor.MBItemValidation
   name: MBItemValidation
   href: api/Material.Blazor.MBItemValidation.html
@@ -5727,66 +6108,6 @@ references:
   commentId: T:Material.Blazor.MBListDivider
   fullName: Material.Blazor.MBListDivider
   nameWithType: MBListDivider
-- uid: Material.Blazor.MBListElement`1
-  name: MBListElement<T>
-  href: api/Material.Blazor.MBListElement-1.html
-  commentId: T:Material.Blazor.MBListElement`1
-  name.vb: MBListElement(Of T)
-  fullName: Material.Blazor.MBListElement<T>
-  fullName.vb: Material.Blazor.MBListElement(Of T)
-  nameWithType: MBListElement<T>
-  nameWithType.vb: MBListElement(Of T)
-- uid: Material.Blazor.MBListElement`1.Disabled
-  name: Disabled
-  href: api/Material.Blazor.MBListElement-1.html#Material_Blazor_MBListElement_1_Disabled
-  commentId: P:Material.Blazor.MBListElement`1.Disabled
-  fullName: Material.Blazor.MBListElement<T>.Disabled
-  fullName.vb: Material.Blazor.MBListElement(Of T).Disabled
-  nameWithType: MBListElement<T>.Disabled
-  nameWithType.vb: MBListElement(Of T).Disabled
-- uid: Material.Blazor.MBListElement`1.Disabled*
-  name: Disabled
-  href: api/Material.Blazor.MBListElement-1.html#Material_Blazor_MBListElement_1_Disabled_
-  commentId: Overload:Material.Blazor.MBListElement`1.Disabled
-  isSpec: "True"
-  fullName: Material.Blazor.MBListElement<T>.Disabled
-  fullName.vb: Material.Blazor.MBListElement(Of T).Disabled
-  nameWithType: MBListElement<T>.Disabled
-  nameWithType.vb: MBListElement(Of T).Disabled
-- uid: Material.Blazor.MBListElement`1.Label
-  name: Label
-  href: api/Material.Blazor.MBListElement-1.html#Material_Blazor_MBListElement_1_Label
-  commentId: P:Material.Blazor.MBListElement`1.Label
-  fullName: Material.Blazor.MBListElement<T>.Label
-  fullName.vb: Material.Blazor.MBListElement(Of T).Label
-  nameWithType: MBListElement<T>.Label
-  nameWithType.vb: MBListElement(Of T).Label
-- uid: Material.Blazor.MBListElement`1.Label*
-  name: Label
-  href: api/Material.Blazor.MBListElement-1.html#Material_Blazor_MBListElement_1_Label_
-  commentId: Overload:Material.Blazor.MBListElement`1.Label
-  isSpec: "True"
-  fullName: Material.Blazor.MBListElement<T>.Label
-  fullName.vb: Material.Blazor.MBListElement(Of T).Label
-  nameWithType: MBListElement<T>.Label
-  nameWithType.vb: MBListElement(Of T).Label
-- uid: Material.Blazor.MBListElement`1.SelectedValue
-  name: SelectedValue
-  href: api/Material.Blazor.MBListElement-1.html#Material_Blazor_MBListElement_1_SelectedValue
-  commentId: P:Material.Blazor.MBListElement`1.SelectedValue
-  fullName: Material.Blazor.MBListElement<T>.SelectedValue
-  fullName.vb: Material.Blazor.MBListElement(Of T).SelectedValue
-  nameWithType: MBListElement<T>.SelectedValue
-  nameWithType.vb: MBListElement(Of T).SelectedValue
-- uid: Material.Blazor.MBListElement`1.SelectedValue*
-  name: SelectedValue
-  href: api/Material.Blazor.MBListElement-1.html#Material_Blazor_MBListElement_1_SelectedValue_
-  commentId: Overload:Material.Blazor.MBListElement`1.SelectedValue
-  isSpec: "True"
-  fullName: Material.Blazor.MBListElement<T>.SelectedValue
-  fullName.vb: Material.Blazor.MBListElement(Of T).SelectedValue
-  nameWithType: MBListElement<T>.SelectedValue
-  nameWithType.vb: MBListElement(Of T).SelectedValue
 - uid: Material.Blazor.MBListItem
   name: MBListItem
   href: api/Material.Blazor.MBListItem.html
@@ -5932,6 +6253,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBMenu.Dispose
   nameWithType: MBMenu.Dispose
+- uid: Material.Blazor.MBMenu.MenuSurfacePositioning
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_MenuSurfacePositioning
+  commentId: P:Material.Blazor.MBMenu.MenuSurfacePositioning
+  fullName: Material.Blazor.MBMenu.MenuSurfacePositioning
+  nameWithType: MBMenu.MenuSurfacePositioning
+- uid: Material.Blazor.MBMenu.MenuSurfacePositioning*
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_MenuSurfacePositioning_
+  commentId: Overload:Material.Blazor.MBMenu.MenuSurfacePositioning
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenu.MenuSurfacePositioning
+  nameWithType: MBMenu.MenuSurfacePositioning
 - uid: Material.Blazor.MBMenu.NotifyClosedAsync
   name: NotifyClosedAsync()
   href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_NotifyClosedAsync
@@ -5990,6 +6324,30 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBMenuSelectionGroup.ChildContent
   nameWithType: MBMenuSelectionGroup.ChildContent
+- uid: Material.Blazor.MBMenuSurfacePositioning
+  name: MBMenuSurfacePositioning
+  href: api/Material.Blazor.MBMenuSurfacePositioning.html
+  commentId: T:Material.Blazor.MBMenuSurfacePositioning
+  fullName: Material.Blazor.MBMenuSurfacePositioning
+  nameWithType: MBMenuSurfacePositioning
+- uid: Material.Blazor.MBMenuSurfacePositioning.Fixed
+  name: Fixed
+  href: api/Material.Blazor.MBMenuSurfacePositioning.html#Material_Blazor_MBMenuSurfacePositioning_Fixed
+  commentId: F:Material.Blazor.MBMenuSurfacePositioning.Fixed
+  fullName: Material.Blazor.MBMenuSurfacePositioning.Fixed
+  nameWithType: MBMenuSurfacePositioning.Fixed
+- uid: Material.Blazor.MBMenuSurfacePositioning.FullWidth
+  name: FullWidth
+  href: api/Material.Blazor.MBMenuSurfacePositioning.html#Material_Blazor_MBMenuSurfacePositioning_FullWidth
+  commentId: F:Material.Blazor.MBMenuSurfacePositioning.FullWidth
+  fullName: Material.Blazor.MBMenuSurfacePositioning.FullWidth
+  nameWithType: MBMenuSurfacePositioning.FullWidth
+- uid: Material.Blazor.MBMenuSurfacePositioning.Regular
+  name: Regular
+  href: api/Material.Blazor.MBMenuSurfacePositioning.html#Material_Blazor_MBMenuSurfacePositioning_Regular
+  commentId: F:Material.Blazor.MBMenuSurfacePositioning.Regular
+  fullName: Material.Blazor.MBMenuSurfacePositioning.Regular
+  nameWithType: MBMenuSurfacePositioning.Regular
 - uid: Material.Blazor.MBNumericDecimalField
   name: MBNumericDecimalField
   href: api/Material.Blazor.MBNumericDecimalField.html
@@ -7288,74 +7646,6 @@ references:
   fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).Density
   nameWithType: MBRadioButtonGroup<TItem>.Density
   nameWithType.vb: MBRadioButtonGroup(Of TItem).Density
-- uid: Material.Blazor.MBRadioButtonGroup`1.EnableTouchWrapper
-  name: EnableTouchWrapper
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_EnableTouchWrapper
-  commentId: P:Material.Blazor.MBRadioButtonGroup`1.EnableTouchWrapper
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.EnableTouchWrapper
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).EnableTouchWrapper
-  nameWithType: MBRadioButtonGroup<TItem>.EnableTouchWrapper
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).EnableTouchWrapper
-- uid: Material.Blazor.MBRadioButtonGroup`1.EnableTouchWrapper*
-  name: EnableTouchWrapper
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_EnableTouchWrapper_
-  commentId: Overload:Material.Blazor.MBRadioButtonGroup`1.EnableTouchWrapper
-  isSpec: "True"
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.EnableTouchWrapper
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).EnableTouchWrapper
-  nameWithType: MBRadioButtonGroup<TItem>.EnableTouchWrapper
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).EnableTouchWrapper
-- uid: Material.Blazor.MBRadioButtonGroup`1.GetKeysFunc
-  name: GetKeysFunc
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_GetKeysFunc
-  commentId: P:Material.Blazor.MBRadioButtonGroup`1.GetKeysFunc
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.GetKeysFunc
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).GetKeysFunc
-  nameWithType: MBRadioButtonGroup<TItem>.GetKeysFunc
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).GetKeysFunc
-- uid: Material.Blazor.MBRadioButtonGroup`1.GetKeysFunc*
-  name: GetKeysFunc
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_GetKeysFunc_
-  commentId: Overload:Material.Blazor.MBRadioButtonGroup`1.GetKeysFunc
-  isSpec: "True"
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.GetKeysFunc
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).GetKeysFunc
-  nameWithType: MBRadioButtonGroup<TItem>.GetKeysFunc
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).GetKeysFunc
-- uid: Material.Blazor.MBRadioButtonGroup`1.Items
-  name: Items
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_Items
-  commentId: P:Material.Blazor.MBRadioButtonGroup`1.Items
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.Items
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).Items
-  nameWithType: MBRadioButtonGroup<TItem>.Items
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).Items
-- uid: Material.Blazor.MBRadioButtonGroup`1.Items*
-  name: Items
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_Items_
-  commentId: Overload:Material.Blazor.MBRadioButtonGroup`1.Items
-  isSpec: "True"
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.Items
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).Items
-  nameWithType: MBRadioButtonGroup<TItem>.Items
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).Items
-- uid: Material.Blazor.MBRadioButtonGroup`1.ItemValidation
-  name: ItemValidation
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_ItemValidation
-  commentId: P:Material.Blazor.MBRadioButtonGroup`1.ItemValidation
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.ItemValidation
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).ItemValidation
-  nameWithType: MBRadioButtonGroup<TItem>.ItemValidation
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).ItemValidation
-- uid: Material.Blazor.MBRadioButtonGroup`1.ItemValidation*
-  name: ItemValidation
-  href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_ItemValidation_
-  commentId: Overload:Material.Blazor.MBRadioButtonGroup`1.ItemValidation
-  isSpec: "True"
-  fullName: Material.Blazor.MBRadioButtonGroup<TItem>.ItemValidation
-  fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).ItemValidation
-  nameWithType: MBRadioButtonGroup<TItem>.ItemValidation
-  nameWithType.vb: MBRadioButtonGroup(Of TItem).ItemValidation
 - uid: Material.Blazor.MBRadioButtonGroup`1.OnInitialized
   name: OnInitialized()
   href: api/Material.Blazor.MBRadioButtonGroup-1.html#Material_Blazor_MBRadioButtonGroup_1_OnInitialized
@@ -7407,6 +7697,178 @@ references:
   fullName.vb: Material.Blazor.MBRadioButtonGroup(Of TItem).Vertical
   nameWithType: MBRadioButtonGroup<TItem>.Vertical
   nameWithType.vb: MBRadioButtonGroup(Of TItem).Vertical
+- uid: Material.Blazor.MBSegmentedButtonMulti`1
+  name: MBSegmentedButtonMulti<TItem>
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html
+  commentId: T:Material.Blazor.MBSegmentedButtonMulti`1
+  name.vb: MBSegmentedButtonMulti(Of TItem)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem)
+  nameWithType: MBSegmentedButtonMulti<TItem>
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_Dispose_System_Boolean_
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.Dispose(System.Boolean)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.Dispose(System.Boolean)
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).Dispose(System.Boolean)
+  nameWithType: MBSegmentedButtonMulti<TItem>.Dispose(Boolean)
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).Dispose(Boolean)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.Dispose*
+  name: Dispose
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_Dispose_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.Dispose
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.Dispose
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).Dispose
+  nameWithType: MBSegmentedButtonMulti<TItem>.Dispose
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).Dispose
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
+  name: NotifyMultiSelectedAsync(Boolean[])
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifyMultiSelectedAsync_System_Boolean___
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
+  name.vb: NotifyMultiSelectedAsync(Boolean())
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync(System.Boolean[])
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync(System.Boolean())
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync(Boolean[])
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync(Boolean())
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync*
+  name: NotifyMultiSelectedAsync
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifyMultiSelectedAsync_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync(System.Int32)
+  name: NotifySingleSelectedAsync(Int32)
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifySingleSelectedAsync_System_Int32_
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync(System.Int32)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync(System.Int32)
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync(System.Int32)
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync(Int32)
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync(Int32)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync*
+  name: NotifySingleSelectedAsync
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifySingleSelectedAsync_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
+  name: OnDisabledSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnDisabledSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback(Object, EventArgs)
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback*
+  name: OnDisabledSetCallback
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnDisabledSetCallback_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnInitialized
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnInitialized
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnInitialized()
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnInitialized()
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnInitialized()
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnInitialized()
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnInitialized_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnInitialized
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnInitialized
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnInitialized
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnInitialized
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
+  name: OnValueSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnValueSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnValueSetCallback(Object, EventArgs)
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback*
+  name: OnValueSetCallback
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnValueSetCallback_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnValueSetCallback
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnValueSetCallback
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnValueSetCallback
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnValueSetCallback
+- uid: Material.Blazor.MBSegmentedButtonSingle`1
+  name: MBSegmentedButtonSingle<TItem>
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html
+  commentId: T:Material.Blazor.MBSegmentedButtonSingle`1
+  name.vb: MBSegmentedButtonSingle(Of TItem)
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem)
+  nameWithType: MBSegmentedButtonSingle<TItem>
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem)
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.IconFoundry
+  name: IconFoundry
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_IconFoundry
+  commentId: P:Material.Blazor.MBSegmentedButtonSingle`1.IconFoundry
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.IconFoundry
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).IconFoundry
+  nameWithType: MBSegmentedButtonSingle<TItem>.IconFoundry
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).IconFoundry
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.IconFoundry*
+  name: IconFoundry
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_IconFoundry_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonSingle`1.IconFoundry
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.IconFoundry
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).IconFoundry
+  nameWithType: MBSegmentedButtonSingle<TItem>.IconFoundry
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).IconFoundry
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnInitialized
+  commentId: M:Material.Blazor.MBSegmentedButtonSingle`1.OnInitialized
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.OnInitialized()
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnInitialized()
+  nameWithType: MBSegmentedButtonSingle<TItem>.OnInitialized()
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnInitialized()
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnInitialized_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonSingle`1.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.OnInitialized
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnInitialized
+  nameWithType: MBSegmentedButtonSingle<TItem>.OnInitialized
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnInitialized
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
+  name: OnValueSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnValueSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBSegmentedButtonSingle<TItem>.OnValueSetCallback(Object, EventArgs)
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback*
+  name: OnValueSetCallback
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnValueSetCallback_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.OnValueSetCallback
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnValueSetCallback
+  nameWithType: MBSegmentedButtonSingle<TItem>.OnValueSetCallback
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnValueSetCallback
 - uid: Material.Blazor.MBSelect`1
   name: MBSelect<TItem>
   href: api/Material.Blazor.MBSelect-1.html
@@ -7450,23 +7912,6 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).Dispose
   nameWithType: MBSelect<TItem>.Dispose
   nameWithType.vb: MBSelect(Of TItem).Dispose
-- uid: Material.Blazor.MBSelect`1.GetKeysFunc
-  name: GetKeysFunc
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_GetKeysFunc
-  commentId: P:Material.Blazor.MBSelect`1.GetKeysFunc
-  fullName: Material.Blazor.MBSelect<TItem>.GetKeysFunc
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).GetKeysFunc
-  nameWithType: MBSelect<TItem>.GetKeysFunc
-  nameWithType.vb: MBSelect(Of TItem).GetKeysFunc
-- uid: Material.Blazor.MBSelect`1.GetKeysFunc*
-  name: GetKeysFunc
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_GetKeysFunc_
-  commentId: Overload:Material.Blazor.MBSelect`1.GetKeysFunc
-  isSpec: "True"
-  fullName: Material.Blazor.MBSelect<TItem>.GetKeysFunc
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).GetKeysFunc
-  nameWithType: MBSelect<TItem>.GetKeysFunc
-  nameWithType.vb: MBSelect(Of TItem).GetKeysFunc
 - uid: Material.Blazor.MBSelect`1.IconFoundry
   name: IconFoundry
   href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_IconFoundry
@@ -7484,40 +7929,6 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).IconFoundry
   nameWithType: MBSelect<TItem>.IconFoundry
   nameWithType.vb: MBSelect(Of TItem).IconFoundry
-- uid: Material.Blazor.MBSelect`1.Items
-  name: Items
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_Items
-  commentId: P:Material.Blazor.MBSelect`1.Items
-  fullName: Material.Blazor.MBSelect<TItem>.Items
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).Items
-  nameWithType: MBSelect<TItem>.Items
-  nameWithType.vb: MBSelect(Of TItem).Items
-- uid: Material.Blazor.MBSelect`1.Items*
-  name: Items
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_Items_
-  commentId: Overload:Material.Blazor.MBSelect`1.Items
-  isSpec: "True"
-  fullName: Material.Blazor.MBSelect<TItem>.Items
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).Items
-  nameWithType: MBSelect<TItem>.Items
-  nameWithType.vb: MBSelect(Of TItem).Items
-- uid: Material.Blazor.MBSelect`1.ItemValidation
-  name: ItemValidation
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_ItemValidation
-  commentId: P:Material.Blazor.MBSelect`1.ItemValidation
-  fullName: Material.Blazor.MBSelect<TItem>.ItemValidation
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).ItemValidation
-  nameWithType: MBSelect<TItem>.ItemValidation
-  nameWithType.vb: MBSelect(Of TItem).ItemValidation
-- uid: Material.Blazor.MBSelect`1.ItemValidation*
-  name: ItemValidation
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_ItemValidation_
-  commentId: Overload:Material.Blazor.MBSelect`1.ItemValidation
-  isSpec: "True"
-  fullName: Material.Blazor.MBSelect<TItem>.ItemValidation
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).ItemValidation
-  nameWithType: MBSelect<TItem>.ItemValidation
-  nameWithType.vb: MBSelect(Of TItem).ItemValidation
 - uid: Material.Blazor.MBSelect`1.Label
   name: Label
   href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_Label
@@ -7552,6 +7963,23 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).LeadingIcon
   nameWithType: MBSelect<TItem>.LeadingIcon
   nameWithType.vb: MBSelect(Of TItem).LeadingIcon
+- uid: Material.Blazor.MBSelect`1.MenuSurfacePositioning
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_MenuSurfacePositioning
+  commentId: P:Material.Blazor.MBSelect`1.MenuSurfacePositioning
+  fullName: Material.Blazor.MBSelect<TItem>.MenuSurfacePositioning
+  fullName.vb: Material.Blazor.MBSelect(Of TItem).MenuSurfacePositioning
+  nameWithType: MBSelect<TItem>.MenuSurfacePositioning
+  nameWithType.vb: MBSelect(Of TItem).MenuSurfacePositioning
+- uid: Material.Blazor.MBSelect`1.MenuSurfacePositioning*
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_MenuSurfacePositioning_
+  commentId: Overload:Material.Blazor.MBSelect`1.MenuSurfacePositioning
+  isSpec: "True"
+  fullName: Material.Blazor.MBSelect<TItem>.MenuSurfacePositioning
+  fullName.vb: Material.Blazor.MBSelect(Of TItem).MenuSurfacePositioning
+  nameWithType: MBSelect<TItem>.MenuSurfacePositioning
+  nameWithType.vb: MBSelect(Of TItem).MenuSurfacePositioning
 - uid: Material.Blazor.MBSelect`1.NotifySelectedAsync(System.Int32)
   name: NotifySelectedAsync(Int32)
   href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_NotifySelectedAsync_System_Int32_
@@ -7671,6 +8099,66 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).TextAlignStyle
   nameWithType: MBSelect<TItem>.TextAlignStyle
   nameWithType.vb: MBSelect(Of TItem).TextAlignStyle
+- uid: Material.Blazor.MBSelectElement`1
+  name: MBSelectElement<T>
+  href: api/Material.Blazor.MBSelectElement-1.html
+  commentId: T:Material.Blazor.MBSelectElement`1
+  name.vb: MBSelectElement(Of T)
+  fullName: Material.Blazor.MBSelectElement<T>
+  fullName.vb: Material.Blazor.MBSelectElement(Of T)
+  nameWithType: MBSelectElement<T>
+  nameWithType.vb: MBSelectElement(Of T)
+- uid: Material.Blazor.MBSelectElement`1.Disabled
+  name: Disabled
+  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Disabled
+  commentId: P:Material.Blazor.MBSelectElement`1.Disabled
+  fullName: Material.Blazor.MBSelectElement<T>.Disabled
+  fullName.vb: Material.Blazor.MBSelectElement(Of T).Disabled
+  nameWithType: MBSelectElement<T>.Disabled
+  nameWithType.vb: MBSelectElement(Of T).Disabled
+- uid: Material.Blazor.MBSelectElement`1.Disabled*
+  name: Disabled
+  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Disabled_
+  commentId: Overload:Material.Blazor.MBSelectElement`1.Disabled
+  isSpec: "True"
+  fullName: Material.Blazor.MBSelectElement<T>.Disabled
+  fullName.vb: Material.Blazor.MBSelectElement(Of T).Disabled
+  nameWithType: MBSelectElement<T>.Disabled
+  nameWithType.vb: MBSelectElement(Of T).Disabled
+- uid: Material.Blazor.MBSelectElement`1.Label
+  name: Label
+  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Label
+  commentId: P:Material.Blazor.MBSelectElement`1.Label
+  fullName: Material.Blazor.MBSelectElement<T>.Label
+  fullName.vb: Material.Blazor.MBSelectElement(Of T).Label
+  nameWithType: MBSelectElement<T>.Label
+  nameWithType.vb: MBSelectElement(Of T).Label
+- uid: Material.Blazor.MBSelectElement`1.Label*
+  name: Label
+  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Label_
+  commentId: Overload:Material.Blazor.MBSelectElement`1.Label
+  isSpec: "True"
+  fullName: Material.Blazor.MBSelectElement<T>.Label
+  fullName.vb: Material.Blazor.MBSelectElement(Of T).Label
+  nameWithType: MBSelectElement<T>.Label
+  nameWithType.vb: MBSelectElement(Of T).Label
+- uid: Material.Blazor.MBSelectElement`1.SelectedValue
+  name: SelectedValue
+  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_SelectedValue
+  commentId: P:Material.Blazor.MBSelectElement`1.SelectedValue
+  fullName: Material.Blazor.MBSelectElement<T>.SelectedValue
+  fullName.vb: Material.Blazor.MBSelectElement(Of T).SelectedValue
+  nameWithType: MBSelectElement<T>.SelectedValue
+  nameWithType.vb: MBSelectElement(Of T).SelectedValue
+- uid: Material.Blazor.MBSelectElement`1.SelectedValue*
+  name: SelectedValue
+  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_SelectedValue_
+  commentId: Overload:Material.Blazor.MBSelectElement`1.SelectedValue
+  isSpec: "True"
+  fullName: Material.Blazor.MBSelectElement<T>.SelectedValue
+  fullName.vb: Material.Blazor.MBSelectElement(Of T).SelectedValue
+  nameWithType: MBSelectElement<T>.SelectedValue
+  nameWithType.vb: MBSelectElement(Of T).SelectedValue
 - uid: Material.Blazor.MBSelectInputStyle
   name: MBSelectInputStyle
   href: api/Material.Blazor.MBSelectInputStyle.html
@@ -7862,6 +8350,205 @@ references:
   commentId: F:Material.Blazor.MBShieldType.ValueOnly
   fullName: Material.Blazor.MBShieldType.ValueOnly
   nameWithType: MBShieldType.ValueOnly
+- uid: Material.Blazor.MBSlider
+  name: MBSlider
+  href: api/Material.Blazor.MBSlider.html
+  commentId: T:Material.Blazor.MBSlider
+  fullName: Material.Blazor.MBSlider
+  nameWithType: MBSlider
+- uid: Material.Blazor.MBSlider.AriaLabel
+  name: AriaLabel
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_AriaLabel
+  commentId: P:Material.Blazor.MBSlider.AriaLabel
+  fullName: Material.Blazor.MBSlider.AriaLabel
+  nameWithType: MBSlider.AriaLabel
+- uid: Material.Blazor.MBSlider.AriaLabel*
+  name: AriaLabel
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_AriaLabel_
+  commentId: Overload:Material.Blazor.MBSlider.AriaLabel
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.AriaLabel
+  nameWithType: MBSlider.AriaLabel
+- uid: Material.Blazor.MBSlider.ContinuousInputDelay
+  name: ContinuousInputDelay
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_ContinuousInputDelay
+  commentId: P:Material.Blazor.MBSlider.ContinuousInputDelay
+  fullName: Material.Blazor.MBSlider.ContinuousInputDelay
+  nameWithType: MBSlider.ContinuousInputDelay
+- uid: Material.Blazor.MBSlider.ContinuousInputDelay*
+  name: ContinuousInputDelay
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_ContinuousInputDelay_
+  commentId: Overload:Material.Blazor.MBSlider.ContinuousInputDelay
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.ContinuousInputDelay
+  nameWithType: MBSlider.ContinuousInputDelay
+- uid: Material.Blazor.MBSlider.DecimalPlaces
+  name: DecimalPlaces
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_DecimalPlaces
+  commentId: P:Material.Blazor.MBSlider.DecimalPlaces
+  fullName: Material.Blazor.MBSlider.DecimalPlaces
+  nameWithType: MBSlider.DecimalPlaces
+- uid: Material.Blazor.MBSlider.DecimalPlaces*
+  name: DecimalPlaces
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_DecimalPlaces_
+  commentId: Overload:Material.Blazor.MBSlider.DecimalPlaces
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.DecimalPlaces
+  nameWithType: MBSlider.DecimalPlaces
+- uid: Material.Blazor.MBSlider.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_Dispose_System_Boolean_
+  commentId: M:Material.Blazor.MBSlider.Dispose(System.Boolean)
+  fullName: Material.Blazor.MBSlider.Dispose(System.Boolean)
+  nameWithType: MBSlider.Dispose(Boolean)
+- uid: Material.Blazor.MBSlider.Dispose*
+  name: Dispose
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_Dispose_
+  commentId: Overload:Material.Blazor.MBSlider.Dispose
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.Dispose
+  nameWithType: MBSlider.Dispose
+- uid: Material.Blazor.MBSlider.EventType
+  name: EventType
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_EventType
+  commentId: P:Material.Blazor.MBSlider.EventType
+  fullName: Material.Blazor.MBSlider.EventType
+  nameWithType: MBSlider.EventType
+- uid: Material.Blazor.MBSlider.EventType*
+  name: EventType
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_EventType_
+  commentId: Overload:Material.Blazor.MBSlider.EventType
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.EventType
+  nameWithType: MBSlider.EventType
+- uid: Material.Blazor.MBSlider.NotifyChangedAsync(System.Double)
+  name: NotifyChangedAsync(Double)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChangedAsync_System_Double_
+  commentId: M:Material.Blazor.MBSlider.NotifyChangedAsync(System.Double)
+  fullName: Material.Blazor.MBSlider.NotifyChangedAsync(System.Double)
+  nameWithType: MBSlider.NotifyChangedAsync(Double)
+- uid: Material.Blazor.MBSlider.NotifyChangedAsync*
+  name: NotifyChangedAsync
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChangedAsync_
+  commentId: Overload:Material.Blazor.MBSlider.NotifyChangedAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.NotifyChangedAsync
+  nameWithType: MBSlider.NotifyChangedAsync
+- uid: Material.Blazor.MBSlider.NumSteps
+  name: NumSteps
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NumSteps
+  commentId: P:Material.Blazor.MBSlider.NumSteps
+  fullName: Material.Blazor.MBSlider.NumSteps
+  nameWithType: MBSlider.NumSteps
+- uid: Material.Blazor.MBSlider.NumSteps*
+  name: NumSteps
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NumSteps_
+  commentId: Overload:Material.Blazor.MBSlider.NumSteps
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.NumSteps
+  nameWithType: MBSlider.NumSteps
+- uid: Material.Blazor.MBSlider.OnDisabledSetCallback(System.Object,System.EventArgs)
+  name: OnDisabledSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnDisabledSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBSlider.OnDisabledSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBSlider.OnDisabledSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBSlider.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSlider.OnDisabledSetCallback*
+  name: OnDisabledSetCallback
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnDisabledSetCallback_
+  commentId: Overload:Material.Blazor.MBSlider.OnDisabledSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.OnDisabledSetCallback
+  nameWithType: MBSlider.OnDisabledSetCallback
+- uid: Material.Blazor.MBSlider.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnInitialized
+  commentId: M:Material.Blazor.MBSlider.OnInitialized
+  fullName: Material.Blazor.MBSlider.OnInitialized()
+  nameWithType: MBSlider.OnInitialized()
+- uid: Material.Blazor.MBSlider.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnInitialized_
+  commentId: Overload:Material.Blazor.MBSlider.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.OnInitialized
+  nameWithType: MBSlider.OnInitialized
+- uid: Material.Blazor.MBSlider.OnValueSetCallback(System.Object,System.EventArgs)
+  name: OnValueSetCallback(Object, EventArgs)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnValueSetCallback_System_Object_System_EventArgs_
+  commentId: M:Material.Blazor.MBSlider.OnValueSetCallback(System.Object,System.EventArgs)
+  fullName: Material.Blazor.MBSlider.OnValueSetCallback(System.Object, System.EventArgs)
+  nameWithType: MBSlider.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSlider.OnValueSetCallback*
+  name: OnValueSetCallback
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnValueSetCallback_
+  commentId: Overload:Material.Blazor.MBSlider.OnValueSetCallback
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.OnValueSetCallback
+  nameWithType: MBSlider.OnValueSetCallback
+- uid: Material.Blazor.MBSlider.SliderType
+  name: SliderType
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_SliderType
+  commentId: P:Material.Blazor.MBSlider.SliderType
+  fullName: Material.Blazor.MBSlider.SliderType
+  nameWithType: MBSlider.SliderType
+- uid: Material.Blazor.MBSlider.SliderType*
+  name: SliderType
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_SliderType_
+  commentId: Overload:Material.Blazor.MBSlider.SliderType
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.SliderType
+  nameWithType: MBSlider.SliderType
+- uid: Material.Blazor.MBSlider.ValueMax
+  name: ValueMax
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_ValueMax
+  commentId: P:Material.Blazor.MBSlider.ValueMax
+  fullName: Material.Blazor.MBSlider.ValueMax
+  nameWithType: MBSlider.ValueMax
+- uid: Material.Blazor.MBSlider.ValueMax*
+  name: ValueMax
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_ValueMax_
+  commentId: Overload:Material.Blazor.MBSlider.ValueMax
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.ValueMax
+  nameWithType: MBSlider.ValueMax
+- uid: Material.Blazor.MBSlider.ValueMin
+  name: ValueMin
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_ValueMin
+  commentId: P:Material.Blazor.MBSlider.ValueMin
+  fullName: Material.Blazor.MBSlider.ValueMin
+  nameWithType: MBSlider.ValueMin
+- uid: Material.Blazor.MBSlider.ValueMin*
+  name: ValueMin
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_ValueMin_
+  commentId: Overload:Material.Blazor.MBSlider.ValueMin
+  isSpec: "True"
+  fullName: Material.Blazor.MBSlider.ValueMin
+  nameWithType: MBSlider.ValueMin
+- uid: Material.Blazor.MBSliderType
+  name: MBSliderType
+  href: api/Material.Blazor.MBSliderType.html
+  commentId: T:Material.Blazor.MBSliderType
+  fullName: Material.Blazor.MBSliderType
+  nameWithType: MBSliderType
+- uid: Material.Blazor.MBSliderType.Continuous
+  name: Continuous
+  href: api/Material.Blazor.MBSliderType.html#Material_Blazor_MBSliderType_Continuous
+  commentId: F:Material.Blazor.MBSliderType.Continuous
+  fullName: Material.Blazor.MBSliderType.Continuous
+  nameWithType: MBSliderType.Continuous
+- uid: Material.Blazor.MBSliderType.Discrete
+  name: Discrete
+  href: api/Material.Blazor.MBSliderType.html#Material_Blazor_MBSliderType_Discrete
+  commentId: F:Material.Blazor.MBSliderType.Discrete
+  fullName: Material.Blazor.MBSliderType.Discrete
+  nameWithType: MBSliderType.Discrete
+- uid: Material.Blazor.MBSliderType.DiscreteWithTickmarks
+  name: DiscreteWithTickmarks
+  href: api/Material.Blazor.MBSliderType.html#Material_Blazor_MBSliderType_DiscreteWithTickmarks
+  commentId: F:Material.Blazor.MBSliderType.DiscreteWithTickmarks
+  fullName: Material.Blazor.MBSliderType.DiscreteWithTickmarks
+  nameWithType: MBSliderType.DiscreteWithTickmarks
 - uid: Material.Blazor.MBSlidingContent`1
   name: MBSlidingContent<TItem>
   href: api/Material.Blazor.MBSlidingContent-1.html
