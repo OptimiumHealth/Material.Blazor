@@ -5441,6 +5441,12 @@
             setDisabled: () => setDisabled,
             setValue: () => setValue
         });
+        var MBBladeSet_namespaceObject = {};
+        __webpack_require__.r(MBBladeSet_namespaceObject);
+        __webpack_require__.d(MBBladeSet_namespaceObject, {
+            closeBlade: () => closeBlade,
+            openBlade: () => openBlade
+        });
         var MBButton_namespaceObject = {};
         __webpack_require__.r(MBButton_namespaceObject);
         __webpack_require__.d(MBButton_namespaceObject, {
@@ -11375,6 +11381,30 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         function setDisabled(textElem, disabled) {
             textElem._textField.disabled = disabled;
+        }
+        function openBlade(bladeSetElem, mainContentElem, scrollHelperElem, bladeElem, bladeContentElem) {
+            var bladeContentWidth = bladeContentElem.getBoundingClientRect().width;
+            var mainContentWidth = getComputedStyle(mainContentElem).width;
+            var mainContentMinWidth = getComputedStyle(mainContentElem).minWidth;
+            var availableShrinkage = bladeContentWidth;
+            if (mainContentMinWidth.substring(mainContentMinWidth.length - 2, mainContentMinWidth.length) == "px") {
+                availableShrinkage = Math.min(bladeContentWidth, parseInt(mainContentWidth) - parseInt(mainContentMinWidth));
+            }
+            if (availableShrinkage < bladeContentWidth) {
+                scrollHelperElem.style.transition = "";
+                scrollHelperElem.style.width = bladeContentWidth + "px";
+                bladeSetElem.scrollBy({
+                    top: 0,
+                    left: 5e3,
+                    behavior: "auto"
+                });
+                scrollHelperElem.style.transition = "width 200ms";
+                scrollHelperElem.style.width = "0px";
+            }
+            bladeElem.style.width = bladeContentWidth + "px";
+        }
+        function closeBlade(bladeElem) {
+            bladeElem.style.width = "0px";
         }
         function MBButton_init(elem) {
             elem._ripple = MDCRipple.attachTo(elem);
@@ -22923,6 +22953,7 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         window.MaterialBlazor = {
             MBAutoCompleteTextField: MBAutocompleteTextField_namespaceObject,
+            MBBladeSet: MBBladeSet_namespaceObject,
             MBButton: MBButton_namespaceObject,
             MBCard: MBCard_namespaceObject,
             MBChipsSelectMulti: MBChipsSelectMulti_namespaceObject,
