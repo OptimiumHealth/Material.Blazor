@@ -6047,6 +6047,7 @@
         __webpack_require__.d(MBGrid_namespaceObject, {
             getScrollBarWidth: () => getScrollBarWidth,
             getTextWidth: () => getTextWidth,
+            getTextWidths: () => getTextWidths,
             syncScrollByID: () => syncScrollByID,
             syncScrollByRef: () => syncScrollByRef
         });
@@ -18122,6 +18123,27 @@ PERFORMANCE OF THIS SOFTWARE.
             var width = window.getComputedStyle(ele).width;
             document.body.removeChild(ele);
             return width;
+        }
+        function getTextWidths(className, currentWidths, textToMeasure) {
+            var ele = document.createElement("div");
+            ele.style.position = "absolute";
+            ele.style.visibility = "hidden";
+            ele.style.whiteSpace = "nowrap";
+            ele.style.left = "-9999px";
+            ele.className = className;
+            document.body.appendChild(ele);
+            for (var i = 0; i < textToMeasure.length; i++) {
+                ele.innerText = textToMeasure[i];
+                var width = window.getComputedStyle(ele).width;
+                var unadornedWidth = width.slice(0, width.indexOf("px"));
+                var numericWidth = parseFloat(unadornedWidth);
+                var indexMod = i % currentWidths.length;
+                if (numericWidth > currentWidths[indexMod]) {
+                    currentWidths[indexMod] = numericWidth;
+                }
+            }
+            document.body.removeChild(ele);
+            return currentWidths;
         }
         function MBIconButton_init(elem) {
             elem._ripple = MDCRipple.attachTo(elem);

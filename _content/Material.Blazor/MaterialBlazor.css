@@ -1150,6 +1150,13 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
   overflow: visible !important;
 }
 
+.mb-dialog__header {
+  padding-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 0px;
+}
+
 .mdc-icon-button.dense--5 {
   width: 28px;
   height: 28px;

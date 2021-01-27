@@ -4259,6 +4259,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.EscapeKeyAction
   nameWithType: MBDialog.EscapeKeyAction
+- uid: Material.Blazor.MBDialog.Header
+  name: Header
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Header
+  commentId: P:Material.Blazor.MBDialog.Header
+  fullName: Material.Blazor.MBDialog.Header
+  nameWithType: MBDialog.Header
+- uid: Material.Blazor.MBDialog.Header*
+  name: Header
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Header_
+  commentId: Overload:Material.Blazor.MBDialog.Header
+  isSpec: "True"
+  fullName: Material.Blazor.MBDialog.Header
+  nameWithType: MBDialog.Header
 - uid: Material.Blazor.MBDialog.HideAsync
   name: HideAsync()
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_HideAsync
@@ -4675,23 +4688,6 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).ColumnConfigurations
   nameWithType: MBGrid<TRowData>.ColumnConfigurations
   nameWithType.vb: MBGrid(Of TRowData).ColumnConfigurations
-- uid: Material.Blazor.MBGrid`1.DataDictionary
-  name: DataDictionary
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_DataDictionary
-  commentId: P:Material.Blazor.MBGrid`1.DataDictionary
-  fullName: Material.Blazor.MBGrid<TRowData>.DataDictionary
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).DataDictionary
-  nameWithType: MBGrid<TRowData>.DataDictionary
-  nameWithType.vb: MBGrid(Of TRowData).DataDictionary
-- uid: Material.Blazor.MBGrid`1.DataDictionary*
-  name: DataDictionary
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_DataDictionary_
-  commentId: Overload:Material.Blazor.MBGrid`1.DataDictionary
-  isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.DataDictionary
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).DataDictionary
-  nameWithType: MBGrid<TRowData>.DataDictionary
-  nameWithType.vb: MBGrid(Of TRowData).DataDictionary
 - uid: Material.Blazor.MBGrid`1.GridSyncScroll
   name: GridSyncScroll()
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GridSyncScroll
@@ -4709,40 +4705,40 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).GridSyncScroll
   nameWithType: MBGrid<TRowData>.GridSyncScroll
   nameWithType.vb: MBGrid(Of TRowData).GridSyncScroll
-- uid: Material.Blazor.MBGrid`1.GroupExpression
-  name: GroupExpression
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GroupExpression
-  commentId: P:Material.Blazor.MBGrid`1.GroupExpression
-  fullName: Material.Blazor.MBGrid<TRowData>.GroupExpression
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).GroupExpression
-  nameWithType: MBGrid<TRowData>.GroupExpression
-  nameWithType.vb: MBGrid(Of TRowData).GroupExpression
-- uid: Material.Blazor.MBGrid`1.GroupExpression*
-  name: GroupExpression
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GroupExpression_
-  commentId: Overload:Material.Blazor.MBGrid`1.GroupExpression
+- uid: Material.Blazor.MBGrid`1.Group
+  name: Group
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_Group
+  commentId: P:Material.Blazor.MBGrid`1.Group
+  fullName: Material.Blazor.MBGrid<TRowData>.Group
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).Group
+  nameWithType: MBGrid<TRowData>.Group
+  nameWithType.vb: MBGrid(Of TRowData).Group
+- uid: Material.Blazor.MBGrid`1.Group*
+  name: Group
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_Group_
+  commentId: Overload:Material.Blazor.MBGrid`1.Group
   isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.GroupExpression
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).GroupExpression
-  nameWithType: MBGrid<TRowData>.GroupExpression
-  nameWithType.vb: MBGrid(Of TRowData).GroupExpression
-- uid: Material.Blazor.MBGrid`1.GroupOrderedList
-  name: GroupOrderedList
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GroupOrderedList
-  commentId: P:Material.Blazor.MBGrid`1.GroupOrderedList
-  fullName: Material.Blazor.MBGrid<TRowData>.GroupOrderedList
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).GroupOrderedList
-  nameWithType: MBGrid<TRowData>.GroupOrderedList
-  nameWithType.vb: MBGrid(Of TRowData).GroupOrderedList
-- uid: Material.Blazor.MBGrid`1.GroupOrderedList*
-  name: GroupOrderedList
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GroupOrderedList_
-  commentId: Overload:Material.Blazor.MBGrid`1.GroupOrderedList
+  fullName: Material.Blazor.MBGrid<TRowData>.Group
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).Group
+  nameWithType: MBGrid<TRowData>.Group
+  nameWithType.vb: MBGrid(Of TRowData).Group
+- uid: Material.Blazor.MBGrid`1.GroupedOrderedData
+  name: GroupedOrderedData
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GroupedOrderedData
+  commentId: P:Material.Blazor.MBGrid`1.GroupedOrderedData
+  fullName: Material.Blazor.MBGrid<TRowData>.GroupedOrderedData
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).GroupedOrderedData
+  nameWithType: MBGrid<TRowData>.GroupedOrderedData
+  nameWithType.vb: MBGrid(Of TRowData).GroupedOrderedData
+- uid: Material.Blazor.MBGrid`1.GroupedOrderedData*
+  name: GroupedOrderedData
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_GroupedOrderedData_
+  commentId: Overload:Material.Blazor.MBGrid`1.GroupedOrderedData
   isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.GroupOrderedList
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).GroupOrderedList
-  nameWithType: MBGrid<TRowData>.GroupOrderedList
-  nameWithType.vb: MBGrid(Of TRowData).GroupOrderedList
+  fullName: Material.Blazor.MBGrid<TRowData>.GroupedOrderedData
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).GroupedOrderedData
+  nameWithType: MBGrid<TRowData>.GroupedOrderedData
+  nameWithType.vb: MBGrid(Of TRowData).GroupedOrderedData
 - uid: Material.Blazor.MBGrid`1.HighlightSelectedRow
   name: HighlightSelectedRow
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_HighlightSelectedRow
@@ -4794,6 +4790,23 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).Measurement
   nameWithType: MBGrid<TRowData>.Measurement
   nameWithType.vb: MBGrid(Of TRowData).Measurement
+- uid: Material.Blazor.MBGrid`1.ObscurePMI
+  name: ObscurePMI
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_ObscurePMI
+  commentId: P:Material.Blazor.MBGrid`1.ObscurePMI
+  fullName: Material.Blazor.MBGrid<TRowData>.ObscurePMI
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).ObscurePMI
+  nameWithType: MBGrid<TRowData>.ObscurePMI
+  nameWithType.vb: MBGrid(Of TRowData).ObscurePMI
+- uid: Material.Blazor.MBGrid`1.ObscurePMI*
+  name: ObscurePMI
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_ObscurePMI_
+  commentId: Overload:Material.Blazor.MBGrid`1.ObscurePMI
+  isSpec: "True"
+  fullName: Material.Blazor.MBGrid<TRowData>.ObscurePMI
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).ObscurePMI
+  nameWithType: MBGrid<TRowData>.ObscurePMI
+  nameWithType.vb: MBGrid(Of TRowData).ObscurePMI
 - uid: Material.Blazor.MBGrid`1.OnAfterRenderAsync(System.Boolean)
   name: OnAfterRenderAsync(Boolean)
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_OnAfterRenderAsync_System_Boolean_
@@ -4862,23 +4875,23 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).OnParametersSetAsync
   nameWithType: MBGrid<TRowData>.OnParametersSetAsync
   nameWithType.vb: MBGrid(Of TRowData).OnParametersSetAsync
-- uid: Material.Blazor.MBGrid`1.SetShouldRenderReturnValue(System.Boolean)
-  name: SetShouldRenderReturnValue(Boolean)
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SetShouldRenderReturnValue_System_Boolean_
-  commentId: M:Material.Blazor.MBGrid`1.SetShouldRenderReturnValue(System.Boolean)
-  fullName: Material.Blazor.MBGrid<TRowData>.SetShouldRenderReturnValue(System.Boolean)
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SetShouldRenderReturnValue(System.Boolean)
-  nameWithType: MBGrid<TRowData>.SetShouldRenderReturnValue(Boolean)
-  nameWithType.vb: MBGrid(Of TRowData).SetShouldRenderReturnValue(Boolean)
-- uid: Material.Blazor.MBGrid`1.SetShouldRenderReturnValue*
-  name: SetShouldRenderReturnValue
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SetShouldRenderReturnValue_
-  commentId: Overload:Material.Blazor.MBGrid`1.SetShouldRenderReturnValue
+- uid: Material.Blazor.MBGrid`1.SetShouldRenderValue(System.Boolean)
+  name: SetShouldRenderValue(Boolean)
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SetShouldRenderValue_System_Boolean_
+  commentId: M:Material.Blazor.MBGrid`1.SetShouldRenderValue(System.Boolean)
+  fullName: Material.Blazor.MBGrid<TRowData>.SetShouldRenderValue(System.Boolean)
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SetShouldRenderValue(System.Boolean)
+  nameWithType: MBGrid<TRowData>.SetShouldRenderValue(Boolean)
+  nameWithType.vb: MBGrid(Of TRowData).SetShouldRenderValue(Boolean)
+- uid: Material.Blazor.MBGrid`1.SetShouldRenderValue*
+  name: SetShouldRenderValue
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SetShouldRenderValue_
+  commentId: Overload:Material.Blazor.MBGrid`1.SetShouldRenderValue
   isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.SetShouldRenderReturnValue
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SetShouldRenderReturnValue
-  nameWithType: MBGrid<TRowData>.SetShouldRenderReturnValue
-  nameWithType.vb: MBGrid(Of TRowData).SetShouldRenderReturnValue
+  fullName: Material.Blazor.MBGrid<TRowData>.SetShouldRenderValue
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SetShouldRenderValue
+  nameWithType: MBGrid<TRowData>.SetShouldRenderValue
+  nameWithType.vb: MBGrid(Of TRowData).SetShouldRenderValue
 - uid: Material.Blazor.MBGrid`1.ShouldRender
   name: ShouldRender()
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_ShouldRender
@@ -4896,40 +4909,6 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).ShouldRender
   nameWithType: MBGrid<TRowData>.ShouldRender
   nameWithType.vb: MBGrid(Of TRowData).ShouldRender
-- uid: Material.Blazor.MBGrid`1.SortExpressionFirst
-  name: SortExpressionFirst
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SortExpressionFirst
-  commentId: P:Material.Blazor.MBGrid`1.SortExpressionFirst
-  fullName: Material.Blazor.MBGrid<TRowData>.SortExpressionFirst
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SortExpressionFirst
-  nameWithType: MBGrid<TRowData>.SortExpressionFirst
-  nameWithType.vb: MBGrid(Of TRowData).SortExpressionFirst
-- uid: Material.Blazor.MBGrid`1.SortExpressionFirst*
-  name: SortExpressionFirst
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SortExpressionFirst_
-  commentId: Overload:Material.Blazor.MBGrid`1.SortExpressionFirst
-  isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.SortExpressionFirst
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SortExpressionFirst
-  nameWithType: MBGrid<TRowData>.SortExpressionFirst
-  nameWithType.vb: MBGrid(Of TRowData).SortExpressionFirst
-- uid: Material.Blazor.MBGrid`1.SortExpressionSecond
-  name: SortExpressionSecond
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SortExpressionSecond
-  commentId: P:Material.Blazor.MBGrid`1.SortExpressionSecond
-  fullName: Material.Blazor.MBGrid<TRowData>.SortExpressionSecond
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SortExpressionSecond
-  nameWithType: MBGrid<TRowData>.SortExpressionSecond
-  nameWithType.vb: MBGrid(Of TRowData).SortExpressionSecond
-- uid: Material.Blazor.MBGrid`1.SortExpressionSecond*
-  name: SortExpressionSecond
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SortExpressionSecond_
-  commentId: Overload:Material.Blazor.MBGrid`1.SortExpressionSecond
-  isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.SortExpressionSecond
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).SortExpressionSecond
-  nameWithType: MBGrid<TRowData>.SortExpressionSecond
-  nameWithType.vb: MBGrid(Of TRowData).SortExpressionSecond
 - uid: Material.Blazor.MBGrid`1.SupressHeader
   name: SupressHeader
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SupressHeader
@@ -4956,15 +4935,15 @@ references:
   fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData)
   nameWithType: MBGridColumnConfiguration<TRowData>
   nameWithType.vb: MBGridColumnConfiguration(Of TRowData)
-- uid: Material.Blazor.MBGridColumnConfiguration`1.#ctor(System.Nullable{System.Drawing.Color},System.Boolean,Material.Blazor.MB_Grid_ColumnType,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Drawing.Color},System.String,System.Boolean,System.String,System.Int32)
-  name: MBGridColumnConfiguration(Nullable<Color>, Boolean, MB_Grid_ColumnType, Expression<Func<TRowData, Object>>, Nullable<Color>, String, Boolean, String, Int32)
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1__ctor_System_Nullable_System_Drawing_Color__System_Boolean_Material_Blazor_MB_Grid_ColumnType_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Nullable_System_Drawing_Color__System_String_System_Boolean_System_String_System_Int32_
-  commentId: M:Material.Blazor.MBGridColumnConfiguration`1.#ctor(System.Nullable{System.Drawing.Color},System.Boolean,Material.Blazor.MB_Grid_ColumnType,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Drawing.Color},System.String,System.Boolean,System.String,System.Int32)
-  name.vb: MBGridColumnConfiguration(Nullable(Of Color), Boolean, MB_Grid_ColumnType, Expression(Of Func(Of TRowData, Object)), Nullable(Of Color), String, Boolean, String, Int32)
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.MBGridColumnConfiguration(System.Nullable<System.Drawing.Color>, System.Boolean, Material.Blazor.MB_Grid_ColumnType, System.Linq.Expressions.Expression<System.Func<TRowData, System.Object>>, System.Nullable<System.Drawing.Color>, System.String, System.Boolean, System.String, System.Int32)
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).MBGridColumnConfiguration(System.Nullable(Of System.Drawing.Color), System.Boolean, Material.Blazor.MB_Grid_ColumnType, System.Linq.Expressions.Expression(Of System.Func(Of TRowData, System.Object)), System.Nullable(Of System.Drawing.Color), System.String, System.Boolean, System.String, System.Int32)
-  nameWithType: MBGridColumnConfiguration<TRowData>.MBGridColumnConfiguration(Nullable<Color>, Boolean, MB_Grid_ColumnType, Expression<Func<TRowData, Object>>, Nullable<Color>, String, Boolean, String, Int32)
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).MBGridColumnConfiguration(Nullable(Of Color), Boolean, MB_Grid_ColumnType, Expression(Of Func(Of TRowData, Object)), Nullable(Of Color), String, Boolean, String, Int32)
+- uid: Material.Blazor.MBGridColumnConfiguration`1.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Drawing.Color},System.Boolean,Material.Blazor.MB_Grid_ColumnType,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Drawing.Color},System.String,System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Int32)
+  name: MBGridColumnConfiguration(Expression<Func<TRowData, Object>>, Nullable<Color>, Boolean, MB_Grid_ColumnType, Expression<Func<TRowData, Object>>, Expression<Func<TRowData, Object>>, Nullable<Color>, String, Boolean, Expression<Func<TRowData, Object>>, String, Int32)
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1__ctor_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Nullable_System_Drawing_Color__System_Boolean_Material_Blazor_MB_Grid_ColumnType_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Nullable_System_Drawing_Color__System_String_System_Boolean_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_String_System_Int32_
+  commentId: M:Material.Blazor.MBGridColumnConfiguration`1.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Drawing.Color},System.Boolean,Material.Blazor.MB_Grid_ColumnType,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Drawing.Color},System.String,System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Int32)
+  name.vb: MBGridColumnConfiguration(Expression(Of Func(Of TRowData, Object)), Nullable(Of Color), Boolean, MB_Grid_ColumnType, Expression(Of Func(Of TRowData, Object)), Expression(Of Func(Of TRowData, Object)), Nullable(Of Color), String, Boolean, Expression(Of Func(Of TRowData, Object)), String, Int32)
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.MBGridColumnConfiguration(System.Linq.Expressions.Expression<System.Func<TRowData, System.Object>>, System.Nullable<System.Drawing.Color>, System.Boolean, Material.Blazor.MB_Grid_ColumnType, System.Linq.Expressions.Expression<System.Func<TRowData, System.Object>>, System.Linq.Expressions.Expression<System.Func<TRowData, System.Object>>, System.Nullable<System.Drawing.Color>, System.String, System.Boolean, System.Linq.Expressions.Expression<System.Func<TRowData, System.Object>>, System.String, System.Int32)
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).MBGridColumnConfiguration(System.Linq.Expressions.Expression(Of System.Func(Of TRowData, System.Object)), System.Nullable(Of System.Drawing.Color), System.Boolean, Material.Blazor.MB_Grid_ColumnType, System.Linq.Expressions.Expression(Of System.Func(Of TRowData, System.Object)), System.Linq.Expressions.Expression(Of System.Func(Of TRowData, System.Object)), System.Nullable(Of System.Drawing.Color), System.String, System.Boolean, System.Linq.Expressions.Expression(Of System.Func(Of TRowData, System.Object)), System.String, System.Int32)
+  nameWithType: MBGridColumnConfiguration<TRowData>.MBGridColumnConfiguration(Expression<Func<TRowData, Object>>, Nullable<Color>, Boolean, MB_Grid_ColumnType, Expression<Func<TRowData, Object>>, Expression<Func<TRowData, Object>>, Nullable<Color>, String, Boolean, Expression<Func<TRowData, Object>>, String, Int32)
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).MBGridColumnConfiguration(Expression(Of Func(Of TRowData, Object)), Nullable(Of Color), Boolean, MB_Grid_ColumnType, Expression(Of Func(Of TRowData, Object)), Expression(Of Func(Of TRowData, Object)), Nullable(Of Color), String, Boolean, Expression(Of Func(Of TRowData, Object)), String, Int32)
 - uid: Material.Blazor.MBGridColumnConfiguration`1.#ctor*
   name: MBGridColumnConfiguration
   href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1__ctor_
@@ -4974,40 +4953,57 @@ references:
   fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).MBGridColumnConfiguration
   nameWithType: MBGridColumnConfiguration<TRowData>.MBGridColumnConfiguration
   nameWithType.vb: MBGridColumnConfiguration(Of TRowData).MBGridColumnConfiguration
-- uid: Material.Blazor.MBGridColumnConfiguration`1.BackgroundColor
-  name: BackgroundColor
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BackgroundColor
-  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.BackgroundColor
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BackgroundColor
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BackgroundColor
-  nameWithType: MBGridColumnConfiguration<TRowData>.BackgroundColor
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BackgroundColor
-- uid: Material.Blazor.MBGridColumnConfiguration`1.BackgroundColor*
-  name: BackgroundColor
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BackgroundColor_
-  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.BackgroundColor
+- uid: Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorExpression
+  name: BackgroundColorExpression
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BackgroundColorExpression
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorExpression
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BackgroundColorExpression
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BackgroundColorExpression
+  nameWithType: MBGridColumnConfiguration<TRowData>.BackgroundColorExpression
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BackgroundColorExpression
+- uid: Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorExpression*
+  name: BackgroundColorExpression
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BackgroundColorExpression_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorExpression
   isSpec: "True"
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BackgroundColor
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BackgroundColor
-  nameWithType: MBGridColumnConfiguration<TRowData>.BackgroundColor
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BackgroundColor
-- uid: Material.Blazor.MBGridColumnConfiguration`1.Bold
-  name: Bold
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_Bold
-  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.Bold
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.Bold
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).Bold
-  nameWithType: MBGridColumnConfiguration<TRowData>.Bold
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).Bold
-- uid: Material.Blazor.MBGridColumnConfiguration`1.Bold*
-  name: Bold
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_Bold_
-  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.Bold
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BackgroundColorExpression
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BackgroundColorExpression
+  nameWithType: MBGridColumnConfiguration<TRowData>.BackgroundColorExpression
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BackgroundColorExpression
+- uid: Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorHeader
+  name: BackgroundColorHeader
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BackgroundColorHeader
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorHeader
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BackgroundColorHeader
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BackgroundColorHeader
+  nameWithType: MBGridColumnConfiguration<TRowData>.BackgroundColorHeader
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BackgroundColorHeader
+- uid: Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorHeader*
+  name: BackgroundColorHeader
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BackgroundColorHeader_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.BackgroundColorHeader
   isSpec: "True"
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.Bold
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).Bold
-  nameWithType: MBGridColumnConfiguration<TRowData>.Bold
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).Bold
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BackgroundColorHeader
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BackgroundColorHeader
+  nameWithType: MBGridColumnConfiguration<TRowData>.BackgroundColorHeader
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BackgroundColorHeader
+- uid: Material.Blazor.MBGridColumnConfiguration`1.BoldHeader
+  name: BoldHeader
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BoldHeader
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.BoldHeader
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BoldHeader
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BoldHeader
+  nameWithType: MBGridColumnConfiguration<TRowData>.BoldHeader
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BoldHeader
+- uid: Material.Blazor.MBGridColumnConfiguration`1.BoldHeader*
+  name: BoldHeader
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_BoldHeader_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.BoldHeader
+  isSpec: "True"
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.BoldHeader
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).BoldHeader
+  nameWithType: MBGridColumnConfiguration<TRowData>.BoldHeader
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).BoldHeader
 - uid: Material.Blazor.MBGridColumnConfiguration`1.ColumnType
   name: ColumnType
   href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ColumnType
@@ -5042,23 +5038,40 @@ references:
   fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).DataExpression
   nameWithType: MBGridColumnConfiguration<TRowData>.DataExpression
   nameWithType.vb: MBGridColumnConfiguration(Of TRowData).DataExpression
-- uid: Material.Blazor.MBGridColumnConfiguration`1.ForegroundColor
-  name: ForegroundColor
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ForegroundColor
-  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.ForegroundColor
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.ForegroundColor
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).ForegroundColor
-  nameWithType: MBGridColumnConfiguration<TRowData>.ForegroundColor
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).ForegroundColor
-- uid: Material.Blazor.MBGridColumnConfiguration`1.ForegroundColor*
-  name: ForegroundColor
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ForegroundColor_
-  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.ForegroundColor
+- uid: Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorExpression
+  name: ForegroundColorExpression
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ForegroundColorExpression
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorExpression
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.ForegroundColorExpression
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).ForegroundColorExpression
+  nameWithType: MBGridColumnConfiguration<TRowData>.ForegroundColorExpression
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).ForegroundColorExpression
+- uid: Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorExpression*
+  name: ForegroundColorExpression
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ForegroundColorExpression_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorExpression
   isSpec: "True"
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.ForegroundColor
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).ForegroundColor
-  nameWithType: MBGridColumnConfiguration<TRowData>.ForegroundColor
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).ForegroundColor
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.ForegroundColorExpression
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).ForegroundColorExpression
+  nameWithType: MBGridColumnConfiguration<TRowData>.ForegroundColorExpression
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).ForegroundColorExpression
+- uid: Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorHeader
+  name: ForegroundColorHeader
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ForegroundColorHeader
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorHeader
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.ForegroundColorHeader
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).ForegroundColorHeader
+  nameWithType: MBGridColumnConfiguration<TRowData>.ForegroundColorHeader
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).ForegroundColorHeader
+- uid: Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorHeader*
+  name: ForegroundColorHeader
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_ForegroundColorHeader_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.ForegroundColorHeader
+  isSpec: "True"
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.ForegroundColorHeader
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).ForegroundColorHeader
+  nameWithType: MBGridColumnConfiguration<TRowData>.ForegroundColorHeader
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).ForegroundColorHeader
 - uid: Material.Blazor.MBGridColumnConfiguration`1.FormatString
   name: FormatString
   href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_FormatString
@@ -5076,23 +5089,40 @@ references:
   fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).FormatString
   nameWithType: MBGridColumnConfiguration<TRowData>.FormatString
   nameWithType.vb: MBGridColumnConfiguration(Of TRowData).FormatString
-- uid: Material.Blazor.MBGridColumnConfiguration`1.SupressDisplay
-  name: SupressDisplay
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_SupressDisplay
-  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.SupressDisplay
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.SupressDisplay
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).SupressDisplay
-  nameWithType: MBGridColumnConfiguration<TRowData>.SupressDisplay
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).SupressDisplay
-- uid: Material.Blazor.MBGridColumnConfiguration`1.SupressDisplay*
-  name: SupressDisplay
-  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_SupressDisplay_
-  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.SupressDisplay
+- uid: Material.Blazor.MBGridColumnConfiguration`1.IsPMI
+  name: IsPMI
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_IsPMI
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.IsPMI
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.IsPMI
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).IsPMI
+  nameWithType: MBGridColumnConfiguration<TRowData>.IsPMI
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).IsPMI
+- uid: Material.Blazor.MBGridColumnConfiguration`1.IsPMI*
+  name: IsPMI
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_IsPMI_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.IsPMI
   isSpec: "True"
-  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.SupressDisplay
-  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).SupressDisplay
-  nameWithType: MBGridColumnConfiguration<TRowData>.SupressDisplay
-  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).SupressDisplay
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.IsPMI
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).IsPMI
+  nameWithType: MBGridColumnConfiguration<TRowData>.IsPMI
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).IsPMI
+- uid: Material.Blazor.MBGridColumnConfiguration`1.SupressDisplayExpression
+  name: SupressDisplayExpression
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_SupressDisplayExpression
+  commentId: P:Material.Blazor.MBGridColumnConfiguration`1.SupressDisplayExpression
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.SupressDisplayExpression
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).SupressDisplayExpression
+  nameWithType: MBGridColumnConfiguration<TRowData>.SupressDisplayExpression
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).SupressDisplayExpression
+- uid: Material.Blazor.MBGridColumnConfiguration`1.SupressDisplayExpression*
+  name: SupressDisplayExpression
+  href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_SupressDisplayExpression_
+  commentId: Overload:Material.Blazor.MBGridColumnConfiguration`1.SupressDisplayExpression
+  isSpec: "True"
+  fullName: Material.Blazor.MBGridColumnConfiguration<TRowData>.SupressDisplayExpression
+  fullName.vb: Material.Blazor.MBGridColumnConfiguration(Of TRowData).SupressDisplayExpression
+  nameWithType: MBGridColumnConfiguration<TRowData>.SupressDisplayExpression
+  nameWithType.vb: MBGridColumnConfiguration(Of TRowData).SupressDisplayExpression
 - uid: Material.Blazor.MBGridColumnConfiguration`1.Title
   name: Title
   href: api/Material.Blazor.MBGridColumnConfiguration-1.html#Material_Blazor_MBGridColumnConfiguration_1_Title
