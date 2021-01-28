@@ -177,19 +177,19 @@
       "url": "_content\/Material.Blazor.Website\/videos\/coverr-someone-is-checking-emails-there_s-an-old-globe-on-the-table-0186.mp4"
     },
     {
-      "hash": "sha256-MzXEAoHwlwhD6FtjlLrb85nucs96m0EvmdpIH2hd5dg=",
+      "hash": "sha256-NM2LhkITQpLZPD1778JW0sJZ+9iGFJCZOLgXg+CWpvY=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.css"
     },
     {
-      "hash": "sha256-ACDAbGoL1vII89Vr2bFyISQX9wUpcXAD\/0zTPn+yZ00=",
+      "hash": "sha256-Ef6iIgLnDgpGujs4GXbz9YICSzC2jD5W6ZLmE47orkM=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.js"
     },
     {
-      "hash": "sha256-DZB9TsWz57juBtuMwW5YGAWx5ViOjJX6NfmZqP9\/IxU=",
+      "hash": "sha256-HFINqsVOJH067JiQekFKu4Y9Ch1I9jOQxNBw8Hd9\/wU=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.min.css"
     },
     {
-      "hash": "sha256-c7h\/zVi82E4T72w3ahX4Vfvk5HnzW23eLkahuQyInKw=",
+      "hash": "sha256-81wO8SwZmrgbi0+aEBpEc1qwopTrojFCyIX1U92GQAA=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.min.js"
     },
     {
@@ -257,15 +257,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-mQnYXt07w2KJ1zIyTetI33lAFGsskKvqNKRihGhkQtY=",
+      "hash": "sha256-TmxnXNpjpznAiy5j+2naIF\/OpPmVzzYF3KAubQ1QtwI=",
       "url": "_framework\/Material.Blazor.dll"
     },
     {
-      "hash": "sha256-UkzFzvkKtvvrDtsF4y2SQ7maUKnzfODDfQEjqgXhOwQ=",
+      "hash": "sha256-VsXPAFzgyB4Qknlz7Obqm\/HRk62o9HEMNyu6IpjPTNk=",
       "url": "_framework\/Material.Blazor.Website.dll"
     },
     {
-      "hash": "sha256-urygDVPNkMUQ5s5pOvEU8RBO7njkIrqPnvcvU+HqliY=",
+      "hash": "sha256-F8OCZ1VafrSZ9unQql09XY+x1\/URQtAlJdY3OfkPoZg=",
       "url": "_framework\/Material.Blazor.Website.WebAssembly.dll"
     },
     {
@@ -369,7 +369,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-tkp3F8+bxjiErIZLU\/VMewU\/+EfmToTSZLU9yxBnX7c=",
+      "hash": "sha256-+Oct3CO\/Y7EAh\/1d9Wp8EUbsvenaXWn5X8gtsAd6O0I=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -377,5 +377,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "b+Al4oYf"
+  "version": "7TU6MKql"
 };
