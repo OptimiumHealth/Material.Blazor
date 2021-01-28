@@ -6046,7 +6046,6 @@
         __webpack_require__.r(MBGrid_namespaceObject);
         __webpack_require__.d(MBGrid_namespaceObject, {
             getScrollBarWidth: () => getScrollBarWidth,
-            getTextWidth: () => getTextWidth,
             getTextWidths: () => getTextWidths,
             syncScrollByID: () => syncScrollByID,
             syncScrollByRef: () => syncScrollByRef
@@ -18109,19 +18108,6 @@ PERFORMANCE OF THIS SOFTWARE.
             firstDiv.appendChild(secondDiv);
             var width = firstDiv.offsetWidth - secondDiv.offsetWidth;
             document.body.removeChild(firstDiv);
-            return width;
-        }
-        function getTextWidth(className, textToMeasure) {
-            var ele = document.createElement("div");
-            ele.style.position = "absolute";
-            ele.style.visibility = "hidden";
-            ele.style.whiteSpace = "nowrap";
-            ele.style.left = "-9999px";
-            ele.className = className;
-            ele.innerText = textToMeasure;
-            document.body.appendChild(ele);
-            var width = window.getComputedStyle(ele).width;
-            document.body.removeChild(ele);
             return width;
         }
         function getTextWidths(className, currentWidths, textToMeasure) {
