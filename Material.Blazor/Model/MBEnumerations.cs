@@ -692,7 +692,7 @@
     /// Determines whether a toast notfication times out and whether it has a close button.
     /// <para>Defaults to <see cref="TimeoutAndCloseButton"/></para>
     /// </summary>
-    public enum MBToastCloseMethod 
+    public enum MBToastCloseMethod
     {
         /// <summary>
         /// Apply a timeout and show the close button. This is the default.
@@ -714,7 +714,7 @@
     /// <summary>
     /// Determines the type of a toast notfication. This is a required toast parameter without defaults.
     /// </summary>
-    public enum MBToastLevel 
+    public enum MBToastLevel
     {
         /// <summary>
         /// Informational toast.
@@ -771,6 +771,94 @@
 
         /// <summary>
         /// Bottom center positioning, newest toasts on the bottom.
+        /// </summary>
+        BottomCenter
+    }
+
+
+    /// <summary>
+    /// Determines whether a snackbar notfication times out and whether it has a close button.
+    /// <para>Defaults to <see cref="TimeoutAndCloseButton"/></para>
+    /// </summary>
+    public enum MBSnackbarCloseMethod
+    {
+        /// <summary>
+        /// Apply a timeout and show the close button. This is the default.
+        /// </summary>
+        TimeoutAndCloseButton,
+
+        /// <summary>
+        /// Apply a timeout only.
+        /// </summary>
+        Timeout,
+
+        /// <summary>
+        /// Show the close button only.
+        /// </summary>
+        CloseButton
+    }
+
+
+    /// <summary>
+    /// Determines the type of a snackbar notfication. This is a required snackbar parameter without defaults.
+    /// </summary>
+    public enum MBSnackbarLevel
+    {
+        /// <summary>
+        /// Informational snackbar.
+        /// </summary>
+        Info,
+
+        /// <summary>
+        /// Success snackbar.
+        /// </summary>
+        Success,
+
+        /// <summary>
+        /// Warning snackbar.
+        /// </summary>
+        Warning,
+
+        /// <summary>
+        /// Error snackbar.
+        /// </summary>
+        Error
+    }
+
+
+    /// <summary>
+    /// Determines where snackbars are positioned.
+    /// <para>Defaults to <see cref="BottomRight"/></para>
+    /// </summary>
+    public enum MBSnackbarPosition
+    {
+        /// <summary>
+        /// Top left positioning, newest snackbars on top.
+        /// </summary>
+        TopLeft,
+
+        /// <summary>
+        /// Top left right, newest snackbars on top.
+        /// </summary>
+        TopRight,
+
+        /// <summary>
+        /// Top left center, newest snackbars on top.
+        /// </summary>
+        TopCenter,
+
+        /// <summary>
+        /// Bottom left positioning, newest snackbars on the bottom.
+        /// </summary>
+        BottomLeft,
+
+        /// <summary>
+        /// Bottom right positioning, newest snackbars on the bottom.
+        /// </summary>
+        BottomRight,
+
+        /// <summary>
+        /// Bottom center positioning, newest snackbars on the bottom.
         /// </summary>
         BottomCenter
     }

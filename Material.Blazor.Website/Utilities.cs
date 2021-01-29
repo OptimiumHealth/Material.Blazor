@@ -22,5 +22,15 @@ namespace Material.Blazor.Website
                 CloseMethod = MBToastCloseMethod.Timeout,
             };
         }
+
+
+        public static MBSnackbarServiceConfiguration GetDefaultSnackbarServiceConfiguration()
+        {
+            return new MBSnackbarServiceConfiguration()
+            {
+                Position = MBSnackbarPosition.TopRight,
+                CloseMethod = MBSnackbarCloseMethod.Timeout,
+            };
+        }
     }
 }
