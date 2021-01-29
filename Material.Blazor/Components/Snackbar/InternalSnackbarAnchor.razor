@@ -2,40 +2,7 @@
 @inherits ComponentFoundation
 
 
-@if (DisplayedSnackbars.Any())
+@foreach (var snackbar in DisplayedSnackbars)
 {
-    <div class="mb-snackbar-container @PositionClass">
-        @foreach (var snackbar in DisplayedSnackbars.OrderBy(x => x.TimeStamp))
-        {
-            var snackbarId = snackbar.Id;
-
-            <div @key="@snackbarId" class="mdc-elevation--z5 mb-snackbar @snackbar.Settings.ContainerLevelClass @snackbar.Settings.StatusClass @snackbar.Settings.AppliedCssClass">
-
-                @if (snackbar.Settings.AppliedShowIcon)
-                {
-                    var iconHelper = new MBIconHelper(null, snackbar.Settings.AppliedIconName, snackbar.Settings.AppliedIconFoundry);
-                    var filterClass = iconHelper.RequiresColorFilter ? snackbar.Settings.IconFilterClass : "";
-
-                    <div class="mb-snackbar-icon @filterClass">
-                        <MBIcon IconName="@snackbar.Settings.AppliedIconName" IconFoundry="@snackbar.Settings.IconFoundry" aria-hidden="true" />
-                    </div>
-                }
-
-                <div class="mb-snackbar-body">
-                    <div class="mb-snackbar-header">
-                        <div class="mb-snackbar-heading-container">
-                            <h5 class="mdc-typography--subtitle1">@((MarkupString)snackbar.Settings.AppliedHeading)</h5>
-                        </div>
-
-                        @if (snackbar.Settings.CloseMethod != MBSnackbarCloseMethod.Timeout)
-                        {
-                            <MBButton @onclick="@(() => CloseSnackbar(snackbarId))" LeadingIcon="close" ButtonStyle="@MBButtonStyle.Text" class="mb-snackbar-close-button" />
-                        }
-                    </div>
-
-                    <p class="mdc-typography--body2">@((MarkupString)snackbar.Settings.AppliedMessage)</p>
-                </div>
-            </div>
-        }
-    </div>
+    <InternalSnackbar Snackbar="snackbar" />
 }

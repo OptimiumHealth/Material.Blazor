@@ -1,4 +1,6 @@
-﻿$snackbar-width: 280px;
+﻿@use "@material/snackbar/mdc-snackbar";
+
+$snackbar-width: 280px;
 $snackbar-height: 66px;
 $snackbar-spacing: 8px;
 $snackbar-margin: 8px;

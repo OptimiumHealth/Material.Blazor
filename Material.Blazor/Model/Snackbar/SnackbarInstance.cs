@@ -11,7 +11,7 @@ namespace Material.Blazor.Internal
     /// <summary>
     /// An instance of a snackbar message.
     /// </summary>
-    internal class SnackbarInstance
+    public class SnackbarInstance
     {
         /// <summary>
         /// The snackbar's unique id.

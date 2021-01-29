@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Components;
-
+using Microsoft.JSInterop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Material.Blazor.Internal
 {
@@ -87,7 +88,6 @@ namespace Material.Blazor.Internal
                 StateHasChanged();
             });
         }
-
 
         private void OnTriggerStateHasChanged() => _ = InvokeAsync(StateHasChanged);
 
