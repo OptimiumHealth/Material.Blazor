@@ -8,12 +8,12 @@ namespace Material.Blazor
     /// </summary>
     public class MBSnackbarServiceConfiguration
     {
-        public const int DefaultTimeout = 3000;
+        public const int DefaultTimeout = 5000;
 
 
         private uint timeout = DefaultTimeout;
         /// <summary>
-        /// Timeout in milliseconds until the Snackbar automatically closes. Defaults to 3000/>.
+        /// Timeout in milliseconds until the Snackbar automatically closes. Defaults to 5000/>.
         /// </summary>
         public uint Timeout { get => timeout; set => Setter(ref timeout, value); }
 
