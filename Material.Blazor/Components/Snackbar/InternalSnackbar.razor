@@ -1,21 +1,26 @@
 ﻿@namespace Material.Blazor.Internal
 @inherits ComponentFoundation
 
-<div @ref="SnackbarReference" class="mdc-snackbar">
+<div @ref="SnackbarReference" class="mdc-snackbar @Stacked @Leading">
     <div class="mdc-snackbar__surface" role="status" aria-relevant="additions">
         <div class="mdc-snackbar__label" aria-atomic="false">
             @Snackbar.Settings.Message
         </div>
-        <div class="mdc-snackbar__actions" aria-atomic="true">
-            <button type="button" class="mdc-button mdc-snackbar__action">
-                <div class="mdc-button__ripple"></div>
-                <span class="mdc-button__label">Retry</span>
-            </button>
-        </div>
+        @if (Snackbar.Settings.Action != null && Snackbar.Settings.ActionText != null)
+        {
+            <div class="mdc-snackbar__actions" aria-atomic="true">
+                <button type="button" class="mdc-button mdc-snackbar__action">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">@Snackbar.Settings.ActionText</span>
+                </button>
+            </div>
+        }
     </div>
 </div>
 
 @code {
     private ElementReference SnackbarReference;
+    private string Stacked => Snackbar.Settings.Stacked ? "mdc-snackbar--stacked" : null;
+    private string Leading => Snackbar.Settings.Leading ? "mdc-snackbar--leading" : null;
     [Parameter] public SnackbarInstance Snackbar { get; set; }
 }

@@ -9,22 +9,14 @@ namespace Material.Blazor
     /// </summary>
     public class MBSnackbarServiceConfiguration
     {
-        public const MBSnackbarPosition DefaultPosition = MBSnackbarPosition.BottomRight;
         public const string DefaultCloseButtonIcon = "close";
         public const bool DefaultShowIcons = true;
-        public const MBSnackbarCloseMethod DefaultCloseMethod = MBSnackbarCloseMethod.TimeoutAndCloseButton;
         public const int DefaultTimeout = 3000;
         public const string DefaultInfoIconName = "notifications";
         public const string DefaultSuccessIconName = "done";
         public const string DefaultWarningIconName = "warning";
         public const string DefaultErrorIconName = "error_outline";
 
-
-        private MBSnackbarPosition position = DefaultPosition;
-        /// <summary>
-        /// Sets the Snackbar's position.
-        /// </summary>
-        public MBSnackbarPosition Position { get => position; set => Setter(ref position, value); }
 
 
         private string closeButtonIcon = DefaultCloseButtonIcon;
@@ -39,13 +31,6 @@ namespace Material.Blazor
         /// Determines whether default Snackbars show an icon.
         /// </summary>
         public bool ShowIcons { get => showIcons; set => Setter(ref showIcons, value); }
-
-
-        private MBSnackbarCloseMethod closeMethod = DefaultCloseMethod;
-        /// <summary>
-        /// Determines how the Snackbar closes. Defaults to <see cref="MBSnackbarCloseMethod.TimeoutAndCloseButton"/>.
-        /// </summary>
-        public MBSnackbarCloseMethod CloseMethod { get => closeMethod; set => Setter(ref closeMethod, value); }
 
 
         private uint timeout = DefaultTimeout;

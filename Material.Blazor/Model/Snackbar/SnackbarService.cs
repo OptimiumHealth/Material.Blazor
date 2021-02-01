@@ -21,11 +21,11 @@ namespace Material.Blazor.Internal
         }
 
 
-        private event Action<MBSnackbarLevel, MBSnackbarSettings> OnAdd;
+        private event Action<MBSnackbarSettings> OnAdd;
         private event Action OnTriggerStateHasChanged;
 
         ///<inheritdoc/>
-        event Action<MBSnackbarLevel, MBSnackbarSettings> IMBSnackbarService.OnAdd
+        event Action<MBSnackbarSettings> IMBSnackbarService.OnAdd
         {
             add => OnAdd += value;
             remove => OnAdd -= value;
@@ -51,14 +51,11 @@ namespace Material.Blazor.Internal
         ///<inheritdoc/>
 #nullable enable annotations
         public void ShowSnackbar(
-            MBSnackbarLevel level,
             string message,
-            string heading = null,
-            MBSnackbarCloseMethod? closeMethod = null,
-            string cssClass = null,
-            string iconName = null,
-            IMBIconFoundry? iconFoundry = null,
-            bool? showIcon = null,
+            Action action = null,
+            string action_text = null,
+            bool leading = false,
+            bool stacked = false,
             uint? timeout = null,
             bool debug = false)
 #nullable restore annotations
@@ -72,22 +69,20 @@ namespace Material.Blazor.Internal
 
             var settings = new MBSnackbarSettings()
             {
+                Action = action,
                 Message = message,
-                Heading = heading,
-                CloseMethod = closeMethod,
-                CssClass = cssClass,
-                IconName = iconName,
-                IconFoundry = iconFoundry,
-                ShowIcon = showIcon,
+                ActionText = action_text,
+                Leading = leading,
+                Stacked = stacked,
                 Timeout = timeout
             };
 
             if (OnAdd is null)
             {
-                throw new InvalidOperationException($"Material.Blazor: you attempted to show a snackbar notification from a {Utilities.GetTypeName(typeof(IMBSnackbarService))} but have not placed a {Utilities.GetTypeName(typeof(MBSnackbarAnchor))} component at the top of either App.razor or MainLayout.razor");
+                throw new InvalidOperationException($"Material.Blazor: you attempted to show a snackbar notification from a {Utilities.GetTypeName(typeof(IMBSnackbarService))} but have not placed a {Utilities.GetTypeName(typeof(MBAnchor))} component at the top of either App.razor or MainLayout.razor");
             }
 
-            OnAdd?.Invoke(level, settings);
+            OnAdd?.Invoke(settings);
         }
     }
 }

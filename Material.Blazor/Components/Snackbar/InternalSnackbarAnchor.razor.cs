@@ -1,16 +1,14 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Microsoft.JSInterop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Material.Blazor.Internal
 {
     /// <summary>
     /// An anchor component that displays snackbar notification that you display via
-    /// <see cref="IMBSnackbarService.ShowSnackbar(MBSnackbarLevel, string, string, MBSnackbarCloseMethod?, string, string, IMBIconFoundry?, bool?, uint?, bool)"/>.
+    /// <see cref="IMBSnackbarService.ShowSnackbar"/>.
     /// Place this component at the top of either App.razor or MainLayout.razor.
     /// </summary>
     public partial class InternalSnackbarAnchor : ComponentFoundation
@@ -20,7 +18,6 @@ namespace Material.Blazor.Internal
 
         private List<SnackbarInstance> DisplayedSnackbars { get; set; } = new List<SnackbarInstance>();
         private Queue<SnackbarInstance> PendingSnackbars { get; set; } = new Queue<SnackbarInstance>();
-        private string PositionClass => $"mb-snackbar__{SnackbarService.Configuration.Position.ToString().ToLower()}";
 
 
         private readonly SemaphoreSlim displayedSnackbarsSemaphore = new SemaphoreSlim(1);
@@ -49,12 +46,11 @@ namespace Material.Blazor.Internal
         /// </summary>
         /// <param name="level"></param>
         /// <param name="settings"></param>
-        private void AddSnackbar(MBSnackbarLevel level, MBSnackbarSettings settings)
+        private void AddSnackbar(MBSnackbarSettings settings)
         {
             InvokeAsync(async () =>
             {
                 settings.Configuration = SnackbarService.Configuration;
-                settings.Level = level;
 
                 var snackbarInstance = new SnackbarInstance
                 {
@@ -102,17 +98,14 @@ namespace Material.Blazor.Internal
 
                 DisplayedSnackbars.Add(snackbarInstance);
 
-                if (snackbarInstance.Settings.AppliedCloseMethod != MBSnackbarCloseMethod.CloseButton)
+                InvokeAsync(() =>
                 {
-                    InvokeAsync(() =>
-                    {
-                        var timeout = snackbarInstance.Settings.AppliedTimeout;
-                        var snackbarTimer = new System.Timers.Timer(snackbarInstance.Settings.AppliedTimeout);
-                        snackbarTimer.Elapsed += (sender, args) => { CloseSnackbar(snackbarInstance.Id); };
-                        snackbarTimer.AutoReset = false;
-                        snackbarTimer.Start();
-                    });
-                }
+                    var timeout = snackbarInstance.Settings.AppliedTimeout;
+                    var snackbarTimer = new System.Timers.Timer(snackbarInstance.Settings.AppliedTimeout);
+                    snackbarTimer.Elapsed += (sender, args) => { CloseSnackbar(snackbarInstance.Id); };
+                    snackbarTimer.AutoReset = false;
+                    snackbarTimer.Start();
+                });
             }
 
             StateHasChanged();

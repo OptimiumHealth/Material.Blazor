@@ -28,8 +28,6 @@ namespace Material.Blazor.Website
         {
             return new MBSnackbarServiceConfiguration()
             {
-                Position = MBSnackbarPosition.TopRight,
-                CloseMethod = MBSnackbarCloseMethod.Timeout,
             };
         }
     }

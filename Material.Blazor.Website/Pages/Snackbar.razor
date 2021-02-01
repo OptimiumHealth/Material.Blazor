@@ -58,54 +58,32 @@
                             </h3>
                         </div>
                         <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@SnackbarService.Configuration.Position"
-                                      Items="@positionItems"
-                                      Label="Snackbar Position"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
                             <MBCheckbox @bind-Value="@OverrideCssDefaults"
                                         Label="Override Default CSS" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBNumericIntField @bind-Value="@SnackbarService.Configuration.MaxSnackbarsShowing"
-                                               Label="Max Snackbars (0-10)"
-                                               Max="10"
-                                               Min="0"
-                                               NumericFormat="N0"
-                                               TextInputStyle="@MBTextInputStyle.Outlined" />
                         </div>
                         <div class="mdc-layout-grid__cell--span-12">
                             <p>
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Info Snackbar"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              level: MBSnackbarLevel.Info,
-                                                              heading: "I'm an Info",
                                                               message: "Nothing doing here."))"
                                           style="background-color: var(--mb-snackbar-background-color-info); color: var(--mb-snackbar-color-info); margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Success Snackbar"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              level: MBSnackbarLevel.Success,
-                                                              heading: "I'm a SUCCESS",
                                                               message: "Congratulations!" ))"
                                           style="background-color: var(--mb-snackbar-background-color-success); color: var(--mb-snackbar-color-success); margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Warning Snackbar"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              level: MBSnackbarLevel.Warning,
-                                                              heading: "I'm a WARNING",
                                                               message: "You have been warned."))"
                                           style="background-color: var(--mb-snackbar-background-color-warning); color: var(--mb-snackbar-color-warning); margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Error Snackbar"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              level: MBSnackbarLevel.Error,
-                                                              heading: "I'm an ERROR",
                                                               message: "Go fix it."))"
                                           style="background-color: var(--mb-snackbar-background-color-error); color: var(--mb-snackbar-color-error); margin-bottom: 1rem;" />
                             </p>
@@ -137,45 +115,10 @@
                                       SelectInputStyle="@MBSelectInputStyle.Outlined" />
                         </div>
                         <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@CloseMethod"
-                                      Items="closeMethodItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Close method"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@Heading"
-                                      Items="headingItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Heading"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@Icon"
-                                      Items="iconItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Icon"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@Level"
-                                      Items="levelItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Level"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
                             <MBSelect @bind-Value="@Message"
                                       Items="messageItems"
                                       ItemValidation="@MBItemValidation.DefaultToFirst"
                                       Label="Message"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@ShowIcon"
-                                      Items="showIconItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Show icon"
                                       SelectInputStyle="@MBSelectInputStyle.Outlined" />
                         </div>
                         <div class="mdc-layout-grid__cell--span-4">
@@ -203,13 +146,6 @@
 @code {
     private bool OverrideCssDefaults { get; set; }
 
-    private readonly IEnumerable<MBSelectElement<MBSnackbarPosition>> positionItems = from pos in (MBSnackbarPosition[])Enum.GetValues(typeof(MBSnackbarPosition))
-                                                                                   select new MBSelectElement<MBSnackbarPosition>
-                                                                                   {
-                                                                                       SelectedValue = pos,
-                                                                                       Label = pos.ToString()
-                                                                                   };
-
 
     private string CssClass { get; set; }
     private readonly MBSelectElement<string>[] CssClassItems = new MBSelectElement<string>[]
@@ -219,69 +155,12 @@
                                             };
 
 
-    private MBSnackbarCloseMethod CloseMethod { get; set; }
-    private readonly IEnumerable<MBSelectElement<MBSnackbarCloseMethod>> closeMethodItems = from c in (MBSnackbarCloseMethod[])Enum.GetValues(typeof(MBSnackbarCloseMethod))
-                                                                                         select new MBSelectElement<MBSnackbarCloseMethod>
-                                                                                         {
-                                                                                             SelectedValue = c,
-                                                                                             Label = c.ToString()
-                                                                                         };
-
-    private string Heading { get; set; }
-    private readonly MBSelectElement<string>[] headingItems = new MBSelectElement<string>[]
-    {
-        new MBSelectElement<string> { SelectedValue = "", Label = "Snackbar Svc Default" },
-        new MBSelectElement<string> { SelectedValue = "Run of the mill heading", Label = "Run of the mill heading" },
-        new MBSelectElement<string> { SelectedValue = "Heading truncated and truncated and truncated and truncated", Label = "Heading that will be truncated" }
-                                            };
-
-
-#nullable enable annotations
-    class MyIcon
-    {
-        public string Name;
-        public IMBIconFoundry? Foundry;
-    }
-#nullable restore annotations
-
-    private MyIcon Icon { get; set; }
-    private readonly MBSelectElement<MyIcon>[] iconItems = new MBSelectElement<MyIcon>[]
-    {
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "directions_run" }, Label = "directions_run" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "thumb_up", Foundry = MBIconHelper.MIFoundry(theme: MBIconMITheme.Filled) }, Label = "thumb_up (filled / default)" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "thumb_up", Foundry = MBIconHelper.MIFoundry(theme: MBIconMITheme.Outlined) }, Label = "thumb_up (outlined)" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "thumb_up", Foundry = MBIconHelper.MIFoundry(theme: MBIconMITheme.Round) }, Label = "thumb_up (rounded)" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "thumb_up", Foundry = MBIconHelper.MIFoundry(theme: MBIconMITheme.TwoTone) }, Label = "thumb_up (two-tone)" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "thumb_up", Foundry = MBIconHelper.MIFoundry(theme: MBIconMITheme.Sharp) }, Label = "thumb_up (sharp)" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "fa-ambulance", Foundry = MBIconHelper.FAFoundry() }, Label = "fa-ambulance" },
-        new MBSelectElement<MyIcon> { SelectedValue = new MyIcon() { Name = "fa-ambulance", Foundry = MBIconHelper.FAFoundry(relativeSize: MBIconFARelativeSize.ExtraSmall) }, Label = "fa-ambulance (x-small)" },
-                                            };
-
-
-    private MBSnackbarLevel Level { get; set; }
-    private readonly IEnumerable<MBSelectElement<MBSnackbarLevel>> levelItems = from c in (MBSnackbarLevel[])Enum.GetValues(typeof(MBSnackbarLevel))
-                                                                             select new MBSelectElement<MBSnackbarLevel>
-                                                                             {
-                                                                                 SelectedValue = c,
-                                                                                 Label = c.ToString()
-                                                                             };
-
-
     private string Message { get; set; }
     private readonly MBSelectElement<string>[] messageItems = new MBSelectElement<string>[]
     {
         new MBSelectElement<string> { SelectedValue = "Run of the mill message", Label = "Run of the mill message" },
         new MBSelectElement<string> { SelectedValue = "Text <strong>bold</strong> and <u>underlined</u>", Label = "Message with markup" },
         new MBSelectElement<string> { SelectedValue = "Message truncated and truncated and truncated and truncated", Label = "Message that will be truncated" }
-                                            };
-
-
-    private string ShowIcon { get; set; }
-    private readonly MBSelectElement<string>[] showIconItems = new MBSelectElement<string>[]
-    {
-        new MBSelectElement<string> { SelectedValue = "", Label = "Snackbar Svc Default" },
-        new MBSelectElement<string> { SelectedValue = "true", Label = "true" },
-        new MBSelectElement<string> { SelectedValue = "false", Label = "false" }
                                             };
 
 
@@ -299,21 +178,10 @@
     {
         string appliedCssClass = (CssClass.Length == 0) ? null : CssClass;
 
-        string appliedHeading = (Heading.Length == 0) ? null : Heading;
-
-        bool? appliedShowIcon = (ShowIcon.Length == 0) ? appliedShowIcon = null : appliedShowIcon = Convert.ToBoolean(ShowIcon);
-
         uint? appliedTimeout = (Timeout.Length == 0) ? appliedTimeout = null : appliedTimeout = Convert.ToUInt32(Timeout);
 
         SnackbarService.ShowSnackbar(
-            cssClass: appliedCssClass,
-            closeMethod: CloseMethod,
-            heading: appliedHeading,
-            level: Level,
             message: Message,
-            iconName: Icon.Name,
-            iconFoundry: Icon.Foundry,
-            showIcon: appliedShowIcon,
             timeout: appliedTimeout);
     }
 
