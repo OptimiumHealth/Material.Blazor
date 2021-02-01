@@ -90,7 +90,7 @@ namespace Material.Blazor.Internal
 
         private void FlushPendingSnackbars()
         {
-            bool FlushNext() => PendingSnackbars.Count() > 0 && (SnackbarService.Configuration.MaxSnackbarsShowing <= 0 || DisplayedSnackbars.Where(t => t.Settings.Status != SnackbarStatus.Hide).Count() < SnackbarService.Configuration.MaxSnackbarsShowing);
+            bool FlushNext() => PendingSnackbars.Count() > 0 && (DisplayedSnackbars.Where(t => t.Settings.Status != SnackbarStatus.Hide).Count() < 1);
 
             while (FlushNext())
             {
