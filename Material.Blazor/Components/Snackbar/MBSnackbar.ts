@@ -8,7 +8,7 @@ export function destroy(elem) {
     elem._snackbar.destroy();
 }
 
-export function open(elem, timeoutMs) {
+export function open(elem, timeoutMs: number) {
     elem._snackbar.timeoutMs = timeoutMs;
     elem._snackbar.open();
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Material.Blazor.Internal
 {
@@ -30,7 +31,6 @@ namespace Material.Blazor.Internal
             SnackbarService.OnAdd += AddSnackbar;
             SnackbarService.OnTriggerStateHasChanged += OnTriggerStateHasChanged;
         }
-
 
         public new void Dispose()
         {
@@ -85,8 +85,17 @@ namespace Material.Blazor.Internal
             });
         }
 
-        private void OnTriggerStateHasChanged() => _ = InvokeAsync(StateHasChanged);
-
+        private void OnTriggerStateHasChanged()
+        {
+            try
+            {
+                _ = InvokeAsync(StateHasChanged);
+            }
+            catch
+            {
+                // It is entirely possible that the renderer has been disposed, so just ignore errors on calling StateHasChanged
+            }
+        }
 
         private void FlushPendingSnackbars()
         {

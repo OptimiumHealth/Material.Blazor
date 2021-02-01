@@ -168,9 +168,9 @@
     private readonly MBSelectElement<string>[] timeoutItems = new MBSelectElement<string>[]
     {
         new MBSelectElement<string> { SelectedValue = "", Label = "Snackbar Svc Default" },
-        new MBSelectElement<string> { SelectedValue = "1000", Label = "1 second" },
-        new MBSelectElement<string> { SelectedValue = "10000", Label = "10 seconds" },
-        new MBSelectElement<string> { SelectedValue = "60000", Label = "60 seconds" }
+        new MBSelectElement<string> { SelectedValue = "4000", Label = "4 seconds (minimum)" },
+        new MBSelectElement<string> { SelectedValue = "10000", Label = "10 seconds (maximum)" },
+        new MBSelectElement<string> { SelectedValue = "-1", Label = "disabled" }
                                             };
 
 
@@ -178,7 +178,7 @@
     {
         string appliedCssClass = (CssClass.Length == 0) ? null : CssClass;
 
-        uint? appliedTimeout = (Timeout.Length == 0) ? appliedTimeout = null : appliedTimeout = Convert.ToUInt32(Timeout);
+        int? appliedTimeout = (Timeout.Length == 0) ? appliedTimeout = null : appliedTimeout = Convert.ToInt32(Timeout);
 
         SnackbarService.ShowSnackbar(
             message: Message,

@@ -11,11 +11,21 @@ namespace Material.Blazor
         public const int DefaultTimeout = 5000;
 
 
-        private uint timeout = DefaultTimeout;
+        private int? timeout = DefaultTimeout;
         /// <summary>
-        /// Timeout in milliseconds until the Snackbar automatically closes. Defaults to 5000/>.
+        /// The snackbar's timeout in milliseconds.
+        /// Minimum value is 4000 (4 seconds), maximum value is 10000 (10s).
+        /// Use -1 to disable.
+        /// Defaults to 5000.
         /// </summary>
-        public uint Timeout { get => timeout; set => Setter(ref timeout, value); }
+        public int? Timeout
+        {
+            get => timeout;
+            set
+            {
+                Setter(ref timeout, value switch { null => null, -1 => -1, _ => Math.Max(4000, Math.Min(value.Value, 10000)) });
+            }
+        }
 
 
         /// <summary>

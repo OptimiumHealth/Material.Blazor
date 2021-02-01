@@ -63,7 +63,7 @@ namespace Material.Blazor
             string action_text = null,
             bool leading = false,
             bool stacked = false,
-            uint? timeout = null,
+            int? timeout = null,
             bool debug = false);
 #nullable restore annotations
     }

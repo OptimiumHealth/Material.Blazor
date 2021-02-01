@@ -9,7 +9,7 @@ namespace Material.Blazor.Internal
         {
             if (firstRender)
             {
-                await JsRuntime.InvokeVoidAsync("MaterialBlazor.MBSnackbar.open", SnackbarReference);
+                await JsRuntime.InvokeVoidAsync("MaterialBlazor.MBSnackbar.open", SnackbarReference, Snackbar.Settings.AppliedTimeout);
             }
             await base.OnAfterRenderAsync(firstRender);
         }

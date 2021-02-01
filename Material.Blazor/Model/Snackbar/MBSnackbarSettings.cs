@@ -33,10 +33,31 @@ namespace Material.Blazor
         public string Message { get; set; }
 
 
+        private int? timeout;
         /// <summary>
         /// The snackbar's timeout in milliseconds.
+        /// Minimum value is 4000 (4 seconds), maximum value is 10000 (10s).
+        /// Use -1 to disable.
         /// </summary>
-        public uint? Timeout { get; set; }
+        public int? Timeout
+        {
+            get => timeout;
+            set
+            {
+                if (value == null)
+                {
+                    timeout = null;
+                }
+                else if (value == -1)
+                {
+                    timeout = -1;
+                }
+                else
+                {
+                    timeout = Math.Max(4000, Math.Min(value.Value, 10000));
+                }
+            }
+        }
 
 
 
