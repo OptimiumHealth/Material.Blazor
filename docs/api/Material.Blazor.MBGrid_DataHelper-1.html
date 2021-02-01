@@ -151,7 +151,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, IEnumerable&lt;KeyValuePair&lt;string, TRowData&gt;&gt;&gt;&gt; PrepareGridData(IEnumerable&lt;TRowData&gt; data, PropertyInfo groupKeyInfo, PropertyInfo sortPropertyInfo1 = null, Direction sortDirection1 = Direction.Ascending, PropertyInfo sortPropertyInfo2 = null, Direction sortDirection2 = Direction.Ascending, bool group = false, PropertyInfo groupExpressionInfo = null, IEnumerable&lt;string&gt; groupItemEnumerable = null, Func&lt;IEnumerable&lt;TRowData&gt;, PropertyInfo, Direction, PropertyInfo, Direction, IEnumerable&lt;TRowData&gt;&gt; OrderItems = null, Func&lt;IEnumerable&lt;TRowData&gt;, bool, PropertyInfo, PropertyInfo, IEnumerable&lt;string&gt;, IEnumerable&lt;KeyValuePair&lt;string, IEnumerable&lt;KeyValuePair&lt;string, TRowData&gt;&gt;&gt;&gt;&gt; GroupItems = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, IEnumerable&lt;KeyValuePair&lt;string, TRowData&gt;&gt;&gt;&gt; PrepareGridData(IEnumerable&lt;TRowData&gt; data, PropertyInfo dataKeyInfo, PropertyInfo orderPropertyInfo1 = null, Direction orderDirection1 = Direction.Ascending, PropertyInfo orderPropertyInfo2 = null, Direction orderDirection2 = Direction.Ascending, bool group = false, PropertyInfo groupPropertyInfo = null, IEnumerable&lt;string&gt; groupItemEnumerable = null, Func&lt;IEnumerable&lt;TRowData&gt;, PropertyInfo, Direction, PropertyInfo, Direction, IEnumerable&lt;TRowData&gt;&gt; OrderData = null, Func&lt;IEnumerable&lt;TRowData&gt;, bool, PropertyInfo, PropertyInfo, IEnumerable&lt;string&gt;, IEnumerable&lt;KeyValuePair&lt;string, IEnumerable&lt;KeyValuePair&lt;string, TRowData&gt;&gt;&gt;&gt;&gt; GroupItems = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,27 +170,27 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></td>
-        <td><span class="parametername">groupKeyInfo</span></td>
+        <td><span class="parametername">dataKeyInfo</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></td>
-        <td><span class="parametername">sortPropertyInfo1</span></td>
+        <td><span class="parametername">orderPropertyInfo1</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Material.Blazor.Direction.html">Direction</a></td>
-        <td><span class="parametername">sortDirection1</span></td>
+        <td><span class="parametername">orderDirection1</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></td>
-        <td><span class="parametername">sortPropertyInfo2</span></td>
+        <td><span class="parametername">orderPropertyInfo2</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Material.Blazor.Direction.html">Direction</a></td>
-        <td><span class="parametername">sortDirection2</span></td>
+        <td><span class="parametername">orderDirection2</span></td>
         <td></td>
       </tr>
       <tr>
@@ -200,7 +200,7 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></td>
-        <td><span class="parametername">groupExpressionInfo</span></td>
+        <td><span class="parametername">groupPropertyInfo</span></td>
         <td></td>
       </tr>
       <tr>
@@ -210,7 +210,7 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-6">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TRowData&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>, <a class="xref" href="Material.Blazor.Direction.html">Direction</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>, <a class="xref" href="Material.Blazor.Direction.html">Direction</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TRowData&gt;&gt;</td>
-        <td><span class="parametername">OrderItems</span></td>
+        <td><span class="parametername">OrderData</span></td>
         <td></td>
       </tr>
       <tr>
