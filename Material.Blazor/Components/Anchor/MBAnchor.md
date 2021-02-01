@@ -19,4 +19,4 @@ An anchor component for snackbars, toasts (based on a port of [Blazored/Toast](h
 &nbsp;
 
 [![Components](https://img.shields.io/static/v1?label=Components&message=Plus&color=red)](xref:A.PlusComponents)
-[![Docs](https://img.shields.io/static/v1?label=API%20Documentation&message=MBToastAnchor&color=brightgreen)](xref:Material.Blazor.MBToastAnchor)
+[![Docs](https://img.shields.io/static/v1?label=API%20Documentation&message=MBAnchor&color=brightgreen)](xref:Material.Blazor.MBAnchor)
