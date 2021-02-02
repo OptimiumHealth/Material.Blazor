@@ -1,24 +1,15 @@
 ﻿@page "/snackbar"
 
-@implements IDisposable
-
 @inject IMBSnackbarService SnackbarService
 
 
-<style>
-    .italic-class {
-        font-style: italic;
-    }
-</style>
-
-
-<DemonstrationPage DemoComponent="@this"
-                   DetailedArticle="Snackbar"
+<DemonstrationPage ComponentName="Snackbar"
+                   DemoComponent="@this"
+                   MaterialIOPage="mdc-snackbar#snackbars"
                    Title="Snackbar Demonstration">
     <Description>
-        <h2>Non-component</h2>
         <p>
-            Demonstrates snackbar variations.
+            Snackbars provide brief messages about app processes at the bottom of the screen.
         </p>
     </Description>
 
@@ -33,38 +24,58 @@
                             </h2>
 
                             <h3 class="mb-card__subtitle mdc-typography mdc-typography--subtitle2">
-                                Shows the varieties of snackbar and managed timeout.
+                                Different layouts of snackbars
                             </h3>
                         </div>
                         <div class="mdc-layout-grid__cell--span-12">
                             <p>
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                          Label="Informative"
+                                          Label="Basic"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
                                                               message: "Can't send photo. Retry in 5 seconds."))"
-                                          style="background-color: var(--mb-snackbar-background-color-info); color: var(--mb-snackbar-color-info); margin-bottom: 1rem;" />
+                                          style="margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                          Label="Actionable"
+                                          Label="With action"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
                                                               message: "Can't send photo. Retry in 5 seconds.",
                                                               action: () => SnackbarService.ShowSnackbar("You clicked the action", timeout: 4000),
                                                               action_text: "retry"))"
-                                          style="background-color: var(--mb-snackbar-background-color-success); color: var(--mb-snackbar-color-success); margin-bottom: 1rem;" />
+                                          style="margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Undismissable"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
                                                               message: "Wait until I'm gone.",
                                                               dismiss_icon: false))"
-                                          style="background-color: var(--mb-snackbar-background-color-warning); color: var(--mb-snackbar-color-warning); margin-bottom: 1rem;" />
+                                          style="margin-bottom: 1rem;" />
+                            </p>
+                        </div>
+                    </div>
+                </Primary>
+            </MBCard>
+        </div>
+        <div class="mdc-layout-grid__cell--span-12">
+            <MBCard AutoStyled="true">
+                <Primary>
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell--span-12">
+                            <h2 class="mb-card__title mdc-typography mdc-typography--headline6">
+                                Position and Layout
+                            </h2>
 
+                            <h3 class="mb-card__subtitle mdc-typography mdc-typography--subtitle2">
+                                Different layouts of snackbars
+                            </h3>
+                        </div>
+                        <div class="mdc-layout-grid__cell--span-12">
+                            <p>
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Leading"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
                                                               message: "I'm on the leading edge of the screen",
                                                               leading: true))"
-                                          style="background-color: var(--mb-snackbar-background-color-warning); color: var(--mb-snackbar-color-warning); margin-bottom: 1rem;" />
+                                          style="margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
                                           Label="Stacked"
@@ -73,54 +84,53 @@
                                                               action: () => SnackbarService.ShowSnackbar("You clicked the action", timeout: 4000),
                                                               action_text: "This text is really rather long",
                                                               stacked: true))"
-                                          style="background-color: var(--mb-snackbar-background-color-error); color: var(--mb-snackbar-color-error); margin-bottom: 1rem;" />
+                                          style="margin-bottom: 1rem;" />
+
+                                <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
+                                          Label="Text with markup"
+                                          @onclick="@(() => SnackbarService.ShowSnackbar(
+                                                              message: "This <b>message</b> is <i>styled</i>"))"
+                                          style="margin-bottom: 1rem;" />
                             </p>
                         </div>
                     </div>
                 </Primary>
             </MBCard>
         </div>
-
-
         <div class="mdc-layout-grid__cell--span-12">
             <MBCard AutoStyled="true">
                 <Primary>
                     <div class="mdc-layout-grid__inner">
                         <div class="mdc-layout-grid__cell--span-12">
                             <h2 class="mb-card__title mdc-typography mdc-typography--headline6">
-                                Tailored Snackbars
+                                Actions
                             </h2>
 
                             <h3 class="mb-card__subtitle mdc-typography mdc-typography--subtitle2">
-                                Shows how snackbars can be tailored through the ShowSnackbar method call.
+                                Variations of timeout (disabled/short/long) and actions
                             </h3>
                         </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@CssClass"
-                                      Items="CssClassItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Additional css class"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@Message"
-                                      Items="messageItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Message"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBSelect @bind-Value="@Timeout"
-                                      Items="timeoutItems"
-                                      ItemValidation="@MBItemValidation.DefaultToFirst"
-                                      Label="Timeout"
-                                      SelectInputStyle="@MBSelectInputStyle.Outlined" />
-                        </div>
-
                         <div class="mdc-layout-grid__cell--span-12">
-                            <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                      Label="Snackbar with selected options"
-                                      @onclick="@CustomiseClick" />
+                            <p>
+                                <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
+                                          Label="Disabled timeout"
+                                          @onclick="@(() => SnackbarService.ShowSnackbar(
+                                                              message: "You need to dismiss this message yourself",
+                                                              timeout: -1))"
+                                          style="margin-bottom: 1rem;" />
+                                <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
+                                          Label="Shortest timeout"
+                                          @onclick="@(() => SnackbarService.ShowSnackbar(
+                                                              message: "This is visible for 4 seconds",
+                                                              timeout: 4000))"
+                                          style="margin-bottom: 1rem;" />
+                                <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
+                                          Label="Longest timeout"
+                                          @onclick="@(() => SnackbarService.ShowSnackbar(
+                                                              message: "This is visible for 10 seconds",
+                                                              timeout: 10000))"
+                                          style="margin-bottom: 1rem;" />
+                            </p>
                         </div>
                     </div>
                 </Primary>
@@ -128,75 +138,3 @@
         </div>
     </PageContent>
 </DemonstrationPage>
-
-
-
-@code {
-    private string CssClass { get; set; }
-    private readonly MBSelectElement<string>[] CssClassItems = new MBSelectElement<string>[]
-    {
-        new MBSelectElement<string> { SelectedValue = "", Label = "Snackbar Svc Default" },
-        new MBSelectElement<string> { SelectedValue = "italic-class", Label = "Italic" },
-                                            };
-
-
-    private string Message { get; set; }
-    private readonly MBSelectElement<string>[] messageItems = new MBSelectElement<string>[]
-    {
-        new MBSelectElement<string> { SelectedValue = "Run of the mill message", Label = "Run of the mill message" },
-        new MBSelectElement<string> { SelectedValue = "Text <strong>bold</strong> and <u>underlined</u>", Label = "Message with markup" },
-        new MBSelectElement<string> { SelectedValue = "Message truncated and truncated and truncated and truncated", Label = "Message that will be truncated" }
-                                            };
-
-
-    private string Timeout { get; set; }
-    private readonly MBSelectElement<string>[] timeoutItems = new MBSelectElement<string>[]
-    {
-        new MBSelectElement<string> { SelectedValue = "", Label = "Snackbar Svc Default" },
-        new MBSelectElement<string> { SelectedValue = "4000", Label = "4 seconds (minimum)" },
-        new MBSelectElement<string> { SelectedValue = "10000", Label = "10 seconds (maximum)" },
-        new MBSelectElement<string> { SelectedValue = "-1", Label = "disabled" }
-                                            };
-
-
-    private void CustomiseClick()
-    {
-        string appliedCssClass = (CssClass.Length == 0) ? null : CssClass;
-
-        int? appliedTimeout = (Timeout.Length == 0) ? appliedTimeout = null : appliedTimeout = Convert.ToInt32(Timeout);
-
-        SnackbarService.ShowSnackbar(
-            message: Message,
-            timeout: appliedTimeout);
-    }
-
-
-    private bool disposedValue;
-
-
-    /// <inheritdoc/>
-    /// <param name="disposing"></param>
-    protected virtual void Dispose(bool disposing)
-    {
-        if (!disposedValue)
-        {
-            if (disposing)
-            {
-                SnackbarService.Configuration = Utilities.GetDefaultSnackbarServiceConfiguration();
-            }
-
-            // O: free unmanaged resources (unmanaged objects) and override finalizer
-            // TODO: set large fields to null
-            disposedValue = true;
-        }
-    }
-
-
-    /// <inheritdoc/>
-    public void Dispose()
-    {
-        // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
-        Dispose(disposing: true);
-        GC.SuppressFinalize(this);
-    }
-}
