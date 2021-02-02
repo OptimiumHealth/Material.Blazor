@@ -21,6 +21,12 @@ namespace Material.Blazor.Internal
 
 
         /// <summary>
+        /// Control whether a date is selectable by evaluating the method.
+        /// </summary>
+        [Parameter] public Func<DateTime, bool>? DateIsSelectable { get; set; }
+
+
+        /// <summary>
         /// Minimum date set by the consumer
         /// </summary>
         [Parameter] public DateTime MinDate { get; set; }
