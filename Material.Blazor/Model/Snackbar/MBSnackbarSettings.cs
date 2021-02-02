@@ -70,7 +70,7 @@ namespace Material.Blazor
         /// </summary>
         internal MBSnackbarServiceConfiguration Configuration { get; set; }
 
-        internal uint AppliedTimeout => (Timeout is null) ? Configuration?.Timeout ?? MBSnackbarServiceConfiguration.DefaultTimeout : (uint)Timeout;
+        internal int AppliedTimeout => (Timeout is null) ? Configuration?.Timeout ?? MBSnackbarServiceConfiguration.DefaultTimeout : (int)Timeout;
 
 
         /// <summary>
