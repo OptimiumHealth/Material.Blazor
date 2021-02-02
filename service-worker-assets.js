@@ -257,15 +257,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-j9HhnoUn7uxh6pkHWexOnCv4I83ZMV5Qs16tU1lNeDE=",
+      "hash": "sha256-pfRzpor7bpnPAnwVurMnXySqZL5mcOc9GxsAWjazaCo=",
       "url": "_framework\/Material.Blazor.dll"
     },
     {
-      "hash": "sha256-Dq1YyrR1reSgVsX+\/WpyjrysIVVauy19BGyBMvxwwcg=",
+      "hash": "sha256-P1Ut3WWHC\/8BhrGYJ\/dJsgCFLQ3TjZLCXOUGzyhR7S0=",
       "url": "_framework\/Material.Blazor.Website.dll"
     },
     {
-      "hash": "sha256-opVAOKcU\/UQs386mV7XWjICWSUQiPn2r5FSUMgB0Jt8=",
+      "hash": "sha256-JQ5PBbK4uBzRWB8U63fqhieadQ37bbbiFSA94vhCfXw=",
       "url": "_framework\/Material.Blazor.Website.WebAssembly.dll"
     },
     {
@@ -285,7 +285,7 @@
       "url": "_framework\/System.Collections.Specialized.dll"
     },
     {
-      "hash": "sha256-+ZhUfE25g+VKANx2VJhVqMN1mIBAtAoDEPSuLjjZguE=",
+      "hash": "sha256-hfzdAxYaJKlwjXIS8kVjfmrwogXltJgo4tw2oVhLXms=",
       "url": "_framework\/System.Collections.dll"
     },
     {
@@ -365,11 +365,11 @@
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-CM8Ubp6wQiz+5rjFfXinPPL7NSqTNhNJ\/MSc0EHM5N0=",
+      "hash": "sha256-\/vfQ91rtDEV0DZ8F5wfoQy3ARIwTJkuJyLoD474cVVU=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-aeZ3DxCNrPA58AjZZgbXBiY\/TcPYAXyHGg7bh\/fqb0I=",
+      "hash": "sha256-qlfurlEun\/SO5XWGhT9+YS07kWMtNuvi3dM2dXSdykQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -377,5 +377,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "QOsElPSe"
+  "version": "hvmxKiwO"
 };

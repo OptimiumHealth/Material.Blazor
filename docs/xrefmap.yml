@@ -1367,6 +1367,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.InternalDatePickerDayButton.CurrentDate
   nameWithType: InternalDatePickerDayButton.CurrentDate
+- uid: Material.Blazor.Internal.InternalDatePickerDayButton.DateIsSelectable
+  name: DateIsSelectable
+  href: api/Material.Blazor.Internal.InternalDatePickerDayButton.html#Material_Blazor_Internal_InternalDatePickerDayButton_DateIsSelectable
+  commentId: P:Material.Blazor.Internal.InternalDatePickerDayButton.DateIsSelectable
+  fullName: Material.Blazor.Internal.InternalDatePickerDayButton.DateIsSelectable
+  nameWithType: InternalDatePickerDayButton.DateIsSelectable
+- uid: Material.Blazor.Internal.InternalDatePickerDayButton.DateIsSelectable*
+  name: DateIsSelectable
+  href: api/Material.Blazor.Internal.InternalDatePickerDayButton.html#Material_Blazor_Internal_InternalDatePickerDayButton_DateIsSelectable_
+  commentId: Overload:Material.Blazor.Internal.InternalDatePickerDayButton.DateIsSelectable
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalDatePickerDayButton.DateIsSelectable
+  nameWithType: InternalDatePickerDayButton.DateIsSelectable
 - uid: Material.Blazor.Internal.InternalDatePickerDayButton.DateSelectionCriteria
   name: DateSelectionCriteria
   href: api/Material.Blazor.Internal.InternalDatePickerDayButton.html#Material_Blazor_Internal_InternalDatePickerDayButton_DateSelectionCriteria
@@ -1464,6 +1477,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.InternalDatePickerPanel.DateFormat
   nameWithType: InternalDatePickerPanel.DateFormat
+- uid: Material.Blazor.Internal.InternalDatePickerPanel.DateIsSelectable
+  name: DateIsSelectable
+  href: api/Material.Blazor.Internal.InternalDatePickerPanel.html#Material_Blazor_Internal_InternalDatePickerPanel_DateIsSelectable
+  commentId: P:Material.Blazor.Internal.InternalDatePickerPanel.DateIsSelectable
+  fullName: Material.Blazor.Internal.InternalDatePickerPanel.DateIsSelectable
+  nameWithType: InternalDatePickerPanel.DateIsSelectable
+- uid: Material.Blazor.Internal.InternalDatePickerPanel.DateIsSelectable*
+  name: DateIsSelectable
+  href: api/Material.Blazor.Internal.InternalDatePickerPanel.html#Material_Blazor_Internal_InternalDatePickerPanel_DateIsSelectable_
+  commentId: Overload:Material.Blazor.Internal.InternalDatePickerPanel.DateIsSelectable
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalDatePickerPanel.DateIsSelectable
+  nameWithType: InternalDatePickerPanel.DateIsSelectable
 - uid: Material.Blazor.Internal.InternalDatePickerPanel.DateSelectionCriteria
   name: DateSelectionCriteria
   href: api/Material.Blazor.Internal.InternalDatePickerPanel.html#Material_Blazor_Internal_InternalDatePickerPanel_DateSelectionCriteria
@@ -3980,6 +4006,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDatePicker.DateFormat
   nameWithType: MBDatePicker.DateFormat
+- uid: Material.Blazor.MBDatePicker.DateIsSelectable
+  name: DateIsSelectable
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_DateIsSelectable
+  commentId: P:Material.Blazor.MBDatePicker.DateIsSelectable
+  fullName: Material.Blazor.MBDatePicker.DateIsSelectable
+  nameWithType: MBDatePicker.DateIsSelectable
+- uid: Material.Blazor.MBDatePicker.DateIsSelectable*
+  name: DateIsSelectable
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_DateIsSelectable_
+  commentId: Overload:Material.Blazor.MBDatePicker.DateIsSelectable
+  isSpec: "True"
+  fullName: Material.Blazor.MBDatePicker.DateIsSelectable
+  nameWithType: MBDatePicker.DateIsSelectable
 - uid: Material.Blazor.MBDatePicker.DateSelectionCriteria
   name: DateSelectionCriteria
   href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_DateSelectionCriteria
