@@ -54,6 +54,7 @@ namespace Material.Blazor.Internal
             string message,
             Action action = null,
             string action_text = null,
+            bool dismiss_icon = true,
             bool leading = false,
             bool stacked = false,
             int? timeout = null,
@@ -72,6 +73,7 @@ namespace Material.Blazor.Internal
                 Action = action,
                 Message = message,
                 ActionText = action_text,
+                DismissIcon = dismiss_icon,
                 Leading = leading,
                 Stacked = stacked,
                 Timeout = timeout

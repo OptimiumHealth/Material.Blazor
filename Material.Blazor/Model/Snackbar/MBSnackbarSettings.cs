@@ -31,6 +31,10 @@ namespace Material.Blazor
         /// TODO documentation
         /// </summary>
         public string Message { get; set; }
+        /// <summary>
+        /// TODO documentation
+        /// </summary>
+        public bool DismissIcon { get; set; }
 
 
         private int? timeout;

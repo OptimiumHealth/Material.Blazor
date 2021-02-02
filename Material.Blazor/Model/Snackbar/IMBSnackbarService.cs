@@ -61,6 +61,7 @@ namespace Material.Blazor
             string message,
             Action action = null,
             string action_text = null,
+            bool dismiss_icon = true,
             bool leading = false,
             bool stacked = false,
             int? timeout = null,
