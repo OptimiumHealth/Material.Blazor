@@ -3,12 +3,6 @@
 namespace Material.Blazor.Internal
 {
     /// <summary>
-    /// The current status of a Snackbar, expressed through it's CSS class.
-    /// </summary>
-    internal enum SnackbarStatus { Show, FadeOut, Hide }
-
-
-    /// <summary>
     /// An instance of a snackbar message.
     /// </summary>
     public class SnackbarInstance

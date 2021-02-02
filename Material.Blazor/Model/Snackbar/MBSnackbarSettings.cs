@@ -1,6 +1,6 @@
 ﻿using Material.Blazor.Internal;
-
 using System;
+using System.Threading.Tasks;
 
 namespace Material.Blazor
 {
@@ -63,12 +63,6 @@ namespace Material.Blazor
             }
         }
 
-
-
-#nullable enable annotations
-#nullable restore annotations
-
-
         /// <summary>
         /// The snackbar service's configuration.
         /// </summary>
@@ -76,10 +70,7 @@ namespace Material.Blazor
 
         internal int AppliedTimeout => (Timeout is null) ? Configuration?.Timeout ?? MBSnackbarServiceConfiguration.DefaultTimeout : (int)Timeout;
 
-
-        /// <summary>
-        /// The current display status of the snackbar message driven by its CSS class.
-        /// </summary>
-        internal SnackbarStatus Status { get; set; }
+        internal Func<SnackbarInstance, Task> OnClose { get; set; }
+        internal bool Closed { get; set; }
     }
 }

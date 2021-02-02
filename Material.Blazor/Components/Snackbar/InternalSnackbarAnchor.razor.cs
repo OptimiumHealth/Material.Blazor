@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,13 +16,8 @@ namespace Material.Blazor.Internal
         [Inject] private IMBSnackbarService SnackbarService { get; set; }
 
 
-        private List<SnackbarInstance> DisplayedSnackbars { get; set; } = new List<SnackbarInstance>();
-        private Queue<SnackbarInstance> PendingSnackbars { get; set; } = new Queue<SnackbarInstance>();
-
-
-        private readonly SemaphoreSlim displayedSnackbarsSemaphore = new SemaphoreSlim(1);
-        private readonly SemaphoreSlim pendingSnackbarsSemaphore = new SemaphoreSlim(1);
-
+        private SnackbarInstance ActiveSnackbar;
+        private ConcurrentQueue<SnackbarInstance> PendingSnackbars = new ConcurrentQueue<SnackbarInstance>();
 
         // Would like to use <inheritdoc/> however DocFX cannot resolve to references outside Material.Blazor
         protected override void OnInitialized()
@@ -44,45 +38,20 @@ namespace Material.Blazor.Internal
         /// <summary>
         /// Adds a snackbar to the anchor, enqueuing it ready for future display if the maximum number of snackbars has been reached.
         /// </summary>
-        /// <param name="level"></param>
         /// <param name="settings"></param>
         private void AddSnackbar(MBSnackbarSettings settings)
         {
-            InvokeAsync(async () =>
+            settings.Configuration = SnackbarService.Configuration;
+
+            var snackbarInstance = new SnackbarInstance
             {
-                settings.Configuration = SnackbarService.Configuration;
+                Id = Guid.NewGuid(),
+                TimeStamp = DateTime.Now,
+                Settings = settings
+            };
 
-                var snackbarInstance = new SnackbarInstance
-                {
-                    Id = Guid.NewGuid(),
-                    TimeStamp = DateTime.Now,
-                    Settings = settings
-                };
-
-                await pendingSnackbarsSemaphore.WaitAsync();
-
-                try
-                {
-                    PendingSnackbars.Enqueue(snackbarInstance);
-
-                    await displayedSnackbarsSemaphore.WaitAsync();
-
-                    try
-                    {
-                        FlushPendingSnackbars();
-                    }
-                    finally
-                    {
-                        displayedSnackbarsSemaphore.Release();
-                    }
-                }
-                finally
-                {
-                    pendingSnackbarsSemaphore.Release();
-                }
-
-                StateHasChanged();
-            });
+            PendingSnackbars.Enqueue(snackbarInstance);
+            ShowNextSnackbarAsync();
         }
 
         private void OnTriggerStateHasChanged()
@@ -96,101 +65,44 @@ namespace Material.Blazor.Internal
                 // It is entirely possible that the renderer has been disposed, so just ignore errors on calling StateHasChanged
             }
         }
-
-        private void FlushPendingSnackbars()
+        private readonly SemaphoreSlim queue_semaphore = new SemaphoreSlim(1, 1);
+        private async Task ShowNextSnackbarAsync()
         {
-            bool FlushNext() => PendingSnackbars.Count() > 0 && (DisplayedSnackbars.Where(t => t.Settings.Status != SnackbarStatus.Hide).Count() < 1);
-
-            while (FlushNext())
+            await queue_semaphore.WaitAsync();
+            try
             {
-                var snackbarInstance = PendingSnackbars.Dequeue();
-
-                DisplayedSnackbars.Add(snackbarInstance);
-
-                InvokeAsync(() =>
+                if (ActiveSnackbar != null) // if there is an active snackbar, we shouldn't try to display the next
                 {
-                    var timeout = snackbarInstance.Settings.AppliedTimeout;
-                    var snackbarTimer = new System.Timers.Timer(snackbarInstance.Settings.AppliedTimeout);
-                    snackbarTimer.Elapsed += (sender, args) => { CloseSnackbar(snackbarInstance.Id); };
-                    snackbarTimer.AutoReset = false;
-                    snackbarTimer.Start();
-                });
+                    return;
+                }
+                if (!PendingSnackbars.TryDequeue(out var snackbarInstance)) // if there is no next snackbar, don't do anything
+                {
+                    return;
+                }
+                // register the close event, which simply removes this snackbar and goes back here
+                // then make this instance active and render.
+                snackbarInstance.Settings.OnClose = RemoveClosedSnackbarAndDisplayNextAsync;
+                ActiveSnackbar = snackbarInstance;
+                await InvokeAsync(StateHasChanged);
             }
-
-            StateHasChanged();
-        }
-
-
-
-        /// <summary>
-        /// Closes a snackbar and removes it from the anchor, with a fade out routine.
-        /// </summary>
-        /// <param name="snackbarId"></param>
-        public void CloseSnackbar(Guid snackbarId)
-        {
-            InvokeAsync(async () =>
+            finally
             {
-
-                await displayedSnackbarsSemaphore.WaitAsync();
-
-                try
-                {
-                    var snackbarInstance = DisplayedSnackbars.SingleOrDefault(x => x.Id == snackbarId);
-
-                    if (snackbarInstance is null)
-                    {
-                        return;
-                    }
-
-                    snackbarInstance.Settings.Status = SnackbarStatus.FadeOut;
-                    StateHasChanged();
-                }
-                finally
-                {
-                    displayedSnackbarsSemaphore.Release();
-                }
-
-                var snackbarTimer = new System.Timers.Timer(500);
-                snackbarTimer.Elapsed += (sender, args) => { RemoveSnackbar(snackbarId); };
-                snackbarTimer.AutoReset = false;
-                snackbarTimer.Start();
-
-                StateHasChanged();
-            });
+                queue_semaphore.Release();
+            }
         }
-
-
-        private void RemoveSnackbar(Guid snackbarId)
+        private async Task RemoveClosedSnackbarAndDisplayNextAsync(SnackbarInstance instance)
         {
-            InvokeAsync(async () =>
+            await queue_semaphore.WaitAsync();
+            try
             {
-                await displayedSnackbarsSemaphore.WaitAsync();
-
-                try
-                {
-                    var snackbarInstance = DisplayedSnackbars.SingleOrDefault(x => x.Id == snackbarId);
-
-                    if (snackbarInstance is null)
-                    {
-                        return;
-                    }
-
-                    snackbarInstance.Settings.Status = SnackbarStatus.Hide;
-
-                    if (DisplayedSnackbars.Where(x => x.Settings.Status == SnackbarStatus.FadeOut).Count() == 0)
-                    {
-                        DisplayedSnackbars.RemoveAll(x => x.Settings.Status == SnackbarStatus.Hide);
-                    }
-
-                    StateHasChanged();
-
-                    FlushPendingSnackbars();
-                }
-                finally
-                {
-                    displayedSnackbarsSemaphore.Release();
-                }
-            });
+                ActiveSnackbar = null;
+                instance.Settings.OnClose = null;
+            }
+            finally
+            {
+                queue_semaphore.Release();
+            }
+            await ShowNextSnackbarAsync();
         }
     }
 }
