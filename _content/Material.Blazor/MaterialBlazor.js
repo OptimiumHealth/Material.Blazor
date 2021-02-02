@@ -6117,6 +6117,13 @@
             setDisabled: () => MBSlider_setDisabled,
             setValue: () => MBSlider_setValue
         });
+        var MBSnackbar_namespaceObject = {};
+        __webpack_require__.r(MBSnackbar_namespaceObject);
+        __webpack_require__.d(MBSnackbar_namespaceObject, {
+            destroy: () => MBSnackbar_destroy,
+            init: () => MBSnackbar_init,
+            open: () => MBSnackbar_open
+        });
         var MBSwitch_namespaceObject = {};
         __webpack_require__.r(MBSwitch_namespaceObject);
         __webpack_require__.d(MBSwitch_namespaceObject, {
@@ -20479,6 +20486,476 @@ PERFORMANCE OF THIS SOFTWARE.
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+        var snackbar_constants_cssClasses = {
+            CLOSING: "mdc-snackbar--closing",
+            OPEN: "mdc-snackbar--open",
+            OPENING: "mdc-snackbar--opening"
+        };
+        var snackbar_constants_strings = {
+            ACTION_SELECTOR: ".mdc-snackbar__action",
+            ARIA_LIVE_LABEL_TEXT_ATTR: "data-mdc-snackbar-label-text",
+            CLOSED_EVENT: "MDCSnackbar:closed",
+            CLOSING_EVENT: "MDCSnackbar:closing",
+            DISMISS_SELECTOR: ".mdc-snackbar__dismiss",
+            LABEL_SELECTOR: ".mdc-snackbar__label",
+            OPENED_EVENT: "MDCSnackbar:opened",
+            OPENING_EVENT: "MDCSnackbar:opening",
+            REASON_ACTION: "action",
+            REASON_DISMISS: "dismiss",
+            SURFACE_SELECTOR: ".mdc-snackbar__surface"
+        };
+        var snackbar_constants_numbers = {
+            DEFAULT_AUTO_DISMISS_TIMEOUT_MS: 5e3,
+            INDETERMINATE: -1,
+            MAX_AUTO_DISMISS_TIMEOUT_MS: 1e4,
+            MIN_AUTO_DISMISS_TIMEOUT_MS: 4e3,
+            SNACKBAR_ANIMATION_CLOSE_TIME_MS: 75,
+            SNACKBAR_ANIMATION_OPEN_TIME_MS: 150,
+            ARIA_LIVE_DELAY_MS: 1e3
+        };
+        /**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+        var OPENING = snackbar_constants_cssClasses.OPENING, OPEN = snackbar_constants_cssClasses.OPEN, CLOSING = snackbar_constants_cssClasses.CLOSING;
+        var REASON_ACTION = snackbar_constants_strings.REASON_ACTION, REASON_DISMISS = snackbar_constants_strings.REASON_DISMISS;
+        var MDCSnackbarFoundation = function(_super) {
+            __extends(MDCSnackbarFoundation, _super);
+            function MDCSnackbarFoundation(adapter) {
+                var _this = _super.call(this, __assign(__assign({}, MDCSnackbarFoundation.defaultAdapter), adapter)) || this;
+                _this.isOpen_ = false;
+                _this.animationFrame_ = 0;
+                _this.animationTimer_ = 0;
+                _this.autoDismissTimer_ = 0;
+                _this.autoDismissTimeoutMs_ = snackbar_constants_numbers.DEFAULT_AUTO_DISMISS_TIMEOUT_MS;
+                _this.closeOnEscape_ = true;
+                return _this;
+            }
+            Object.defineProperty(MDCSnackbarFoundation, "cssClasses", {
+                get: function() {
+                    return snackbar_constants_cssClasses;
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbarFoundation, "strings", {
+                get: function() {
+                    return snackbar_constants_strings;
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbarFoundation, "numbers", {
+                get: function() {
+                    return snackbar_constants_numbers;
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbarFoundation, "defaultAdapter", {
+                get: function() {
+                    return {
+                        addClass: function() {
+                            return undefined;
+                        },
+                        announce: function() {
+                            return undefined;
+                        },
+                        notifyClosed: function() {
+                            return undefined;
+                        },
+                        notifyClosing: function() {
+                            return undefined;
+                        },
+                        notifyOpened: function() {
+                            return undefined;
+                        },
+                        notifyOpening: function() {
+                            return undefined;
+                        },
+                        removeClass: function() {
+                            return undefined;
+                        }
+                    };
+                },
+                enumerable: true,
+                configurable: true
+            });
+            MDCSnackbarFoundation.prototype.destroy = function() {
+                this.clearAutoDismissTimer_();
+                cancelAnimationFrame(this.animationFrame_);
+                this.animationFrame_ = 0;
+                clearTimeout(this.animationTimer_);
+                this.animationTimer_ = 0;
+                this.adapter.removeClass(OPENING);
+                this.adapter.removeClass(OPEN);
+                this.adapter.removeClass(CLOSING);
+            };
+            MDCSnackbarFoundation.prototype.open = function() {
+                var _this = this;
+                this.clearAutoDismissTimer_();
+                this.isOpen_ = true;
+                this.adapter.notifyOpening();
+                this.adapter.removeClass(CLOSING);
+                this.adapter.addClass(OPENING);
+                this.adapter.announce();
+                this.runNextAnimationFrame_((function() {
+                    _this.adapter.addClass(OPEN);
+                    _this.animationTimer_ = setTimeout((function() {
+                        var timeoutMs = _this.getTimeoutMs();
+                        _this.handleAnimationTimerEnd_();
+                        _this.adapter.notifyOpened();
+                        if (timeoutMs !== snackbar_constants_numbers.INDETERMINATE) {
+                            _this.autoDismissTimer_ = setTimeout((function() {
+                                _this.close(REASON_DISMISS);
+                            }), timeoutMs);
+                        }
+                    }), snackbar_constants_numbers.SNACKBAR_ANIMATION_OPEN_TIME_MS);
+                }));
+            };
+            MDCSnackbarFoundation.prototype.close = function(reason) {
+                var _this = this;
+                if (reason === void 0) {
+                    reason = "";
+                }
+                if (!this.isOpen_) {
+                    return;
+                }
+                cancelAnimationFrame(this.animationFrame_);
+                this.animationFrame_ = 0;
+                this.clearAutoDismissTimer_();
+                this.isOpen_ = false;
+                this.adapter.notifyClosing(reason);
+                this.adapter.addClass(snackbar_constants_cssClasses.CLOSING);
+                this.adapter.removeClass(snackbar_constants_cssClasses.OPEN);
+                this.adapter.removeClass(snackbar_constants_cssClasses.OPENING);
+                clearTimeout(this.animationTimer_);
+                this.animationTimer_ = setTimeout((function() {
+                    _this.handleAnimationTimerEnd_();
+                    _this.adapter.notifyClosed(reason);
+                }), snackbar_constants_numbers.SNACKBAR_ANIMATION_CLOSE_TIME_MS);
+            };
+            MDCSnackbarFoundation.prototype.isOpen = function() {
+                return this.isOpen_;
+            };
+            MDCSnackbarFoundation.prototype.getTimeoutMs = function() {
+                return this.autoDismissTimeoutMs_;
+            };
+            MDCSnackbarFoundation.prototype.setTimeoutMs = function(timeoutMs) {
+                var minValue = snackbar_constants_numbers.MIN_AUTO_DISMISS_TIMEOUT_MS;
+                var maxValue = snackbar_constants_numbers.MAX_AUTO_DISMISS_TIMEOUT_MS;
+                var indeterminateValue = snackbar_constants_numbers.INDETERMINATE;
+                if (timeoutMs === snackbar_constants_numbers.INDETERMINATE || timeoutMs <= maxValue && timeoutMs >= minValue) {
+                    this.autoDismissTimeoutMs_ = timeoutMs;
+                } else {
+                    throw new Error("\n        timeoutMs must be an integer in the range " + minValue + "–" + maxValue + "\n        (or " + indeterminateValue + " to disable), but got '" + timeoutMs + "'");
+                }
+            };
+            MDCSnackbarFoundation.prototype.getCloseOnEscape = function() {
+                return this.closeOnEscape_;
+            };
+            MDCSnackbarFoundation.prototype.setCloseOnEscape = function(closeOnEscape) {
+                this.closeOnEscape_ = closeOnEscape;
+            };
+            MDCSnackbarFoundation.prototype.handleKeyDown = function(evt) {
+                var isEscapeKey = evt.key === "Escape" || evt.keyCode === 27;
+                if (isEscapeKey && this.getCloseOnEscape()) {
+                    this.close(REASON_DISMISS);
+                }
+            };
+            MDCSnackbarFoundation.prototype.handleActionButtonClick = function(_evt) {
+                this.close(REASON_ACTION);
+            };
+            MDCSnackbarFoundation.prototype.handleActionIconClick = function(_evt) {
+                this.close(REASON_DISMISS);
+            };
+            MDCSnackbarFoundation.prototype.clearAutoDismissTimer_ = function() {
+                clearTimeout(this.autoDismissTimer_);
+                this.autoDismissTimer_ = 0;
+            };
+            MDCSnackbarFoundation.prototype.handleAnimationTimerEnd_ = function() {
+                this.animationTimer_ = 0;
+                this.adapter.removeClass(snackbar_constants_cssClasses.OPENING);
+                this.adapter.removeClass(snackbar_constants_cssClasses.CLOSING);
+            };
+            MDCSnackbarFoundation.prototype.runNextAnimationFrame_ = function(callback) {
+                var _this = this;
+                cancelAnimationFrame(this.animationFrame_);
+                this.animationFrame_ = requestAnimationFrame((function() {
+                    _this.animationFrame_ = 0;
+                    clearTimeout(_this.animationTimer_);
+                    _this.animationTimer_ = setTimeout(callback, 0);
+                }));
+            };
+            return MDCSnackbarFoundation;
+        }(MDCFoundation);
+        const snackbar_foundation = null && MDCSnackbarFoundation;
+        /**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+        var ARIA_LIVE_DELAY_MS = snackbar_constants_numbers.ARIA_LIVE_DELAY_MS;
+        var ARIA_LIVE_LABEL_TEXT_ATTR = snackbar_constants_strings.ARIA_LIVE_LABEL_TEXT_ATTR;
+        function util_announce(ariaEl, labelEl) {
+            if (labelEl === void 0) {
+                labelEl = ariaEl;
+            }
+            var priority = ariaEl.getAttribute("aria-live");
+            var labelText = labelEl.textContent.trim();
+            if (!labelText || !priority) {
+                return;
+            }
+            ariaEl.setAttribute("aria-live", "off");
+            labelEl.textContent = "";
+            labelEl.innerHTML = '<span style="display: inline-block; width: 0; height: 1px;">&nbsp;</span>';
+            labelEl.setAttribute(ARIA_LIVE_LABEL_TEXT_ATTR, labelText);
+            setTimeout((function() {
+                ariaEl.setAttribute("aria-live", priority);
+                labelEl.removeAttribute(ARIA_LIVE_LABEL_TEXT_ATTR);
+                labelEl.textContent = labelText;
+            }), ARIA_LIVE_DELAY_MS);
+        }
+        /**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+        var SURFACE_SELECTOR = snackbar_constants_strings.SURFACE_SELECTOR, LABEL_SELECTOR = snackbar_constants_strings.LABEL_SELECTOR, ACTION_SELECTOR = snackbar_constants_strings.ACTION_SELECTOR, DISMISS_SELECTOR = snackbar_constants_strings.DISMISS_SELECTOR, OPENING_EVENT = snackbar_constants_strings.OPENING_EVENT, OPENED_EVENT = snackbar_constants_strings.OPENED_EVENT, CLOSING_EVENT = snackbar_constants_strings.CLOSING_EVENT, CLOSED_EVENT = snackbar_constants_strings.CLOSED_EVENT;
+        var MDCSnackbar = function(_super) {
+            __extends(MDCSnackbar, _super);
+            function MDCSnackbar() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            MDCSnackbar.attachTo = function(root) {
+                return new MDCSnackbar(root);
+            };
+            MDCSnackbar.prototype.initialize = function(announcerFactory) {
+                if (announcerFactory === void 0) {
+                    announcerFactory = function() {
+                        return util_announce;
+                    };
+                }
+                this.announce_ = announcerFactory();
+            };
+            MDCSnackbar.prototype.initialSyncWithDOM = function() {
+                var _this = this;
+                this.surfaceEl_ = this.root.querySelector(SURFACE_SELECTOR);
+                this.labelEl_ = this.root.querySelector(LABEL_SELECTOR);
+                this.actionEl_ = this.root.querySelector(ACTION_SELECTOR);
+                this.handleKeyDown_ = function(evt) {
+                    return _this.foundation.handleKeyDown(evt);
+                };
+                this.handleSurfaceClick_ = function(evt) {
+                    var target = evt.target;
+                    if (_this.isActionButton_(target)) {
+                        _this.foundation.handleActionButtonClick(evt);
+                    } else if (_this.isActionIcon_(target)) {
+                        _this.foundation.handleActionIconClick(evt);
+                    }
+                };
+                this.registerKeyDownHandler_(this.handleKeyDown_);
+                this.registerSurfaceClickHandler_(this.handleSurfaceClick_);
+            };
+            MDCSnackbar.prototype.destroy = function() {
+                _super.prototype.destroy.call(this);
+                this.deregisterKeyDownHandler_(this.handleKeyDown_);
+                this.deregisterSurfaceClickHandler_(this.handleSurfaceClick_);
+            };
+            MDCSnackbar.prototype.open = function() {
+                this.foundation.open();
+            };
+            MDCSnackbar.prototype.close = function(reason) {
+                if (reason === void 0) {
+                    reason = "";
+                }
+                this.foundation.close(reason);
+            };
+            MDCSnackbar.prototype.getDefaultFoundation = function() {
+                var _this = this;
+                var adapter = {
+                    addClass: function(className) {
+                        return _this.root.classList.add(className);
+                    },
+                    announce: function() {
+                        return _this.announce_(_this.labelEl_);
+                    },
+                    notifyClosed: function(reason) {
+                        return _this.emit(CLOSED_EVENT, reason ? {
+                            reason: reason
+                        } : {});
+                    },
+                    notifyClosing: function(reason) {
+                        return _this.emit(CLOSING_EVENT, reason ? {
+                            reason: reason
+                        } : {});
+                    },
+                    notifyOpened: function() {
+                        return _this.emit(OPENED_EVENT, {});
+                    },
+                    notifyOpening: function() {
+                        return _this.emit(OPENING_EVENT, {});
+                    },
+                    removeClass: function(className) {
+                        return _this.root.classList.remove(className);
+                    }
+                };
+                return new MDCSnackbarFoundation(adapter);
+            };
+            Object.defineProperty(MDCSnackbar.prototype, "timeoutMs", {
+                get: function() {
+                    return this.foundation.getTimeoutMs();
+                },
+                set: function(timeoutMs) {
+                    this.foundation.setTimeoutMs(timeoutMs);
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbar.prototype, "closeOnEscape", {
+                get: function() {
+                    return this.foundation.getCloseOnEscape();
+                },
+                set: function(closeOnEscape) {
+                    this.foundation.setCloseOnEscape(closeOnEscape);
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbar.prototype, "isOpen", {
+                get: function() {
+                    return this.foundation.isOpen();
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbar.prototype, "labelText", {
+                get: function() {
+                    return this.labelEl_.textContent;
+                },
+                set: function(labelText) {
+                    this.labelEl_.textContent = labelText;
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Object.defineProperty(MDCSnackbar.prototype, "actionButtonText", {
+                get: function() {
+                    return this.actionEl_.textContent;
+                },
+                set: function(actionButtonText) {
+                    this.actionEl_.textContent = actionButtonText;
+                },
+                enumerable: true,
+                configurable: true
+            });
+            MDCSnackbar.prototype.registerKeyDownHandler_ = function(handler) {
+                this.listen("keydown", handler);
+            };
+            MDCSnackbar.prototype.deregisterKeyDownHandler_ = function(handler) {
+                this.unlisten("keydown", handler);
+            };
+            MDCSnackbar.prototype.registerSurfaceClickHandler_ = function(handler) {
+                this.surfaceEl_.addEventListener("click", handler);
+            };
+            MDCSnackbar.prototype.deregisterSurfaceClickHandler_ = function(handler) {
+                this.surfaceEl_.removeEventListener("click", handler);
+            };
+            MDCSnackbar.prototype.isActionButton_ = function(target) {
+                return Boolean(closest(target, ACTION_SELECTOR));
+            };
+            MDCSnackbar.prototype.isActionIcon_ = function(target) {
+                return Boolean(closest(target, DISMISS_SELECTOR));
+            };
+            return MDCSnackbar;
+        }(MDCComponent);
+        function MBSnackbar_init(elem, dotnetReference) {
+            elem._snackbar = new MDCSnackbar(elem);
+            elem._snackbar.listen("MDCSnackbar:closed", (function(r) {
+                dotnetReference.invokeMethodAsync("Closed", r);
+            }));
+        }
+        function MBSnackbar_destroy(elem) {
+            elem._snackbar.destroy();
+        }
+        function MBSnackbar_open(elem, timeoutMs) {
+            elem._snackbar.timeoutMs = timeoutMs;
+            elem._snackbar.open();
+        }
+        /**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
         var switch_constants_cssClasses = {
             CHECKED: "mdc-switch--checked",
             DISABLED: "mdc-switch--disabled"
@@ -23986,6 +24463,7 @@ PERFORMANCE OF THIS SOFTWARE.
             MBSegmentedButtonMulti: MBSegmentedButtonMulti_namespaceObject,
             MBSelect: MBSelect_namespaceObject,
             MBSlider: MBSlider_namespaceObject,
+            MBSnackbar: MBSnackbar_namespaceObject,
             MBSwitch: MBSwitch_namespaceObject,
             MBTabBar: MBTabBar_namespaceObject,
             MBTextField: MBTextField_namespaceObject,

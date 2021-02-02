@@ -85,12 +85,12 @@
   <h1 id="Material_Blazor_IMBToastService" data-uid="Material.Blazor.IMBToastService" class="text-break">Interface IMBToastService
   </h1>
   <div class="markdown level0 summary"><p>Interface for the Material.Blazor toast service, developed from the code base of Blazored Toast by Chris Sainty.
-Works in conjunction with a <a class="xref" href="Material.Blazor.MBToastAnchor.html">MBToastAnchor</a> that must be placed in either App.razor or
+Works in conjunction with a <see cref="!:MBToastAnchor"></see> that must be placed in either App.razor or
 MainLayout.razor to avoid an exception being thrown when you first attempt to show a toast notification.</p>
 <p>
 Throws a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> if
 <a class="xref" href="Material.Blazor.IMBToastService.html#Material_Blazor_IMBToastService_ShowToast_Material_Blazor_MBToastLevel_System_String_System_String_System_Nullable_Material_Blazor_MBToastCloseMethod__System_String_System_String_Material_Blazor_IMBIconFoundry_System_Nullable_System_Boolean__System_Nullable_System_UInt32__System_Boolean_">ShowToast(MBToastLevel, String, String, Nullable&lt;MBToastCloseMethod&gt;, String, String, IMBIconFoundry, Nullable&lt;Boolean&gt;, Nullable&lt;UInt32&gt;, Boolean)</a>
-is called without an <a class="xref" href="Material.Blazor.MBToastAnchor.html">MBToastAnchor</a> component used in the app.
+is called without an <see cref="!:MBToastAnchor"></see> component used in the app.
 </p>
 <example>
 <p>You can optionally add configuration when you add this to the service collection:</p>

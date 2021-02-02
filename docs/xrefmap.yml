@@ -376,6 +376,41 @@ references:
   commentId: T:Material.Blazor.IMBIconFoundry
   fullName: Material.Blazor.IMBIconFoundry
   nameWithType: IMBIconFoundry
+- uid: Material.Blazor.IMBSnackbarService
+  name: IMBSnackbarService
+  href: api/Material.Blazor.IMBSnackbarService.html
+  commentId: T:Material.Blazor.IMBSnackbarService
+  fullName: Material.Blazor.IMBSnackbarService
+  nameWithType: IMBSnackbarService
+- uid: Material.Blazor.IMBSnackbarService.Configuration
+  name: Configuration
+  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_Configuration
+  commentId: P:Material.Blazor.IMBSnackbarService.Configuration
+  fullName: Material.Blazor.IMBSnackbarService.Configuration
+  nameWithType: IMBSnackbarService.Configuration
+- uid: Material.Blazor.IMBSnackbarService.Configuration*
+  name: Configuration
+  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_Configuration_
+  commentId: Overload:Material.Blazor.IMBSnackbarService.Configuration
+  isSpec: "True"
+  fullName: Material.Blazor.IMBSnackbarService.Configuration
+  nameWithType: IMBSnackbarService.Configuration
+- uid: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Boolean,System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
+  name: ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable<Int32>, Boolean)
+  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Boolean_System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_
+  commentId: M:Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Boolean,System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
+  name.vb: ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable(Of Int32), Boolean)
+  fullName: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Boolean, System.Boolean, System.Boolean, System.Nullable<System.Int32>, System.Boolean)
+  fullName.vb: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Boolean, System.Boolean, System.Boolean, System.Nullable(Of System.Int32), System.Boolean)
+  nameWithType: IMBSnackbarService.ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable<Int32>, Boolean)
+  nameWithType.vb: IMBSnackbarService.ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable(Of Int32), Boolean)
+- uid: Material.Blazor.IMBSnackbarService.ShowSnackbar*
+  name: ShowSnackbar
+  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_
+  commentId: Overload:Material.Blazor.IMBSnackbarService.ShowSnackbar
+  isSpec: "True"
+  fullName: Material.Blazor.IMBSnackbarService.ShowSnackbar
+  nameWithType: IMBSnackbarService.ShowSnackbar
 - uid: Material.Blazor.IMBToastService
   name: IMBToastService
   href: api/Material.Blazor.IMBToastService.html
@@ -1591,6 +1626,96 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.InternalDatePickerYearButton.OnItemClickAsync
   nameWithType: InternalDatePickerYearButton.OnItemClickAsync
+- uid: Material.Blazor.Internal.InternalSnackbar
+  name: InternalSnackbar
+  href: api/Material.Blazor.Internal.InternalSnackbar.html
+  commentId: T:Material.Blazor.Internal.InternalSnackbar
+  fullName: Material.Blazor.Internal.InternalSnackbar
+  nameWithType: InternalSnackbar
+- uid: Material.Blazor.Internal.InternalSnackbar.Closed
+  name: Closed()
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_Closed
+  commentId: M:Material.Blazor.Internal.InternalSnackbar.Closed
+  fullName: Material.Blazor.Internal.InternalSnackbar.Closed()
+  nameWithType: InternalSnackbar.Closed()
+- uid: Material.Blazor.Internal.InternalSnackbar.Closed*
+  name: Closed
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_Closed_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbar.Closed
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbar.Closed
+  nameWithType: InternalSnackbar.Closed
+- uid: Material.Blazor.Internal.InternalSnackbar.Dispose
+  name: Dispose()
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_Dispose
+  commentId: M:Material.Blazor.Internal.InternalSnackbar.Dispose
+  fullName: Material.Blazor.Internal.InternalSnackbar.Dispose()
+  nameWithType: InternalSnackbar.Dispose()
+- uid: Material.Blazor.Internal.InternalSnackbar.Dispose*
+  name: Dispose
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_Dispose_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbar.Dispose
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbar.Dispose
+  nameWithType: InternalSnackbar.Dispose
+- uid: Material.Blazor.Internal.InternalSnackbar.OnAfterRenderAsync(System.Boolean)
+  name: OnAfterRenderAsync(Boolean)
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_OnAfterRenderAsync_System_Boolean_
+  commentId: M:Material.Blazor.Internal.InternalSnackbar.OnAfterRenderAsync(System.Boolean)
+  fullName: Material.Blazor.Internal.InternalSnackbar.OnAfterRenderAsync(System.Boolean)
+  nameWithType: InternalSnackbar.OnAfterRenderAsync(Boolean)
+- uid: Material.Blazor.Internal.InternalSnackbar.OnAfterRenderAsync*
+  name: OnAfterRenderAsync
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_OnAfterRenderAsync_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbar.OnAfterRenderAsync
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbar.OnAfterRenderAsync
+  nameWithType: InternalSnackbar.OnAfterRenderAsync
+- uid: Material.Blazor.Internal.InternalSnackbar.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_OnInitialized
+  commentId: M:Material.Blazor.Internal.InternalSnackbar.OnInitialized
+  fullName: Material.Blazor.Internal.InternalSnackbar.OnInitialized()
+  nameWithType: InternalSnackbar.OnInitialized()
+- uid: Material.Blazor.Internal.InternalSnackbar.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_OnInitialized_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbar.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbar.OnInitialized
+  nameWithType: InternalSnackbar.OnInitialized
+- uid: Material.Blazor.Internal.InternalSnackbarAnchor
+  name: InternalSnackbarAnchor
+  href: api/Material.Blazor.Internal.InternalSnackbarAnchor.html
+  commentId: T:Material.Blazor.Internal.InternalSnackbarAnchor
+  fullName: Material.Blazor.Internal.InternalSnackbarAnchor
+  nameWithType: InternalSnackbarAnchor
+- uid: Material.Blazor.Internal.InternalSnackbarAnchor.Dispose
+  name: Dispose()
+  href: api/Material.Blazor.Internal.InternalSnackbarAnchor.html#Material_Blazor_Internal_InternalSnackbarAnchor_Dispose
+  commentId: M:Material.Blazor.Internal.InternalSnackbarAnchor.Dispose
+  fullName: Material.Blazor.Internal.InternalSnackbarAnchor.Dispose()
+  nameWithType: InternalSnackbarAnchor.Dispose()
+- uid: Material.Blazor.Internal.InternalSnackbarAnchor.Dispose*
+  name: Dispose
+  href: api/Material.Blazor.Internal.InternalSnackbarAnchor.html#Material_Blazor_Internal_InternalSnackbarAnchor_Dispose_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbarAnchor.Dispose
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbarAnchor.Dispose
+  nameWithType: InternalSnackbarAnchor.Dispose
+- uid: Material.Blazor.Internal.InternalSnackbarAnchor.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.Internal.InternalSnackbarAnchor.html#Material_Blazor_Internal_InternalSnackbarAnchor_OnInitialized
+  commentId: M:Material.Blazor.Internal.InternalSnackbarAnchor.OnInitialized
+  fullName: Material.Blazor.Internal.InternalSnackbarAnchor.OnInitialized()
+  nameWithType: InternalSnackbarAnchor.OnInitialized()
+- uid: Material.Blazor.Internal.InternalSnackbarAnchor.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.Internal.InternalSnackbarAnchor.html#Material_Blazor_Internal_InternalSnackbarAnchor_OnInitialized_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbarAnchor.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbarAnchor.OnInitialized
+  nameWithType: InternalSnackbarAnchor.OnInitialized
 - uid: Material.Blazor.Internal.InternalToastAnchor
   name: InternalToastAnchor
   href: api/Material.Blazor.Internal.InternalToastAnchor.html
@@ -1823,6 +1948,51 @@ references:
   fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ValidateItemList
   nameWithType: SingleSelectComponent<T, TListElement>.ValidateItemList
   nameWithType.vb: SingleSelectComponent(Of T, TListElement).ValidateItemList
+- uid: Material.Blazor.Internal.SnackbarInstance
+  name: SnackbarInstance
+  href: api/Material.Blazor.Internal.SnackbarInstance.html
+  commentId: T:Material.Blazor.Internal.SnackbarInstance
+  fullName: Material.Blazor.Internal.SnackbarInstance
+  nameWithType: SnackbarInstance
+- uid: Material.Blazor.Internal.SnackbarInstance.Id
+  name: Id
+  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_Id
+  commentId: P:Material.Blazor.Internal.SnackbarInstance.Id
+  fullName: Material.Blazor.Internal.SnackbarInstance.Id
+  nameWithType: SnackbarInstance.Id
+- uid: Material.Blazor.Internal.SnackbarInstance.Id*
+  name: Id
+  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_Id_
+  commentId: Overload:Material.Blazor.Internal.SnackbarInstance.Id
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SnackbarInstance.Id
+  nameWithType: SnackbarInstance.Id
+- uid: Material.Blazor.Internal.SnackbarInstance.Settings
+  name: Settings
+  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_Settings
+  commentId: P:Material.Blazor.Internal.SnackbarInstance.Settings
+  fullName: Material.Blazor.Internal.SnackbarInstance.Settings
+  nameWithType: SnackbarInstance.Settings
+- uid: Material.Blazor.Internal.SnackbarInstance.Settings*
+  name: Settings
+  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_Settings_
+  commentId: Overload:Material.Blazor.Internal.SnackbarInstance.Settings
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SnackbarInstance.Settings
+  nameWithType: SnackbarInstance.Settings
+- uid: Material.Blazor.Internal.SnackbarInstance.TimeStamp
+  name: TimeStamp
+  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_TimeStamp
+  commentId: P:Material.Blazor.Internal.SnackbarInstance.TimeStamp
+  fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
+  nameWithType: SnackbarInstance.TimeStamp
+- uid: Material.Blazor.Internal.SnackbarInstance.TimeStamp*
+  name: TimeStamp
+  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_TimeStamp_
+  commentId: Overload:Material.Blazor.Internal.SnackbarInstance.TimeStamp
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
+  nameWithType: SnackbarInstance.TimeStamp
 - uid: Material.Blazor.Internal.StyleMapper
   name: StyleMapper
   href: api/Material.Blazor.Internal.StyleMapper.html
@@ -9072,6 +9242,128 @@ references:
   fullName.vb: Material.Blazor.MBSlidingTabBar(Of TItem).StackIcons
   nameWithType: MBSlidingTabBar<TItem>.StackIcons
   nameWithType.vb: MBSlidingTabBar(Of TItem).StackIcons
+- uid: Material.Blazor.MBSnackbarServiceConfiguration
+  name: MBSnackbarServiceConfiguration
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html
+  commentId: T:Material.Blazor.MBSnackbarServiceConfiguration
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration
+  nameWithType: MBSnackbarServiceConfiguration
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
+  name: DefaultTimeout
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultTimeout
+  commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
+  nameWithType: MBSnackbarServiceConfiguration.DefaultTimeout
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.Timeout
+  name: Timeout
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Timeout
+  commentId: P:Material.Blazor.MBSnackbarServiceConfiguration.Timeout
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.Timeout
+  nameWithType: MBSnackbarServiceConfiguration.Timeout
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.Timeout*
+  name: Timeout
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Timeout_
+  commentId: Overload:Material.Blazor.MBSnackbarServiceConfiguration.Timeout
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.Timeout
+  nameWithType: MBSnackbarServiceConfiguration.Timeout
+- uid: Material.Blazor.MBSnackbarSettings
+  name: MBSnackbarSettings
+  href: api/Material.Blazor.MBSnackbarSettings.html
+  commentId: T:Material.Blazor.MBSnackbarSettings
+  fullName: Material.Blazor.MBSnackbarSettings
+  nameWithType: MBSnackbarSettings
+- uid: Material.Blazor.MBSnackbarSettings.Action
+  name: Action
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Action
+  commentId: P:Material.Blazor.MBSnackbarSettings.Action
+  fullName: Material.Blazor.MBSnackbarSettings.Action
+  nameWithType: MBSnackbarSettings.Action
+- uid: Material.Blazor.MBSnackbarSettings.Action*
+  name: Action
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Action_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.Action
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.Action
+  nameWithType: MBSnackbarSettings.Action
+- uid: Material.Blazor.MBSnackbarSettings.ActionText
+  name: ActionText
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_ActionText
+  commentId: P:Material.Blazor.MBSnackbarSettings.ActionText
+  fullName: Material.Blazor.MBSnackbarSettings.ActionText
+  nameWithType: MBSnackbarSettings.ActionText
+- uid: Material.Blazor.MBSnackbarSettings.ActionText*
+  name: ActionText
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_ActionText_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.ActionText
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.ActionText
+  nameWithType: MBSnackbarSettings.ActionText
+- uid: Material.Blazor.MBSnackbarSettings.DismissIcon
+  name: DismissIcon
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_DismissIcon
+  commentId: P:Material.Blazor.MBSnackbarSettings.DismissIcon
+  fullName: Material.Blazor.MBSnackbarSettings.DismissIcon
+  nameWithType: MBSnackbarSettings.DismissIcon
+- uid: Material.Blazor.MBSnackbarSettings.DismissIcon*
+  name: DismissIcon
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_DismissIcon_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.DismissIcon
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.DismissIcon
+  nameWithType: MBSnackbarSettings.DismissIcon
+- uid: Material.Blazor.MBSnackbarSettings.Leading
+  name: Leading
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Leading
+  commentId: P:Material.Blazor.MBSnackbarSettings.Leading
+  fullName: Material.Blazor.MBSnackbarSettings.Leading
+  nameWithType: MBSnackbarSettings.Leading
+- uid: Material.Blazor.MBSnackbarSettings.Leading*
+  name: Leading
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Leading_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.Leading
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.Leading
+  nameWithType: MBSnackbarSettings.Leading
+- uid: Material.Blazor.MBSnackbarSettings.Message
+  name: Message
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Message
+  commentId: P:Material.Blazor.MBSnackbarSettings.Message
+  fullName: Material.Blazor.MBSnackbarSettings.Message
+  nameWithType: MBSnackbarSettings.Message
+- uid: Material.Blazor.MBSnackbarSettings.Message*
+  name: Message
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Message_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.Message
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.Message
+  nameWithType: MBSnackbarSettings.Message
+- uid: Material.Blazor.MBSnackbarSettings.Stacked
+  name: Stacked
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Stacked
+  commentId: P:Material.Blazor.MBSnackbarSettings.Stacked
+  fullName: Material.Blazor.MBSnackbarSettings.Stacked
+  nameWithType: MBSnackbarSettings.Stacked
+- uid: Material.Blazor.MBSnackbarSettings.Stacked*
+  name: Stacked
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Stacked_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.Stacked
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.Stacked
+  nameWithType: MBSnackbarSettings.Stacked
+- uid: Material.Blazor.MBSnackbarSettings.Timeout
+  name: Timeout
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Timeout
+  commentId: P:Material.Blazor.MBSnackbarSettings.Timeout
+  fullName: Material.Blazor.MBSnackbarSettings.Timeout
+  nameWithType: MBSnackbarSettings.Timeout
+- uid: Material.Blazor.MBSnackbarSettings.Timeout*
+  name: Timeout
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Timeout_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.Timeout
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.Timeout
+  nameWithType: MBSnackbarSettings.Timeout
 - uid: Material.Blazor.MBSwitch
   name: MBSwitch
   href: api/Material.Blazor.MBSwitch.html
@@ -9763,38 +10055,6 @@ references:
   commentId: F:Material.Blazor.MBTextInputStyle.Outlined
   fullName: Material.Blazor.MBTextInputStyle.Outlined
   nameWithType: MBTextInputStyle.Outlined
-- uid: Material.Blazor.MBToastAnchor
-  name: MBToastAnchor
-  href: api/Material.Blazor.MBToastAnchor.html
-  commentId: T:Material.Blazor.MBToastAnchor
-  fullName: Material.Blazor.MBToastAnchor
-  nameWithType: MBToastAnchor
-- uid: Material.Blazor.MBToastAnchor.CloseToast(System.Guid)
-  name: CloseToast(Guid)
-  href: api/Material.Blazor.MBToastAnchor.html#Material_Blazor_MBToastAnchor_CloseToast_System_Guid_
-  commentId: M:Material.Blazor.MBToastAnchor.CloseToast(System.Guid)
-  fullName: Material.Blazor.MBToastAnchor.CloseToast(System.Guid)
-  nameWithType: MBToastAnchor.CloseToast(Guid)
-- uid: Material.Blazor.MBToastAnchor.CloseToast*
-  name: CloseToast
-  href: api/Material.Blazor.MBToastAnchor.html#Material_Blazor_MBToastAnchor_CloseToast_
-  commentId: Overload:Material.Blazor.MBToastAnchor.CloseToast
-  isSpec: "True"
-  fullName: Material.Blazor.MBToastAnchor.CloseToast
-  nameWithType: MBToastAnchor.CloseToast
-- uid: Material.Blazor.MBToastAnchor.OnInitialized
-  name: OnInitialized()
-  href: api/Material.Blazor.MBToastAnchor.html#Material_Blazor_MBToastAnchor_OnInitialized
-  commentId: M:Material.Blazor.MBToastAnchor.OnInitialized
-  fullName: Material.Blazor.MBToastAnchor.OnInitialized()
-  nameWithType: MBToastAnchor.OnInitialized()
-- uid: Material.Blazor.MBToastAnchor.OnInitialized*
-  name: OnInitialized
-  href: api/Material.Blazor.MBToastAnchor.html#Material_Blazor_MBToastAnchor_OnInitialized_
-  commentId: Overload:Material.Blazor.MBToastAnchor.OnInitialized
-  isSpec: "True"
-  fullName: Material.Blazor.MBToastAnchor.OnInitialized
-  nameWithType: MBToastAnchor.OnInitialized
 - uid: Material.Blazor.MBToastCloseMethod
   name: MBToastCloseMethod
   href: api/Material.Blazor.MBToastCloseMethod.html
@@ -10528,12 +10788,12 @@ references:
   commentId: T:Material.Blazor.ServiceCollectionExtensions
   fullName: Material.Blazor.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
-  name: AddMBServices(IServiceCollection, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)
-  href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_
-  commentId: M:Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
-  fullName: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection, Material.Blazor.MBToastServiceConfiguration, Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
-  nameWithType: ServiceCollectionExtensions.AddMBServices(IServiceCollection, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)
+- uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
+  name: AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)
+  href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_
+  commentId: M:Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
+  fullName: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection, Material.Blazor.MBSnackbarServiceConfiguration, Material.Blazor.MBToastServiceConfiguration, Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
+  nameWithType: ServiceCollectionExtensions.AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)
 - uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices*
   name: AddMBServices
   href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_
@@ -10544,6 +10804,9 @@ references:
 - uid: S.IMBAnimatedNavigationManager
   name: IMBAnimatedNavigationManager
   href: Material.Blazor/Model/AnimatedNavigation/IMBAnimatedNavigationManager.html
+- uid: S.IMBSnackbarService
+  name: IMBSnackbarService
+  href: Material.Blazor/Model/Snackbar/IMBSnackbarService.html
 - uid: S.IMBToastService
   name: IMBToastService
   href: Material.Blazor/Model/Toast/IMBToastService.html

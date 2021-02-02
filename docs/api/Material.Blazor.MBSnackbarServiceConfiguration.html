@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ServiceCollectionExtensions
+    <title>Class MBSnackbarServiceConfiguration
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ServiceCollectionExtensions
+    <meta name="title" content="Class MBSnackbarServiceConfiguration
    ">
     <meta name="generator" content="docfx 2.56.1.0">
     
@@ -79,17 +79,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Material.Blazor.ServiceCollectionExtensions">
+            <article class="content wrap" id="_content" data-uid="Material.Blazor.MBSnackbarServiceConfiguration">
   
   
-  <h1 id="Material_Blazor_ServiceCollectionExtensions" data-uid="Material.Blazor.ServiceCollectionExtensions" class="text-break">Class ServiceCollectionExtensions
+  <h1 id="Material_Blazor_MBSnackbarServiceConfiguration" data-uid="Material.Blazor.MBSnackbarServiceConfiguration" class="text-break">Class MBSnackbarServiceConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Configuration for <a class="xref" href="Material.Blazor.IMBSnackbarService.html">IMBSnackbarService</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">ServiceCollectionExtensions</span></div>
+    <div class="level1"><span class="xref">MBSnackbarServiceConfiguration</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -117,62 +118,63 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Material.Blazor.html">Material.Blazor</a></h6>
   <h6><strong>Assembly</strong>: Material.Blazor.dll</h6>
-  <h5 id="Material_Blazor_ServiceCollectionExtensions_syntax">Syntax</h5>
+  <h5 id="Material_Blazor_MBSnackbarServiceConfiguration_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ServiceCollectionExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public class MBSnackbarServiceConfiguration</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_.md&amp;value=---%0Auid%3A%20Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection%2CMaterial.Blazor.MBSnackbarServiceConfiguration%2CMaterial.Blazor.MBToastServiceConfiguration%2CMaterial.Blazor.MBAnimatedNavigationManagerServiceConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBSnackbarServiceConfiguration_DefaultTimeout.md&amp;value=---%0Auid%3A%20Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Model/ServiceCollectionExtensions.cs/#L18">View Source</a>
+    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Model/Snackbar/MBSnackbarServiceConfiguration.cs/#L11">View Source</a>
   </span>
-  <a id="Material_Blazor_ServiceCollectionExtensions_AddMBServices_" data-uid="Material.Blazor.ServiceCollectionExtensions.AddMBServices*"></a>
-  <h4 id="Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_" data-uid="Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)">AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)</h4>
-  <div class="markdown level1 summary"><p>Adds Snackbar, Toast, Tooltip and Animated Navigation services for Material.Blazor. This is required for any app that uses one or more
-of these components. The two configurations are optional.</p>
-</div>
+  <h4 id="Material_Blazor_MBSnackbarServiceConfiguration_DefaultTimeout" data-uid="Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout">DefaultTimeout</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddMBServices(this IServiceCollection services, MBSnackbarServiceConfiguration snackbarServiceConfiguration = null, MBToastServiceConfiguration toastServiceConfiguration = null, MBAnimatedNavigationManagerServiceConfiguration animatedNavigationManagerServiceConfiguration = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public const int DefaultTimeout = 5000</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
-        <td><span class="parametername">services</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Material.Blazor.MBSnackbarServiceConfiguration.html">MBSnackbarServiceConfiguration</a></td>
-        <td><span class="parametername">snackbarServiceConfiguration</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Material.Blazor.MBToastServiceConfiguration.html">MBToastServiceConfiguration</a></td>
-        <td><span class="parametername">toastServiceConfiguration</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration.html">MBAnimatedNavigationManagerServiceConfiguration</a></td>
-        <td><span class="parametername">animatedNavigationManagerServiceConfiguration</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBSnackbarServiceConfiguration_Timeout.md&amp;value=---%0Auid%3A%20Material.Blazor.MBSnackbarServiceConfiguration.Timeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Model/Snackbar/MBSnackbarServiceConfiguration.cs/#L21">View Source</a>
+  </span>
+  <a id="Material_Blazor_MBSnackbarServiceConfiguration_Timeout_" data-uid="Material.Blazor.MBSnackbarServiceConfiguration.Timeout*"></a>
+  <h4 id="Material_Blazor_MBSnackbarServiceConfiguration_Timeout" data-uid="Material.Blazor.MBSnackbarServiceConfiguration.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"><p>The snackbar's timeout in milliseconds.
+Minimum value is 4000 (4 seconds), maximum value is 10000 (10s).
+Use -1 to disable.
+Defaults to 5000.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Timeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -182,7 +184,7 @@ of these components. The two configurations are optional.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -195,10 +197,10 @@ of these components. The two configurations are optional.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_ServiceCollectionExtensions.md&amp;value=---%0Auid%3A%20Material.Blazor.ServiceCollectionExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBSnackbarServiceConfiguration.md&amp;value=---%0Auid%3A%20Material.Blazor.MBSnackbarServiceConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Model/ServiceCollectionExtensions.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Model/Snackbar/MBSnackbarServiceConfiguration.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
