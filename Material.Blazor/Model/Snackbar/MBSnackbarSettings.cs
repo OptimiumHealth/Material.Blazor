@@ -12,27 +12,32 @@ namespace Material.Blazor
     public class MBSnackbarSettings
     {
         /// <summary>
-        /// TODO documentation
+        /// The action that is performed when the button in the snackbar is clicked (optional. if set, <see cref="ActionText"/> must also be set).
         /// </summary>
         public Action Action { get; set; }
         /// <summary>
-        /// TODO documentation
+        /// The text to display in the action button in the snackbar (optional. if set, <see cref="Action"/> must also be set).
         /// </summary>
         public string ActionText { get; set; }
         /// <summary>
-        /// TODO documentation
+        /// By default, snackbars are centered horizontally within the viewport.
+        /// On larger screens, they can optionally be displayed on the leading edge of the screen (the left side in LTR, or the right side in RTL) by setting this property to true.
+        /// Default: false.
         /// </summary>
         public bool Leading { get; set; }
         /// <summary>
-        /// TODO documentation
+        /// Action buttons with long text should be positioned below the label instead of alongside it.
+        /// This can be accomplished by setting this property to true.
+        /// Default: false.
         /// </summary>
         public bool Stacked { get; set; }
         /// <summary>
-        /// TODO documentation
+        /// The message to be displayed in the snackbar.
         /// </summary>
         public string Message { get; set; }
         /// <summary>
-        /// TODO documentation
+        /// Snackbars are intended to dismiss on their own after a few seconds, but a dedicated dismiss icon may be optionally included as well for accessibility purposes.
+        /// By default, a dismiss icon is displayed. This can be disabled by setting this property to false.
         /// </summary>
         public bool DismissIcon { get; set; }
 
