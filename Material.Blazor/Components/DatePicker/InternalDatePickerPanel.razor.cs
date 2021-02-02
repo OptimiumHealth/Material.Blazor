@@ -142,9 +142,11 @@ namespace Material.Blazor.Internal
                 CachedComponentValue = ComponentValue;
                 CachedMinDate = MinDate;
                 CachedMaxDate = MaxDate;
-
                 var startDate = StartOfDisplayMonth = new DateTime(ComponentValue.Year, ComponentValue.Month, 1).AddMonths(MonthsOffset);
-                startDate = startDate.AddDays(1-(int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek);
+                while (startDate.DayOfWeek != CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek)
+                {
+                    startDate = startDate.AddDays(-1);
+                }
                 var endDate = startDate.AddDays(6 * 7); // 6 lines of 7 days each
 
                 Dates = new List<DateTime>();
