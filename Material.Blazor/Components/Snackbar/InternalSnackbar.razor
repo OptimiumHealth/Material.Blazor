@@ -8,21 +8,21 @@
         </div>
         @{
             var has_action = Snackbar.Settings.Action != null && Snackbar.Settings.ActionText != null;
-            var has_dismiss = Snackbar.Settings.DismissIcon;
+            var has_dismiss = Snackbar.Settings.DismissIcon || Snackbar.Settings.AppliedTimeout < 0;
         }
         @if (has_action || has_dismiss)
         {
             <div class="mdc-snackbar__actions" aria-atomic="true">
                 @if (has_action)
                 {
-                    <button type="button" class="mdc-button mdc-snackbar__action">
+                    <button type="button" class="mdc-button mdc-snackbar__action" @onclick="Snackbar.Settings.Action">
                         <div class="mdc-button__ripple"></div>
                         <span class="mdc-button__label">@Snackbar.Settings.ActionText</span>
                     </button>
                 }
                 @if (has_dismiss)
                 {
-                <button class="mdc-icon-button mdc-snackbar__dismiss material-icons" title="Dismiss">close</button>
+                    <button class="mdc-icon-button mdc-snackbar__dismiss material-icons" title="Dismiss">close</button>
                 }
             </div>
         }

@@ -11,27 +11,6 @@
     }
 </style>
 
-@if (OverrideCssDefaults)
-{
-    <style>
-        :root {
-            --mb-snackbar-color-info: var(--mb-color-on-light-blue-200) !important;
-            --mb-snackbar-color-success: var(--mb-color-on-green-200) !important;
-            --mb-snackbar-color-warning: var(--mb-color-on-amber-200) !important;
-            --mb-snackbar-color-error: var(--mb-color-on-red-200) !important;
-            --mb-snackbar-filter-info: var(--mb-color-on-light-blue-200) !important;
-            --mb-snackbar-filter-success: var(--mb-color-on-green-200) !important;
-            --mb-snackbar-filter-warning: var(--mb-color-on-amber-200) !important;
-            --mb-snackbar-filter-error: var(--mb-color-on-red-200) !important;
-            --mb-snackbar-background-color-info: var(--mb-color-light-blue-200) !important;
-            --mb-snackbar-background-color-success: var(--mb-color-green-200) !important;
-            --mb-snackbar-background-color-warning: var(--mb-color-amber-200) !important;
-            --mb-snackbar-background-color-error: var(--mb-color-red-200) !important;
-            --mb-snackbar-border-radius: 4px 16px !important;
-        }
-    </style>
-}
-
 
 <DemonstrationPage DemoComponent="@this"
                    DetailedArticle="Snackbar"
@@ -54,37 +33,46 @@
                             </h2>
 
                             <h3 class="mb-card__subtitle mdc-typography mdc-typography--subtitle2">
-                                Shows the four varieties of snackbar with CSS markup and managed timeout.
+                                Shows the varieties of snackbar and managed timeout.
                             </h3>
-                        </div>
-                        <div class="mdc-layout-grid__cell--span-4">
-                            <MBCheckbox @bind-Value="@OverrideCssDefaults"
-                                        Label="Override Default CSS" />
                         </div>
                         <div class="mdc-layout-grid__cell--span-12">
                             <p>
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                          Label="Info Snackbar"
+                                          Label="Informative"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              message: "Nothing doing here."))"
+                                                              message: "Can't send photo. Retry in 5 seconds."))"
                                           style="background-color: var(--mb-snackbar-background-color-info); color: var(--mb-snackbar-color-info); margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                          Label="Success Snackbar"
+                                          Label="Actionable"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              message: "Congratulations!" ))"
+                                                              message: "Can't send photo. Retry in 5 seconds.",
+                                                              action: () => SnackbarService.ShowSnackbar("You clicked the action", timeout: 4000),
+                                                              action_text: "retry"))"
                                           style="background-color: var(--mb-snackbar-background-color-success); color: var(--mb-snackbar-color-success); margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                          Label="Warning Snackbar"
+                                          Label="Undismissable"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              message: "You have been warned."))"
+                                                              message: "Wait until I'm gone.",
+                                                              dismiss_icon: false))"
                                           style="background-color: var(--mb-snackbar-background-color-warning); color: var(--mb-snackbar-color-warning); margin-bottom: 1rem;" />
 
                                 <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
-                                          Label="Error Snackbar"
+                                          Label="Leading"
                                           @onclick="@(() => SnackbarService.ShowSnackbar(
-                                                              message: "Go fix it."))"
+                                                              message: "I'm on the leading edge of the screen",
+                                                              leading: true))"
+                                          style="background-color: var(--mb-snackbar-background-color-warning); color: var(--mb-snackbar-color-warning); margin-bottom: 1rem;" />
+
+                                <MBButton ButtonStyle="@MBButtonStyle.ContainedRaised"
+                                          Label="Stacked"
+                                          @onclick="@(() => SnackbarService.ShowSnackbar(
+                                                              message: "The action text is rather long, so the action icon is stacked",
+                                                              action: () => SnackbarService.ShowSnackbar("You clicked the action", timeout: 4000),
+                                                              action_text: "This text is really rather long",
+                                                              stacked: true))"
                                           style="background-color: var(--mb-snackbar-background-color-error); color: var(--mb-snackbar-color-error); margin-bottom: 1rem;" />
                             </p>
                         </div>
@@ -144,9 +132,6 @@
 
 
 @code {
-    private bool OverrideCssDefaults { get; set; }
-
-
     private string CssClass { get; set; }
     private readonly MBSelectElement<string>[] CssClassItems = new MBSelectElement<string>[]
     {
