@@ -68,6 +68,12 @@
                         The auto-complete items may only be suggestions, but custom values may be permitted.
                     </h3>
 
+                    <style>
+                        li.mb-autocomplete-custom-value + li {
+                            border-top: 1px solid darkgray;
+                        }
+                    </style>
+
                     <p><MBAutocompleteTextField Label="Any value is valid" @bind-Value="@CustomValue" SelectItems="@Fruits" AllowCustomValue="true" /></p>
                 </Primary>
             </MBCard>
