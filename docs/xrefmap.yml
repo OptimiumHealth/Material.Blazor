@@ -2200,6 +2200,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBAutocompleteTextField.AllowBlankResult
   nameWithType: MBAutocompleteTextField.AllowBlankResult
+- uid: Material.Blazor.MBAutocompleteTextField.AllowCustomValue
+  name: AllowCustomValue
+  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_AllowCustomValue
+  commentId: P:Material.Blazor.MBAutocompleteTextField.AllowCustomValue
+  fullName: Material.Blazor.MBAutocompleteTextField.AllowCustomValue
+  nameWithType: MBAutocompleteTextField.AllowCustomValue
+- uid: Material.Blazor.MBAutocompleteTextField.AllowCustomValue*
+  name: AllowCustomValue
+  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_AllowCustomValue_
+  commentId: Overload:Material.Blazor.MBAutocompleteTextField.AllowCustomValue
+  isSpec: "True"
+  fullName: Material.Blazor.MBAutocompleteTextField.AllowCustomValue
+  nameWithType: MBAutocompleteTextField.AllowCustomValue
 - uid: Material.Blazor.MBAutocompleteTextField.Density
   name: Density
   href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_Density
