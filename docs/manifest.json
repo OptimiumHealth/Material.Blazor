@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "LICENSE.html",
-          "hash": "JW03o2X3iPGSBXaq5zKNTQ=="
+          "hash": "SS8Ij8ytchisn8QB0kYTiA=="
         }
       },
       "is_incremental": false,
@@ -2206,12 +2206,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/DevelopmentEnvironment.md",
       "output": {
         ".html": {
           "relative_path": "articles/DevelopmentEnvironment.html",
-          "hash": "HGO7aWFpv2rBoPZzzt1zyQ=="
+          "hash": "zrGhdLuXVmCt4Q7Qy7gyog=="
         }
       },
       "is_incremental": false,
@@ -2362,6 +2365,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/TwoWayBinding.md",
       "output": {
@@ -2392,105 +2398,6 @@
         ".html": {
           "relative_path": "articles/toc.html",
           "hash": "smuqnV6TI4ptEdv+eX5Lbg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/gh-account-settings-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/gh-account-settings-1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/gh-account-settings-2.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/gh-account-settings-2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/gh-account-settings-3.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/gh-account-settings-3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/gh-account-settings-4.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/gh-account-settings-4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/gh-account-settings-5.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/gh-account-settings-5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/text-field-focus.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/text-field-focus.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/two-way-bind-flow.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/two-way-bind-flow.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/vs-config.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/vs-config.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/vs-extensions.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/vs-extensions.png"
         }
       },
       "is_incremental": false,
@@ -2542,13 +2449,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 118,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
