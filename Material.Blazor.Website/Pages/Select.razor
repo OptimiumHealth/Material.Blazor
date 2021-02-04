@@ -116,6 +116,25 @@
             <MBCard AutoStyled="true">
                 <Primary>
                     <h2 class="mb-card__title mdc-typography mdc-typography--headline6">
+                        Disabled
+                    </h2>
+
+                    <h3 class="mb-card__subtitle mdc-typography mdc-typography--subtitle2">
+                        Shows the component either entirely disabled or with some items disabled.
+                    </h3>
+
+                    <p><MBSelect Label="Disabled Component" @bind-Value="@TwoWayBinding" Items="KittenBreeds" ItemValidation="@MBItemValidation.NoSelection" Disabled="true" /></p>
+                    <p><MBSelect Label="Items disabled" @bind-Value="@TwoWayBinding" Items="KittenBreedsNoFake" ItemValidation="@MBItemValidation.NoSelection" /></p>
+                </Primary>
+            </MBCard>
+        </div>
+
+
+
+        <div class="mdc-layout-grid__cell--span-4">
+            <MBCard AutoStyled="true">
+                <Primary>
+                    <h2 class="mb-card__title mdc-typography mdc-typography--headline6">
                         Filled Density
                     </h2>
 
@@ -163,7 +182,15 @@
         new MBSelectElement<string> { SelectedValue = "brit-short", Label = "British Shorthair" },
         new MBSelectElement<string> { SelectedValue = "russ-blue", Label = "Russian Blue" },
         new MBSelectElement<string> { SelectedValue = "ice-invis", Label = "Icelandic Invisible" }
-            };
+    };
+    MBSelectElement<string>[] KittenBreedsNoFake = new MBSelectElement<string>[]
+    {
+        new MBSelectElement<string> { SelectedValue = "brit-short", Label = "British Shorthair" },
+        new MBSelectElement<string> { SelectedValue = "russ-blue", Label = "Russian Blue" },
+        new MBSelectElement<string> { SelectedValue = "ice-invis", Label = "Icelandic Invisible" },
+        new MBSelectElement<string> { SelectedValue = "disabled1", Label = "Mr. Snuggles", Disabled = true },
+        new MBSelectElement<string> { SelectedValue = "disabled2", Label = "Roger Rabbit", Disabled = true }
+    };
 
 
     private string DefaultStyle;
