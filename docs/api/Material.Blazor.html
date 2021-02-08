@@ -339,6 +339,10 @@ is called without a <a class="xref" href="Material.Blazor.MBAnimatedNavigation.h
 });</code></pre>
 </example>
 </section>
+      <h4><a class="xref" href="Material.Blazor.IMBDialog.html">IMBDialog</a></h4>
+      <section><p>An interface implemented by <a class="xref" href="Material.Blazor.MBDialog.html">MBDialog</a> to allow child components to
+register themselves for Material Theme js instantiation.</p>
+</section>
       <h4><a class="xref" href="Material.Blazor.IMBIcon.html">IMBIcon</a></h4>
       <section><p>Interface providing markup elements for an icon in a given foundry.</p>
 </section>
@@ -382,6 +386,16 @@ is called without an <see cref="!:MBToastAnchor"></see> component used in the ap
     ... etc
 });</code></pre>
 </example>
+</section>
+      <h4><a class="xref" href="Material.Blazor.IMBTooltipService.html">IMBTooltipService</a></h4>
+      <section><p>Interface for the Material.Blazor toast service, developed from the code base of Blazored Toast by Chris Sainty.
+Works in conjunction with a <see cref="!:MBToastAnchor"></see> that must be placed in either App.razor or
+MainLayout.razor to avoid an exception being thrown when you first attempt to show a toast notification.</p>
+<p>
+Throws a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> if
+<a class="xref" href="Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_RenderFragment_">AddTooltip(Guid, RenderFragment)</a>
+is called without an <see cref="!:MBTooltipAnchor"></see> component used in the app.
+</p>
 </section>
     <h3 id="enums">Enums
   </h3>

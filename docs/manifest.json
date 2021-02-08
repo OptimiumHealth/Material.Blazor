@@ -755,6 +755,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Material.Blazor.IMBDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Material.Blazor.IMBDialog.html",
+          "hash": "EOUDULKygiPqCUOK0SOCrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Material.Blazor.IMBIcon.yml",
       "output": {
         ".html": {
@@ -796,6 +808,18 @@
         ".html": {
           "relative_path": "api/Material.Blazor.IMBToastService.html",
           "hash": "k+O3edKck3SP4GVrRYAkzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Material.Blazor.IMBTooltipService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Material.Blazor.IMBTooltipService.html",
+          "hash": "kevTpSp6pckE/w04LBW2tA=="
         }
       },
       "is_incremental": false,
@@ -951,7 +975,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.Internal.InternalTooltipAnchor.html",
-          "hash": "h1YRuH2VllJicGUbAUNEPA=="
+          "hash": "VQTWnqms6bY0kZZSVbQTBg=="
         }
       },
       "is_incremental": false,
@@ -1011,7 +1035,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.Internal.html",
-          "hash": "LevwX0HAuJH4FC0PAtbtwA=="
+          "hash": "G0CSG6sQBZ1lqKk6YLI4nw=="
         }
       },
       "is_incremental": false,
@@ -1275,7 +1299,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBDialog.html",
-          "hash": "79WMI/kqiYNEVJ3rXhcD/g=="
+          "hash": "qU7IiHQ8cSq3BQVoBvmzoQ=="
         }
       },
       "is_incremental": false,
@@ -2127,7 +2151,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.html",
-          "hash": "xNoaAU0gppoZczc2RDUIEw=="
+          "hash": "qAZvpga9QpOBvhfz1V8Xtg=="
         }
       },
       "is_incremental": false,
@@ -2139,7 +2163,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7mskr7KxoultoO2uaPfC8g=="
+          "hash": "dMqYyaRUEcj9/c7jQVRUJA=="
         }
       },
       "is_incremental": false,
@@ -2448,7 +2472,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 118,
+          "total_file_count": 120,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

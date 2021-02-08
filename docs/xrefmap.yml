@@ -299,6 +299,25 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBAnimatedNavigationManager.NavigationManager
   nameWithType: IMBAnimatedNavigationManager.NavigationManager
+- uid: Material.Blazor.IMBDialog
+  name: IMBDialog
+  href: api/Material.Blazor.IMBDialog.html
+  commentId: T:Material.Blazor.IMBDialog
+  fullName: Material.Blazor.IMBDialog
+  nameWithType: IMBDialog
+- uid: Material.Blazor.IMBDialog.RegisterLayoutAction(Material.Blazor.DialogChildComponent)
+  name: RegisterLayoutAction(DialogChildComponent)
+  href: api/Material.Blazor.IMBDialog.html#Material_Blazor_IMBDialog_RegisterLayoutAction_Material_Blazor_DialogChildComponent_
+  commentId: M:Material.Blazor.IMBDialog.RegisterLayoutAction(Material.Blazor.DialogChildComponent)
+  fullName: Material.Blazor.IMBDialog.RegisterLayoutAction(Material.Blazor.DialogChildComponent)
+  nameWithType: IMBDialog.RegisterLayoutAction(DialogChildComponent)
+- uid: Material.Blazor.IMBDialog.RegisterLayoutAction*
+  name: RegisterLayoutAction
+  href: api/Material.Blazor.IMBDialog.html#Material_Blazor_IMBDialog_RegisterLayoutAction_
+  commentId: Overload:Material.Blazor.IMBDialog.RegisterLayoutAction
+  isSpec: "True"
+  fullName: Material.Blazor.IMBDialog.RegisterLayoutAction
+  nameWithType: IMBDialog.RegisterLayoutAction
 - uid: Material.Blazor.IMBIcon
   name: IMBIcon
   href: api/Material.Blazor.IMBIcon.html
@@ -446,6 +465,44 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBToastService.ShowToast
   nameWithType: IMBToastService.ShowToast
+- uid: Material.Blazor.IMBTooltipService
+  name: IMBTooltipService
+  href: api/Material.Blazor.IMBTooltipService.html
+  commentId: T:Material.Blazor.IMBTooltipService
+  fullName: Material.Blazor.IMBTooltipService
+  nameWithType: IMBTooltipService
+- uid: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,MarkupString)
+  name: AddTooltip(Guid, MarkupString)
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_MarkupString_
+  commentId: M:Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,MarkupString)
+  fullName: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid, MarkupString)
+  nameWithType: IMBTooltipService.AddTooltip(Guid, MarkupString)
+- uid: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,RenderFragment)
+  name: AddTooltip(Guid, RenderFragment)
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_RenderFragment_
+  commentId: M:Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,RenderFragment)
+  fullName: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid, RenderFragment)
+  nameWithType: IMBTooltipService.AddTooltip(Guid, RenderFragment)
+- uid: Material.Blazor.IMBTooltipService.AddTooltip*
+  name: AddTooltip
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_
+  commentId: Overload:Material.Blazor.IMBTooltipService.AddTooltip
+  isSpec: "True"
+  fullName: Material.Blazor.IMBTooltipService.AddTooltip
+  nameWithType: IMBTooltipService.AddTooltip
+- uid: Material.Blazor.IMBTooltipService.RemoveTooltip(System.Guid)
+  name: RemoveTooltip(Guid)
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_RemoveTooltip_System_Guid_
+  commentId: M:Material.Blazor.IMBTooltipService.RemoveTooltip(System.Guid)
+  fullName: Material.Blazor.IMBTooltipService.RemoveTooltip(System.Guid)
+  nameWithType: IMBTooltipService.RemoveTooltip(Guid)
+- uid: Material.Blazor.IMBTooltipService.RemoveTooltip*
+  name: RemoveTooltip
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_RemoveTooltip_
+  commentId: Overload:Material.Blazor.IMBTooltipService.RemoveTooltip
+  isSpec: "True"
+  fullName: Material.Blazor.IMBTooltipService.RemoveTooltip
+  nameWithType: IMBTooltipService.RemoveTooltip
 - uid: Material.Blazor.Internal
   name: Material.Blazor.Internal
   href: api/Material.Blazor.Internal.html
@@ -4525,6 +4582,23 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.HideAsync
   nameWithType: MBDialog.HideAsync
+- uid: Material.Blazor.MBDialog.Material#Blazor#IMBDialog#RegisterLayoutAction(Material.Blazor.DialogChildComponent)
+  name: IMBDialog.RegisterLayoutAction(DialogChildComponent)
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Material_Blazor_IMBDialog_RegisterLayoutAction_Material_Blazor_DialogChildComponent_
+  commentId: M:Material.Blazor.MBDialog.Material#Blazor#IMBDialog#RegisterLayoutAction(Material.Blazor.DialogChildComponent)
+  name.vb: Material.Blazor.IMBDialog.RegisterLayoutAction(DialogChildComponent)
+  fullName: Material.Blazor.MBDialog.Material.Blazor.IMBDialog.RegisterLayoutAction(Material.Blazor.DialogChildComponent)
+  nameWithType: MBDialog.IMBDialog.RegisterLayoutAction(DialogChildComponent)
+  nameWithType.vb: MBDialog.Material.Blazor.IMBDialog.RegisterLayoutAction(DialogChildComponent)
+- uid: Material.Blazor.MBDialog.Material#Blazor#IMBDialog#RegisterLayoutAction*
+  name: IMBDialog.RegisterLayoutAction
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Material_Blazor_IMBDialog_RegisterLayoutAction_
+  commentId: Overload:Material.Blazor.MBDialog.Material#Blazor#IMBDialog#RegisterLayoutAction
+  isSpec: "True"
+  name.vb: Material.Blazor.IMBDialog.RegisterLayoutAction
+  fullName: Material.Blazor.MBDialog.Material.Blazor.IMBDialog.RegisterLayoutAction
+  nameWithType: MBDialog.IMBDialog.RegisterLayoutAction
+  nameWithType.vb: MBDialog.Material.Blazor.IMBDialog.RegisterLayoutAction
 - uid: Material.Blazor.MBDialog.NotifyOpenedAsync
   name: NotifyOpenedAsync()
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyOpenedAsync
