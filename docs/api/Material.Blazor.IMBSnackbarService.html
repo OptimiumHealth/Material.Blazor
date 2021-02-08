@@ -85,18 +85,18 @@
   <h1 id="Material_Blazor_IMBSnackbarService" data-uid="Material.Blazor.IMBSnackbarService" class="text-break">Interface IMBSnackbarService
   </h1>
   <div class="markdown level0 summary"><p>Interface for the Material.Blazor snackbar service, developed from the code base of Blazored Snackbar by Chris Sainty.
-Works in conjunction with a <see cref="!:MBSnackbarAnchor"></see> that must be placed in either App.razor or
+Works in conjunction with a <a class="xref" href="Material.Blazor.MBAnchor.html">MBAnchor</a> that must be placed in either App.razor or
 MainLayout.razor to avoid an exception being thrown when you first attempt to show a snackbar notification.</p>
 <p>
 Throws a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> if
-<a class="xref" href="Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Boolean_System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_">ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable&lt;Int32&gt;, Boolean)</a>
-is called without an <see cref="!:MBSnackbarAnchor"></see> component used in the app.
+<a class="xref" href="Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_">ShowSnackbar(String, Action, String, Nullable&lt;MBNotifierCloseMethod&gt;, Boolean, Boolean, Nullable&lt;Int32&gt;, Boolean)</a>
+is called without an <a class="xref" href="Material.Blazor.MBAnchor.html">MBAnchor</a> component used in the app.
 </p>
 <example>
 <p>You can optionally add configuration when you add this to the service collection:</p>
-<pre><code>services.AddMBSnackbarService(new MBSnackbarServiceConfiguration()
+<pre><code>services.AddMBServices(snackbarServiceConfiguration: new MBSnackbarServiceConfiguration()
 {
-    Postion = MBSnackbarPosition.TopRight,
+    Timeout = 4000,
     CloseMethod = MBSnackbarCloseMethod.Timeout,
     ... etc
 });</code></pre>
@@ -146,13 +146,13 @@ is called without an <see cref="!:MBSnackbarAnchor"></see> component used in the
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Boolean_System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_.md&amp;value=---%0Auid%3A%20Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String%2CSystem.Action%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/OptimiumHealth/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_.md&amp;value=---%0Auid%3A%20Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String%2CSystem.Action%2CSystem.String%2CSystem.Nullable%7BMaterial.Blazor.MBNotifierCloseMethod%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Model/Snackbar/IMBSnackbarService.cs/#L65">View Source</a>
   </span>
   <a id="Material_Blazor_IMBSnackbarService_ShowSnackbar_" data-uid="Material.Blazor.IMBSnackbarService.ShowSnackbar*"></a>
-  <h4 id="Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Boolean_System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_" data-uid="Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Boolean,System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)">ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <h4 id="Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_" data-uid="Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)">ShowSnackbar(String, Action, String, Nullable&lt;MBNotifierCloseMethod&gt;, Boolean, Boolean, Nullable&lt;Int32&gt;, Boolean)</h4>
   <div class="markdown level1 summary"><p>Shows a snackbar using the supplied settings. Only the level and message parameters are required, with
 the remainder haveing defaults specified by the <a class="xref" href="Material.Blazor.MBSnackbarServiceConfiguration.html">MBSnackbarServiceConfiguration</a> that you can supply
 when registering services. Failing that Material.Blazor provides defaults.</p>
@@ -160,7 +160,7 @@ when registering services. Failing that Material.Blazor provides defaults.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ShowSnackbar(string message, Action action = null, string actionText = null, bool dismissIcon = true, bool leading = false, bool stacked = false, int? timeout = default(int? ), bool debug = false)</code></pre>
+    <pre><code class="lang-csharp hljs">void ShowSnackbar(string message, Action action = null, string actionText = null, MBNotifierCloseMethod? closeMethod = default(MBNotifierCloseMethod? ), bool leading = false, bool stacked = false, int? timeout = default(int? ), bool debug = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,18 +181,18 @@ when registering services. Failing that Material.Blazor provides defaults.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
         <td><span class="parametername">action</span></td>
-        <td><p>The action that is performed when the button in the snackbar is clicked (optional. if set, <see cref="!:actionText"></see> must also be set)</p>
+        <td><p>The action that is performed when the button in the snackbar is clicked (optional. if set, 'actionText' must also be set)</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">actionText</span></td>
-        <td><p>The text to display in the action button in the snackbar (optional. if set, <see cref="!:action"></see> must also be set)</p>
+        <td><p>The text to display in the action button in the snackbar (optional. if set, 'action' must also be set)</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">dismissIcon</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Material.Blazor.MBNotifierCloseMethod.html">MBNotifierCloseMethod</a>&gt;</td>
+        <td><span class="parametername">closeMethod</span></td>
         <td><p>Snackbars are intended to dismiss on their own after a few seconds, but a dedicated dismiss icon may be optionally included as well for accessibility purposes</p>
 </td>
       </tr>

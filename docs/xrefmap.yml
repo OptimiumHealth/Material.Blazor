@@ -55,9 +55,9 @@ references:
 - uid: A.ThemingAndCSS
   name: ThemingAndCSS
   href: articles/ThemingAndCSS.html
-- uid: A.Toast
-  name: Toast
-  href: articles/Toast.html
+- uid: A.ToastAndSnackbar
+  name: ToastAndSnackbar
+  href: articles/ToastAndSnackbar.html
 - uid: A.Tooltip
   name: Tooltip
   href: articles/Tooltip.html
@@ -414,15 +414,15 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBSnackbarService.Configuration
   nameWithType: IMBSnackbarService.Configuration
-- uid: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Boolean,System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
-  name: ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable<Int32>, Boolean)
-  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Boolean_System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_
-  commentId: M:Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Boolean,System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
-  name.vb: ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable(Of Int32), Boolean)
-  fullName: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Boolean, System.Boolean, System.Boolean, System.Nullable<System.Int32>, System.Boolean)
-  fullName.vb: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Boolean, System.Boolean, System.Boolean, System.Nullable(Of System.Int32), System.Boolean)
-  nameWithType: IMBSnackbarService.ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable<Int32>, Boolean)
-  nameWithType.vb: IMBSnackbarService.ShowSnackbar(String, Action, String, Boolean, Boolean, Boolean, Nullable(Of Int32), Boolean)
+- uid: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
+  name: ShowSnackbar(String, Action, String, Nullable<MBNotifierCloseMethod>, Boolean, Boolean, Nullable<Int32>, Boolean)
+  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_
+  commentId: M:Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
+  name.vb: ShowSnackbar(String, Action, String, Nullable(Of MBNotifierCloseMethod), Boolean, Boolean, Nullable(Of Int32), Boolean)
+  fullName: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Nullable<Material.Blazor.MBNotifierCloseMethod>, System.Boolean, System.Boolean, System.Nullable<System.Int32>, System.Boolean)
+  fullName.vb: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Nullable(Of Material.Blazor.MBNotifierCloseMethod), System.Boolean, System.Boolean, System.Nullable(Of System.Int32), System.Boolean)
+  nameWithType: IMBSnackbarService.ShowSnackbar(String, Action, String, Nullable<MBNotifierCloseMethod>, Boolean, Boolean, Nullable<Int32>, Boolean)
+  nameWithType.vb: IMBSnackbarService.ShowSnackbar(String, Action, String, Nullable(Of MBNotifierCloseMethod), Boolean, Boolean, Nullable(Of Int32), Boolean)
 - uid: Material.Blazor.IMBSnackbarService.ShowSnackbar*
   name: ShowSnackbar
   href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_
@@ -449,15 +449,15 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBToastService.Configuration
   nameWithType: IMBToastService.Configuration
-- uid: Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel,System.String,System.String,System.Nullable{Material.Blazor.MBToastCloseMethod},System.String,System.String,Material.Blazor.IMBIconFoundry,System.Nullable{System.Boolean},System.Nullable{System.UInt32},System.Boolean)
-  name: ShowToast(MBToastLevel, String, String, Nullable<MBToastCloseMethod>, String, String, IMBIconFoundry, Nullable<Boolean>, Nullable<UInt32>, Boolean)
-  href: api/Material.Blazor.IMBToastService.html#Material_Blazor_IMBToastService_ShowToast_Material_Blazor_MBToastLevel_System_String_System_String_System_Nullable_Material_Blazor_MBToastCloseMethod__System_String_System_String_Material_Blazor_IMBIconFoundry_System_Nullable_System_Boolean__System_Nullable_System_UInt32__System_Boolean_
-  commentId: M:Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel,System.String,System.String,System.Nullable{Material.Blazor.MBToastCloseMethod},System.String,System.String,Material.Blazor.IMBIconFoundry,System.Nullable{System.Boolean},System.Nullable{System.UInt32},System.Boolean)
-  name.vb: ShowToast(MBToastLevel, String, String, Nullable(Of MBToastCloseMethod), String, String, IMBIconFoundry, Nullable(Of Boolean), Nullable(Of UInt32), Boolean)
-  fullName: Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel, System.String, System.String, System.Nullable<Material.Blazor.MBToastCloseMethod>, System.String, System.String, Material.Blazor.IMBIconFoundry, System.Nullable<System.Boolean>, System.Nullable<System.UInt32>, System.Boolean)
-  fullName.vb: Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel, System.String, System.String, System.Nullable(Of Material.Blazor.MBToastCloseMethod), System.String, System.String, Material.Blazor.IMBIconFoundry, System.Nullable(Of System.Boolean), System.Nullable(Of System.UInt32), System.Boolean)
-  nameWithType: IMBToastService.ShowToast(MBToastLevel, String, String, Nullable<MBToastCloseMethod>, String, String, IMBIconFoundry, Nullable<Boolean>, Nullable<UInt32>, Boolean)
-  nameWithType.vb: IMBToastService.ShowToast(MBToastLevel, String, String, Nullable(Of MBToastCloseMethod), String, String, IMBIconFoundry, Nullable(Of Boolean), Nullable(Of UInt32), Boolean)
+- uid: Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel,System.String,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.String,System.String,Material.Blazor.IMBIconFoundry,System.Nullable{System.Boolean},System.Nullable{System.UInt32},System.Boolean)
+  name: ShowToast(MBToastLevel, String, String, Nullable<MBNotifierCloseMethod>, String, String, IMBIconFoundry, Nullable<Boolean>, Nullable<UInt32>, Boolean)
+  href: api/Material.Blazor.IMBToastService.html#Material_Blazor_IMBToastService_ShowToast_Material_Blazor_MBToastLevel_System_String_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_String_System_String_Material_Blazor_IMBIconFoundry_System_Nullable_System_Boolean__System_Nullable_System_UInt32__System_Boolean_
+  commentId: M:Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel,System.String,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.String,System.String,Material.Blazor.IMBIconFoundry,System.Nullable{System.Boolean},System.Nullable{System.UInt32},System.Boolean)
+  name.vb: ShowToast(MBToastLevel, String, String, Nullable(Of MBNotifierCloseMethod), String, String, IMBIconFoundry, Nullable(Of Boolean), Nullable(Of UInt32), Boolean)
+  fullName: Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel, System.String, System.String, System.Nullable<Material.Blazor.MBNotifierCloseMethod>, System.String, System.String, Material.Blazor.IMBIconFoundry, System.Nullable<System.Boolean>, System.Nullable<System.UInt32>, System.Boolean)
+  fullName.vb: Material.Blazor.IMBToastService.ShowToast(Material.Blazor.MBToastLevel, System.String, System.String, System.Nullable(Of Material.Blazor.MBNotifierCloseMethod), System.String, System.String, Material.Blazor.IMBIconFoundry, System.Nullable(Of System.Boolean), System.Nullable(Of System.UInt32), System.Boolean)
+  nameWithType: IMBToastService.ShowToast(MBToastLevel, String, String, Nullable<MBNotifierCloseMethod>, String, String, IMBIconFoundry, Nullable<Boolean>, Nullable<UInt32>, Boolean)
+  nameWithType.vb: IMBToastService.ShowToast(MBToastLevel, String, String, Nullable(Of MBNotifierCloseMethod), String, String, IMBIconFoundry, Nullable(Of Boolean), Nullable(Of UInt32), Boolean)
 - uid: Material.Blazor.IMBToastService.ShowToast*
   name: ShowToast
   href: api/Material.Blazor.IMBToastService.html#Material_Blazor_IMBToastService_ShowToast_
@@ -2162,6 +2162,12 @@ references:
   commentId: F:Material.Blazor.MB_Grid_Measurement.PX
   fullName: Material.Blazor.MB_Grid_Measurement.PX
   nameWithType: MB_Grid_Measurement.PX
+- uid: Material.Blazor.MBAnchor
+  name: MBAnchor
+  href: api/Material.Blazor.MBAnchor.html
+  commentId: T:Material.Blazor.MBAnchor
+  fullName: Material.Blazor.MBAnchor
+  nameWithType: MBAnchor
 - uid: Material.Blazor.MBAnimatedNavigation
   name: MBAnimatedNavigation
   href: api/Material.Blazor.MBAnimatedNavigation.html
@@ -6924,6 +6930,30 @@ references:
   commentId: F:Material.Blazor.MBMenuSurfacePositioning.Regular
   fullName: Material.Blazor.MBMenuSurfacePositioning.Regular
   nameWithType: MBMenuSurfacePositioning.Regular
+- uid: Material.Blazor.MBNotifierCloseMethod
+  name: MBNotifierCloseMethod
+  href: api/Material.Blazor.MBNotifierCloseMethod.html
+  commentId: T:Material.Blazor.MBNotifierCloseMethod
+  fullName: Material.Blazor.MBNotifierCloseMethod
+  nameWithType: MBNotifierCloseMethod
+- uid: Material.Blazor.MBNotifierCloseMethod.DismissButton
+  name: DismissButton
+  href: api/Material.Blazor.MBNotifierCloseMethod.html#Material_Blazor_MBNotifierCloseMethod_DismissButton
+  commentId: F:Material.Blazor.MBNotifierCloseMethod.DismissButton
+  fullName: Material.Blazor.MBNotifierCloseMethod.DismissButton
+  nameWithType: MBNotifierCloseMethod.DismissButton
+- uid: Material.Blazor.MBNotifierCloseMethod.Timeout
+  name: Timeout
+  href: api/Material.Blazor.MBNotifierCloseMethod.html#Material_Blazor_MBNotifierCloseMethod_Timeout
+  commentId: F:Material.Blazor.MBNotifierCloseMethod.Timeout
+  fullName: Material.Blazor.MBNotifierCloseMethod.Timeout
+  nameWithType: MBNotifierCloseMethod.Timeout
+- uid: Material.Blazor.MBNotifierCloseMethod.TimeoutAndDismissButton
+  name: TimeoutAndDismissButton
+  href: api/Material.Blazor.MBNotifierCloseMethod.html#Material_Blazor_MBNotifierCloseMethod_TimeoutAndDismissButton
+  commentId: F:Material.Blazor.MBNotifierCloseMethod.TimeoutAndDismissButton
+  fullName: Material.Blazor.MBNotifierCloseMethod.TimeoutAndDismissButton
+  nameWithType: MBNotifierCloseMethod.TimeoutAndDismissButton
 - uid: Material.Blazor.MBNumericDecimalField
   name: MBNumericDecimalField
   href: api/Material.Blazor.MBNumericDecimalField.html
@@ -9387,6 +9417,25 @@ references:
   commentId: T:Material.Blazor.MBSnackbarServiceConfiguration
   fullName: Material.Blazor.MBSnackbarServiceConfiguration
   nameWithType: MBSnackbarServiceConfiguration
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.CloseMethod
+  name: CloseMethod
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_CloseMethod
+  commentId: P:Material.Blazor.MBSnackbarServiceConfiguration.CloseMethod
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.CloseMethod
+  nameWithType: MBSnackbarServiceConfiguration.CloseMethod
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.CloseMethod*
+  name: CloseMethod
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_CloseMethod_
+  commentId: Overload:Material.Blazor.MBSnackbarServiceConfiguration.CloseMethod
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.CloseMethod
+  nameWithType: MBSnackbarServiceConfiguration.CloseMethod
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultCloseMethod
+  name: DefaultCloseMethod
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultCloseMethod
+  commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultCloseMethod
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultCloseMethod
+  nameWithType: MBSnackbarServiceConfiguration.DefaultCloseMethod
 - uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultDismissIcon
   name: DefaultDismissIcon
   href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultDismissIcon
@@ -9411,19 +9460,6 @@ references:
   commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
   fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
   nameWithType: MBSnackbarServiceConfiguration.DefaultTimeout
-- uid: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
-  name: DismissIcon
-  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DismissIcon
-  commentId: P:Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
-  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
-  nameWithType: MBSnackbarServiceConfiguration.DismissIcon
-- uid: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon*
-  name: DismissIcon
-  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DismissIcon_
-  commentId: Overload:Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
-  isSpec: "True"
-  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
-  nameWithType: MBSnackbarServiceConfiguration.DismissIcon
 - uid: Material.Blazor.MBSnackbarServiceConfiguration.Leading
   name: Leading
   href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Leading
@@ -9495,19 +9531,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSnackbarSettings.ActionText
   nameWithType: MBSnackbarSettings.ActionText
-- uid: Material.Blazor.MBSnackbarSettings.DismissIcon
-  name: DismissIcon
-  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_DismissIcon
-  commentId: P:Material.Blazor.MBSnackbarSettings.DismissIcon
-  fullName: Material.Blazor.MBSnackbarSettings.DismissIcon
-  nameWithType: MBSnackbarSettings.DismissIcon
-- uid: Material.Blazor.MBSnackbarSettings.DismissIcon*
-  name: DismissIcon
-  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_DismissIcon_
-  commentId: Overload:Material.Blazor.MBSnackbarSettings.DismissIcon
+- uid: Material.Blazor.MBSnackbarSettings.CloseMethod
+  name: CloseMethod
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_CloseMethod
+  commentId: P:Material.Blazor.MBSnackbarSettings.CloseMethod
+  fullName: Material.Blazor.MBSnackbarSettings.CloseMethod
+  nameWithType: MBSnackbarSettings.CloseMethod
+- uid: Material.Blazor.MBSnackbarSettings.CloseMethod*
+  name: CloseMethod
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_CloseMethod_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.CloseMethod
   isSpec: "True"
-  fullName: Material.Blazor.MBSnackbarSettings.DismissIcon
-  nameWithType: MBSnackbarSettings.DismissIcon
+  fullName: Material.Blazor.MBSnackbarSettings.CloseMethod
+  nameWithType: MBSnackbarSettings.CloseMethod
 - uid: Material.Blazor.MBSnackbarSettings.Leading
   name: Leading
   href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_Leading
@@ -10251,30 +10287,6 @@ references:
   commentId: F:Material.Blazor.MBTextInputStyle.Outlined
   fullName: Material.Blazor.MBTextInputStyle.Outlined
   nameWithType: MBTextInputStyle.Outlined
-- uid: Material.Blazor.MBToastCloseMethod
-  name: MBToastCloseMethod
-  href: api/Material.Blazor.MBToastCloseMethod.html
-  commentId: T:Material.Blazor.MBToastCloseMethod
-  fullName: Material.Blazor.MBToastCloseMethod
-  nameWithType: MBToastCloseMethod
-- uid: Material.Blazor.MBToastCloseMethod.CloseButton
-  name: CloseButton
-  href: api/Material.Blazor.MBToastCloseMethod.html#Material_Blazor_MBToastCloseMethod_CloseButton
-  commentId: F:Material.Blazor.MBToastCloseMethod.CloseButton
-  fullName: Material.Blazor.MBToastCloseMethod.CloseButton
-  nameWithType: MBToastCloseMethod.CloseButton
-- uid: Material.Blazor.MBToastCloseMethod.Timeout
-  name: Timeout
-  href: api/Material.Blazor.MBToastCloseMethod.html#Material_Blazor_MBToastCloseMethod_Timeout
-  commentId: F:Material.Blazor.MBToastCloseMethod.Timeout
-  fullName: Material.Blazor.MBToastCloseMethod.Timeout
-  nameWithType: MBToastCloseMethod.Timeout
-- uid: Material.Blazor.MBToastCloseMethod.TimeoutAndCloseButton
-  name: TimeoutAndCloseButton
-  href: api/Material.Blazor.MBToastCloseMethod.html#Material_Blazor_MBToastCloseMethod_TimeoutAndCloseButton
-  commentId: F:Material.Blazor.MBToastCloseMethod.TimeoutAndCloseButton
-  fullName: Material.Blazor.MBToastCloseMethod.TimeoutAndCloseButton
-  nameWithType: MBToastCloseMethod.TimeoutAndCloseButton
 - uid: Material.Blazor.MBToastLevel
   name: MBToastLevel
   href: api/Material.Blazor.MBToastLevel.html

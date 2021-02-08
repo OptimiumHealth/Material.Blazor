@@ -28,15 +28,89 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/architecture-book-shelves-books-commercial-eatablishment-244134.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/architecture-book-shelves-books-commercial-eatablishment-244134.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/book-shelves.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/book-shelves.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/mac.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/mac.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/notebook-and-pen-beside-red-mug-on-gray-surface-3774057.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/notebook-and-pen-beside-red-mug-on-gray-surface-3774057.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/person-using-macbook-pro-3804775.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/person-using-macbook-pro-3804775.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/person-using-tablet-computer-3740722.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/person-using-tablet-computer-3740722.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Material.Blazor.Website/wwwroot/images/tablet.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Material.Blazor.Website/wwwroot/images/tablet.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "Material.Blazor/Components/Anchor/MBAnchor.md",
       "output": {
         ".html": {
           "relative_path": "Material.Blazor/Components/Anchor/MBAnchor.html",
-          "hash": "3YljBBVzNMg49pRMaCDPgQ=="
+          "hash": "AgNQNca8PhdGifqBSMGPjQ=="
         }
       },
       "is_incremental": false,
@@ -667,15 +741,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "Material.Blazor/Model/Snackbar/IMBSnackbarService.md",
       "output": {
         ".html": {
           "relative_path": "Material.Blazor/Model/Snackbar/IMBSnackbarService.html",
-          "hash": "/HfZVqEOSjjjxPCx+Sh2Jw=="
+          "hash": "h9xJxjGinhilg57UyWzWug=="
         }
       },
       "is_incremental": false,
@@ -687,22 +758,19 @@
       "output": {
         ".html": {
           "relative_path": "Material.Blazor/Model/Toast/IMBToastService.html",
-          "hash": "1Xo9sSqKpZAeeziAnXbg6g=="
+          "hash": "V/C6j1pgoUn929+wcKicKw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "Material.Blazor/Model/Tooltip/IMBTooltipService.md",
       "output": {
         ".html": {
           "relative_path": "Material.Blazor/Model/Tooltip/IMBTooltipService.html",
-          "hash": "A2t6gDwDY8gBMUzE7wAGEA=="
+          "hash": "7fk3sgN4z7hdubeamQuudg=="
         }
       },
       "is_incremental": false,
@@ -762,7 +830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.IMBDialog.html",
-          "hash": "EOUDULKygiPqCUOK0SOCrQ=="
+          "hash": "2DyBxjW6U1ZibHjoiUnMhA=="
         }
       },
       "is_incremental": false,
@@ -798,7 +866,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.IMBSnackbarService.html",
-          "hash": "DdXdbZALiXq7Jv4kNHUIwg=="
+          "hash": "rhnF93N7qUKLi2Z6CxwPCQ=="
         }
       },
       "is_incremental": false,
@@ -810,7 +878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.IMBToastService.html",
-          "hash": "k+O3edKck3SP4GVrRYAkzg=="
+          "hash": "eDIrHkBD7Zjd5NPvBB/eIQ=="
         }
       },
       "is_incremental": false,
@@ -822,7 +890,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.IMBTooltipService.html",
-          "hash": "iPp+MBo3FNWxOq2azhYe9g=="
+          "hash": "9ahYYwFGVx0RhXt68hk8Hg=="
         }
       },
       "is_incremental": false,
@@ -954,7 +1022,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.Internal.InternalSnackbarAnchor.html",
-          "hash": "ngCxLckJRgPNx5ebtv3JHw=="
+          "hash": "1MVVimaR0gTBF9X2Bq8MEg=="
         }
       },
       "is_incremental": false,
@@ -966,7 +1034,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.Internal.InternalToastAnchor.html",
-          "hash": "+wrXyrAtY3z6IMszeWD1Vg=="
+          "hash": "C/2PaIx4F2Ob19WgLl5lMA=="
         }
       },
       "is_incremental": false,
@@ -1038,7 +1106,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.Internal.html",
-          "hash": "G0CSG6sQBZ1lqKk6YLI4nw=="
+          "hash": "lzxq+ngcZnEnf8VpB2rolQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Material.Blazor.MBAnchor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Material.Blazor.MBAnchor.html",
+          "hash": "IcNqy0iRKtrO9yHtLS2vEg=="
         }
       },
       "is_incremental": false,
@@ -1302,7 +1382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBDialog.html",
-          "hash": "AjAlStNvk4ODyWBUpWVnww=="
+          "hash": "RFuDruQx3kimpxlWtHcQXA=="
         }
       },
       "is_incremental": false,
@@ -1670,6 +1750,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Material.Blazor.MBNotifierCloseMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Material.Blazor.MBNotifierCloseMethod.html",
+          "hash": "/f3u9+1VH0ZIZzxNGO4CDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Material.Blazor.MBNumericDecimalField.yml",
       "output": {
         ".html": {
@@ -1902,7 +1994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBSnackbarServiceConfiguration.html",
-          "hash": "8+DuYMJC2peP2x0y3rt9yQ=="
+          "hash": "hZ9Rk0guaYbc6xRQ4BGJ6A=="
         }
       },
       "is_incremental": false,
@@ -1914,7 +2006,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBSnackbarSettings.html",
-          "hash": "XFSl3b5OgpsTSwLs/CHX2w=="
+          "hash": "aSP5WGMDnSB9onESk0/KBA=="
         }
       },
       "is_incremental": false,
@@ -1994,18 +2086,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Material.Blazor.MBToastCloseMethod.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Material.Blazor.MBToastCloseMethod.html",
-          "hash": "uFhFWT5cpRpdQatAMkhIQQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Material.Blazor.MBToastLevel.yml",
       "output": {
         ".html": {
@@ -2034,7 +2114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBToastServiceConfiguration.html",
-          "hash": "GHCj1XptL9LdseI4E/kV4g=="
+          "hash": "gGmVI5UElVK9WHu3geCeLw=="
         }
       },
       "is_incremental": false,
@@ -2046,7 +2126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBToastSettings.html",
-          "hash": "bhcXrgTslX8HIq5FTZNueg=="
+          "hash": "YABVdSjvr+qzwyhXv7ie1w=="
         }
       },
       "is_incremental": false,
@@ -2154,7 +2234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.html",
-          "hash": "TBDTSEJJKQB7uAOlu1VzSQ=="
+          "hash": "fHEArwyLOfvNMXKjhG16yA=="
         }
       },
       "is_incremental": false,
@@ -2166,7 +2246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dMqYyaRUEcj9/c7jQVRUJA=="
+          "hash": "iQX6IwPHaHg2FJ+57Sahvw=="
         }
       },
       "is_incremental": false,
@@ -2233,9 +2313,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/DevelopmentEnvironment.md",
       "output": {
@@ -2337,7 +2414,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes.html",
-          "hash": "lRgeWsVKM52BDMoNoNCJgw=="
+          "hash": "//qBSLwJNLOh0brFp412dQ=="
         }
       },
       "is_incremental": false,
@@ -2369,11 +2446,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/Toast.md",
+      "source_relative_path": "articles/ToastAndSnackbar.md",
       "output": {
         ".html": {
-          "relative_path": "articles/Toast.html",
-          "hash": "q1JMml23e+HUBLeoNguHJg=="
+          "relative_path": "articles/ToastAndSnackbar.html",
+          "hash": "xDbZ6yvWldzdV8Lh9EcJlg=="
         }
       },
       "is_incremental": false,
@@ -2392,15 +2469,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/TwoWayBinding.md",
       "output": {
         ".html": {
           "relative_path": "articles/TwoWayBinding.html",
-          "hash": "Hncdq6DiPWWdxDOrScG+Yg=="
+          "hash": "Ogvcb1m9PgUK+V4NGlvqlw=="
         }
       },
       "is_incremental": false,
@@ -2419,15 +2493,166 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
+      "type": "Resource",
+      "source_relative_path": "articles/images/gh-account-settings-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/gh-account-settings-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/gh-account-settings-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/gh-account-settings-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/gh-account-settings-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/gh-account-settings-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/gh-account-settings-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/gh-account-settings-4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/gh-account-settings-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/gh-account-settings-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/text-field-focus.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/text-field-focus.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/two-way-bind-flow.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/two-way-bind-flow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/vs-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/vs-config.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/vs-extensions.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/vs-extensions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "eNi82AnT5+os4WVQzjUe9Q=="
+          "hash": "+DopZ3YK5i5eLqM7b5WbTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "guidelines/images/screenshot-branch-protection.png",
+      "output": {
+        "resource": {
+          "relative_path": "guidelines/images/screenshot-branch-protection.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "guidelines/images/screenshot-chart-complex.png",
+      "output": {
+        "resource": {
+          "relative_path": "guidelines/images/screenshot-chart-complex.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "guidelines/images/screenshot-chart-simple.png",
+      "output": {
+        "resource": {
+          "relative_path": "guidelines/images/screenshot-chart-simple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "guidelines/images/screenshot-merge-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "guidelines/images/screenshot-merge-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "guidelines/images/screenshot-update-branch.png",
+      "output": {
+        "resource": {
+          "relative_path": "guidelines/images/screenshot-update-branch.png"
         }
       },
       "is_incremental": false,
@@ -2478,7 +2703,14 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 120,
+          "total_file_count": 121,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
