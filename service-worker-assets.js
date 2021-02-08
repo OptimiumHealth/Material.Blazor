@@ -177,7 +177,7 @@
       "url": "_content\/Material.Blazor.Website\/videos\/coverr-someone-is-checking-emails-there_s-an-old-globe-on-the-table-0186.mp4"
     },
     {
-      "hash": "sha256-fIo7N8DbH4pc0DCJbIQn+WrBs4bfewcJVR2TxI4gUtQ=",
+      "hash": "sha256-nYAgksA1zNx\/yEPlce0Bc\/lSWcoECLHOecFhT4pM4gQ=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.css"
     },
     {
@@ -185,7 +185,7 @@
       "url": "_content\/Material.Blazor\/MaterialBlazor.js"
     },
     {
-      "hash": "sha256-YFx7NphTKn4h4wMETivStFKLBsjDJOrsj2gedfx8N6c=",
+      "hash": "sha256-cqcnnE2zvPSPoAa1XVWgTQvft0ZetAVniQ\/FoD8u2KE=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.min.css"
     },
     {
@@ -257,15 +257,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-zEiJbmcp\/HA8Pl+YNjmT7e7YwR2wo6ZslTRP59ZEEuA=",
+      "hash": "sha256-Z9iKb+bdYEgwHPJ0qkf586bt\/KHzowiYb1E7mz2nRe8=",
       "url": "_framework\/Material.Blazor.dll"
     },
     {
-      "hash": "sha256-ssDv4Ikisq8LQ1ik9oRaNwV\/TzWK4AcDttWcOMosRHg=",
+      "hash": "sha256-b2O3k3k\/2tOqFV\/L5BPZeMRruGl3icPtnPc2K6SBWi0=",
       "url": "_framework\/Material.Blazor.Website.dll"
     },
     {
-      "hash": "sha256-3OmCi94KYG5ZjDxgB\/jIb\/uvX1o2CL0MiMsaE4Hi3sI=",
+      "hash": "sha256-W\/EUm1cj7RXn9fWG3VFDDoLzn5x81IlEATgGq3\/K290=",
       "url": "_framework\/Material.Blazor.Website.WebAssembly.dll"
     },
     {
@@ -369,7 +369,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-Y4Z9mcIX78zYCg1bcYjhZUQY+cS2ux51qeDXFMCYAiM=",
+      "hash": "sha256-AyheEfPVk7EA3T4mR8+L0ACsk7hu2ErG8hSDerLT6M4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -377,5 +377,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "QdpImXVt"
+  "version": "5ugb\/E9Y"
 };
