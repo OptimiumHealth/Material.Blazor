@@ -128,7 +128,7 @@ namespace Material.Blazor
         /// </summary>
         internal event Action OnValueChanged;
 
-        
+
         public MBToastServiceConfiguration()
         {
             InfoIconName = DefaultInfoIconName;

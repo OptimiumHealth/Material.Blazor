@@ -62,7 +62,7 @@ namespace Material.Blazor.Internal
         private string Day => DisplayDate.Day.ToString();
         private MBButtonStyle ButtonStyle => (DisplayDate == CurrentDate) ? MBButtonStyle.ContainedUnelevated : MBButtonStyle.Text;
 
-        
+
         private bool ButtonDisabled
         {
             get

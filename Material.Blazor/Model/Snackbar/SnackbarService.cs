@@ -11,10 +11,10 @@ namespace Material.Blazor.Internal
 
         ///<inheritdoc/>
         public MBSnackbarServiceConfiguration Configuration
-        { 
-            get => configuration; 
+        {
+            get => configuration;
             set
-            { 
+            {
                 configuration = value;
                 configuration.OnValueChanged += ConfigurationChanged;
                 OnTriggerStateHasChanged?.Invoke();
