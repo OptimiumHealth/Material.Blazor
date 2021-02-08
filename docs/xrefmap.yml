@@ -1767,6 +1767,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.InternalSnackbar.OnInitialized
   nameWithType: InternalSnackbar.OnInitialized
+- uid: Material.Blazor.Internal.InternalSnackbar.Snackbar
+  name: Snackbar
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_Snackbar
+  commentId: P:Material.Blazor.Internal.InternalSnackbar.Snackbar
+  fullName: Material.Blazor.Internal.InternalSnackbar.Snackbar
+  nameWithType: InternalSnackbar.Snackbar
+- uid: Material.Blazor.Internal.InternalSnackbar.Snackbar*
+  name: Snackbar
+  href: api/Material.Blazor.Internal.InternalSnackbar.html#Material_Blazor_Internal_InternalSnackbar_Snackbar_
+  commentId: Overload:Material.Blazor.Internal.InternalSnackbar.Snackbar
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.InternalSnackbar.Snackbar
+  nameWithType: InternalSnackbar.Snackbar
 - uid: Material.Blazor.Internal.InternalSnackbarAnchor
   name: InternalSnackbarAnchor
   href: api/Material.Blazor.Internal.InternalSnackbarAnchor.html
@@ -4530,6 +4543,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.Buttons
   nameWithType: MBDialog.Buttons
+- uid: Material.Blazor.MBDialog.CustomHeader
+  name: CustomHeader
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_CustomHeader
+  commentId: P:Material.Blazor.MBDialog.CustomHeader
+  fullName: Material.Blazor.MBDialog.CustomHeader
+  nameWithType: MBDialog.CustomHeader
+- uid: Material.Blazor.MBDialog.CustomHeader*
+  name: CustomHeader
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_CustomHeader_
+  commentId: Overload:Material.Blazor.MBDialog.CustomHeader
+  isSpec: "True"
+  fullName: Material.Blazor.MBDialog.CustomHeader
+  nameWithType: MBDialog.CustomHeader
 - uid: Material.Blazor.MBDialog.Dispose(System.Boolean)
   name: Dispose(Boolean)
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Dispose_System_Boolean_
@@ -4556,19 +4582,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.EscapeKeyAction
   nameWithType: MBDialog.EscapeKeyAction
-- uid: Material.Blazor.MBDialog.Header
-  name: Header
-  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Header
-  commentId: P:Material.Blazor.MBDialog.Header
-  fullName: Material.Blazor.MBDialog.Header
-  nameWithType: MBDialog.Header
-- uid: Material.Blazor.MBDialog.Header*
-  name: Header
-  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_Header_
-  commentId: Overload:Material.Blazor.MBDialog.Header
-  isSpec: "True"
-  fullName: Material.Blazor.MBDialog.Header
-  nameWithType: MBDialog.Header
 - uid: Material.Blazor.MBDialog.HideAsync
   name: HideAsync()
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_HideAsync
@@ -9374,12 +9387,69 @@ references:
   commentId: T:Material.Blazor.MBSnackbarServiceConfiguration
   fullName: Material.Blazor.MBSnackbarServiceConfiguration
   nameWithType: MBSnackbarServiceConfiguration
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultDismissIcon
+  name: DefaultDismissIcon
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultDismissIcon
+  commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultDismissIcon
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultDismissIcon
+  nameWithType: MBSnackbarServiceConfiguration.DefaultDismissIcon
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultLeading
+  name: DefaultLeading
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultLeading
+  commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultLeading
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultLeading
+  nameWithType: MBSnackbarServiceConfiguration.DefaultLeading
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultStacked
+  name: DefaultStacked
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultStacked
+  commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultStacked
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultStacked
+  nameWithType: MBSnackbarServiceConfiguration.DefaultStacked
 - uid: Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
   name: DefaultTimeout
   href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DefaultTimeout
   commentId: F:Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
   fullName: Material.Blazor.MBSnackbarServiceConfiguration.DefaultTimeout
   nameWithType: MBSnackbarServiceConfiguration.DefaultTimeout
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
+  name: DismissIcon
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DismissIcon
+  commentId: P:Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
+  nameWithType: MBSnackbarServiceConfiguration.DismissIcon
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon*
+  name: DismissIcon
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_DismissIcon_
+  commentId: Overload:Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.DismissIcon
+  nameWithType: MBSnackbarServiceConfiguration.DismissIcon
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.Leading
+  name: Leading
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Leading
+  commentId: P:Material.Blazor.MBSnackbarServiceConfiguration.Leading
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.Leading
+  nameWithType: MBSnackbarServiceConfiguration.Leading
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.Leading*
+  name: Leading
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Leading_
+  commentId: Overload:Material.Blazor.MBSnackbarServiceConfiguration.Leading
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.Leading
+  nameWithType: MBSnackbarServiceConfiguration.Leading
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.Stacked
+  name: Stacked
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Stacked
+  commentId: P:Material.Blazor.MBSnackbarServiceConfiguration.Stacked
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.Stacked
+  nameWithType: MBSnackbarServiceConfiguration.Stacked
+- uid: Material.Blazor.MBSnackbarServiceConfiguration.Stacked*
+  name: Stacked
+  href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Stacked_
+  commentId: Overload:Material.Blazor.MBSnackbarServiceConfiguration.Stacked
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarServiceConfiguration.Stacked
+  nameWithType: MBSnackbarServiceConfiguration.Stacked
 - uid: Material.Blazor.MBSnackbarServiceConfiguration.Timeout
   name: Timeout
   href: api/Material.Blazor.MBSnackbarServiceConfiguration.html#Material_Blazor_MBSnackbarServiceConfiguration_Timeout

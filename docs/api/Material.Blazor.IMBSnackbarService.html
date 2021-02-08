@@ -160,7 +160,7 @@ when registering services. Failing that Material.Blazor provides defaults.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ShowSnackbar(string message, Action action = null, string action_text = null, bool dismiss_icon = true, bool leading = false, bool stacked = false, int? timeout = default(int? ), bool debug = false)</code></pre>
+    <pre><code class="lang-csharp hljs">void ShowSnackbar(string message, Action action = null, string actionText = null, bool dismissIcon = true, bool leading = false, bool stacked = false, int? timeout = default(int? ), bool debug = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,18 +181,18 @@ when registering services. Failing that Material.Blazor provides defaults.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
         <td><span class="parametername">action</span></td>
-        <td><p>The action that is performed when the button in the snackbar is clicked (optional. if set, <see cref="!:action_text"></see> must also be set)</p>
+        <td><p>The action that is performed when the button in the snackbar is clicked (optional. if set, <see cref="!:actionText"></see> must also be set)</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">action_text</span></td>
+        <td><span class="parametername">actionText</span></td>
         <td><p>The text to display in the action button in the snackbar (optional. if set, <see cref="!:action"></see> must also be set)</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">dismiss_icon</span></td>
+        <td><span class="parametername">dismissIcon</span></td>
         <td><p>Snackbars are intended to dismiss on their own after a few seconds, but a dedicated dismiss icon may be optionally included as well for accessibility purposes</p>
 </td>
       </tr>
