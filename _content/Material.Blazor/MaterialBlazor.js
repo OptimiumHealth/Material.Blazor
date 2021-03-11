@@ -1,5 +1,22 @@
 (() => {
     var __webpack_modules__ = {
+        228: module => {
+            function _arrayLikeToArray(arr, len) {
+                if (len == null || len > arr.length) len = arr.length;
+                for (var i = 0, arr2 = new Array(len); i < len; i++) {
+                    arr2[i] = arr[i];
+                }
+                return arr2;
+            }
+            module.exports = _arrayLikeToArray;
+        },
+        646: (module, __unused_webpack_exports, __webpack_require__) => {
+            var arrayLikeToArray = __webpack_require__(228);
+            function _arrayWithoutHoles(arr) {
+                if (Array.isArray(arr)) return arrayLikeToArray(arr);
+            }
+            module.exports = _arrayWithoutHoles;
+        },
         926: module => {
             function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
                 try {
@@ -32,8 +49,72 @@
             }
             module.exports = _asyncToGenerator;
         },
+        860: module => {
+            function _iterableToArray(iter) {
+                if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+            }
+            module.exports = _iterableToArray;
+        },
+        206: module => {
+            function _nonIterableSpread() {
+                throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+            }
+            module.exports = _nonIterableSpread;
+        },
+        319: (module, __unused_webpack_exports, __webpack_require__) => {
+            var arrayWithoutHoles = __webpack_require__(646);
+            var iterableToArray = __webpack_require__(860);
+            var unsupportedIterableToArray = __webpack_require__(379);
+            var nonIterableSpread = __webpack_require__(206);
+            function _toConsumableArray(arr) {
+                return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+            }
+            module.exports = _toConsumableArray;
+        },
+        379: (module, __unused_webpack_exports, __webpack_require__) => {
+            var arrayLikeToArray = __webpack_require__(228);
+            function _unsupportedIterableToArray(o, minLen) {
+                if (!o) return;
+                if (typeof o === "string") return arrayLikeToArray(o, minLen);
+                var n = Object.prototype.toString.call(o).slice(8, -1);
+                if (n === "Object" && o.constructor) n = o.constructor.name;
+                if (n === "Map" || n === "Set") return Array.from(o);
+                if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+            }
+            module.exports = _unsupportedIterableToArray;
+        },
         757: (module, __unused_webpack_exports, __webpack_require__) => {
             module.exports = __webpack_require__(666);
+        },
+        854: (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            __webpack_require__.d(__webpack_exports__, {
+                apply: () => apply
+            });
+            var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(319);
+            var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
+            var methodLookup = {};
+            function apply(calls) {
+                return calls.map((function(call) {
+                    var identifier = call.identifier;
+                    var args = call.args;
+                    try {
+                        if (!(identifier in methodLookup)) {
+                            methodLookup[identifier] = eval(identifier);
+                        }
+                        var f = methodLookup[identifier];
+                        if (args == null) {
+                            f();
+                        } else {
+                            f.apply(void 0, _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(args));
+                        }
+                        return null;
+                    } catch (e) {
+                        return e.message;
+                    }
+                }));
+            }
         },
         486: function(module, exports, __webpack_require__) {
             module = __webpack_require__.nmd(module);
@@ -6121,8 +6202,7 @@
         __webpack_require__.r(MBSnackbar_namespaceObject);
         __webpack_require__.d(MBSnackbar_namespaceObject, {
             destroy: () => MBSnackbar_destroy,
-            init: () => MBSnackbar_init,
-            open: () => MBSnackbar_open
+            init: () => MBSnackbar_init
         });
         var MBSwitch_namespaceObject = {};
         __webpack_require__.r(MBSwitch_namespaceObject);
@@ -11960,23 +12040,22 @@ PERFORMANCE OF THIS SOFTWARE.
         function init(textElem, menuElem, dotNetObject) {
             textElem._textField = MDCTextField.attachTo(textElem);
             menuElem._menu = MDCMenu.attachTo(menuElem);
-            return new Promise((function() {
-                menuElem._menu.foundation.handleItemAction = function(listItem) {
-                    menuElem._menu.open = false;
-                    dotNetObject.invokeMethodAsync("NotifySelectedAsync", listItem.innerText);
-                };
-                menuElem._menu.foundation.adapter.handleMenuSurfaceOpened = function() {
-                    menuElem._menu.foundation.setDefaultFocusState(0);
-                };
-                var closedCallback = function closedCallback() {
-                    dotNetObject.invokeMethodAsync("NotifyClosedAsync");
-                };
-                menuElem._menu.listen("MDCMenuSurface:closed", closedCallback);
-            }));
+            menuElem._menu.foundation.handleItemAction = function(listItem) {
+                menuElem._menu.open = false;
+                dotNetObject.invokeMethodAsync("NotifySelectedAsync", listItem.innerText);
+            };
+            menuElem._menu.foundation.adapter.handleMenuSurfaceOpened = function() {
+                menuElem._menu.foundation.setDefaultFocusState(0);
+            };
+            var closedCallback = function closedCallback() {
+                dotNetObject.invokeMethodAsync("NotifyClosedAsync");
+            };
+            menuElem._menu.listen("MDCMenuSurface:closed", closedCallback);
         }
         function destroy(textElem, menuElem) {
-            textElem._textField.destroy();
-            menuElem._menu.destroy();
+            var _textElem$_textField, _menuElem$_menu;
+            textElem === null || textElem === void 0 ? void 0 : (_textElem$_textField = textElem._textField) === null || _textElem$_textField === void 0 ? void 0 : _textElem$_textField.destroy();
+            menuElem === null || menuElem === void 0 ? void 0 : (_menuElem$_menu = menuElem._menu) === null || _menuElem$_menu === void 0 ? void 0 : _menuElem$_menu.destroy();
         }
         function MBAutocompleteTextField_open(menuElem) {
             menuElem._menu.open = true;
@@ -12052,13 +12131,15 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._ripple = MDCRipple.attachTo(elem);
         }
         function MBButton_destroy(elem) {
-            elem._ripple.destroy();
+            var _elem$_ripple;
+            elem === null || elem === void 0 ? void 0 : (_elem$_ripple = elem._ripple) === null || _elem$_ripple === void 0 ? void 0 : _elem$_ripple.destroy();
         }
         function MBCard_init(elem) {
             elem._ripple = MDCRipple.attachTo(elem);
         }
         function MBCard_destroy(elem) {
-            elem._ripple.destroy();
+            var _elem$_ripple;
+            elem === null || elem === void 0 ? void 0 : (_elem$_ripple = elem._ripple) === null || _elem$_ripple === void 0 ? void 0 : _elem$_ripple.destroy();
         }
         /**
  * @license
@@ -13556,30 +13637,29 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBChipsSelectMulti_init(elem, isSingleSelect, dotNetObject) {
             elem._chipSet = MDCChipSet.attachTo(elem);
             elem._isSingleSelect = isSingleSelect;
-            return new Promise((function() {
-                var clickedCallback = function clickedCallback() {
-                    if (elem._isSingleSelect) {
-                        var selectedChips = elem._chipSet.chips.filter((function(x) {
-                            return x.foundation.isSelected();
-                        }));
-                        if (selectedChips.length == 0) {
-                            dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", -1);
-                        } else {
-                            dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", elem._chipSet.chips.findIndex((function(x) {
-                                return x.id === selectedChips[0].id;
-                            })));
-                        }
+            var clickedCallback = function clickedCallback() {
+                if (elem._isSingleSelect) {
+                    var selectedChips = elem._chipSet.chips.filter((function(x) {
+                        return x.foundation.isSelected();
+                    }));
+                    if (selectedChips.length == 0) {
+                        dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", -1);
                     } else {
-                        dotNetObject.invokeMethodAsync("NotifyMultiSelectedAsync", elem._chipSet.chips.map((function(x) {
-                            return x.foundation.isSelected();
+                        dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", elem._chipSet.chips.findIndex((function(x) {
+                            return x.id === selectedChips[0].id;
                         })));
                     }
-                };
-                elem._chipSet.listen("MDCChip:selection", clickedCallback);
-            }));
+                } else {
+                    dotNetObject.invokeMethodAsync("NotifyMultiSelectedAsync", elem._chipSet.chips.map((function(x) {
+                        return x.foundation.isSelected();
+                    })));
+                }
+            };
+            elem._chipSet.listen("MDCChip:selection", clickedCallback);
         }
         function MBChipsSelectMulti_destroy(elem) {
-            elem._chipSet.destroy();
+            var _elem$_chipSet;
+            elem === null || elem === void 0 ? void 0 : (_elem$_chipSet = elem._chipSet) === null || _elem$_chipSet === void 0 ? void 0 : _elem$_chipSet.destroy();
         }
         function MBChipsSelectMulti_setDisabled(elem, value) {
             elem._chipSet.disabled = value;
@@ -14298,13 +14378,17 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._formField.input = elem._checkbox;
         }
         function MBCheckbox_destroy(elem) {
-            elem._checkbox.destroy();
-            elem._formField.destroy();
+            var _elem$_checkbox, _elem$_formField;
+            elem === null || elem === void 0 ? void 0 : (_elem$_checkbox = elem._checkbox) === null || _elem$_checkbox === void 0 ? void 0 : _elem$_checkbox.destroy();
+            elem === null || elem === void 0 ? void 0 : (_elem$_formField = elem._formField) === null || _elem$_formField === void 0 ? void 0 : _elem$_formField.destroy();
         }
         function setChecked(elem, checked) {
             elem._checkbox.checked = checked;
         }
         function setIndeterminate(elem, indeterminate) {
+            if ((elem === null || elem === void 0 ? void 0 : elem._checkbox) == null) {
+                return;
+            }
             elem._checkbox.indeterminate = indeterminate;
         }
         function MBCheckbox_setDisabled(elem, disabled) {
@@ -14553,7 +14637,8 @@ PERFORMANCE OF THIS SOFTWARE.
             setProgress(elem, progress);
         }
         function MBCircularProgress_destroy(elem) {
-            elem._circularProgress.destroy();
+            var _elem$_circularProgre;
+            elem === null || elem === void 0 ? void 0 : (_elem$_circularProgre = elem._circularProgress) === null || _elem$_circularProgre === void 0 ? void 0 : _elem$_circularProgre.destroy();
         }
         function setProgress(elem, progress) {
             elem._circularProgress.progress = progress;
@@ -15636,12 +15721,15 @@ PERFORMANCE OF THIS SOFTWARE.
             };
             return MDCDataTable;
         }(MDCComponent);
-        function MBDataTable_init(elem, showProgress) {
+        function MBDataTable_init(elem, hasProgress, showProgress) {
             elem._dataTable = MDCDataTable.attachTo(elem);
-            MBDataTable_setProgress(elem, showProgress);
+            if (hasProgress) {
+                MBDataTable_setProgress(elem, showProgress);
+            }
         }
         function MBDataTable_destroy(elem) {
-            elem._dataTable.destroy();
+            var _elem$_dataTable;
+            elem === null || elem === void 0 ? void 0 : (_elem$_dataTable = elem._dataTable) === null || _elem$_dataTable === void 0 ? void 0 : _elem$_dataTable.destroy();
         }
         function MBDataTable_setProgress(elem, showProgress) {
             if (showProgress) {
@@ -16994,7 +17082,8 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._select.disabled = value;
         }
         function MBDatePicker_destroy(elem) {
-            elem._select.destroy();
+            var _elem$_select;
+            elem === null || elem === void 0 ? void 0 : (_elem$_select = elem._select) === null || _elem$_select === void 0 ? void 0 : _elem$_select.destroy();
         }
         function listItemClick(elem, elemText) {
             elem.innerText = elemText;
@@ -17706,20 +17795,20 @@ PERFORMANCE OF THIS SOFTWARE.
         function show(elem, dotNetObject, escapeKeyAction, scrimClickAction) {
             elem._dialog = elem._dialog || MDCDialog.attachTo(elem);
             elem._dotNetObject = dotNetObject;
+            var dialog = elem._dialog;
+            var openedCallback = function openedCallback() {
+                dialog.unlisten("MDCDialog:opened", openedCallback);
+                dotNetObject.invokeMethodAsync("NotifyOpenedAsync");
+            };
+            dialog.listen("MDCDialog:opened", openedCallback);
+            dialog.escapeKeyAction = escapeKeyAction;
+            dialog.scrimClickAction = scrimClickAction;
             return new Promise((function(resolve) {
-                var dialog = elem._dialog;
-                var openedCallback = function openedCallback() {
-                    dialog.unlisten("MDCDialog:opened", openedCallback);
-                    dotNetObject.invokeMethodAsync("NotifyOpenedAsync");
-                };
                 var closingCallback = function closingCallback(event) {
                     dialog.unlisten("MDCDialog:closing", closingCallback);
                     resolve(event.detail.action);
                 };
-                dialog.listen("MDCDialog:opened", openedCallback);
                 dialog.listen("MDCDialog:closing", closingCallback);
-                dialog.escapeKeyAction = escapeKeyAction;
-                dialog.scrimClickAction = scrimClickAction;
                 dialog.open();
             }));
         }
@@ -18158,7 +18247,8 @@ PERFORMANCE OF THIS SOFTWARE.
             toggle(elem, isOpen);
         }
         function MBDrawer_destroy(elem) {
-            elem._drawer.destroy();
+            var _elem$_drawer;
+            elem === null || elem === void 0 ? void 0 : (_elem$_drawer = elem._drawer) === null || _elem$_drawer === void 0 ? void 0 : _elem$_drawer.destroy();
         }
         function toggle(elem, isOpen) {
             elem._drawer.open = isOpen;
@@ -18169,7 +18259,8 @@ PERFORMANCE OF THIS SOFTWARE.
             setExited(elem, exited);
         }
         function MBFloatingActionButton_destroy(elem) {
-            elem._fab.destroy();
+            var _elem$_fab;
+            elem === null || elem === void 0 ? void 0 : (_elem$_fab = elem._fab) === null || _elem$_fab === void 0 ? void 0 : _elem$_fab.destroy();
         }
         function setExited(elem, exited) {
             if (elem) {
@@ -18230,7 +18321,8 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._ripple.unbounded = true;
         }
         function MBIconButton_destroy(elem) {
-            elem._ripple.destroy();
+            var _elem$_ripple;
+            elem === null || elem === void 0 ? void 0 : (_elem$_ripple = elem._ripple) === null || _elem$_ripple === void 0 ? void 0 : _elem$_ripple.destroy();
         }
         /**
  * @license
@@ -18471,7 +18563,8 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._iconButtonToggle = MDCIconButtonToggle.attachTo(elem);
         }
         function MBIconButtonToggle_destroy(elem) {
-            elem._ripple.destroy();
+            var _elem$_iconButtonTogg;
+            elem === null || elem === void 0 ? void 0 : (_elem$_iconButtonTogg = elem._iconButtonToggle) === null || _elem$_iconButtonTogg === void 0 ? void 0 : _elem$_iconButtonTogg.destroy();
         }
         function setOn(elem, isOn) {
             elem._iconButtonToggle.on = isOn;
@@ -18484,7 +18577,8 @@ PERFORMANCE OF THIS SOFTWARE.
             MBLinearProgress_setProgress(elem, progress, buffer);
         }
         function MBLinearProgress_destroy(elem) {
-            elem._linearProgress.destroy();
+            var _elem$_linearProgress;
+            elem === null || elem === void 0 ? void 0 : (_elem$_linearProgress = elem._linearProgress) === null || _elem$_linearProgress === void 0 ? void 0 : _elem$_linearProgress.destroy();
         }
         function MBLinearProgress_setProgress(elem, progress, buffer) {
             elem._linearProgress.progress = progress;
@@ -18501,19 +18595,19 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }
         function MBList_destroy(elem) {
-            elem._list.destroy();
+            var _elem$_list;
+            elem === null || elem === void 0 ? void 0 : (_elem$_list = elem._list) === null || _elem$_list === void 0 ? void 0 : _elem$_list.destroy();
         }
         function MBMenu_init(elem, dotNetObject) {
             elem._menu = MDCMenu.attachTo(elem);
-            return new Promise((function() {
-                var closedCallback = function closedCallback() {
-                    dotNetObject.invokeMethodAsync("NotifyClosedAsync");
-                };
-                elem._menu.listen("MDCMenuSurface:closed", closedCallback);
-            }));
+            var closedCallback = function closedCallback() {
+                dotNetObject.invokeMethodAsync("NotifyClosedAsync");
+            };
+            elem._menu.listen("MDCMenuSurface:closed", closedCallback);
         }
         function MBMenu_destroy(elem) {
-            elem._menu.destroy();
+            var _elem$_menu;
+            elem === null || elem === void 0 ? void 0 : (_elem$_menu = elem._menu) === null || _elem$_menu === void 0 ? void 0 : _elem$_menu.destroy();
         }
         function MBMenu_show(elem) {
             if (elem._menu) {
@@ -18751,8 +18845,9 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._formField.input = elem._radio;
         }
         function MBRadioButton_destroy(elem) {
-            elem._radio.destroy();
-            elem._formField.destroy();
+            var _elem$_radio, _elem$_formField;
+            elem === null || elem === void 0 ? void 0 : (_elem$_radio = elem._radio) === null || _elem$_radio === void 0 ? void 0 : _elem$_radio.destroy();
+            elem === null || elem === void 0 ? void 0 : (_elem$_formField = elem._formField) === null || _elem$_formField === void 0 ? void 0 : _elem$_formField.destroy();
         }
         function MBRadioButton_setDisabled(elem, value) {
             elem._radio.disabled = value;
@@ -19290,20 +19385,19 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBSegmentedButtonMulti_init(elem, isSingleSelect, dotNetObject) {
             elem._segmentedButton = MDCSegmentedButton.attachTo(elem);
             elem._isSingleSelect = isSingleSelect;
-            return new Promise((function() {
-                elem._segmentedButton.foundation.adapter.notifySelectedChange = function(detail) {
-                    if (elem._isSingleSelect) {
-                        dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", detail.index);
-                    } else {
-                        dotNetObject.invokeMethodAsync("NotifyMultiSelectedAsync", elem._segmentedButton.segments.map((function(x) {
-                            return x.isSelected();
-                        })));
-                    }
-                };
-            }));
+            elem._segmentedButton.foundation.adapter.notifySelectedChange = function(detail) {
+                if (elem._isSingleSelect) {
+                    dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", detail.index);
+                } else {
+                    dotNetObject.invokeMethodAsync("NotifyMultiSelectedAsync", elem._segmentedButton.segments.map((function(x) {
+                        return x.isSelected();
+                    })));
+                }
+            };
         }
         function MBSegmentedButtonMulti_destroy(elem) {
-            elem._segmentedButton.destroy();
+            var _elem$_segmentedButto;
+            elem === null || elem === void 0 ? void 0 : (_elem$_segmentedButto = elem._segmentedButton) === null || _elem$_segmentedButto === void 0 ? void 0 : _elem$_segmentedButto.destroy();
         }
         function MBSegmentedButtonMulti_setDisabled(elem, value) {
             elem._segmentedButton.disabled = value;
@@ -19319,15 +19413,14 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         function MBSelect_init(elem, dotNetObject) {
             elem._select = MDCSelect.attachTo(elem);
-            return new Promise((function() {
-                elem._select.foundation.handleMenuItemAction = function(index) {
-                    elem._select.foundation.setSelectedIndex(index);
-                    dotNetObject.invokeMethodAsync("NotifySelectedAsync", index);
-                };
-            }));
+            elem._select.foundation.handleMenuItemAction = function(index) {
+                elem._select.foundation.setSelectedIndex(index);
+                dotNetObject.invokeMethodAsync("NotifySelectedAsync", index);
+            };
         }
         function MBSelect_destroy(elem) {
-            elem._select.destroy();
+            var _elem$_select;
+            elem === null || elem === void 0 ? void 0 : (_elem$_select = elem._select) === null || _elem$_select === void 0 ? void 0 : _elem$_select.destroy();
         }
         function MBSelect_setDisabled(elem, value) {
             elem._select.disabled = value;
@@ -20436,27 +20529,26 @@ PERFORMANCE OF THIS SOFTWARE.
             var throttleNotify = lodash.throttle((function() {
                 dotNetObject.invokeMethodAsync("NotifyChangedAsync", elem._slider.getValue());
             }), delay);
-            return new Promise((function() {
-                var thumbUpCallback = function thumbUpCallback() {
-                    dotNetObject.invokeMethodAsync("NotifyChangedAsync", elem._slider.getValue());
-                };
-                var debounceCallback = function debounceCallback() {
-                    debounceNotify();
-                };
-                var throttleCallback = function throttleCallback() {
-                    throttleNotify();
-                };
-                if (eventType == 0) {
-                    elem._slider.listen("MDCSlider:change", thumbUpCallback);
-                } else if (eventType == 1) {
-                    elem._slider.listen("MDCSlider:input", debounceCallback);
-                } else {
-                    elem._slider.listen("MDCSlider:input", throttleCallback);
-                }
-            }));
+            var thumbUpCallback = function thumbUpCallback() {
+                dotNetObject.invokeMethodAsync("NotifyChangedAsync", elem._slider.getValue());
+            };
+            var debounceCallback = function debounceCallback() {
+                debounceNotify();
+            };
+            var throttleCallback = function throttleCallback() {
+                throttleNotify();
+            };
+            if (eventType == 0) {
+                elem._slider.listen("MDCSlider:change", thumbUpCallback);
+            } else if (eventType == 1) {
+                elem._slider.listen("MDCSlider:input", debounceCallback);
+            } else {
+                elem._slider.listen("MDCSlider:input", throttleCallback);
+            }
         }
         function MBSlider_destroy(elem) {
-            elem._slider.destroy();
+            var _elem$_slider;
+            elem === null || elem === void 0 ? void 0 : (_elem$_slider = elem._slider) === null || _elem$_slider === void 0 ? void 0 : _elem$_slider.destroy();
         }
         function MBSlider_setValue(elem, value) {
             elem._slider.setValue(value);
@@ -20921,18 +21013,17 @@ PERFORMANCE OF THIS SOFTWARE.
             };
             return MDCSnackbar;
         }(MDCComponent);
-        function MBSnackbar_init(elem, dotnetReference) {
+        function MBSnackbar_init(elem, dotnetReference, timeoutMs) {
             elem._snackbar = new MDCSnackbar(elem);
             elem._snackbar.listen("MDCSnackbar:closed", (function(r) {
                 dotnetReference.invokeMethodAsync("Closed", r);
             }));
-        }
-        function MBSnackbar_destroy(elem) {
-            elem._snackbar.destroy();
-        }
-        function MBSnackbar_open(elem, timeoutMs) {
             elem._snackbar.timeoutMs = timeoutMs;
             elem._snackbar.open();
+        }
+        function MBSnackbar_destroy(elem) {
+            var _elem$_snackbar;
+            elem === null || elem === void 0 ? void 0 : (_elem$_snackbar = elem._snackbar) === null || _elem$_snackbar === void 0 ? void 0 : _elem$_snackbar.destroy();
         }
         /**
  * @license
@@ -21205,7 +21296,8 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._switch.checked = checked;
         }
         function MBSwitch_destroy(elem) {
-            elem._switch.destroy();
+            var _elem$_switch;
+            elem === null || elem === void 0 ? void 0 : (_elem$_switch = elem._switch) === null || _elem$_switch === void 0 ? void 0 : _elem$_switch.destroy();
         }
         function MBSwitch_setChecked(elem, checked) {
             elem._switch.checked = checked;
@@ -22995,16 +23087,15 @@ PERFORMANCE OF THIS SOFTWARE.
         }(MDCComponent);
         function MBTabBar_init(elem, dotNetObject) {
             elem._tabBar = MDCTabBar.attachTo(elem);
-            return new Promise((function() {
-                elem._callback = function() {
-                    var index = elem._tabBar.foundation.adapter.getFocusedTabIndex();
-                    dotNetObject.invokeMethodAsync("NotifyActivatedAsync", index);
-                };
-                elem._tabBar.listen("MDCTabBar:activated", elem._callback);
-            }));
+            elem._callback = function() {
+                var index = elem._tabBar.foundation.adapter.getFocusedTabIndex();
+                dotNetObject.invokeMethodAsync("NotifyActivatedAsync", index);
+            };
+            elem._tabBar.listen("MDCTabBar:activated", elem._callback);
         }
         function MBTabBar_destroy(elem) {
-            elem._tabBar.destroy();
+            var _elem$_tabBar;
+            elem === null || elem === void 0 ? void 0 : (_elem$_tabBar = elem._tabBar) === null || _elem$_tabBar === void 0 ? void 0 : _elem$_tabBar.destroy();
         }
         function activateTab(elem, index) {
             elem._tabBar.unlisten("MDCTabBar:activated", elem._callback);
@@ -23016,8 +23107,9 @@ PERFORMANCE OF THIS SOFTWARE.
             setHelperText(elem, helperTextElem, helperText, helperTextPersistent, performsValidation, false, "");
         }
         function MBTextField_destroy(elem) {
-            elem._textField.destroy();
-            if (elem._helperText) {
+            var _elem$_textField;
+            elem === null || elem === void 0 ? void 0 : (_elem$_textField = elem._textField) === null || _elem$_textField === void 0 ? void 0 : _elem$_textField.destroy();
+            if (elem !== null && elem !== void 0 && elem._helperText) {
                 elem._helperText.destroy();
             }
         }
@@ -23934,7 +24026,8 @@ PERFORMANCE OF THIS SOFTWARE.
             }));
         }
         function MBTooltip_destroy(elem) {
-            elem._tooltip.destroy();
+            var _elem$_tooltip;
+            elem === null || elem === void 0 ? void 0 : (_elem$_tooltip = elem._tooltip) === null || _elem$_tooltip === void 0 ? void 0 : _elem$_tooltip.destroy();
         }
         /**
  * @license
@@ -24438,9 +24531,12 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }
         function MBTopAppBar_destroy(elem) {
-            elem._topAppBar.destroy();
+            var _elem$_topAppBar;
+            elem === null || elem === void 0 ? void 0 : (_elem$_topAppBar = elem._topAppBar) === null || _elem$_topAppBar === void 0 ? void 0 : _elem$_topAppBar.destroy();
         }
+        var Batching = __webpack_require__(854);
         window.MaterialBlazor = {
+            Batching: Batching,
             MBAutoCompleteTextField: MBAutocompleteTextField_namespaceObject,
             MBBladeSet: MBBladeSet_namespaceObject,
             MBButton: MBButton_namespaceObject,

@@ -110,6 +110,14 @@ your user navigates from one page to another.</p>
       <section><p>An autocomplete built using an <a class="xref" href="Material.Blazor.MBTextField.html">MBTextField</a> with the anchor and drop
 down list implementation from a Material Theme select.</p>
 </section>
+      <h4><a class="xref" href="Material.Blazor.MBBladeComponent-1.html">MBBladeComponent&lt;TParam&gt;</a></h4>
+      <section><p>A component added to a blade via <see cref="!:MBBladeSet.AddBlade(string, MBBladeComponent&lt;TParam>, TParam, string, string)"></see>
+must implement this interface.</p>
+</section>
+      <h4><a class="xref" href="Material.Blazor.MBBladeComponentParameters.html">MBBladeComponentParameters</a></h4>
+      <section><p>Parameters passed to a new blade via <see cref="!:MBBladeSet.AddBlade(string, MBBladeComponent, MBBladeComponentParameters, string, string)"></see> must take
+one parameter of a class implementing this interface. That class then holds all the parameters required for the component.</p>
+</section>
       <h4><a class="xref" href="Material.Blazor.MBBladeSet.html">MBBladeSet</a></h4>
       <section><p>A blade display component. Adds blades to the right hand side of the viewport (or bock where this component is located), with
 blades displayed left to right in ascending order of when they were requested (newest blades to the right).</p>
@@ -317,6 +325,12 @@ the <a class="xref" href="Material.Blazor.MBToastServiceConfiguration.html">MBTo
       <section></section>
       <h4><a class="xref" href="Material.Blazor.ServiceCollectionExtensions.html">ServiceCollectionExtensions</a></h4>
       <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Material.Blazor.HashCode.html">HashCode</a></h4>
+      <section><p>A hash code used to help with implementing <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode()</a>.</p>
+<p>This code is from the blog post at <a href="https://rehansaeed.com/gethashcode-made-easy/">https://rehansaeed.com/gethashcode-made-easy/</a></p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Material.Blazor.IMBAnimatedNavigationManager.html">IMBAnimatedNavigationManager</a></h4>
@@ -396,7 +410,7 @@ Works in conjunction with a <a class="xref" href="Material.Blazor.MBAnchor.html"
 MainLayout.razor to avoid an exception being thrown when you first attempt to show a tooltip notification.</p>
 <p>
 Throws a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> if
-<a class="xref" href="Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_RenderFragment_">AddTooltip(Guid, RenderFragment)</a>
+<a class="xref" href="Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_Microsoft_AspNetCore_Components_RenderFragment_">AddTooltip(Guid, RenderFragment)</a>
 is called without an <a class="xref" href="Material.Blazor.MBAnchor.html">MBAnchor</a> component used in the app.
 </p>
 </section>

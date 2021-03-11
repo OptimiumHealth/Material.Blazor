@@ -3,31 +3,31 @@
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v77/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype");
+  src: url(https://fonts.gstatic.com/s/materialicons/v81/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype");
 }
 @font-face {
   font-family: "Material Icons Outlined";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v45/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v51/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf) format("opentype");
 }
 @font-face {
   font-family: "Material Icons Round";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsround/v44/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconsround/v50/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmM.otf) format("opentype");
 }
 @font-face {
   font-family: "Material Icons Sharp";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconssharp/v45/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconssharp/v51/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvS.otf) format("opentype");
 }
 @font-face {
   font-family: "Material Icons Two Tone";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v43/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format("opentype");
+  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v49/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu3.otf) format("opentype");
 }
 .material-icons {
   font-family: "Material Icons";
@@ -1094,6 +1094,14 @@ mb-blade-content {
   border-radius: 16px;
 }
 
+.mb-dp-day-pad__button_earlier_month {
+  visibility: hidden;
+}
+
+.mb-dp-day-pad__button_later_month {
+  visibility: hidden;
+}
+
 /*
     Year pad
 */
@@ -1189,6 +1197,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
 }
 
 .mb-grid-div-header {
+  font-family: Arial;
   font-weight: bolder;
   padding: 0;
   overflow-x: hidden;
@@ -1204,6 +1213,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
 }
 
 .mb-grid-div-body {
+  font-family: Arial;
   background: lightblue;
   font-weight: normal;
   padding: 0;
@@ -1245,6 +1255,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
   overflow: hidden;
   box-sizing: border-box;
   white-space: nowrap;
+  letter-spacing: initial;
 }
 
 .mb-grid-td-group {
@@ -1281,7 +1292,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
 }
 
 .mb-grid-header-td-measure {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial;
   font-weight: bolder;
   border-collapse: collapse;
   border-spacing: 0;
@@ -1294,6 +1305,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
   padding: 4px;
   font-size: inherit;
   text-overflow: unset;
+  letter-spacing: initial;
   overflow: hidden;
   box-sizing: border-box;
   white-space: nowrap;
@@ -1306,7 +1318,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
 }
 
 .mb-grid-body-td-measure {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial;
   font-weight: normal;
   border-collapse: collapse;
   border-spacing: 0;
@@ -1319,6 +1331,7 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
   padding: 4px;
   font-size: inherit;
   text-overflow: unset;
+  letter-spacing: initial;
   overflow: hidden;
   box-sizing: border-box;
   white-space: nowrap;
@@ -4363,40 +4376,6 @@ $dp-menu-year-menu-height: $dp-menu-height + $dp-year-pad-rows * ($dp-button-siz
 }
 .mb-top-app-bar__title-right {
   padding: 0 20px 0 0 !important;
-}
-
-:root {
-  --mb-scroll-color: var(--mdc-theme-primary);
-  --mb-scroll-track-color: rgba(0, 0, 0, 0);
-  --mb-scrollbar-width: thin;
-  --mb-scroll-webkit-margin-right: 4px;
-  --mb-scroll-webkit-width: 8px;
-  --mb-scroll-webkit-border-radius: 4px;
-}
-
-.mb-custom-scrollbars {
-  scrollbar-width: var(--mb-scrollbar-width);
-  scrollbar-color: var(--mb-scroll-color) var(--mb-scroll-track-color);
-  /* Scrollbar width */
-  /* Track */
-  /* Handle */
-}
-.mb-custom-scrollbars ::-webkit-scrollbar {
-  width: var(--mb-scroll-webkit-width);
-  height: var(--mb-scroll-webkit-width);
-}
-.mb-custom-scrollbars ::-webkit-scrollbar-track {
-  background-color: var(--mb-scroll-track-color);
-  margin-right: var(--mb-scroll-webkit-margin-right);
-}
-.mb-custom-scrollbars ::-webkit-scrollbar-thumb {
-  background: var(--mb-scroll-color);
-  border-radius: var(--mb-scroll-webkit-border-radius);
-}
-
-.mb-custom-scrollbars * {
-  scrollbar-width: inherit;
-  scrollbar-color: inherit;
 }
 
 .mb-align-left {
