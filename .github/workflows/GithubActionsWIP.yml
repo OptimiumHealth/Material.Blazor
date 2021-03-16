@@ -30,6 +30,7 @@ jobs:
 # This job is only to display some CI information
 ############################################################################################################
   info:
+
     runs-on: windows-latest
 
     steps:
@@ -82,6 +83,7 @@ jobs:
 # Run the test project. Should this fail, the deploy step (job deployghpages) is skipped
 ############################################################################################################
   test:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -182,7 +184,9 @@ jobs:
 # permission check
 ############################################################################################################
   permissions:
+
     runs-on: ubuntu-latest
+
     if: github.event_name != 'pull_request' || github.repository != 'Material-Blazor/Material.Blazor'
     steps:
       # Check for write permission
@@ -200,7 +204,9 @@ jobs:
 # deployghpages
 ############################################################################################################
   deployghpages:
+
     needs: [test, build-documentation, build-website, permissions]
+
      # for PRs, we only need to make sure the build works (the job above), we don't need to deploy anything.
      # On forks, PRs against main will run the deploy step only if initiated by the fork owner 
     if: github.event_name != 'pull_request' || needs.permissions.outputs.has-permission
@@ -268,7 +274,9 @@ jobs:
 ############################################################################################################
   # step 1: identify all the pages that should be compared
   findpages:
+
     needs: [deployghpages]
+
     outputs:
       pages: ${{ steps.setpages.outputs.pages }}
     runs-on: ubuntu-latest
@@ -287,7 +295,9 @@ jobs:
         echo "::set-output name=pages::[${allpages}]"
   # step 2: perform comparisons
   compare:
+
     needs: [findpages]
+
     runs-on: ubuntu-latest
     if: (github.repository != 'Material-Blazor/Material.Blazor') && !contains(github.event.head_commit.message, '[no-compare]')
     # we use the result of the last job to parallelize the crawling of pages
@@ -344,7 +354,9 @@ jobs:
         path: report${{matrix.label}}.md
   # step 3: aggregate/summarise comparisons
   aggregate:
+
     needs: [compare]
+
     runs-on: ubuntu-latest
     if: (github.repository != 'Material-Blazor/Material.Blazor') && !contains(github.event.head_commit.message, '[no-compare]')
     steps:
