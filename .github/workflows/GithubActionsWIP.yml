@@ -351,6 +351,7 @@ jobs:
       run: |
         allpages=$(find Material.Blazor.Website/Pages -name *.razor | xargs grep "@page" -h | sed 's/.*"\(.*\)".*/"\1"/' | paste -sd ",")
         echo "::set-output name=pages::[${allpages}]"
+
         
   # job 2: perform comparisons
   compare:
