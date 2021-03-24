@@ -17803,14 +17803,12 @@ PERFORMANCE OF THIS SOFTWARE.
             dialog.listen("MDCDialog:opened", openedCallback);
             dialog.escapeKeyAction = escapeKeyAction;
             dialog.scrimClickAction = scrimClickAction;
-            return new Promise((function(resolve) {
-                var closingCallback = function closingCallback(event) {
-                    dialog.unlisten("MDCDialog:closing", closingCallback);
-                    resolve(event.detail.action);
-                };
-                dialog.listen("MDCDialog:closing", closingCallback);
-                dialog.open();
-            }));
+            var closingCallback = function closingCallback(event) {
+                dialog.unlisten("MDCDialog:closing", closingCallback);
+                dotNetObject.invokeMethodAsync("NotifyClosed", event.detail.action);
+            };
+            dialog.listen("MDCDialog:closing", closingCallback);
+            dialog.open();
         }
         function hide(elem, dialogAction) {
             if (elem && elem._dialog) {

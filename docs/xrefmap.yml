@@ -4937,6 +4937,19 @@ references:
   fullName: Material.Blazor.MBDialog.Material.Blazor.IMBDialog.RegisterLayoutAction
   nameWithType: MBDialog.IMBDialog.RegisterLayoutAction
   nameWithType.vb: MBDialog.Material.Blazor.IMBDialog.RegisterLayoutAction
+- uid: Material.Blazor.MBDialog.NotifyClosed(System.String)
+  name: NotifyClosed(String)
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyClosed_System_String_
+  commentId: M:Material.Blazor.MBDialog.NotifyClosed(System.String)
+  fullName: Material.Blazor.MBDialog.NotifyClosed(System.String)
+  nameWithType: MBDialog.NotifyClosed(String)
+- uid: Material.Blazor.MBDialog.NotifyClosed*
+  name: NotifyClosed
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyClosed_
+  commentId: Overload:Material.Blazor.MBDialog.NotifyClosed
+  isSpec: "True"
+  fullName: Material.Blazor.MBDialog.NotifyClosed
+  nameWithType: MBDialog.NotifyClosed
 - uid: Material.Blazor.MBDialog.NotifyOpenedAsync
   name: NotifyOpenedAsync()
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyOpenedAsync
