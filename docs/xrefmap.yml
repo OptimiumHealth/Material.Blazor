@@ -67,6 +67,9 @@ references:
 - uid: A.Utilities
   name: Utilities
   href: articles/Utilities.html
+- uid: A.Workflows
+  name: Workflows
+  href: articles/Workflows.html
 - uid: C.MBAnchor
   name: MBAnchor
   href: Material.Blazor/Components/Anchor/MBAnchor.html
@@ -5465,6 +5468,23 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).KeyExpression
   nameWithType: MBGrid<TRowData>.KeyExpression
   nameWithType.vb: MBGrid(Of TRowData).KeyExpression
+- uid: Material.Blazor.MBGrid`1.LogIdentification
+  name: LogIdentification
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_LogIdentification
+  commentId: P:Material.Blazor.MBGrid`1.LogIdentification
+  fullName: Material.Blazor.MBGrid<TRowData>.LogIdentification
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).LogIdentification
+  nameWithType: MBGrid<TRowData>.LogIdentification
+  nameWithType.vb: MBGrid(Of TRowData).LogIdentification
+- uid: Material.Blazor.MBGrid`1.LogIdentification*
+  name: LogIdentification
+  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_LogIdentification_
+  commentId: Overload:Material.Blazor.MBGrid`1.LogIdentification
+  isSpec: "True"
+  fullName: Material.Blazor.MBGrid<TRowData>.LogIdentification
+  fullName.vb: Material.Blazor.MBGrid(Of TRowData).LogIdentification
+  nameWithType: MBGrid<TRowData>.LogIdentification
+  nameWithType.vb: MBGrid(Of TRowData).LogIdentification
 - uid: Material.Blazor.MBGrid`1.Measurement
   name: Measurement
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_Measurement
