@@ -2529,6 +2529,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Workflows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Workflows.html",
+          "hash": "jme69jQf5mUKRk8DOlgbIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "articles/images/gh-account-settings-1.png",
       "output": {
@@ -2733,7 +2745,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 79,
+          "total_file_count": 80,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
