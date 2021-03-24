@@ -260,6 +260,19 @@ references:
   commentId: T:Material.Blazor.HashCode
   fullName: Material.Blazor.HashCode
   nameWithType: HashCode
+- uid: Material.Blazor.HashCode.#ctor(System.Int32)
+  name: HashCode(Int32)
+  href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode__ctor_System_Int32_
+  commentId: M:Material.Blazor.HashCode.#ctor(System.Int32)
+  fullName: Material.Blazor.HashCode.HashCode(System.Int32)
+  nameWithType: HashCode.HashCode(Int32)
+- uid: Material.Blazor.HashCode.#ctor*
+  name: HashCode
+  href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode__ctor_
+  commentId: Overload:Material.Blazor.HashCode.#ctor
+  isSpec: "True"
+  fullName: Material.Blazor.HashCode.HashCode
+  nameWithType: HashCode.HashCode
 - uid: Material.Blazor.HashCode.And*
   name: And
   href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode_And_
@@ -292,6 +305,19 @@ references:
   fullName.vb: Material.Blazor.HashCode.AndEach(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: HashCode.AndEach<T>(IEnumerable<T>)
   nameWithType.vb: HashCode.AndEach(Of T)(IEnumerable(Of T))
+- uid: Material.Blazor.HashCode.CombineHashCodes(System.Int32,System.Int32)
+  name: CombineHashCodes(Int32, Int32)
+  href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode_CombineHashCodes_System_Int32_System_Int32_
+  commentId: M:Material.Blazor.HashCode.CombineHashCodes(System.Int32,System.Int32)
+  fullName: Material.Blazor.HashCode.CombineHashCodes(System.Int32, System.Int32)
+  nameWithType: HashCode.CombineHashCodes(Int32, Int32)
+- uid: Material.Blazor.HashCode.CombineHashCodes*
+  name: CombineHashCodes
+  href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode_CombineHashCodes_
+  commentId: Overload:Material.Blazor.HashCode.CombineHashCodes
+  isSpec: "True"
+  fullName: Material.Blazor.HashCode.CombineHashCodes
+  nameWithType: HashCode.CombineHashCodes
 - uid: Material.Blazor.HashCode.Equals(Material.Blazor.HashCode)
   name: Equals(HashCode)
   href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode_Equals_Material_Blazor_HashCode_
@@ -388,6 +414,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.HashCode.Inequality
   nameWithType: HashCode.Inequality
+- uid: Material.Blazor.HashCode.value
+  name: value
+  href: api/Material.Blazor.HashCode.html#Material_Blazor_HashCode_value
+  commentId: F:Material.Blazor.HashCode.value
+  fullName: Material.Blazor.HashCode.value
+  nameWithType: HashCode.value
 - uid: Material.Blazor.IMBAnimatedNavigationManager
   name: IMBAnimatedNavigationManager
   href: api/Material.Blazor.IMBAnimatedNavigationManager.html
