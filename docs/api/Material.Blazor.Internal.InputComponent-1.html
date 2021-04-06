@@ -866,7 +866,7 @@ some combination of &quot;modified&quot;, &quot;valid&quot;, or &quot;invalid&qu
     <a href="https://github.com/OptimiumHealth/Material.Blazor/blob/main/Material.Blazor/Foundation/InputComponent.cs/#L48">View Source</a>
   </span>
   <h4 id="Material_Blazor_Internal_InputComponent_1_SetComponentValue" data-uid="Material.Blazor.Internal.InputComponent`1.SetComponentValue">SetComponentValue</h4>
-  <div class="markdown level1 summary"><p>Derived components can use this to get a callback from SetParametrs(Async) when the consumer changes
+  <div class="markdown level1 summary"><p>Derived components can use this to get a callback from SetParameters(Async) when the consumer changes
 the value. This allows a component to take action with Material Theme js to update the DOM to reflect
 the data change visually. An example is a select where the relevant list item needs to be
 automatically clicked to get Material Theme to update the value shown in the
@@ -875,7 +875,7 @@ automatically clicked to get Material Theme to update the value shown in the
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected event EventHandler SetComponentValue</code></pre>
+    <pre><code class="lang-csharp hljs">protected event Action SetComponentValue</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -887,7 +887,7 @@ automatically clicked to get Material Theme to update the value shown in the
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
         <td></td>
       </tr>
     </tbody>
