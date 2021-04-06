@@ -3046,6 +3046,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBButton.OnInitializedAsync
   nameWithType: MBButton.OnInitializedAsync
+- uid: Material.Blazor.MBButton.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBButton.html#Material_Blazor_MBButton_TouchTarget
+  commentId: P:Material.Blazor.MBButton.TouchTarget
+  fullName: Material.Blazor.MBButton.TouchTarget
+  nameWithType: MBButton.TouchTarget
+- uid: Material.Blazor.MBButton.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBButton.html#Material_Blazor_MBButton_TouchTarget_
+  commentId: Overload:Material.Blazor.MBButton.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBButton.TouchTarget
+  nameWithType: MBButton.TouchTarget
 - uid: Material.Blazor.MBButton.TrailingIcon
   name: TrailingIcon
   href: api/Material.Blazor.MBButton.html#Material_Blazor_MBButton_TrailingIcon
@@ -3665,6 +3678,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCascadingDefaults.ThemeDensity
   nameWithType: MBCascadingDefaults.ThemeDensity
+- uid: Material.Blazor.MBCascadingDefaults.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_TouchTarget
+  commentId: P:Material.Blazor.MBCascadingDefaults.TouchTarget
+  fullName: Material.Blazor.MBCascadingDefaults.TouchTarget
+  nameWithType: MBCascadingDefaults.TouchTarget
+- uid: Material.Blazor.MBCascadingDefaults.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_TouchTarget_
+  commentId: Overload:Material.Blazor.MBCascadingDefaults.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBCascadingDefaults.TouchTarget
+  nameWithType: MBCascadingDefaults.TouchTarget
 - uid: Material.Blazor.MBCascadingDefaults.Version
   name: Version
   href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_Version
@@ -3775,6 +3801,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCheckbox.OnValueSetCallback
   nameWithType: MBCheckbox.OnValueSetCallback
+- uid: Material.Blazor.MBCheckbox.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_TouchTarget
+  commentId: P:Material.Blazor.MBCheckbox.TouchTarget
+  fullName: Material.Blazor.MBCheckbox.TouchTarget
+  nameWithType: MBCheckbox.TouchTarget
+- uid: Material.Blazor.MBCheckbox.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_TouchTarget_
+  commentId: Overload:Material.Blazor.MBCheckbox.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBCheckbox.TouchTarget
+  nameWithType: MBCheckbox.TouchTarget
 - uid: Material.Blazor.MBChipsSelectMulti`1
   name: MBChipsSelectMulti<TItem>
   href: api/Material.Blazor.MBChipsSelectMulti-1.html
@@ -3887,6 +3926,23 @@ references:
   fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnValueSetCallback
   nameWithType: MBChipsSelectMulti<TItem>.OnValueSetCallback
   nameWithType.vb: MBChipsSelectMulti(Of TItem).OnValueSetCallback
+- uid: Material.Blazor.MBChipsSelectMulti`1.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_TouchTarget
+  commentId: P:Material.Blazor.MBChipsSelectMulti`1.TouchTarget
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).TouchTarget
+  nameWithType: MBChipsSelectMulti<TItem>.TouchTarget
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).TouchTarget
+- uid: Material.Blazor.MBChipsSelectMulti`1.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_TouchTarget_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).TouchTarget
+  nameWithType: MBChipsSelectMulti<TItem>.TouchTarget
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).TouchTarget
 - uid: Material.Blazor.MBChipsSelectSingle`1
   name: MBChipsSelectSingle<TItem>
   href: api/Material.Blazor.MBChipsSelectSingle-1.html
@@ -5288,6 +5344,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBFloatingActionButton.OnInitializedAsync
   nameWithType: MBFloatingActionButton.OnInitializedAsync
+- uid: Material.Blazor.MBFloatingActionButton.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBFloatingActionButton.html#Material_Blazor_MBFloatingActionButton_TouchTarget
+  commentId: P:Material.Blazor.MBFloatingActionButton.TouchTarget
+  fullName: Material.Blazor.MBFloatingActionButton.TouchTarget
+  nameWithType: MBFloatingActionButton.TouchTarget
+- uid: Material.Blazor.MBFloatingActionButton.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBFloatingActionButton.html#Material_Blazor_MBFloatingActionButton_TouchTarget_
+  commentId: Overload:Material.Blazor.MBFloatingActionButton.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBFloatingActionButton.TouchTarget
+  nameWithType: MBFloatingActionButton.TouchTarget
 - uid: Material.Blazor.MBFloatingActionButton.Type
   name: Type
   href: api/Material.Blazor.MBFloatingActionButton.html#Material_Blazor_MBFloatingActionButton_Type
@@ -8736,6 +8805,23 @@ references:
   fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnValueSetCallback
   nameWithType: MBSegmentedButtonMulti<TItem>.OnValueSetCallback
   nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnValueSetCallback
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_TouchTarget
+  commentId: P:Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).TouchTarget
+  nameWithType: MBSegmentedButtonMulti<TItem>.TouchTarget
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).TouchTarget
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_TouchTarget_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).TouchTarget
+  nameWithType: MBSegmentedButtonMulti<TItem>.TouchTarget
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).TouchTarget
 - uid: Material.Blazor.MBSegmentedButtonSingle`1
   name: MBSegmentedButtonSingle<TItem>
   href: api/Material.Blazor.MBSegmentedButtonSingle-1.html
@@ -11292,6 +11378,51 @@ references:
   commentId: F:Material.Blazor.MBTopAppBarType.Standard
   fullName: Material.Blazor.MBTopAppBarType.Standard
   nameWithType: MBTopAppBarType.Standard
+- uid: Material.Blazor.MBTouchTargetWrapper
+  name: MBTouchTargetWrapper
+  href: api/Material.Blazor.MBTouchTargetWrapper.html
+  commentId: T:Material.Blazor.MBTouchTargetWrapper
+  fullName: Material.Blazor.MBTouchTargetWrapper
+  nameWithType: MBTouchTargetWrapper
+- uid: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  name: ApplyTouchTargetWrapper
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ApplyTouchTargetWrapper
+  commentId: P:Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  fullName: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  nameWithType: MBTouchTargetWrapper.ApplyTouchTargetWrapper
+- uid: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper*
+  name: ApplyTouchTargetWrapper
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ApplyTouchTargetWrapper_
+  commentId: Overload:Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  isSpec: "True"
+  fullName: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  nameWithType: MBTouchTargetWrapper.ApplyTouchTargetWrapper
+- uid: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_BuildRenderTree_RenderTreeBuilder_
+  commentId: M:Material.Blazor.MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+  fullName: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+  nameWithType: MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+- uid: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree*
+  name: BuildRenderTree
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_BuildRenderTree_
+  commentId: Overload:Material.Blazor.MBTouchTargetWrapper.BuildRenderTree
+  isSpec: "True"
+  fullName: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree
+  nameWithType: MBTouchTargetWrapper.BuildRenderTree
+- uid: Material.Blazor.MBTouchTargetWrapper.ChildContent
+  name: ChildContent
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ChildContent
+  commentId: P:Material.Blazor.MBTouchTargetWrapper.ChildContent
+  fullName: Material.Blazor.MBTouchTargetWrapper.ChildContent
+  nameWithType: MBTouchTargetWrapper.ChildContent
+- uid: Material.Blazor.MBTouchTargetWrapper.ChildContent*
+  name: ChildContent
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ChildContent_
+  commentId: Overload:Material.Blazor.MBTouchTargetWrapper.ChildContent
+  isSpec: "True"
+  fullName: Material.Blazor.MBTouchTargetWrapper.ChildContent
+  nameWithType: MBTouchTargetWrapper.ChildContent
 - uid: Material.Blazor.MBVersion
   name: MBVersion
   href: api/Material.Blazor.MBVersion.html
