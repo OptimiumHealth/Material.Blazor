@@ -1185,6 +1185,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.OnAfterRenderAsync
   nameWithType: ComponentFoundation.OnAfterRenderAsync
+- uid: Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnInitialized
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  fullName: Material.Blazor.Internal.ComponentFoundation.OnInitialized()
+  nameWithType: ComponentFoundation.OnInitialized()
+- uid: Material.Blazor.Internal.ComponentFoundation.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnInitialized_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  nameWithType: ComponentFoundation.OnInitialized
 - uid: Material.Blazor.Internal.ComponentFoundation.OnParametersSet
   name: OnParametersSet()
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnParametersSet
@@ -1442,23 +1455,6 @@ references:
   fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnAfterRenderAsync
   nameWithType: InputComponent<T>.OnAfterRenderAsync
   nameWithType.vb: InputComponent(Of T).OnAfterRenderAsync
-- uid: Material.Blazor.Internal.InputComponent`1.OnInitialized
-  name: OnInitialized()
-  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitialized
-  commentId: M:Material.Blazor.Internal.InputComponent`1.OnInitialized
-  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitialized()
-  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitialized()
-  nameWithType: InputComponent<T>.OnInitialized()
-  nameWithType.vb: InputComponent(Of T).OnInitialized()
-- uid: Material.Blazor.Internal.InputComponent`1.OnInitialized*
-  name: OnInitialized
-  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitialized_
-  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnInitialized
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitialized
-  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitialized
-  nameWithType: InputComponent<T>.OnInitialized
-  nameWithType.vb: InputComponent(Of T).OnInitialized
 - uid: Material.Blazor.Internal.InputComponent`1.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitializedAsync
