@@ -3391,6 +3391,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCascadingDefaults.DataTableDensity
   nameWithType: MBCascadingDefaults.DataTableDensity
+- uid: Material.Blazor.MBCascadingDefaults.DateFormat
+  name: DateFormat
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_DateFormat
+  commentId: P:Material.Blazor.MBCascadingDefaults.DateFormat
+  fullName: Material.Blazor.MBCascadingDefaults.DateFormat
+  nameWithType: MBCascadingDefaults.DateFormat
+- uid: Material.Blazor.MBCascadingDefaults.DateFormat*
+  name: DateFormat
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_DateFormat_
+  commentId: Overload:Material.Blazor.MBCascadingDefaults.DateFormat
+  isSpec: "True"
+  fullName: Material.Blazor.MBCascadingDefaults.DateFormat
+  nameWithType: MBCascadingDefaults.DateFormat
 - uid: Material.Blazor.MBCascadingDefaults.DateSelectionCriteria
   name: DateSelectionCriteria
   href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_DateSelectionCriteria
@@ -9530,12 +9543,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSlider.EventType
   nameWithType: MBSlider.EventType
-- uid: Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
-  name: NotifyChanged(Decimal)
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Decimal_
-  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
-  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
-  nameWithType: MBSlider.NotifyChanged(Decimal)
+- uid: Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  name: NotifyChanged(Double)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Double_
+  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  nameWithType: MBSlider.NotifyChanged(Double)
 - uid: Material.Blazor.MBSlider.NotifyChanged*
   name: NotifyChanged
   href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_
