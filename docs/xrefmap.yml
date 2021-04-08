@@ -2275,19 +2275,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.SnackbarInstance.Settings
   nameWithType: SnackbarInstance.Settings
-- uid: Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  name: TimeStamp
-  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_TimeStamp
-  commentId: P:Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  nameWithType: SnackbarInstance.TimeStamp
-- uid: Material.Blazor.Internal.SnackbarInstance.TimeStamp*
-  name: TimeStamp
-  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_TimeStamp_
-  commentId: Overload:Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  nameWithType: SnackbarInstance.TimeStamp
 - uid: Material.Blazor.MB_Grid_ColumnType
   name: MB_Grid_ColumnType
   href: api/Material.Blazor.MB_Grid_ColumnType.html
@@ -9543,12 +9530,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSlider.EventType
   nameWithType: MBSlider.EventType
-- uid: Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
-  name: NotifyChanged(Decimal)
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Decimal_
-  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
-  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
-  nameWithType: MBSlider.NotifyChanged(Decimal)
+- uid: Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  name: NotifyChanged(Double)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Double_
+  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  nameWithType: MBSlider.NotifyChanged(Double)
 - uid: Material.Blazor.MBSlider.NotifyChanged*
   name: NotifyChanged
   href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_
