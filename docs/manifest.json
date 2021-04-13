@@ -590,7 +590,7 @@
       "output": {
         ".html": {
           "relative_path": "Material.Blazor/Components/Slider/MBSlider.html",
-          "hash": "UKcwT1cPgVH3amOHCHbFxA=="
+          "hash": "g6By2LTYjJNSfLoq6lTeoA=="
         }
       },
       "is_incremental": false,
@@ -1526,7 +1526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBIcon.html",
-          "hash": "DII2nOW2HKTTA82CP+u8Zg=="
+          "hash": "DZ5KMF6BOzfoz51uskerlA=="
         }
       },
       "is_incremental": false,
@@ -1982,7 +1982,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBSlider.html",
-          "hash": "Hi3C03C5qfrUOA4mZrohVQ=="
+          "hash": "uEJWhgDsR3A0j9NGGg2V3w=="
         }
       },
       "is_incremental": false,
@@ -2465,7 +2465,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes.html",
-          "hash": "+4Guhlpb1ZqEDrEaRScSaQ=="
+          "hash": "K+WIbG6IArKRDqWybYW7IA=="
         }
       },
       "is_incremental": false,
