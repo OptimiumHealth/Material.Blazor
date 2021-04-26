@@ -9658,23 +9658,23 @@ references:
   fullName.vb: Material.Blazor.MBSlidingContent(Of TItem).OnAfterRenderAsync
   nameWithType: MBSlidingContent<TItem>.OnAfterRenderAsync
   nameWithType.vb: MBSlidingContent(Of TItem).OnAfterRenderAsync
-- uid: Material.Blazor.MBSlidingContent`1.OnInitializedAsync
-  name: OnInitializedAsync()
-  href: api/Material.Blazor.MBSlidingContent-1.html#Material_Blazor_MBSlidingContent_1_OnInitializedAsync
-  commentId: M:Material.Blazor.MBSlidingContent`1.OnInitializedAsync
-  fullName: Material.Blazor.MBSlidingContent<TItem>.OnInitializedAsync()
-  fullName.vb: Material.Blazor.MBSlidingContent(Of TItem).OnInitializedAsync()
-  nameWithType: MBSlidingContent<TItem>.OnInitializedAsync()
-  nameWithType.vb: MBSlidingContent(Of TItem).OnInitializedAsync()
-- uid: Material.Blazor.MBSlidingContent`1.OnInitializedAsync*
-  name: OnInitializedAsync
-  href: api/Material.Blazor.MBSlidingContent-1.html#Material_Blazor_MBSlidingContent_1_OnInitializedAsync_
-  commentId: Overload:Material.Blazor.MBSlidingContent`1.OnInitializedAsync
+- uid: Material.Blazor.MBSlidingContent`1.OnParametersSet
+  name: OnParametersSet()
+  href: api/Material.Blazor.MBSlidingContent-1.html#Material_Blazor_MBSlidingContent_1_OnParametersSet
+  commentId: M:Material.Blazor.MBSlidingContent`1.OnParametersSet
+  fullName: Material.Blazor.MBSlidingContent<TItem>.OnParametersSet()
+  fullName.vb: Material.Blazor.MBSlidingContent(Of TItem).OnParametersSet()
+  nameWithType: MBSlidingContent<TItem>.OnParametersSet()
+  nameWithType.vb: MBSlidingContent(Of TItem).OnParametersSet()
+- uid: Material.Blazor.MBSlidingContent`1.OnParametersSet*
+  name: OnParametersSet
+  href: api/Material.Blazor.MBSlidingContent-1.html#Material_Blazor_MBSlidingContent_1_OnParametersSet_
+  commentId: Overload:Material.Blazor.MBSlidingContent`1.OnParametersSet
   isSpec: "True"
-  fullName: Material.Blazor.MBSlidingContent<TItem>.OnInitializedAsync
-  fullName.vb: Material.Blazor.MBSlidingContent(Of TItem).OnInitializedAsync
-  nameWithType: MBSlidingContent<TItem>.OnInitializedAsync
-  nameWithType.vb: MBSlidingContent(Of TItem).OnInitializedAsync
+  fullName: Material.Blazor.MBSlidingContent<TItem>.OnParametersSet
+  fullName.vb: Material.Blazor.MBSlidingContent(Of TItem).OnParametersSet
+  nameWithType: MBSlidingContent<TItem>.OnParametersSet
+  nameWithType.vb: MBSlidingContent(Of TItem).OnParametersSet
 - uid: Material.Blazor.MBSlidingTabBar`1
   name: MBSlidingTabBar<TItem>
   href: api/Material.Blazor.MBSlidingTabBar-1.html
