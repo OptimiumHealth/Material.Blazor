@@ -561,6 +561,38 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBIconFoundry.FoundryName
   nameWithType: IMBIconFoundry.FoundryName
+- uid: Material.Blazor.IMBLoggingLevelService
+  name: IMBLoggingLevelService
+  href: api/Material.Blazor.IMBLoggingLevelService.html
+  commentId: T:Material.Blazor.IMBLoggingLevelService
+  fullName: Material.Blazor.IMBLoggingLevelService
+  nameWithType: IMBLoggingLevelService
+- uid: Material.Blazor.IMBLoggingLevelService.Configuration
+  name: Configuration
+  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_Configuration
+  commentId: P:Material.Blazor.IMBLoggingLevelService.Configuration
+  fullName: Material.Blazor.IMBLoggingLevelService.Configuration
+  nameWithType: IMBLoggingLevelService.Configuration
+- uid: Material.Blazor.IMBLoggingLevelService.Configuration*
+  name: Configuration
+  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_Configuration_
+  commentId: Overload:Material.Blazor.IMBLoggingLevelService.Configuration
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingLevelService.Configuration
+  nameWithType: IMBLoggingLevelService.Configuration
+- uid: Material.Blazor.IMBLoggingLevelService.CurrentLevel
+  name: CurrentLevel()
+  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_CurrentLevel
+  commentId: M:Material.Blazor.IMBLoggingLevelService.CurrentLevel
+  fullName: Material.Blazor.IMBLoggingLevelService.CurrentLevel()
+  nameWithType: IMBLoggingLevelService.CurrentLevel()
+- uid: Material.Blazor.IMBLoggingLevelService.CurrentLevel*
+  name: CurrentLevel
+  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_CurrentLevel_
+  commentId: Overload:Material.Blazor.IMBLoggingLevelService.CurrentLevel
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingLevelService.CurrentLevel
+  nameWithType: IMBLoggingLevelService.CurrentLevel
 - uid: Material.Blazor.IMBSnackbarService
   name: IMBSnackbarService
   href: api/Material.Blazor.IMBSnackbarService.html
@@ -820,307 +852,84 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.JsRuntime
   nameWithType: ComponentFoundation.JsRuntime
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBCritical(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBCritical(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBCritical(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBCritical(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId,System.String,System.Object[])
-  name: LogMBCritical(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId,System.String,System.Object[])
-  name.vb: LogMBCritical(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBCritical(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBCritical(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.Exception,System.String,System.Object[])
-  name: LogMBCritical(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.Exception,System.String,System.Object[])
-  name.vb: LogMBCritical(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBCritical(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBCritical(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.String,System.Object[])
-  name: LogMBCritical(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.String,System.Object[])
-  name.vb: LogMBCritical(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBCritical(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBCritical(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBCritical*
-  name: LogMBCritical
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBCritical
+- uid: Material.Blazor.Internal.ComponentFoundation.LogCritical(System.String)
+  name: LogCritical(String)
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogCritical_System_String_
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogCritical(System.String)
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogCritical(System.String)
+  nameWithType: ComponentFoundation.LogCritical(String)
+- uid: Material.Blazor.Internal.ComponentFoundation.LogCritical*
+  name: LogCritical
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogCritical_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogCritical
   isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBCritical
-  nameWithType: ComponentFoundation.LogMBCritical
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBDebug(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBDebug(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebug(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebug(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId,System.String,System.Object[])
-  name: LogMBDebug(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId,System.String,System.Object[])
-  name.vb: LogMBDebug(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebug(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebug(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.Exception,System.String,System.Object[])
-  name: LogMBDebug(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.Exception,System.String,System.Object[])
-  name.vb: LogMBDebug(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebug(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebug(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.String,System.Object[])
-  name: LogMBDebug(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.String,System.Object[])
-  name.vb: LogMBDebug(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebug(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebug(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebug(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebug*
-  name: LogMBDebug
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBDebug
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogCritical
+  nameWithType: ComponentFoundation.LogCritical
+- uid: Material.Blazor.Internal.ComponentFoundation.LogDebug(System.String)
+  name: LogDebug(String)
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogDebug_System_String_
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogDebug(System.String)
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogDebug(System.String)
+  nameWithType: ComponentFoundation.LogDebug(String)
+- uid: Material.Blazor.Internal.ComponentFoundation.LogDebug*
+  name: LogDebug
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogDebug_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogDebug
   isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebug
-  nameWithType: ComponentFoundation.LogMBDebug
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBDebugVerbose(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBDebugVerbose(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebugVerbose(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebugVerbose(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId,System.String,System.Object[])
-  name: LogMBDebugVerbose(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId,System.String,System.Object[])
-  name.vb: LogMBDebugVerbose(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebugVerbose(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebugVerbose(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.Exception,System.String,System.Object[])
-  name: LogMBDebugVerbose(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.Exception,System.String,System.Object[])
-  name.vb: LogMBDebugVerbose(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebugVerbose(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebugVerbose(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.String,System.Object[])
-  name: LogMBDebugVerbose(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.String,System.Object[])
-  name.vb: LogMBDebugVerbose(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBDebugVerbose(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBDebugVerbose(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose*
-  name: LogMBDebugVerbose
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogDebug
+  nameWithType: ComponentFoundation.LogDebug
+- uid: Material.Blazor.Internal.ComponentFoundation.LogError(System.String)
+  name: LogError(String)
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogError_System_String_
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogError(System.String)
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogError(System.String)
+  nameWithType: ComponentFoundation.LogError(String)
+- uid: Material.Blazor.Internal.ComponentFoundation.LogError*
+  name: LogError
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogError_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogError
   isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBDebugVerbose
-  nameWithType: ComponentFoundation.LogMBDebugVerbose
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBError(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBError(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBError(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBError(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId,System.String,System.Object[])
-  name: LogMBError(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId,System.String,System.Object[])
-  name.vb: LogMBError(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBError(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBError(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBError(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBError(System.Exception,System.String,System.Object[])
-  name: LogMBError(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBError(System.Exception,System.String,System.Object[])
-  name.vb: LogMBError(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBError(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBError(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBError(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBError(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBError(System.String,System.Object[])
-  name: LogMBError(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBError(System.String,System.Object[])
-  name.vb: LogMBError(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBError(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBError(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBError(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBError(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBError*
-  name: LogMBError
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBError
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogError
+  nameWithType: ComponentFoundation.LogError
+- uid: Material.Blazor.Internal.ComponentFoundation.LogInformation(System.String)
+  name: LogInformation(String)
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogInformation_System_String_
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogInformation(System.String)
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogInformation(System.String)
+  nameWithType: ComponentFoundation.LogInformation(String)
+- uid: Material.Blazor.Internal.ComponentFoundation.LogInformation*
+  name: LogInformation
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogInformation_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogInformation
   isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBError
-  nameWithType: ComponentFoundation.LogMBError
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBInformation(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBInformation(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBInformation(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBInformation(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId,System.String,System.Object[])
-  name: LogMBInformation(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId,System.String,System.Object[])
-  name.vb: LogMBInformation(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBInformation(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBInformation(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.Exception,System.String,System.Object[])
-  name: LogMBInformation(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.Exception,System.String,System.Object[])
-  name.vb: LogMBInformation(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBInformation(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBInformation(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.String,System.Object[])
-  name: LogMBInformation(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.String,System.Object[])
-  name.vb: LogMBInformation(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBInformation(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBInformation(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBInformation(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBInformation*
-  name: LogMBInformation
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBInformation
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogInformation
+  nameWithType: ComponentFoundation.LogInformation
+- uid: Material.Blazor.Internal.ComponentFoundation.LogTrace(System.String)
+  name: LogTrace(String)
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogTrace_System_String_
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogTrace(System.String)
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogTrace(System.String)
+  nameWithType: ComponentFoundation.LogTrace(String)
+- uid: Material.Blazor.Internal.ComponentFoundation.LogTrace*
+  name: LogTrace
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogTrace_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogTrace
   isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBInformation
-  nameWithType: ComponentFoundation.LogMBInformation
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBTrace(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBTrace(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBTrace(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBTrace(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId,System.String,System.Object[])
-  name: LogMBTrace(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId,System.String,System.Object[])
-  name.vb: LogMBTrace(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBTrace(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBTrace(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.Exception,System.String,System.Object[])
-  name: LogMBTrace(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.Exception,System.String,System.Object[])
-  name.vb: LogMBTrace(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBTrace(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBTrace(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.String,System.Object[])
-  name: LogMBTrace(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.String,System.Object[])
-  name.vb: LogMBTrace(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBTrace(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBTrace(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBTrace(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBTrace*
-  name: LogMBTrace
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBTrace
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogTrace
+  nameWithType: ComponentFoundation.LogTrace
+- uid: Material.Blazor.Internal.ComponentFoundation.LogWarning(System.String)
+  name: LogWarning(String)
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogWarning_System_String_
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogWarning(System.String)
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogWarning(System.String)
+  nameWithType: ComponentFoundation.LogWarning(String)
+- uid: Material.Blazor.Internal.ComponentFoundation.LogWarning*
+  name: LogWarning
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogWarning_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogWarning
   isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBTrace
-  nameWithType: ComponentFoundation.LogMBTrace
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId,System.Exception,System.String,System.Object[])
-  name: LogMBWarning(EventId, Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_EventId_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId,System.Exception,System.String,System.Object[])
-  name.vb: LogMBWarning(EventId, Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId, System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId, System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBWarning(EventId, Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBWarning(EventId, Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId,System.String,System.Object[])
-  name: LogMBWarning(EventId, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_EventId_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId,System.String,System.Object[])
-  name.vb: LogMBWarning(EventId, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(EventId, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBWarning(EventId, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBWarning(EventId, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.Exception,System.String,System.Object[])
-  name: LogMBWarning(Exception, String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_System_Exception_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.Exception,System.String,System.Object[])
-  name.vb: LogMBWarning(Exception, String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.Exception, System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.Exception, System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBWarning(Exception, String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBWarning(Exception, String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.String,System.Object[])
-  name: LogMBWarning(String, Object[])
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_System_String_System_Object___
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.String,System.Object[])
-  name.vb: LogMBWarning(String, Object())
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.String, System.Object[])
-  fullName.vb: Material.Blazor.Internal.ComponentFoundation.LogMBWarning(System.String, System.Object())
-  nameWithType: ComponentFoundation.LogMBWarning(String, Object[])
-  nameWithType.vb: ComponentFoundation.LogMBWarning(String, Object())
-- uid: Material.Blazor.Internal.ComponentFoundation.LogMBWarning*
-  name: LogMBWarning
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogMBWarning
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogMBWarning
-  nameWithType: ComponentFoundation.LogMBWarning
+  fullName: Material.Blazor.Internal.ComponentFoundation.LogWarning
+  nameWithType: ComponentFoundation.LogWarning
 - uid: Material.Blazor.Internal.ComponentFoundation.OnAfterRender(System.Boolean)
   name: OnAfterRender(Boolean)
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnAfterRender_System_Boolean_
@@ -7065,6 +6874,92 @@ references:
   commentId: F:Material.Blazor.MBListType.Regular
   fullName: Material.Blazor.MBListType.Regular
   nameWithType: MBListType.Regular
+- uid: Material.Blazor.MBLoggingLevel
+  name: MBLoggingLevel
+  href: api/Material.Blazor.MBLoggingLevel.html
+  commentId: T:Material.Blazor.MBLoggingLevel
+  fullName: Material.Blazor.MBLoggingLevel
+  nameWithType: MBLoggingLevel
+- uid: Material.Blazor.MBLoggingLevel.Critical
+  name: Critical
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_Critical
+  commentId: F:Material.Blazor.MBLoggingLevel.Critical
+  fullName: Material.Blazor.MBLoggingLevel.Critical
+  nameWithType: MBLoggingLevel.Critical
+- uid: Material.Blazor.MBLoggingLevel.Debug
+  name: Debug
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_Debug
+  commentId: F:Material.Blazor.MBLoggingLevel.Debug
+  fullName: Material.Blazor.MBLoggingLevel.Debug
+  nameWithType: MBLoggingLevel.Debug
+- uid: Material.Blazor.MBLoggingLevel.Error
+  name: Error
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_Error
+  commentId: F:Material.Blazor.MBLoggingLevel.Error
+  fullName: Material.Blazor.MBLoggingLevel.Error
+  nameWithType: MBLoggingLevel.Error
+- uid: Material.Blazor.MBLoggingLevel.Information
+  name: Information
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_Information
+  commentId: F:Material.Blazor.MBLoggingLevel.Information
+  fullName: Material.Blazor.MBLoggingLevel.Information
+  nameWithType: MBLoggingLevel.Information
+- uid: Material.Blazor.MBLoggingLevel.None
+  name: None
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_None
+  commentId: F:Material.Blazor.MBLoggingLevel.None
+  fullName: Material.Blazor.MBLoggingLevel.None
+  nameWithType: MBLoggingLevel.None
+- uid: Material.Blazor.MBLoggingLevel.Trace
+  name: Trace
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_Trace
+  commentId: F:Material.Blazor.MBLoggingLevel.Trace
+  fullName: Material.Blazor.MBLoggingLevel.Trace
+  nameWithType: MBLoggingLevel.Trace
+- uid: Material.Blazor.MBLoggingLevel.Warning
+  name: Warning
+  href: api/Material.Blazor.MBLoggingLevel.html#Material_Blazor_MBLoggingLevel_Warning
+  commentId: F:Material.Blazor.MBLoggingLevel.Warning
+  fullName: Material.Blazor.MBLoggingLevel.Warning
+  nameWithType: MBLoggingLevel.Warning
+- uid: Material.Blazor.MBLoggingLevelServiceConfiguration
+  name: MBLoggingLevelServiceConfiguration
+  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html
+  commentId: T:Material.Blazor.MBLoggingLevelServiceConfiguration
+  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration
+  nameWithType: MBLoggingLevelServiceConfiguration
+- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor
+  name: MBLoggingLevelServiceConfiguration()
+  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration__ctor
+  commentId: M:Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor
+  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration()
+  nameWithType: MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration()
+- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor*
+  name: MBLoggingLevelServiceConfiguration
+  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration__ctor_
+  commentId: Overload:Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor
+  isSpec: "True"
+  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration
+  nameWithType: MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration
+- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
+  name: DefaultLoggingLevel
+  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration_DefaultLoggingLevel
+  commentId: F:Material.Blazor.MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
+  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
+  nameWithType: MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
+- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  name: LoggingLevel
+  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration_LoggingLevel
+  commentId: P:Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  nameWithType: MBLoggingLevelServiceConfiguration.LoggingLevel
+- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel*
+  name: LoggingLevel
+  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration_LoggingLevel_
+  commentId: Overload:Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  isSpec: "True"
+  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  nameWithType: MBLoggingLevelServiceConfiguration.LoggingLevel
 - uid: Material.Blazor.MBMenu
   name: MBMenu
   href: api/Material.Blazor.MBMenu.html
@@ -11375,12 +11270,12 @@ references:
   commentId: T:Material.Blazor.ServiceCollectionExtensions
   fullName: Material.Blazor.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
-  name: AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)
-  href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_
-  commentId: M:Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
-  fullName: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection, Material.Blazor.MBSnackbarServiceConfiguration, Material.Blazor.MBToastServiceConfiguration, Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration)
-  nameWithType: ServiceCollectionExtensions.AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration)
+- uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration,Material.Blazor.MBLoggingLevelServiceConfiguration)
+  name: AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration, MBLoggingLevelServiceConfiguration)
+  href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_Material_Blazor_MBLoggingLevelServiceConfiguration_
+  commentId: M:Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration,Material.Blazor.MBLoggingLevelServiceConfiguration)
+  fullName: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection, Material.Blazor.MBSnackbarServiceConfiguration, Material.Blazor.MBToastServiceConfiguration, Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration, Material.Blazor.MBLoggingLevelServiceConfiguration)
+  nameWithType: ServiceCollectionExtensions.AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration, MBLoggingLevelServiceConfiguration)
 - uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices*
   name: AddMBServices
   href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_
