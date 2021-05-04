@@ -561,38 +561,132 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBIconFoundry.FoundryName
   nameWithType: IMBIconFoundry.FoundryName
-- uid: Material.Blazor.IMBLoggingLevelService
-  name: IMBLoggingLevelService
-  href: api/Material.Blazor.IMBLoggingLevelService.html
-  commentId: T:Material.Blazor.IMBLoggingLevelService
-  fullName: Material.Blazor.IMBLoggingLevelService
-  nameWithType: IMBLoggingLevelService
-- uid: Material.Blazor.IMBLoggingLevelService.Configuration
+- uid: Material.Blazor.IMBLoggingService
+  name: IMBLoggingService
+  href: api/Material.Blazor.IMBLoggingService.html
+  commentId: T:Material.Blazor.IMBLoggingService
+  fullName: Material.Blazor.IMBLoggingService
+  nameWithType: IMBLoggingService
+- uid: Material.Blazor.IMBLoggingService.Configuration
   name: Configuration
-  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_Configuration
-  commentId: P:Material.Blazor.IMBLoggingLevelService.Configuration
-  fullName: Material.Blazor.IMBLoggingLevelService.Configuration
-  nameWithType: IMBLoggingLevelService.Configuration
-- uid: Material.Blazor.IMBLoggingLevelService.Configuration*
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_Configuration
+  commentId: P:Material.Blazor.IMBLoggingService.Configuration
+  fullName: Material.Blazor.IMBLoggingService.Configuration
+  nameWithType: IMBLoggingService.Configuration
+- uid: Material.Blazor.IMBLoggingService.Configuration*
   name: Configuration
-  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_Configuration_
-  commentId: Overload:Material.Blazor.IMBLoggingLevelService.Configuration
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_Configuration_
+  commentId: Overload:Material.Blazor.IMBLoggingService.Configuration
   isSpec: "True"
-  fullName: Material.Blazor.IMBLoggingLevelService.Configuration
-  nameWithType: IMBLoggingLevelService.Configuration
-- uid: Material.Blazor.IMBLoggingLevelService.CurrentLevel
+  fullName: Material.Blazor.IMBLoggingService.Configuration
+  nameWithType: IMBLoggingService.Configuration
+- uid: Material.Blazor.IMBLoggingService.CurrentLevel
   name: CurrentLevel()
-  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_CurrentLevel
-  commentId: M:Material.Blazor.IMBLoggingLevelService.CurrentLevel
-  fullName: Material.Blazor.IMBLoggingLevelService.CurrentLevel()
-  nameWithType: IMBLoggingLevelService.CurrentLevel()
-- uid: Material.Blazor.IMBLoggingLevelService.CurrentLevel*
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_CurrentLevel
+  commentId: M:Material.Blazor.IMBLoggingService.CurrentLevel
+  fullName: Material.Blazor.IMBLoggingService.CurrentLevel()
+  nameWithType: IMBLoggingService.CurrentLevel()
+- uid: Material.Blazor.IMBLoggingService.CurrentLevel*
   name: CurrentLevel
-  href: api/Material.Blazor.IMBLoggingLevelService.html#Material_Blazor_IMBLoggingLevelService_CurrentLevel_
-  commentId: Overload:Material.Blazor.IMBLoggingLevelService.CurrentLevel
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_CurrentLevel_
+  commentId: Overload:Material.Blazor.IMBLoggingService.CurrentLevel
   isSpec: "True"
-  fullName: Material.Blazor.IMBLoggingLevelService.CurrentLevel
-  nameWithType: IMBLoggingLevelService.CurrentLevel
+  fullName: Material.Blazor.IMBLoggingService.CurrentLevel
+  nameWithType: IMBLoggingService.CurrentLevel
+- uid: Material.Blazor.IMBLoggingService.LogCritical(System.String)
+  name: LogCritical(String)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogCritical_System_String_
+  commentId: M:Material.Blazor.IMBLoggingService.LogCritical(System.String)
+  fullName: Material.Blazor.IMBLoggingService.LogCritical(System.String)
+  nameWithType: IMBLoggingService.LogCritical(String)
+- uid: Material.Blazor.IMBLoggingService.LogCritical*
+  name: LogCritical
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogCritical_
+  commentId: Overload:Material.Blazor.IMBLoggingService.LogCritical
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.LogCritical
+  nameWithType: IMBLoggingService.LogCritical
+- uid: Material.Blazor.IMBLoggingService.LogDebug(System.String)
+  name: LogDebug(String)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogDebug_System_String_
+  commentId: M:Material.Blazor.IMBLoggingService.LogDebug(System.String)
+  fullName: Material.Blazor.IMBLoggingService.LogDebug(System.String)
+  nameWithType: IMBLoggingService.LogDebug(String)
+- uid: Material.Blazor.IMBLoggingService.LogDebug*
+  name: LogDebug
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogDebug_
+  commentId: Overload:Material.Blazor.IMBLoggingService.LogDebug
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.LogDebug
+  nameWithType: IMBLoggingService.LogDebug
+- uid: Material.Blazor.IMBLoggingService.LogError(System.String)
+  name: LogError(String)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogError_System_String_
+  commentId: M:Material.Blazor.IMBLoggingService.LogError(System.String)
+  fullName: Material.Blazor.IMBLoggingService.LogError(System.String)
+  nameWithType: IMBLoggingService.LogError(String)
+- uid: Material.Blazor.IMBLoggingService.LogError*
+  name: LogError
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogError_
+  commentId: Overload:Material.Blazor.IMBLoggingService.LogError
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.LogError
+  nameWithType: IMBLoggingService.LogError
+- uid: Material.Blazor.IMBLoggingService.LogInformation(System.String)
+  name: LogInformation(String)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogInformation_System_String_
+  commentId: M:Material.Blazor.IMBLoggingService.LogInformation(System.String)
+  fullName: Material.Blazor.IMBLoggingService.LogInformation(System.String)
+  nameWithType: IMBLoggingService.LogInformation(String)
+- uid: Material.Blazor.IMBLoggingService.LogInformation*
+  name: LogInformation
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogInformation_
+  commentId: Overload:Material.Blazor.IMBLoggingService.LogInformation
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.LogInformation
+  nameWithType: IMBLoggingService.LogInformation
+- uid: Material.Blazor.IMBLoggingService.LogTrace(System.String)
+  name: LogTrace(String)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogTrace_System_String_
+  commentId: M:Material.Blazor.IMBLoggingService.LogTrace(System.String)
+  fullName: Material.Blazor.IMBLoggingService.LogTrace(System.String)
+  nameWithType: IMBLoggingService.LogTrace(String)
+- uid: Material.Blazor.IMBLoggingService.LogTrace*
+  name: LogTrace
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogTrace_
+  commentId: Overload:Material.Blazor.IMBLoggingService.LogTrace
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.LogTrace
+  nameWithType: IMBLoggingService.LogTrace
+- uid: Material.Blazor.IMBLoggingService.LogWarning(System.String)
+  name: LogWarning(String)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogWarning_System_String_
+  commentId: M:Material.Blazor.IMBLoggingService.LogWarning(System.String)
+  fullName: Material.Blazor.IMBLoggingService.LogWarning(System.String)
+  nameWithType: IMBLoggingService.LogWarning(String)
+- uid: Material.Blazor.IMBLoggingService.LogWarning*
+  name: LogWarning
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_LogWarning_
+  commentId: Overload:Material.Blazor.IMBLoggingService.LogWarning
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.LogWarning
+  nameWithType: IMBLoggingService.LogWarning
+- uid: Material.Blazor.IMBLoggingService.SetLogger(ILogger{Material.Blazor.Internal.ComponentFoundation})
+  name: SetLogger(ILogger<ComponentFoundation>)
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_SetLogger_ILogger_Material_Blazor_Internal_ComponentFoundation__
+  commentId: M:Material.Blazor.IMBLoggingService.SetLogger(ILogger{Material.Blazor.Internal.ComponentFoundation})
+  name.vb: SetLogger(ILogger(Of ComponentFoundation))
+  fullName: Material.Blazor.IMBLoggingService.SetLogger(ILogger<Material.Blazor.Internal.ComponentFoundation>)
+  fullName.vb: Material.Blazor.IMBLoggingService.SetLogger(ILogger(Of Material.Blazor.Internal.ComponentFoundation))
+  nameWithType: IMBLoggingService.SetLogger(ILogger<ComponentFoundation>)
+  nameWithType.vb: IMBLoggingService.SetLogger(ILogger(Of ComponentFoundation))
+- uid: Material.Blazor.IMBLoggingService.SetLogger*
+  name: SetLogger
+  href: api/Material.Blazor.IMBLoggingService.html#Material_Blazor_IMBLoggingService_SetLogger_
+  commentId: Overload:Material.Blazor.IMBLoggingService.SetLogger
+  isSpec: "True"
+  fullName: Material.Blazor.IMBLoggingService.SetLogger
+  nameWithType: IMBLoggingService.SetLogger
 - uid: Material.Blazor.IMBSnackbarService
   name: IMBSnackbarService
   href: api/Material.Blazor.IMBSnackbarService.html
@@ -852,84 +946,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.JsRuntime
   nameWithType: ComponentFoundation.JsRuntime
-- uid: Material.Blazor.Internal.ComponentFoundation.LogCritical(System.String)
-  name: LogCritical(String)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogCritical_System_String_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogCritical(System.String)
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogCritical(System.String)
-  nameWithType: ComponentFoundation.LogCritical(String)
-- uid: Material.Blazor.Internal.ComponentFoundation.LogCritical*
-  name: LogCritical
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogCritical_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogCritical
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogCritical
-  nameWithType: ComponentFoundation.LogCritical
-- uid: Material.Blazor.Internal.ComponentFoundation.LogDebug(System.String)
-  name: LogDebug(String)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogDebug_System_String_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogDebug(System.String)
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogDebug(System.String)
-  nameWithType: ComponentFoundation.LogDebug(String)
-- uid: Material.Blazor.Internal.ComponentFoundation.LogDebug*
-  name: LogDebug
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogDebug_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogDebug
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogDebug
-  nameWithType: ComponentFoundation.LogDebug
-- uid: Material.Blazor.Internal.ComponentFoundation.LogError(System.String)
-  name: LogError(String)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogError_System_String_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogError(System.String)
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogError(System.String)
-  nameWithType: ComponentFoundation.LogError(String)
-- uid: Material.Blazor.Internal.ComponentFoundation.LogError*
-  name: LogError
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogError_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogError
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogError
-  nameWithType: ComponentFoundation.LogError
-- uid: Material.Blazor.Internal.ComponentFoundation.LogInformation(System.String)
-  name: LogInformation(String)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogInformation_System_String_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogInformation(System.String)
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogInformation(System.String)
-  nameWithType: ComponentFoundation.LogInformation(String)
-- uid: Material.Blazor.Internal.ComponentFoundation.LogInformation*
-  name: LogInformation
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogInformation_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogInformation
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogInformation
-  nameWithType: ComponentFoundation.LogInformation
-- uid: Material.Blazor.Internal.ComponentFoundation.LogTrace(System.String)
-  name: LogTrace(String)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogTrace_System_String_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogTrace(System.String)
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogTrace(System.String)
-  nameWithType: ComponentFoundation.LogTrace(String)
-- uid: Material.Blazor.Internal.ComponentFoundation.LogTrace*
-  name: LogTrace
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogTrace_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogTrace
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogTrace
-  nameWithType: ComponentFoundation.LogTrace
-- uid: Material.Blazor.Internal.ComponentFoundation.LogWarning(System.String)
-  name: LogWarning(String)
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogWarning_System_String_
-  commentId: M:Material.Blazor.Internal.ComponentFoundation.LogWarning(System.String)
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogWarning(System.String)
-  nameWithType: ComponentFoundation.LogWarning(String)
-- uid: Material.Blazor.Internal.ComponentFoundation.LogWarning*
-  name: LogWarning
-  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogWarning_
-  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.LogWarning
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ComponentFoundation.LogWarning
-  nameWithType: ComponentFoundation.LogWarning
 - uid: Material.Blazor.Internal.ComponentFoundation.OnAfterRender(System.Boolean)
   name: OnAfterRender(Boolean)
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnAfterRender_System_Boolean_
@@ -5358,23 +5374,6 @@ references:
   fullName.vb: Material.Blazor.MBGrid(Of TRowData).OnMouseClick
   nameWithType: MBGrid<TRowData>.OnMouseClick
   nameWithType.vb: MBGrid(Of TRowData).OnMouseClick
-- uid: Material.Blazor.MBGrid`1.OnParametersSetAsync
-  name: OnParametersSetAsync()
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_OnParametersSetAsync
-  commentId: M:Material.Blazor.MBGrid`1.OnParametersSetAsync
-  fullName: Material.Blazor.MBGrid<TRowData>.OnParametersSetAsync()
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).OnParametersSetAsync()
-  nameWithType: MBGrid<TRowData>.OnParametersSetAsync()
-  nameWithType.vb: MBGrid(Of TRowData).OnParametersSetAsync()
-- uid: Material.Blazor.MBGrid`1.OnParametersSetAsync*
-  name: OnParametersSetAsync
-  href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_OnParametersSetAsync_
-  commentId: Overload:Material.Blazor.MBGrid`1.OnParametersSetAsync
-  isSpec: "True"
-  fullName: Material.Blazor.MBGrid<TRowData>.OnParametersSetAsync
-  fullName.vb: Material.Blazor.MBGrid(Of TRowData).OnParametersSetAsync
-  nameWithType: MBGrid<TRowData>.OnParametersSetAsync
-  nameWithType.vb: MBGrid(Of TRowData).OnParametersSetAsync
 - uid: Material.Blazor.MBGrid`1.SetParametersAsync(ParameterView)
   name: SetParametersAsync(ParameterView)
   href: api/Material.Blazor.MBGrid-1.html#Material_Blazor_MBGrid_1_SetParametersAsync_ParameterView_
@@ -6922,44 +6921,44 @@ references:
   commentId: F:Material.Blazor.MBLoggingLevel.Warning
   fullName: Material.Blazor.MBLoggingLevel.Warning
   nameWithType: MBLoggingLevel.Warning
-- uid: Material.Blazor.MBLoggingLevelServiceConfiguration
-  name: MBLoggingLevelServiceConfiguration
-  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html
-  commentId: T:Material.Blazor.MBLoggingLevelServiceConfiguration
-  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration
-  nameWithType: MBLoggingLevelServiceConfiguration
-- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor
-  name: MBLoggingLevelServiceConfiguration()
-  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration__ctor
-  commentId: M:Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor
-  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration()
-  nameWithType: MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration()
-- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor*
-  name: MBLoggingLevelServiceConfiguration
-  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration__ctor_
-  commentId: Overload:Material.Blazor.MBLoggingLevelServiceConfiguration.#ctor
+- uid: Material.Blazor.MBLoggingServiceConfiguration
+  name: MBLoggingServiceConfiguration
+  href: api/Material.Blazor.MBLoggingServiceConfiguration.html
+  commentId: T:Material.Blazor.MBLoggingServiceConfiguration
+  fullName: Material.Blazor.MBLoggingServiceConfiguration
+  nameWithType: MBLoggingServiceConfiguration
+- uid: Material.Blazor.MBLoggingServiceConfiguration.#ctor
+  name: MBLoggingServiceConfiguration()
+  href: api/Material.Blazor.MBLoggingServiceConfiguration.html#Material_Blazor_MBLoggingServiceConfiguration__ctor
+  commentId: M:Material.Blazor.MBLoggingServiceConfiguration.#ctor
+  fullName: Material.Blazor.MBLoggingServiceConfiguration.MBLoggingServiceConfiguration()
+  nameWithType: MBLoggingServiceConfiguration.MBLoggingServiceConfiguration()
+- uid: Material.Blazor.MBLoggingServiceConfiguration.#ctor*
+  name: MBLoggingServiceConfiguration
+  href: api/Material.Blazor.MBLoggingServiceConfiguration.html#Material_Blazor_MBLoggingServiceConfiguration__ctor_
+  commentId: Overload:Material.Blazor.MBLoggingServiceConfiguration.#ctor
   isSpec: "True"
-  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration
-  nameWithType: MBLoggingLevelServiceConfiguration.MBLoggingLevelServiceConfiguration
-- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
+  fullName: Material.Blazor.MBLoggingServiceConfiguration.MBLoggingServiceConfiguration
+  nameWithType: MBLoggingServiceConfiguration.MBLoggingServiceConfiguration
+- uid: Material.Blazor.MBLoggingServiceConfiguration.DefaultLoggingLevel
   name: DefaultLoggingLevel
-  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration_DefaultLoggingLevel
-  commentId: F:Material.Blazor.MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
-  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
-  nameWithType: MBLoggingLevelServiceConfiguration.DefaultLoggingLevel
-- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  href: api/Material.Blazor.MBLoggingServiceConfiguration.html#Material_Blazor_MBLoggingServiceConfiguration_DefaultLoggingLevel
+  commentId: F:Material.Blazor.MBLoggingServiceConfiguration.DefaultLoggingLevel
+  fullName: Material.Blazor.MBLoggingServiceConfiguration.DefaultLoggingLevel
+  nameWithType: MBLoggingServiceConfiguration.DefaultLoggingLevel
+- uid: Material.Blazor.MBLoggingServiceConfiguration.LoggingLevel
   name: LoggingLevel
-  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration_LoggingLevel
-  commentId: P:Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
-  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
-  nameWithType: MBLoggingLevelServiceConfiguration.LoggingLevel
-- uid: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel*
+  href: api/Material.Blazor.MBLoggingServiceConfiguration.html#Material_Blazor_MBLoggingServiceConfiguration_LoggingLevel
+  commentId: P:Material.Blazor.MBLoggingServiceConfiguration.LoggingLevel
+  fullName: Material.Blazor.MBLoggingServiceConfiguration.LoggingLevel
+  nameWithType: MBLoggingServiceConfiguration.LoggingLevel
+- uid: Material.Blazor.MBLoggingServiceConfiguration.LoggingLevel*
   name: LoggingLevel
-  href: api/Material.Blazor.MBLoggingLevelServiceConfiguration.html#Material_Blazor_MBLoggingLevelServiceConfiguration_LoggingLevel_
-  commentId: Overload:Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
+  href: api/Material.Blazor.MBLoggingServiceConfiguration.html#Material_Blazor_MBLoggingServiceConfiguration_LoggingLevel_
+  commentId: Overload:Material.Blazor.MBLoggingServiceConfiguration.LoggingLevel
   isSpec: "True"
-  fullName: Material.Blazor.MBLoggingLevelServiceConfiguration.LoggingLevel
-  nameWithType: MBLoggingLevelServiceConfiguration.LoggingLevel
+  fullName: Material.Blazor.MBLoggingServiceConfiguration.LoggingLevel
+  nameWithType: MBLoggingServiceConfiguration.LoggingLevel
 - uid: Material.Blazor.MBMenu
   name: MBMenu
   href: api/Material.Blazor.MBMenu.html
@@ -11270,12 +11269,12 @@ references:
   commentId: T:Material.Blazor.ServiceCollectionExtensions
   fullName: Material.Blazor.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration,Material.Blazor.MBLoggingLevelServiceConfiguration)
-  name: AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration, MBLoggingLevelServiceConfiguration)
-  href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_Material_Blazor_MBLoggingLevelServiceConfiguration_
-  commentId: M:Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration,Material.Blazor.MBLoggingLevelServiceConfiguration)
-  fullName: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection, Material.Blazor.MBSnackbarServiceConfiguration, Material.Blazor.MBToastServiceConfiguration, Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration, Material.Blazor.MBLoggingLevelServiceConfiguration)
-  nameWithType: ServiceCollectionExtensions.AddMBServices(IServiceCollection, MBSnackbarServiceConfiguration, MBToastServiceConfiguration, MBAnimatedNavigationManagerServiceConfiguration, MBLoggingLevelServiceConfiguration)
+- uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration,Material.Blazor.MBLoggingServiceConfiguration,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration)
+  name: AddMBServices(IServiceCollection, MBAnimatedNavigationManagerServiceConfiguration, MBLoggingServiceConfiguration, MBSnackbarServiceConfiguration, MBToastServiceConfiguration)
+  href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_IServiceCollection_Material_Blazor_MBAnimatedNavigationManagerServiceConfiguration_Material_Blazor_MBLoggingServiceConfiguration_Material_Blazor_MBSnackbarServiceConfiguration_Material_Blazor_MBToastServiceConfiguration_
+  commentId: M:Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection,Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration,Material.Blazor.MBLoggingServiceConfiguration,Material.Blazor.MBSnackbarServiceConfiguration,Material.Blazor.MBToastServiceConfiguration)
+  fullName: Material.Blazor.ServiceCollectionExtensions.AddMBServices(IServiceCollection, Material.Blazor.MBAnimatedNavigationManagerServiceConfiguration, Material.Blazor.MBLoggingServiceConfiguration, Material.Blazor.MBSnackbarServiceConfiguration, Material.Blazor.MBToastServiceConfiguration)
+  nameWithType: ServiceCollectionExtensions.AddMBServices(IServiceCollection, MBAnimatedNavigationManagerServiceConfiguration, MBLoggingServiceConfiguration, MBSnackbarServiceConfiguration, MBToastServiceConfiguration)
 - uid: Material.Blazor.ServiceCollectionExtensions.AddMBServices*
   name: AddMBServices
   href: api/Material.Blazor.ServiceCollectionExtensions.html#Material_Blazor_ServiceCollectionExtensions_AddMBServices_
