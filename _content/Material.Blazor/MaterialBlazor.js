@@ -128,9 +128,9 @@
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */            (function() {
                 var undefined;
-                var VERSION = "4.17.20";
+                var VERSION = "4.17.21";
                 var LARGE_ARRAY_SIZE = 200;
-                var CORE_ERROR_TEXT = "Unsupported core-js use. Try https://npms.io/search?q=ponyfill.", FUNC_ERROR_TEXT = "Expected a function";
+                var CORE_ERROR_TEXT = "Unsupported core-js use. Try https://npms.io/search?q=ponyfill.", FUNC_ERROR_TEXT = "Expected a function", INVALID_TEMPL_VAR_ERROR_TEXT = "Invalid `variable` option passed into `_.template`";
                 var HASH_UNDEFINED = "__lodash_hash_undefined__";
                 var MAX_MEMOIZE_SIZE = 500;
                 var PLACEHOLDER = "__lodash_placeholder__";
@@ -150,9 +150,11 @@
                 var reEscape = /<%-([\s\S]+?)%>/g, reEvaluate = /<%([\s\S]+?)%>/g, reInterpolate = /<%=([\s\S]+?)%>/g;
                 var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/, reIsPlainProp = /^\w*$/, rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
                 var reRegExpChar = /[\\^$.*+?()[\]{}|]/g, reHasRegExpChar = RegExp(reRegExpChar.source);
-                var reTrim = /^\s+|\s+$/g, reTrimStart = /^\s+/, reTrimEnd = /\s+$/;
+                var reTrimStart = /^\s+/;
+                var reWhitespace = /\s/;
                 var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/, reWrapDetails = /\{\n\/\* \[wrapped with (.+)\] \*/, reSplitDetails = /,? & /;
                 var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
+                var reForbiddenIdentifierChars = /[()=,{}\[\]\/\s]/;
                 var reEscapeChar = /\\(\\)?/g;
                 var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
                 var reFlags = /\w*$/;
@@ -621,6 +623,9 @@
                         return [ key, object[key] ];
                     }));
                 }
+                function baseTrim(string) {
+                    return string ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, "") : string;
+                }
                 function baseUnary(func) {
                     return function(value) {
                         return func(value);
@@ -734,6 +739,11 @@
                 }
                 function stringToArray(string) {
                     return hasUnicode(string) ? unicodeToArray(string) : asciiToArray(string);
+                }
+                function trimmedEndIndex(string) {
+                    var index = string.length;
+                    while (index-- && reWhitespace.test(string.charAt(index))) {}
+                    return index;
                 }
                 var unescapeHtmlChar = basePropertyOf(htmlUnescapes);
                 function unicodeSize(string) {
@@ -4234,7 +4244,7 @@
                         if (typeof value != "string") {
                             return value === 0 ? value : +value;
                         }
-                        value = value.replace(reTrim, "");
+                        value = baseTrim(value);
                         var isBinary = reIsBinary.test(value);
                         return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;
                     }
@@ -4677,6 +4687,8 @@
                         var variable = hasOwnProperty.call(options, "variable") && options.variable;
                         if (!variable) {
                             source = "with (obj) {\n" + source + "\n}\n";
+                        } else if (reForbiddenIdentifierChars.test(variable)) {
+                            throw new Error(INVALID_TEMPL_VAR_ERROR_TEXT);
                         }
                         source = (isEvaluating ? source.replace(reEmptyStringLeading, "") : source).replace(reEmptyStringMiddle, "$1").replace(reEmptyStringTrailing, "$1;");
                         source = "function(" + (variable || "obj") + ") {\n" + (variable ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (isEscaping ? ", __e = _.escape" : "") + (isEvaluating ? ", __j = Array.prototype.join;\n" + "function print() { __p += __j.call(arguments, '') }\n" : ";\n") + source + "return __p\n}";
@@ -4698,7 +4710,7 @@
                     function trim(string, chars, guard) {
                         string = toString(string);
                         if (string && (guard || chars === undefined)) {
-                            return string.replace(reTrim, "");
+                            return baseTrim(string);
                         }
                         if (!string || !(chars = baseToString(chars))) {
                             return string;
@@ -4709,7 +4721,7 @@
                     function trimEnd(string, chars, guard) {
                         string = toString(string);
                         if (string && (guard || chars === undefined)) {
-                            return string.replace(reTrimEnd, "");
+                            return string.slice(0, trimmedEndIndex(string) + 1);
                         }
                         if (!string || !(chars = baseToString(chars))) {
                             return string;
